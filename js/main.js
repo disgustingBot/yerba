@@ -5,7 +5,7 @@ w.onload=()=>{
   // REMOVE LOADER ANIMATION
   d.getElementById("load").style.top="-100vh"
   // LAZY LOAD FUNCTIONS
-  var lBs=[].slice.call(d.querySelectorAll(".lazy-background")),lIs=[].slice.call(d.querySelectorAll("img.lazy")),opt={threshold:.01};
+  var lBs=[].slice.call(d.querySelectorAll(".lazy-background")),lIs=[].slice.call(d.querySelectorAll(".lazy")),opt={threshold:.01};
   if("IntersectionObserver" in window){
     let lBO=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){let l=e.target;l.classList.add("visible");lBO.unobserve(l)}})},opt),
         lIO=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){let l=e.target;l.classList.remove("lazy");lIO.unobserve(l);l.srcset=l.dataset.url}})},opt);
@@ -28,8 +28,8 @@ const menuHandler=new IntersectionObserver(function(entries,observer){
     }
   })
 }, options);
-
-if(d.querySelector("#homeATF")){menuHandler.observe(d.querySelector("#homeATF"))}else{d.querySelector(".header").style.background="var(--color2)"}
+// HEADER TRANSPARENT HANDLER
+if(d.querySelector(".headerTransparent")){menuHandler.observe(d.querySelector(".headerTransparent"))}else{d.querySelector(".header").style.background="var(--color2)"}
 
 // NAVBAR
 const alternateNavBar=()=>{const navBar=d.querySelector("#navBar");if(navBar.classList.contains("navBarActive")){navBar.classList.remove("navBarActive")}else{navBar.classList.add("navBarActive")}}
