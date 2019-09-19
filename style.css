@@ -28,6 +28,8 @@ Text Domain: yerba
 
 5) =ESTRUCTURA:
 
+5.N) =Footer
+
 6) =COMPONENTES:
 6.1) =load:
 6.2) =header:
@@ -86,6 +88,25 @@ FIN DE MAPA DE CONTENIDOS */
     ------------------------------------------------------------------------------
     --------------------------------------------------------------------------- */
 
+    /*Footer*/
+        --footerPadding: 10px;
+        --socialContainerGridC: 1/9;
+        --socialContainerGridR: 5;
+        --footerMenuFontSize: .9rem;
+        --footerLogoHeight: 250px;
+        --footerMenuItemBorder: none;
+        --footerContactoGridC: 7/9;
+        --footerMenuFlexDirection: column;
+        --footerMenu1GridC: 1/5;
+        --footerMenu1GridR: 1/5;
+        --footerMenu2GridC: 5/9;
+        --footerMenu2GridR: 1/5;
+        --footerMenuFirstPaddingL: ;
+        --footerMenuFirstMarginL: ;
+        --footerContactoGridR: 6;
+        --socialItemMarginLeft: auto;
+
+
 
 }
 
@@ -126,6 +147,27 @@ FIN DE MAPA DE CONTENIDOS */
 @media screen and (min-width: 768px) {
   :root {
     --sizeR: calc(calc(var(--sizeRc) * 1px) + (var(--sizeRd) - var(--sizeRc)) * ((100vw - 768px) / (1200 - 768)));
+
+/*Footer*/
+    --footerPadding: 10px;
+    --socialContainerGridC: 1/4;
+    --socialContainerGridR: 3/4;
+    --footerMenuFontSize: .9rem;
+    --footerLogoHeight: 300px;
+    --footerMenuItemBorder: solid white 2px;
+    --footerContactoGridC: 8/9;
+    --footerMenuFlexDirection: row;
+    --footerMenu1GridC: 1/9;
+    --footerMenu1GridR: 4/5;
+    --footerMenu2GridC: 1/9;
+    --footerMenu2GridR: 5/6;
+    --footerMenuFirstPaddingL: 0;
+    --footerMenuFirstMarginL: 0;
+    --footerContactoGridR: 1/2;
+    --socialItemMarginLeft: 0;
+
+
+
   }
 }
 
@@ -139,6 +181,14 @@ FIN DE MAPA DE CONTENIDOS */
 --------------------------------------------------------------------------- */
 @media screen and (min-width: 992px) {
   :root {
+
+    /* Footer */
+    --footerPadding: 40px;
+    --footerMenuFontSize: 1.1rem;
+    --socialContainerGridC: 1/3;
+    --footerLogoHeight: 350px;
+
+
   }
 }
 
@@ -151,6 +201,10 @@ FIN DE MAPA DE CONTENIDOS */
 @media  screen and (min-width: 1200px) {
   :root {
     --sizeR: calc(var(--sizeRd) * 1px);
+
+
+    /* Footer */
+    --footerMenuFontSize: 1.4rem;
   }
 }
 
@@ -215,11 +269,95 @@ img{
 
 
 
+/* ---------------------------------------------------------------------------
+------------------------------------------------------------------------------
+                              5.N) =Footer:
+------------------------------------------------------------------------------
+--------------------------------------------------------------------------- */
+
+.footer {
+  background:#232323;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  height: 450px;
+  padding: var(--footerPadding);
+  width: 100%;
+}
+
+.footerLogo{
+  grid-column: 1/9;
+  grid-row: 1/6;
+  margin: auto;
+  height: var(--footerLogoHeight);
+}
+.footerContacto {
+  grid-column: var(--footerContactoGridC);
+  grid-row: var(--footerContactoGridR);
+  margin: 0 0 auto auto;
+  color: #1D82BB;
+  text-decoration: none;
+  transition: .2s;
+}
+.footerContacto:hover {color: #60b1ee;}
 
 
+.socialContainer {
+  display: flex;
+  grid-column: var(--socialContainerGridC);
+  grid-row: var(--socialContainerGridR);
+}
+
+.socialItem {margin: auto; margin-left: var(--socialItemMarginLeft);}
+
+.socialItemSvg {
+  width: 50px;
+  color: white;
+}
+
+.facebookFooter        { color: white; transition: .2s; }
+.facebookFooter:hover  { color: #3b5998!important;  }
+.twitterFooter         { color: white; transition: .2s; }
+.twitterFooter:hover   { color:  #00acee!important; }
+.instagramFooter       { color: white; transition: .2s; }
+.instagramFooter:hover { color: #3f729b!important;  }
+.googleFooter          { color: white; transition: .2s; }
+.googleFooter:hover    { color: #d34836!important;  }
+
+.footerMenu {
+  align-items: space-between;
+  display: flex;
+  flex-direction: var(--footerMenuFlexDirection);
+  flex-wrap: wrap;
+  font-size: var(--footerMenuFontSize);
+  list-style: none;
+  text-align: center;
+}
+
+.footerMenu1 {
+  grid-column: var(--footerMenu1GridC);
+  grid-row: var(--footerMenu1GridR);
+}
 
 
+.footerMenu2 {
+  grid-column: var(--footerMenu2GridC);
+  grid-row: var(--footerMenu2GridR);
 
+}
+.footerMenuItem {
+  margin: auto 0;
+  padding: 5px 15px;
+  height: min-content;
+  transition: .2s;
+}
+.footerMenuItem:hover {
+  background: #4b4b4b;
+  box-shadow: inset 0 0 10px #000000;
+ }
+.footerMenuItem:not(:last-child) {border-right: var(--footerMenuItemBorder); }
+.footerMenuItem:nth-child(1) {margin-left: var(--footerMenuFirstMarginL)!important; padding-left: var(--footerMenuFirstPaddingL);}
+.footerMenuItem a {text-decoration: none;color: white;}
 
 /* ---------------------------------------------------------------------------
 ------------------------------------------------------------------------------
