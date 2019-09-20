@@ -8,6 +8,7 @@
   <?php wp_head(); ?>
   <link href="https://fonts.googleapis.com/css?family=Bitter|Raleway:300,400&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Amita:400,700|Great+Vibes|Niconne|Tangerine:400,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
 </head>
 <body>
 
