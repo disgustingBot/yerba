@@ -105,6 +105,8 @@ FIN DE MAPA DE CONTENIDOS */
         --footerMenuFirstMarginL: ;
         --footerContactoGridR: 6;
         --socialItemMarginLeft: auto;
+        --footerPadding: repeat(6, 1fr);
+        --footerContacto: auto;
 
 
 
@@ -165,6 +167,8 @@ FIN DE MAPA DE CONTENIDOS */
     --footerMenuFirstMarginL: 0;
     --footerContactoGridR: 1/2;
     --socialItemMarginLeft: 0;
+    --footerPadding: repeat(5, 1fr);
+    --footerContacto: 0 0 auto auto;
 
 
 
@@ -279,7 +283,7 @@ img{
   background:#232323;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: var(--footerGridTemplateR);
   height: 450px;
   padding: var(--footerPadding);
   width: 100%;
@@ -294,7 +298,7 @@ img{
 .footerContacto {
   grid-column: var(--footerContactoGridC);
   grid-row: var(--footerContactoGridR);
-  margin: 0 0 auto auto;
+  margin: var(--footerContacto);
   color: #1D82BB;
   text-decoration: none;
   transition: .2s;
@@ -415,7 +419,11 @@ img{
   justify-content: center;
   grid-template-columns: 100%;
   grid-template-rows: 100vh;
+  max-width: 100%;
+  display: none;
 }
+
+.aligncenter {display: none;}
 /* ---------------------------------------------------------------------------
 ------------------------------------------------------------------------------
                              6.3.1) =homeATF:
@@ -427,6 +435,9 @@ img{
   /* padding: 4rem; */
   /* grid-gap: 1rem; */
 }
+
+.temporalGigantDiv {height: 1000px;}
+
 .homeATFCaption{
   /* grid-column: span 3; */
   margin: auto;
