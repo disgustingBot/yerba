@@ -36,6 +36,7 @@ Text Domain: yerba
 6.3) =ATFs:
 6.3.1) =homeATF:
 6.3.2) =section localizaciones:
+6.3.3) =section Gastronomía:
 6.4) =holyLink:
 
 
@@ -322,14 +323,14 @@ img{
 .footerLogo{
   grid-column: 1/9;
   grid-row: 1/6;
-  margin: auto;
   height: var(--footerLogoHeight);
+  margin: auto;
 }
 .footerContacto {
+  color: #1D82BB;
   grid-column: var(--footerContactoGridC);
   grid-row: var(--footerContactoGridR);
   margin: var(--footerContacto);
-  color: #1D82BB;
   text-decoration: none;
   transition: .2s;
 }
@@ -345,8 +346,8 @@ img{
 .socialItem {margin: auto; margin-left: var(--socialItemMarginLeft);}
 
 .socialItemSvg {
-  width: 50px;
   color: white;
+  width: 50px;
 }
 
 .facebookFooter        { color: white; transition: .2s; }
@@ -381,9 +382,9 @@ img{
 
 }
 .footerMenuItem {
+  height: min-content;
   margin: auto 0;
   padding: 5px 15px;
-  height: min-content;
   transition: .2s;
 }
 .footerMenuItem:hover {
@@ -490,35 +491,35 @@ img{
   display: grid;
   grid-template-columns:var(--ATFGridTemplateC);
   grid-template-rows: var(--ATFGridTemplateR);
-  height: 140vh;
-  width: 100%;
   grid-gap: 20px;
+  height: 140vh;
   padding-bottom: 10px;
+  width: 100%;
 }
 
 .videoATF {
   grid-column: var(--videoATFGridC);
   grid-row: var(--videoATFGridR);
   height: 110vh;
-  width: 100%;
   object-fit: cover;
+  width: 100%;
 }
 
 .ATFIsoLogo {
-  z-index: 2;
+  display: grid;
   grid-column: var(--ATFIsoLogoGridC);
   grid-row: var(--ATFIsoLogoGridR);
-  display: grid;
+  z-index: 2;
 }
 .ATFLogo,.ATFtitle{margin: auto; text-align: center;}
 .ATFtitle {margin-top: 0;}
 
 .cardsATF {
-  z-index: 2;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   grid-column: var(--cardsATFGridC);
   grid-row:var(--cardsATFGridR);
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  z-index: 2;
 }
 
 .cardsATF:hover {
@@ -529,18 +530,18 @@ img{
 
 
 .cardsATFImg {
-  width: 100%;
   height: 80%;
+  width: 100%;
 }
 
 .cardsATFTxt {
-  width: 100%;
-  height: 20%;
-  text-align: center;
-  font-size:;
   display: flex;
+  height: 20%;
   flex-direction: column;
+  font-size:;
   justify-content: center;
+  text-align: center;
+  width: 100%;
 }
 
 /* ---------------------------------------------------------------------------
@@ -550,13 +551,13 @@ img{
 --------------------------------------------------------------------------- */
 
 .fPSection {
-  margin-top: 100px;
-  width: 100%;
+  background: white;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-row-gap: 50px;
-  background: white;
+  margin-top: 100px;
   position: relative;
+  width: 100%;
 }
 
 .fPSectionHead {
@@ -569,16 +570,16 @@ img{
 
 
 .fPSectionImg {
-  width: 100%;
+  filter: brightness(2) contrast(70%) sepia(0.1);
   height: 400px;
   object-fit: cover;
-  filter: brightness(2) contrast(70%) sepia(0.1);
+  width: 100%;
 }
 
 .fPSectionTitle {
+  margin-left: -200px;
   position:relative;
   top: 50%;
-  margin-left: -200px;
   z-index: 2;
 }
 
@@ -589,8 +590,8 @@ img{
 }
 
 .localizacionesContainer {
-  grid-column: span 8;
   display: flex;
+  grid-column: span 8;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -600,29 +601,67 @@ img{
 }
 
 .localizacionItemImg {
-  width: 100%;
   height: 100%;
+  width: 100%;
+}
+
+.itemTitle {
+  background: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  padding: 10px 10px;
+  text-align: center;
+  transition: .25s;
+  width: 200px;
 }
 
 
 .itemTitleCenter {
+  left: calc(50% - 100px);
   position: relative;
   top: -50%;
-  left: calc(50% - 100px);
   z-index: 2;
-  text-align: center;
-  width: 200px;
-  padding: 10px 10px;
-  background: white;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  transition: .25s;
+
 }
 
-.itemTitleCenter:hover {
+.itemTitle:hover {
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .itemTitleCenter a {text-decoration: none; color: black;}
+
+
+
+/* ---------------------------------------------------------------------------
+------------------------------------------------------------------------------
+                            6.3.3) =section Gastronomía:
+------------------------------------------------------------------------------
+--------------------------------------------------------------------------- */
+
+.gastronomiaContainer {
+  display: flex;
+  flex-wrap: wrap;
+  grid-column: span 8;
+}
+
+.gastronomiaItem33 {
+  flex-basis: 33.33333333333333333%;
+  position: relative;
+}
+
+.gastronomiaItem50 {
+  flex-basis: 50%;
+  position: relative;
+}
+
+.gastronomiaItemImg {
+  height:100%;
+  width:100%;
+}
+
+.gastronomiaItemFigcaption {z-index: 2;}
+
+.titleTopRight {position: relative; top: 0; right: 0;}
+.titleBottomRight {position: relative; bottom: 0; right: 0;}
 /* ---------------------------------------------------------------------------
 ------------------------------------------------------------------------------
                              6.4) =holyLink:

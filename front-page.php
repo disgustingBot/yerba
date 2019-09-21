@@ -56,21 +56,17 @@
   <div class="localizacionesContainer">
     <figure class="localizacionItem fPSectionItem">
       <img src="<?php echo get_template_directory_uri(); ?>/img/home/view-sandy-beach_23-2147836788.jpg" alt="" class="localizacionItemImg">
-      <figcaption class="localizacionItemFigcaption itemTitleCenter">
+      <figcaption class="localizacionItemFigcaption itemTitleCenter itemTitle">
         <a href="#"><h5>Ibiza</h5></a>
       </figcaption>
     </figure>
 
     <figure class="localizacionItem fPSectionItem">
       <img src="<?php echo get_template_directory_uri(); ?>/img/home/pal-ski-resort-andorra-pyrenees_79295-10470.jpg" alt="" class="localizacionItemImg">
-      <figcaption class="localizacionItemFigcaption itemTitleCenter">
+      <figcaption class="localizacionItemFigcaption itemTitleCenter itemTitle">
         <a href="#"><h5>Andorra</h5></a>
       </figcaption>
     </figure>
-
-    
-
-
   </div>
 
 </section>
@@ -88,30 +84,35 @@
     </figure>
   </article>
 
-  <figure class="gastronomiaItem fPSectionItem">
-    <img src="" alt="" class="gastronomiaItemImg">
-    <figcaption class="gastronomiaItemFigcaption">Restaurante CBbC</figcaption>
-  </figure>
+  <div class="gastronomiaContainer">
+    <figure class="gastronomiaItem33 fPSectionItem">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/home/9948.jpg" alt="" class="gastronomiaItemImg">
+      <figcaption class="gastronomiaItemFigcaption titleTopRight itemTitle">Restaurante CBbC</figcaption>
+    </figure>
 
-  <figure class="gastronomiaItem fPSectionItem">
-    <img src="" alt="" class="gastronomiaItemImg">
-    <figcaption class="gastronomiaItemFigcaption">Chiringo CBbC</figcaption>
-  </figure>
+    <figure class="gastronomiaItem33 fPSectionItem">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/home/80.jpg" alt="" class="gastronomiaItemImg">
+      <figcaption class="gastronomiaItemFigcaption titleTopRight itemTitle">Chiringo CBbC</figcaption>
+    </figure>
 
-  <figure class="gastronomiaItem fPSectionItem">
-    <img src="" alt="" class="gastronomiaItemImg">
-    <figcaption class="gastronomiaItemFigcaption">Sushi CBbC</figcaption>
-  </figure>
+    <figure class="gastronomiaItem33 fPSectionItem">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/home/7781.jpg" alt="" class="gastronomiaItemImg">
+      <figcaption class="gastronomiaItemFigcaption titleTopRight itemTitle">Sushi CBbC</figcaption>
+    </figure>
 
-  <figure class="gastronomiaItem fPSectionItem">
-    <img src="" alt="" class="gastronomiaItemImg">
-    <figcaption class="gastronomiaItemFigcaption">Barra Gourmet</figcaption>
-  </figure>
+    <figure class="gastronomiaItem50 fPSectionItem">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/home/954.jpg" alt="" class="gastronomiaItemImg">
+      <figcaption class="gastronomiaItemFigcaption titleBottomRight itemTitle">Barra Gourmet</figcaption>
+    </figure>
 
-  <figure class="gastronomiaItem fPSectionItem">
-    <img src="" alt="" class="gastronomiaItemImg">
-    <figcaption class="gastronomiaItemFigcaption">Snak CBbC</figcaption>
-  </figure>
+    <figure class="gastronomiaItem50 fPSectionItem">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/home/1301764.jpg" alt="" class="gastronomiaItemImg">
+      <figcaption class="gastronomiaItemFigcaption titleBottomRight itemTitle">Snak CBbC</figcaption>
+    </figure>
+
+
+  </div>
+
 
 
 </section>
@@ -148,7 +149,7 @@
   <figure class="experienciasItem fPSectionItem">
     <img src="" alt="" class="experiencasItemImg">
     <figcaption class="experienciasItemFigcaption">
-      <h5 class="itemTitleCenter">Platos de Andorra</h5>
+      <h5 class="itemTitleCenter itemTitle">Platos de Andorra</h5>
       <p>Dolor sit amet, consectetur adipiscing elit</p>
       <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </figcaption>
@@ -157,7 +158,7 @@
   <figure class="experienciasItem fPSectionItem">
     <img src="" alt="" class="experiencasItemImg">
     <figcaption class="experienciasItemFigcaption">
-      <h5 class="itemTitleCenter">pendant sky</h5>
+      <h5 class="itemTitleCenter itemTitle">pendant sky</h5>
       <p>Dolor sit amet, consectetur adipiscing elit</p>
       <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </figcaption>
@@ -166,7 +167,7 @@
   <figure class="experienciasItem fPSectionItem">
     <img src="" alt="" class="experiencasItemImg">
     <figcaption class="experienciasItemFigcaption">
-      <h5 class="itemTitleCenter">festival</h5>
+      <h5 class="itemTitleCenter itemTitle">festival</h5>
       <p>Dolor sit amet, consectetur adipiscing elit</p>
       <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </figcaption>
