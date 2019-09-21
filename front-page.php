@@ -40,12 +40,12 @@
 
 </section>
 
-<section class="fPSection2 localizaciones">
+<section class="fPSection localizaciones">
 
   <article class="localizacionesHead fPSectionHead">
     <h4 class="localizacionTitle fPSectionTitle">CBbC es... <span class="specialTitle">localización</span></h4>
-    <figure class="localizacionesHeadFigure fPSectionFigure">
-      <img src="" alt="" class="localizacionesHeadImg">
+    <figure class="localizacionesHeadFigure1 fPSectionFigure">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/home/localizaciones.jpg" alt="" class="localizacionesHeadImg fPSectionImg">
       <figcaption class="localizacionesHeadFigcaption">
         <h5>En nuestros ambientes y restaurantes respirarás y sentirás que hasta el más mínimo detalle está por y para ti.</h5>
         <p>¿Eres mas de mar o de montaña?  Descubre lugares magicos en los que disfrutar de lo mejor de la vida.</p>
@@ -53,27 +53,34 @@
     </figure>
   </article>
 
-  <figure class="localizacionItem fPSectionItem">
-    <img src="" alt="" class="localizacionItemImg">
-    <figcaption class="localizacionItemFigcaption">
-      <h5>Ibiza</h5>
-    </figcaption>
-  </figure>
+  <div class="localizacionesContainer">
+    <figure class="localizacionItem fPSectionItem">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/home/view-sandy-beach_23-2147836788.jpg" alt="" class="localizacionItemImg">
+      <figcaption class="localizacionItemFigcaption itemTitleCenter">
+        <a href="#"><h5>Ibiza</h5></a>
+      </figcaption>
+    </figure>
 
-  <figure class="localizacionItem fPSectionItem">
-    <img src="" alt="" class="localizacionItemImg">
-    <figcaption class="localizacionItemFigcaption">
-      <h5>Andorra</h5>
-    </figcaption>
-  </figure>
+    <figure class="localizacionItem fPSectionItem">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/home/pal-ski-resort-andorra-pyrenees_79295-10470.jpg" alt="" class="localizacionItemImg">
+      <figcaption class="localizacionItemFigcaption itemTitleCenter">
+        <a href="#"><h5>Andorra</h5></a>
+      </figcaption>
+    </figure>
+
+    
+
+
+  </div>
 
 </section>
 
-<section class="fPSection3 gastronomia">
+<section class="fPSection gastronomia">
+
   <article class="gastronomiaHead fPSectionHead">
-    <h4 class="gastronomiaTitle fPSectionTitle">CBbC es...<span class="specialtitle">Gastronomía</span></h4>
-    <figure class="gastronomiaHeadFigure fPSectionFigure">
-      <img src="" alt="" class="gastronomiaHeadImg">
+    <h4 class="gastronomiaTitle fPSectionTitle">CBbC es...<span class="specialTitle">Gastronomía</span></h4>
+    <figure class="gastronomiaHeadFigure2 fPSectionFigure">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/home/gastronomia.jpg" alt="" class="gastronomiaHeadImg fPSectionImg">
       <figcaption class="gastronomiaHeadFigcaption">
         <h5>Disfruta de la esencia de la gastronomía en los mejores restauranes.</h5>
         <p>Cuando te sientes a la mesa, invita a todos tus sentidos. Cada plato presenta colores, sabores, aroma y texturas de auténtica tradición ibicenca. Del mar de un Bullit de Peix, a la tierra de un jamón de pata negra.</p>
@@ -106,15 +113,16 @@
     <figcaption class="gastronomiaItemFigcaption">Snak CBbC</figcaption>
   </figure>
 
+
 </section>
 
 
-<section class="fPSection4 experiencias">
+<section class="fPSection experiencias">
 
   <article class="experienciasHead fPSectionHead">
     <h4 class="experiencasTitle fPSectionTitle">CBbC es...<span class="specialTitle">Experiencias</span></h4>
-    <figure class="experienciasHeadFigure fPSectionFigure">
-      <img src="" alt="" class="experienciasHeadImg">
+    <figure class="experienciasHeadFigure1 fPSectionFigure">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/home/experiencias.jpg" alt="" class="experienciasHeadImg fPSectionImg">
       <figcaption class="experiencasHeadFigcaption">
         <h5>Disfruta de la esencia de la gastronomía en los mejores restauranes.</h5>
         <p>Cuando te sientes a la mesa, invita a todos tus sentidos. Cada plato presenta colores, sabores, aroma y texturas de auténtica tradición ibicenca. Del mar de un Bullit de Peix, a la tierra de un jamón de pata negra.</p>
@@ -134,7 +142,7 @@
 
 </section>
 
-<section class="fPSection5 Magazine">
+<section class="fPSection Magazine">
   <h4 class="magazineTitle"> <span class="magazineTitle1">CBbC</span> <span class="specialTitle magazineTitle2">Life</span> <span class="magazineTitle3">Magazine</span></h4>
 
   <figure class="experienciasItem fPSectionItem">
