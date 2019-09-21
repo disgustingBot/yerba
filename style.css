@@ -35,6 +35,7 @@ Text Domain: yerba
 6.2) =header:
 6.3) =ATFs:
 6.3.1) =homeATF:
+6.3.2) =section localizaciones:
 6.4) =holyLink:
 
 
@@ -444,6 +445,47 @@ img{
 ------------------------------------------------------------------------------
 --------------------------------------------------------------------------- */
 
+
+
+
+
+/* ---------------------------------------------------------------------------
+------------------------------------------------------------------------------
+                             6.3.1) =homeATF:
+------------------------------------------------------------------------------
+--------------------------------------------------------------------------- */
+.homeATF{
+  /* background: var(--color4); */
+  /* grid-template-columns:1fr 1fr 1fr; */
+  /* padding: 4rem; */
+  /* grid-gap: 1rem; */
+}
+
+.temporalGigantDiv {height: 1000px;}
+
+.homeATFCaption{
+  /* grid-column: span 3; */
+  margin: auto;
+  margin-bottom: 15vh;
+  text-align: center;
+  width: 100%;
+}
+.homeATFVideo{
+  height: 100%;
+  /* grid-column: span 3; */
+  object-fit: cover;
+  width: 100%;
+  z-index: -1;
+}
+.homeATFLogo{
+  height:100%;
+  /* grid-column: span 3; */
+  margin: auto;
+  object-fit: contain;
+  width:auto;
+}
+
+
 .ATF {
   display: grid;
   grid-template-columns:var(--ATFGridTemplateC);
@@ -501,47 +543,86 @@ img{
   justify-content: center;
 }
 
-
-
 /* ---------------------------------------------------------------------------
 ------------------------------------------------------------------------------
-                             6.3.1) =homeATF:
+                            6.3.2) =section localizaciones:
 ------------------------------------------------------------------------------
 --------------------------------------------------------------------------- */
-.homeATF{
-  /* background: var(--color4); */
-  /* grid-template-columns:1fr 1fr 1fr; */
-  /* padding: 4rem; */
-  /* grid-gap: 1rem; */
+
+.fPSection {
+  margin-top: 100px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-row-gap: 50px;
+  background: white;
+  position: relative;
 }
 
-.temporalGigantDiv {height: 1000px;}
+.fPSectionHead {
+  grid-column: 3/ span 5;
+}
 
-.homeATFCaption{
-  /* grid-column: span 3; */
-  margin: auto;
-  margin-bottom: 15vh;
-  text-align: center;
+.fPSectionFigure {
   width: 100%;
 }
-.homeATFVideo{
-  height: 100%;
-  /* grid-column: span 3; */
+
+
+.fPSectionImg {
+  width: 100%;
+  height: 400px;
   object-fit: cover;
+  filter: brightness(2) contrast(70%) sepia(0.1);
+}
+
+.fPSectionTitle {
+  position:relative;
+  top: 50%;
+  margin-left: -200px;
+  z-index: 2;
+}
+
+.fPSectionTitle span {
+  margin-left: 40px;
+  font-size: 4rem;
+  text-transform: capitalize;
+}
+
+.localizacionesContainer {
+  grid-column: span 8;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.localizacionItem {
+  flex-basis: 50%;
+}
+
+.localizacionItemImg {
   width: 100%;
-  z-index: -1;
-}
-.homeATFLogo{
-  height:100%;
-  /* grid-column: span 3; */
-  margin: auto;
-  object-fit: contain;
-  width:auto;
+  height: 100%;
 }
 
 
+.itemTitleCenter {
+  position: relative;
+  top: -50%;
+  left: calc(50% - 100px);
+  z-index: 2;
+  text-align: center;
+  width: 200px;
+  padding: 10px 10px;
+  background: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: .25s;
+}
 
+.itemTitleCenter:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
 
+.itemTitleCenter a {text-decoration: none; color: black;}
 /* ---------------------------------------------------------------------------
 ------------------------------------------------------------------------------
                              6.4) =holyLink:
