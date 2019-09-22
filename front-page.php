@@ -53,16 +53,16 @@
     </figure>
   </article>
 
-  <div class="localizacionesContainer">
-    <figure class="localizacionItem fPSectionItem">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/home/view-sandy-beach_23-2147836788.jpg" alt="" class="localizacionItemImg">
+  <div class="Container5050">
+    <figure class="item5050 fPSectionItem">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/home/view-sandy-beach_23-2147836788.jpg" alt="" class="item5050Img">
       <figcaption class="localizacionItemFigcaption itemTitleCenter itemTitle">
         <a href="#"><h5>Ibiza</h5></a>
       </figcaption>
     </figure>
 
-    <figure class="localizacionItem fPSectionItem">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/home/pal-ski-resort-andorra-pyrenees_79295-10470.jpg" alt="" class="localizacionItemImg">
+    <figure class="item5050 fPSectionItem">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/home/pal-ski-resort-andorra-pyrenees_79295-10470.jpg" alt="" class="item5050Img">
       <figcaption class="localizacionItemFigcaption itemTitleCenter itemTitle">
         <a href="#"><h5>Andorra</h5></a>
       </figcaption>
@@ -86,29 +86,46 @@
 
   <div class="gastronomiaContainer">
     <figure class="gastronomiaItem33 fPSectionItem">
+      <figcaption class="imgOverlay">
+        <p class="imgOverlayTxt"> <strong>At vero eos et accusamus</strong> et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. </p>
+      </figcaption>
       <img src="<?php echo get_template_directory_uri(); ?>/img/home/9948.jpg" alt="" class="gastronomiaItemImg">
       <figcaption class="gastronomiaItemFigcaption titleTopRight itemTitle">Restaurante CBbC</figcaption>
     </figure>
 
     <figure class="gastronomiaItem33 fPSectionItem">
+      <figcaption class="imgOverlay">
+        <p class="imgOverlayTxt"> <strong>At vero eos et accusamus</strong> et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. </p>
+      </figcaption>
       <img src="<?php echo get_template_directory_uri(); ?>/img/home/80.jpg" alt="" class="gastronomiaItemImg">
       <figcaption class="gastronomiaItemFigcaption titleTopRight itemTitle">Chiringo CBbC</figcaption>
     </figure>
 
     <figure class="gastronomiaItem33 fPSectionItem">
+      <figcaption class="imgOverlay">
+        <p class="imgOverlayTxt"> <strong>At vero eos et accusamus</strong> et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. </p>
+      </figcaption>
       <img src="<?php echo get_template_directory_uri(); ?>/img/home/7781.jpg" alt="" class="gastronomiaItemImg">
       <figcaption class="gastronomiaItemFigcaption titleTopRight itemTitle">Sushi CBbC</figcaption>
     </figure>
 
     <figure class="gastronomiaItem50 fPSectionItem">
+      <figcaption class="imgOverlay">
+        <p class="imgOverlayTxt"> <strong>At vero eos et accusamus</strong> et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. </p>
+      </figcaption>
       <img src="<?php echo get_template_directory_uri(); ?>/img/home/954.jpg" alt="" class="gastronomiaItemImg">
-      <figcaption class="gastronomiaItemFigcaption titleBottomRight itemTitle">Barra Gourmet</figcaption>
+
+      <figcaption class="gastronomiaItemFigcaption titleBottomLeft itemTitle">Barra Gourmet</figcaption>
     </figure>
 
     <figure class="gastronomiaItem50 fPSectionItem">
+      <figcaption class="imgOverlay">
+        <p class="imgOverlayTxt"> <strong>At vero eos et accusamus</strong> et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. </p>
+      </figcaption>
       <img src="<?php echo get_template_directory_uri(); ?>/img/home/1301764.jpg" alt="" class="gastronomiaItemImg">
-      <figcaption class="gastronomiaItemFigcaption titleBottomRight itemTitle">Snak CBbC</figcaption>
+      <figcaption class="gastronomiaItemFigcaption titleBottomLeft itemTitle">Snak CBbC</figcaption>
     </figure>
+
 
 
   </div>
@@ -131,49 +148,61 @@
     </figure>
   </article>
 
-  <figure class="experienciasItem fPSectionItem">
-    <img src="" alt="" class="gastronomiaItemImg">
-    <figcaption class="gastronomiaItemFigcaption">Snak CBbC</figcaption>
-  </figure>
+  <div class="Container5050">
 
-  <figure class="experienciasItem fPSectionItem">
-    <img src="" alt="" class="experiencasItemImg">
-    <figcaption class="experienciasItemFigcaption">Snak CBbC</figcaption>
-  </figure>
+    <figure class="experienciasItem fPSectionItem item5050">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/home/720.jpg" alt="" class="gastronomiaItemImg item5050Img">
+      <figcaption class="gastronomiaItemFigcaption itemTitle itemTitleCenter">Snak CBbC</figcaption>
+    </figure>
+
+    <figure class="experienciasItem fPSectionItem item5050">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/home/14459.jpg" alt="" class="experiencasItemImg item5050Img">
+      <figcaption class="experienciasItemFigcaption itemTitle itemTitleCenter">Snak CBbC</figcaption>
+    </figure>
+
+  </div>
+
+
+
+
+
 
 </section>
 
 <section class="fPSection Magazine">
-  <h4 class="magazineTitle"> <span class="magazineTitle1">CBbC</span> <span class="specialTitle magazineTitle2">Life</span> <span class="magazineTitle3">Magazine</span></h4>
+  <h4 class="magazineTitle"> <span class="magazineTitle1">CBbC</span> <span class="specialTitle magazineTitleBlue">Life</span> <span class="magazineTitle3">Magazine</span></h4>
 
   <figure class="experienciasItem fPSectionItem">
-    <img src="" alt="" class="experiencasItemImg">
+    <img src="<?php echo get_template_directory_uri(); ?>/img/home/114579-261.jpg" alt="" class="experiencasItemImg">
+    <h5 class="itemTitleCenter itemTitle">Platos de Andorra</h5>
     <figcaption class="experienciasItemFigcaption">
-      <h5 class="itemTitleCenter itemTitle">Platos de Andorra</h5>
       <p>Dolor sit amet, consectetur adipiscing elit</p>
       <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </figcaption>
   </figure>
 
+
   <figure class="experienciasItem fPSectionItem">
-    <img src="" alt="" class="experiencasItemImg">
+    <img src="<?php echo get_template_directory_uri(); ?>/img/home/23-2148153662.jpg" alt=""class="experiencasItemImg">
+    <h5 class="itemTitleCenter itemTitle">pendant sky</h5>
     <figcaption class="experienciasItemFigcaption">
-      <h5 class="itemTitleCenter itemTitle">pendant sky</h5>
       <p>Dolor sit amet, consectetur adipiscing elit</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.</p>
     </figcaption>
   </figure>
 
   <figure class="experienciasItem fPSectionItem">
-    <img src="" alt="" class="experiencasItemImg">
+    <img src="<?php echo get_template_directory_uri(); ?>/img/home/23-2147717087.png" alt=""class="experiencasItemImg">
+    <h5 class="itemTitleCenter itemTitle">festival</h5>
     <figcaption class="experienciasItemFigcaption">
-      <h5 class="itemTitleCenter itemTitle">festival</h5>
       <p>Dolor sit amet, consectetur adipiscing elit</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.</p>
     </figcaption>
   </figure>
+
 
 </section>
+
 
 </div>
 <?php get_footer(); ?>
