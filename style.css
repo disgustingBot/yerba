@@ -603,26 +603,26 @@ img{
 }
 
 .item5050Img {
-  height: 100%;
+  height: 80vh;
   width: 100%;
 }
 
 .itemTitle {
   background: white;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  padding: 20px 10px;
+  padding: 2rem;
   text-align: center;
   transition: .25s;
-  width: 250px;
+  width: max-content;
   border-radius: 2px;
   transition: .25s;
 }
 
 
 .itemTitleCenter {
-  left: calc(50% - 125px);
-  position: relative;
-  top: -50%;
+  grid-row: 1;
+  grid-column: 1;
+  margin: auto;
   z-index: 2;
 }
 
@@ -640,12 +640,17 @@ img{
 }
 
 .experiencasItemImg {
+  height: 80vh;
   width: 100%;
-  height: auto;
 }
 
 .experienciasItem {
   grid-column: span 2;
+}
+
+.magazineItemImg {
+  height: 30vh;
+  width: 100%;
 }
 
 .experienciasItem:nth-child(2) {
@@ -692,7 +697,9 @@ img{
 
 .fPSectionItem {
   position: relative;
+  display: grid;
 }
+.itemImg { grid-row: 1; grid-column: 1;}
 
 .imgOverlay {
   position: absolute;
@@ -710,14 +717,18 @@ img{
   opacity: 1;
 }
 
+/* TODO: El texto se desborda mal (hacer que se desborde bien (text overflow: ellipsis?)) */
+
 .gastronomiaItem50:hover .imgOverlay{
   opacity: 1;
 }
+
 
 .imgOverlayTxt {
   margin: auto;
   width: 50%;
   text-align: justify;
+
 }
 
 .titleTopRight {position: absolute; top: 0; right: 0;}
