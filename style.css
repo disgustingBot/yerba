@@ -30,6 +30,8 @@ Text Domain: yerba
 
 5.N) =Footer
 
+5.N) =MAGAZINE
+
 6) =COMPONENTES:
 6.1) =load:
 6.2) =header:
@@ -307,6 +309,104 @@ img{
 
 /* ---------------------------------------------------------------------------
 ------------------------------------------------------------------------------
+                              5.N) =MAGAZINE:
+------------------------------------------------------------------------------
+--------------------------------------------------------------------------- */
+.magazineHead {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.magazineSectionTitle {
+  font-size: 6rem;
+  grid-row: 1;
+  margin: auto;
+  margin-left: 80px;
+  z-index: 2;
+}
+
+.magazineHead1 {
+  grid-column: 2/ span 6;
+}
+
+.magazineSectionFigure1 {
+  grid-column: 3/ span 4;
+  grid-row: 1;
+}
+.magazineSectionTitle1 {
+    grid-column: 2/ span 2;
+}
+
+.magazineHead2 {
+  grid-column: 1/ span 6;
+}
+
+.magazineSectionFigure2 {
+  grid-column: 2/ span 4;
+  grid-row: 1;
+}
+
+.magazineSectionTitle2 {
+  grid-column: 5/ span 2;
+}
+
+.experiencasSection {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.experienciasSectionColumn1{
+  grid-column: 1/2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.experienciasSectionColumn2 {
+  grid-column: 2/3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.experiencasMagazineItem {
+  display: grid;
+  grid-column: span 2;
+  grid-template-columns: 1fr 1fr;
+  margin: -100px auto 50px auto;
+  background: white;
+  width: 40vw;
+}
+
+.experienciasMainImg {
+  grid-column: span 2;
+}
+
+.experienciasItemImg {
+  grid-column: 1/2;
+  width: 20vw;
+  margin: auto;
+  z-index: 2;
+  background: white;
+}
+.experienciasItemFigcaption {
+  grid-column: 2/3;
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  z-index: 2;
+  background: white;
+}
+
+.experienciasCard {
+  grid-column: span 1!important;
+}
+
+.experienciasBottomCardsImg { width: 80%!important; margin: auto!important;}
+.experienciasBottomCardsTxt { width: 100%!important; padding: 10px 10%;}
+/* ---------------------------------------------------------------------------
+------------------------------------------------------------------------------
                               5.N) =Footer:
 ------------------------------------------------------------------------------
 --------------------------------------------------------------------------- */
@@ -413,10 +513,6 @@ img{
 }
 .cards:hover {
    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
-.cardsImg {
-  height: 80%;
-  width: 100%;
 }
 
 .cardsTxt {
@@ -581,9 +677,11 @@ img{
 .cardsATF{
   grid-column: var(--cardsATFGridC);
   grid-row:var(--cardsATFGridR);
+  max-height: 40vh;
 }
 
 .cardATF1 {grid-column: var(--cardAtf1GridC);}
+
 
 /* ---------------------------------------------------------------------------
 ------------------------------------------------------------------------------
@@ -591,7 +689,7 @@ img{
 ------------------------------------------------------------------------------
 --------------------------------------------------------------------------- */
 
-.fPSection {
+.fPSection, .magazineSection {
   background: white;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
@@ -648,16 +746,16 @@ img{
   width: 100%;
 }
 
-.experienciasItem {
+.standarCard {
   grid-column: span 2;
 }
 
-.magazineItemImg {
+.standarCardImg {
   height: 30vh;
   width: 100%;
 }
 
-.experienciasItem:nth-child(2) {
+.standarCard:nth-child(2) {
   grid-column: 2/ span 2;
 }
 
@@ -699,7 +797,7 @@ img{
 
 .gastronomiaItemFigcaption {z-index: 2;}
 
-.fPSectionItem {
+.SectionItem {
   position: relative;
   display: grid;
 }
@@ -819,6 +917,8 @@ input[type="radio"]:checked:nth-of-type(4) + .slide + .nav + .dots .dot:nth-chil
           transform: translate3d(-100%, 0, 0);
   transition: all 1s ease;
   width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .slide::after {
   color: #fff;
@@ -833,23 +933,15 @@ input[type="radio"]:checked:nth-of-type(4) + .slide + .nav + .dots .dot:nth-chil
 }
 .slide:nth-of-type(1) {
   background-image: url("img/magazine/40.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 .slide:nth-of-type(2) {
   background-image: url("img/magazine/_8100687.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 .slide:nth-of-type(3) {
   background-image: url("img/magazine/_8100451.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 .slide:nth-of-type(4) {
   background-image: url("img/magazine/_8100518.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .nav {
