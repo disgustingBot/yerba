@@ -18,21 +18,21 @@
 </figure>
 
   <figure class="cards cardsATF cardATF1">
-    <img class="cardsImg itemImg" src="<?php echo get_template_directory_uri(); ?>/img/home/localizaciones.jpg" alt="">
+    <img class="standarCardImg itemImg" src="<?php echo get_template_directory_uri(); ?>/img/home/localizaciones.jpg" alt="">
     <figcaption class="cardsTxt specialTitle">
       <h3>Localizacion</h3>
     </figcaption>
   </figure>
 
   <figure class="cards cardsATF cardATF2">
-    <img class="cardsImg itemImg" src="<?php echo get_template_directory_uri(); ?>/img/home/gastronomia.jpg" alt="">
+    <img class="standarCardImg itemImg" src="<?php echo get_template_directory_uri(); ?>/img/home/gastronomia.jpg" alt="">
     <figcaption class="cardsTxt specialTitle">
         <h3>Gastronomía</h3>
     </figcaption>
   </figure>
 
   <figure class="cards cardsATF cardATF3">
-    <img class="cardsImg itemImg" src="<?php echo get_template_directory_uri(); ?>/img/home/experiencias.jpg" alt="">
+    <img class="standarCardImg itemImg" src="<?php echo get_template_directory_uri(); ?>/img/home/experiencias.jpg" alt="">
     <figcaption class="cardsTxt specialTitle">
       <h3>Experiencias</h3>
     </figcaption>
@@ -54,14 +54,14 @@
   </article>
 
   <div class="Container5050">
-    <figure class="item5050 fPSectionItem">
+    <figure class="item5050 SectionItem">
       <img src="<?php echo get_template_directory_uri(); ?>/img/home/view-sandy-beach_23-2147836788.jpg" alt="" class="item5050Img itemImg">
       <figcaption class="localizacionItemFigcaption itemTitleCenter itemTitle">
         <a href="#"><h5>Ibiza</h5></a>
       </figcaption>
     </figure>
 
-    <figure class="item5050 fPSectionItem">
+    <figure class="item5050 SectionItem">
       <img src="<?php echo get_template_directory_uri(); ?>/img/home/pal-ski-resort-andorra-pyrenees_79295-10470.jpg" alt="" class="item5050Img itemImg">
       <figcaption class="localizacionItemFigcaption itemTitleCenter itemTitle">
         <a href="#"><h5>Andorra</h5></a>
@@ -85,7 +85,7 @@
   </article>
 
   <div class="gastronomiaContainer">
-    <figure class="gastronomiaItem33 fPSectionItem">
+    <figure class="gastronomiaItem33 SectionItem">
       <figcaption class="imgOverlay">
         <p class="imgOverlayTxt"> <strong>At vero eos et accusamus</strong> et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. </p>
       </figcaption>
@@ -93,7 +93,7 @@
       <figcaption class="gastronomiaItemFigcaption titleTopRight itemTitle">Restaurante CBbC</figcaption>
     </figure>
 
-    <figure class="gastronomiaItem33 fPSectionItem">
+    <figure class="gastronomiaItem33 SectionItem">
       <figcaption class="imgOverlay">
         <p class="imgOverlayTxt"> <strong>At vero eos et accusamus</strong> et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. </p>
       </figcaption>
@@ -101,7 +101,7 @@
       <figcaption class="gastronomiaItemFigcaption titleTopRight itemTitle">Chiringo CBbC</figcaption>
     </figure>
 
-    <figure class="gastronomiaItem33 fPSectionItem">
+    <figure class="gastronomiaItem33 SectionItem">
       <figcaption class="imgOverlay">
         <p class="imgOverlayTxt"> <strong>At vero eos et accusamus</strong> et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. </p>
       </figcaption>
@@ -109,7 +109,7 @@
       <figcaption class="gastronomiaItemFigcaption titleTopRight itemTitle">Sushi CBbC</figcaption>
     </figure>
 
-    <figure class="gastronomiaItem50 fPSectionItem">
+    <figure class="gastronomiaItem50 SectionItem">
       <figcaption class="imgOverlay">
         <p class="imgOverlayTxt"> <strong>At vero eos et accusamus</strong> et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. </p>
       </figcaption>
@@ -118,7 +118,7 @@
       <figcaption class="gastronomiaItemFigcaption titleBottomLeft itemTitle">Barra Gourmet</figcaption>
     </figure>
 
-    <figure class="gastronomiaItem50  fPSectionItem">
+    <figure class="gastronomiaItem50  SectionItem">
       <figcaption class="imgOverlay">
         <p class="imgOverlayTxt"> <strong>At vero eos et accusamus</strong> et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. </p>
       </figcaption>
@@ -150,14 +150,14 @@
 
   <div class="Container5050">
 
-    <figure class="experienciasItem  item5050 fPSectionItem">
+    <figure class="item5050 SectionItem">
       <img src="<?php echo get_template_directory_uri(); ?>/img/home/720.jpg" alt="" class="experiencasItemImg item5050Img itemImg">
       <figcaption class="gastronomiaItemFigcaption itemTitle itemTitleCenter">Snak CBbC</figcaption>
     </figure>
 
-    <figure class="experienciasItem fPSectionItem item5050 fPSectionItem">
+    <figure class="SectionItem item5050 SectionItem">
       <img src="<?php echo get_template_directory_uri(); ?>/img/home/14459.jpg" alt="" class="experiencasItemImg item5050Img itemImg">
-      <figcaption class="experienciasItemFigcaption itemTitle itemTitleCenter">Snak CBbC</figcaption>
+      <figcaption class="standarCardFigcaption itemTitle itemTitleCenter">Snak CBbC</figcaption>
     </figure>
 
   </div>
@@ -172,29 +172,29 @@
 <section class="fPSection Magazine">
   <h4 class="magazineTitle"> <span class="magazineTitle1">CBbC</span> <span class="specialTitle magazineTitleBlue">Life</span> <span class="magazineTitle3">Magazine</span></h4>
 
-  <figure class="experienciasItem fPSectionItem">
-    <img src="<?php echo get_template_directory_uri(); ?>/img/home/114579-261.jpg" alt="" class="magazineItemImg itemImg">
+  <figure class="standarCard SectionItem">
+    <img src="<?php echo get_template_directory_uri(); ?>/img/home/114579-261.jpg" alt="" class="standarCardImg itemImg">
     <h5 class="itemTitleCenter itemTitle">Platos de Andorra</h5>
-    <figcaption class="experienciasItemFigcaption">
+    <figcaption class="standarCardFigcaption">
       <p>Dolor sit amet, consectetur adipiscing elit</p>
       <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </figcaption>
   </figure>
 
 
-  <figure class="experienciasItem fPSectionItem">
-    <img src="<?php echo get_template_directory_uri(); ?>/img/home/23-2148153662.jpg" alt=""class="magazineItemImg itemImg">
+  <figure class="standarCard SectionItem">
+    <img src="<?php echo get_template_directory_uri(); ?>/img/home/23-2148153662.jpg" alt=""class="standarCardImg itemImg">
     <h5 class="itemTitleCenter itemTitle">pendant sky</h5>
-    <figcaption class="experienciasItemFigcaption">
+    <figcaption class="standarCardFigcaption">
       <p>Dolor sit amet, consectetur adipiscing elit</p>
       <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.</p>
     </figcaption>
   </figure>
 
-  <figure class="experienciasItem fPSectionItem">
-    <img src="<?php echo get_template_directory_uri(); ?>/img/home/23-2147717087.png" alt=""class="magazineItemImg itemImg">
+  <figure class="standarCard SectionItem">
+    <img src="<?php echo get_template_directory_uri(); ?>/img/home/23-2147717087.png" alt=""class="standarCardImg itemImg">
     <h5 class="itemTitleCenter itemTitle">festival</h5>
-    <figcaption class="experienciasItemFigcaption">
+    <figcaption class="standarCardFigcaption">
       <p>Dolor sit amet, consectetur adipiscing elit</p>
       <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.</p>
     </figcaption>
