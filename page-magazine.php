@@ -1,159 +1,92 @@
 <?php get_header(); ?>
 
-<!-- <h1>eventos.php</h1> -->
+
+<div class='slider'>
+
+  <input checked id='slide-1' name='active' type='radio'>
+  <div class='slide'>
+    <div class="slideTextWrapper">
+      <h3 class="slideTitle">Lorem Ipsum</h3>
+      <p class="slideTxt">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate</p>
+    </div>
+  </div>
+
+  <nav class='nav'>
+    <label class='prev' for='slide-4'></label>
+    <label class='next' for='slide-2'></label>
+  </nav>
+  <nav class='dots'>
+    <label class='dot' for='slide-1'></label>
+    <label class='dot' for='slide-2'></label>
+    <label class='dot' for='slide-3'></label>
+    <label class='dot' for='slide-4'></label>
+  </nav>
 
 
 
+  <input id='slide-2' name='active' type='radio'>
+  <div class='slide'>
+    <div class="slideTextWrapper">
+      <h3 class="slideTitle">Lorem Ipsum</h3>
+      <p class="slideTxt">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate</p>
+    </div>
+  </div>
+
+  <nav class='nav'>
+    <label class='prev' for='slide-1'></label>
+    <label class='next' for='slide-3'></label>
+  </nav>
+
+  <nav class='dots'>
+    <label class='dot' for='slide-1'></label>
+    <label class='dot' for='slide-2'></label>
+    <label class='dot' for='slide-3'></label>
+    <label class='dot' for='slide-4'></label>
+  </nav>
+
+  <input id='slide-3' name='active' type='radio'>
+  <div class='slide'>
+    <div class="slideTextWrapper">
+      <h3 class="slideTitle">Lorem Ipsum</h3>
+      <p class="slideTxt">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate</p>
+    </div>
+  </div>
 
 
-  <section class="section magazineATF">
+  <nav class='nav'>
+    <label class='prev' for='slide-2'></label>
+    <label class='next' for='slide-4'></label>
+  </nav>
 
-    <h2 class="title">Magazine</h2>
-    <?php
-    $categories=get_categories();
-    foreach($categories as $category){
-      // if ($category->slug=="plans") {
-      //   echo '<a href="https://and7dreams.com/login/">'.$category->name.'</a>';
-      //   continue;
-      // }
-      if($category->slug=="uncategorized"){continue;}
-       echo '<a class="magazineATFLink" href="' . get_category_link($category->term_id) . '">' . $category->name . '</a>';
-    }
-    ?>
+  <nav class='dots'>
+    <label class='dot' for='slide-1'></label>
+    <label class='dot' for='slide-2'></label>
+    <label class='dot' for='slide-3'></label>
+    <label class='dot' for='slide-4'></label>
+  </nav>
 
-  </section>
-
-
-    <section class="section sectionLatest">
-      <h3 class="title sectionLatestTitle">Úlitmas entradas</h3>
-      <?php $i=0;
-      $args=array(
-        'post_type'=>'post',
-        'posts_per_page'=>9,
-      );$atf=new WP_Query($args);
-      while($atf->have_posts()){$atf->the_post(); ?>
-
-        <figure class="lastPost<?php
-          switch($i){
-            case 0:
-              echo" lastPostBig";
-              break;
-            case 6:
-              echo" lastPostBig";
-              break;
-            default:break;
-          }
-        ?>">
-          <a class="lastPostLink" href="<?php the_permalink(); ?>">
-            <img class="lastPostImg lazy" data-url="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt="">
-          </a>
-          <figcaption class="lastPostCaption">
-            <h3><?php the_title(); ?></h3>
-          </figcaption>
-        </figure>
-
-      <?php $i++;}wp_reset_query(); ?>
-    </section>
+  <input id='slide-4' name='active' type='radio'>
+  <div class='slide'>
+    <div class="slideTextWrapper">
+      <h3 class="slideTitle">Lorem Ipsum</h3>
+      <p class="slideTxt">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate</p>
+    </div>
+  </div>
 
 
+  <nav class='nav'>
+    <label class='prev' for='slide-3'></label>
+    <label class='next' for='slide-1'></label>
+  </nav>
 
+  <nav class='dots'>
+    <label class='dot' for='slide-1'></label>
+    <label class='dot' for='slide-2'></label>
+    <label class='dot' for='slide-3'></label>
+    <label class='dot' for='slide-4'></label>
+  </nav>
 
-    <section class="section sectionFeatured">
-      <h2 class="title">CBbC destacados</h2>
-      <?php
-      $args=array(
-        'post_type'=>'post',
-        'posts_per_page'=>6,
-      );$atf=new WP_Query($args);
-      while($atf->have_posts()){$atf->the_post(); ?>
-        <figure class="slide">
-          <img class="slideImg lazy" data-url="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt="">
-          <figcaption class="slideCaption">
-            <a class="slideLink" href="<?php the_permalink(); ?>">
-              <h3><?php the_title(); ?></h3>
-            </a>
-          </figcaption>
-        </figure>
-      <?php } wp_reset_query(); ?>
-
-    </section>
-
-
-
-
-
-
-    <section class="section sectionSelects">
-      <h2 class="title selectsTitle">CBbC selectos</h2>
-      <?php
-      $args=array(
-        'post_type'=>'post',
-        'posts_per_page'=>15,
-      );$atf=new WP_Query($args);
-      while($atf->have_posts()){$atf->the_post(); ?>
-        <figure class="slide slideSmall">
-          <img class="slideImg lazy" data-url="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt="">
-          <figcaption class="slideCaption">
-            <a class="slideLink" href="<?php the_permalink(); ?>">
-              <h3><?php the_title(); ?></h3>
-            </a>
-          </figcaption>
-        </figure>
-      <?php } wp_reset_query(); ?>
-
-    </section>
-
-
-
-
-
-    <section class="section sectionStories">
-      <h3 class="title sectionStoriesTitle">Vive la Experiencia</h3>
-      <?php
-      $categoria="experiencias";
-      $args=array(
-        'post_type'=>'post',
-        'posts_per_page'=>3,
-        'category_name' => $categoria,
-      );$atf=new WP_Query($args);
-      while($atf->have_posts()){$atf->the_post(); ?>
-        <figure class="smallCard">
-          <img class="smallCardImg lazy" data-url="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt="">
-          <figcaption class="smallCardCaption">
-            <a class="smallCardLink" href="<?php the_permalink(); ?>">
-              <h3><?php the_title(); ?></h3>
-            </a>
-          </figcaption>
-        </figure>
-      <?php } wp_reset_query(); ?>
-
-    </section>
-
-
-
-
-
-    <section class="section sectionStories">
-      <h3 class="title sectionStoriesTitle">La mejor Gastronomia</h3>
-      <?php
-      $categoria="gastronomia";
-      $args=array(
-        'post_type'=>'post',
-        'posts_per_page'=>3,
-        'category_name' => $categoria,
-      );$atf=new WP_Query($args);
-      while($atf->have_posts()){$atf->the_post(); ?>
-        <figure class="smallCard">
-          <img class="smallCardImg lazy" data-url="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt="">
-          <figcaption class="smallCardCaption">
-            <a class="smallCardLink" href="<?php the_permalink(); ?>">
-              <h3><?php the_title(); ?></h3>
-            </a>
-          </figcaption>
-        </figure>
-      <?php } wp_reset_query(); ?>
-
-    </section>
+</div>
 
 
 
