@@ -17,23 +17,23 @@
   </figcaption>
 </figure>
 
-  <figure class="cardsATF cardATF1">
-    <img class="cardsATFImg itemImg" src="<?php echo get_template_directory_uri(); ?>/img/home/localizaciones.jpg" alt="">
-    <figcaption class="cardsATFTxt specialTitle">
+  <figure class="cards cardsATF cardATF1">
+    <img class="cardsImg itemImg" src="<?php echo get_template_directory_uri(); ?>/img/home/localizaciones.jpg" alt="">
+    <figcaption class="cardsTxt specialTitle">
       <h3>Localizacion</h3>
     </figcaption>
   </figure>
 
-  <figure class="cardsATF cardATF2">
-    <img class="cardsATFImg itemImg" src="<?php echo get_template_directory_uri(); ?>/img/home/gastronomia.jpg" alt="">
-    <figcaption class="cardsATFTxt specialTitle">
+  <figure class="cards cardsATF cardATF2">
+    <img class="cardsImg itemImg" src="<?php echo get_template_directory_uri(); ?>/img/home/gastronomia.jpg" alt="">
+    <figcaption class="cardsTxt specialTitle">
         <h3>Gastronomía</h3>
     </figcaption>
   </figure>
 
-  <figure class="cardsATF cardATF3">
-    <img class="cardsATFImg itemImg" src="<?php echo get_template_directory_uri(); ?>/img/home/experiencias.jpg" alt="">
-    <figcaption class="cardsATFTxt specialTitle">
+  <figure class="cards cardsATF cardATF3">
+    <img class="cardsImg itemImg" src="<?php echo get_template_directory_uri(); ?>/img/home/experiencias.jpg" alt="">
+    <figcaption class="cardsTxt specialTitle">
       <h3>Experiencias</h3>
     </figcaption>
   </figure>
