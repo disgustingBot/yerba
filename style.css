@@ -259,10 +259,12 @@ FIN DE MAPA DE CONTENIDOS */
 --------------------------------------------------------------------------- */
 
 
-
-
-
-
+body.gutenberg-editor-page .editor-post-title__block, body.gutenberg-editor-page .editor-default-block-appender, body.gutenberg-editor-page .editor-block-list__block {
+max-width: none !important;
+}
+.block-editor__container .wp-block {
+    max-width: none !important;
+}
 
 
 
@@ -751,7 +753,7 @@ img{
 }
 
 .standarCardImg {
-  height: 30vh;
+  height: 30vh!important;
   width: 100%;
 }
 
