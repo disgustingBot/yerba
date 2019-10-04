@@ -29,7 +29,7 @@ const menuHandler=new IntersectionObserver(function(entries,observer){
   })
 }, options);
 // HEADER TRANSPARENT HANDLER
-if(d.querySelector(".headerTransparent")){menuHandler.observe(d.querySelector(".headerTransparent"))}else{d.querySelector(".header").style.background="var(--color2)"}
+// if(d.querySelector(".headerTransparent")){menuHandler.observe(d.querySelector(".headerTransparent"))}else{d.querySelector(".header").style.background="var(--color2)"}
 
 // NAVBAR
 const alternateNavBar=()=>{const navBar=d.querySelector("#navBar");if(navBar.classList.contains("navBarActive")){navBar.classList.remove("navBarActive")}else{navBar.classList.add("navBarActive")}}
