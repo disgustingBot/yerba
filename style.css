@@ -72,7 +72,7 @@ FIN DE MAPA DE CONTENIDOS */
 
   --color1:#0F0F0F;
   --color2:#FFFFFF;
-  --color3:#404040;
+  --color3:#627DAE;
 
   --color4:#2b6660;
   --color5:#5A9894;
@@ -283,13 +283,13 @@ max-width: none !important;
                            4) =ETIQUETAS GLOBALES:
 ------------------------------------------------------------------------------
 --------------------------------------------------------------------------- */
+:root{font-size:var(--sizeR)}
 *{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
  body{
-   font-size: var(--sizeR);
    /* overflow-x: hidden; */
    display: grid;
  }
@@ -470,7 +470,85 @@ img{
 }
 
 
+/* ---------------------------------------------------------------------------
+------------------------------------------------------------------------------
+                             6.2) =header:
+------------------------------------------------------------------------------
+--------------------------------------------------------------------------- */
+.header{
+  align-items: center;
+  background:transparent;
+  display: grid;
+  grid-template-columns:100%;
+  /* grid-template-rows:min-content min-content; */
+  grid-row:2;
+  height: 4rem;
+  justify-content: center;
+  margin: calc(-50vh - 5rem) 0 0 0;
+  position: sticky;
+  top:0;
+  width: 100%;
+  z-index: 100;
+  font-size: .6rem;
+}
+.headerLogoCont{
+  grid-column:1/-1;
+  height:3rem;
+  margin:auto;
+  width: 3rem;
+}
+.headerLogo{
+  height:100%;
+  object-fit: contain;
+  width: 100%;
+}
+.navBar{
+  grid-column:1;
+  grid-row:2;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  grid-gap:.5rem;
+}
+.headerLink{
+  text-transform: uppercase;
+  color:var(--color1);
+  text-decoration:none;
+  position: relative;
+}
+.magazineLink{text-transform: unset;}
+.headerLink::after{
+  content:'';
+  position: absolute;
+  bottom: -3px;
+  width: 0;
+  height: 3px;
+  background:var(--color1);
+  left: 50%;
+  transform:translateX(-50%);
+  transition: .3s;
+}
+.headerLink:hover::after{
+  width: 100%;
+}
+.suscribeButton{
+  grid-column:1;
+  grid-row:2;
+  border: none;
+  background:var(--color1);
+  color:var(--color2);
+  padding: .5rem 1.3rem;
+  cursor: pointer;
+  width: max-content;
+  margin-left: auto;
+  font-size: .6rem;
+}
 
+
+.specialTxt{
+  color:var(--color3);
+  font-family: 'Satisfy', cursive;
+}
 /* ---------------------------------------------------------------------------
 ------------------------------------------------------------------------------
                               5.N) =ATF FRONT-PAGE:
