@@ -296,6 +296,8 @@ max-width: none !important;
 img{
   object-fit: cover;
 }
+
+
 /* ---------------------------------------------------------------------------
 ------------------------------------------------------------------------------
                               5) =ESTRUCTURA:
@@ -308,108 +310,22 @@ img{
 }
 
 
-
 /* ---------------------------------------------------------------------------
 ------------------------------------------------------------------------------
-                              5.N) =MAGAZINE:
+                             6.2) =HEADER:
 ------------------------------------------------------------------------------
 --------------------------------------------------------------------------- */
-.magazineHead {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
+.header{
+  position: fixed;
+  top:0;
+  left: 0;
+  right: 0;
 }
 
-.magazineSectionTitle {
-  font-size: 6rem;
-  grid-row: 1;
-  margin: auto;
-  margin-left: 80px;
-  z-index: 2;
-}
 
-.magazineHead1 {
-  grid-column: 2/ span 6;
-}
-
-.magazineSectionFigure1 {
-  grid-column: 3/ span 4;
-  grid-row: 1;
-}
-.magazineSectionTitle1 {
-    grid-column: 2/ span 2;
-}
-
-.magazineHead2 {
-  grid-column: 1/ span 6;
-}
-
-.magazineSectionFigure2 {
-  grid-column: 2/ span 4;
-  grid-row: 1;
-}
-
-.magazineSectionTitle2 {
-  grid-column: 5/ span 2;
-}
-
-.experiencasSection {
-  margin-top: 100px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.experienciasSectionColumn1{
-  grid-column: 1/2;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.experienciasSectionColumn2 {
-  grid-column: 2/3;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.experiencasMagazineItem {
-  display: grid;
-  grid-column: span 2;
-  grid-template-columns: 1fr 1fr;
-  margin: -100px auto 50px auto;
-  background: white;
-  width: 40vw;
-}
-
-.experienciasMainImg {
-  grid-column: span 2;
-}
-
-.experienciasItemImg {
-  grid-column: 1/2;
-  width: 20vw;
-  margin: auto;
-  z-index: 2;
-  background: white;
-}
-.experienciasItemFigcaption {
-  grid-column: 2/3;
-  width: 20vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 20px;
-  z-index: 2;
-  background: white;
-}
-
-.experienciasCard {
-  grid-column: span 1!important;
-}
-
-.experienciasBottomCardsImg { width: 80%!important; margin: auto!important;}
-.experienciasBottomCardsTxt { width: 100%!important; padding: 10px 10%;}
 /* ---------------------------------------------------------------------------
 ------------------------------------------------------------------------------
-                              5.N) =Footer:
+                              5.N) =FOOTER:
 ------------------------------------------------------------------------------
 --------------------------------------------------------------------------- */
 
@@ -500,93 +416,58 @@ img{
 .footerMenuItem:nth-child(1) {margin-left: var(--footerMenuFirstMarginL)!important; padding-left: var(--footerMenuFirstPaddingL);}
 .footerMenuItem a {text-decoration: none;color: white;}
 
+
+
+
 /* ---------------------------------------------------------------------------
 ------------------------------------------------------------------------------
-                              6) =COMPONENTES:
+                              5.N) =FRONT PAGE:
 ------------------------------------------------------------------------------
 --------------------------------------------------------------------------- */
 
-/* CARDS */
-.cards {
-  border-radius: 2px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  transition: all 0.25s cubic-bezier(.25,.8,.25,1);
-  z-index: 2;
-}
-.cards:hover {
-   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
 
-.cardsTxt {
-  display: flex;
-  height: 20%;
-  flex-direction: column;
-  font-size:;
-  justify-content: center;
-  text-align: center;
-  width: 100%;
-}
-
-/* Items with images */
-
-.Container5050 {
-  display: flex;
-  grid-column: span 8;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.item5050 {
-  flex-basis: 50%;
-}
-.item5050Img {
-  height: 80vh;
-  width: 100%;
-}
-.itemTitle {
+.fPSection {
   background: white;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  padding: 2rem;
-  text-align: center;
-  transition: .25s;
-  width: max-content;
-  border-radius: 2px;
-  transition: .25s;
-}
-.itemTitleCenter {
-  grid-row: 1;
-  grid-column: 1;
-  margin: auto;
-  z-index: 2;
-}
-.itemTitleCenter:hover {
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 20px;
+  grid-row-gap: 50px;
+  margin-top: 100px;
+  position: relative;
+  width: 100%;
 }
 
-/* ---------------------------------------------------------------------------
-------------------------------------------------------------------------------
-                               6.1) =load:
-------------------------------------------------------------------------------
---------------------------------------------------------------------------- */
-.load{
-  background: var(--color2);
+
+.fPSectionHead {
   display: grid;
-  height: 100vh;
-  left:0;
-  position: fixed;
-  top:0;
-  transition: .5s;
-  width:  100vw;
-  z-index: 10000;
+  grid-column: 3/ span 5;
 }
-.circle{
-  animation: wheel 1s infinite;
-  border-radius: 50%;
-  border-top: 2px solid var(--color1);
-  height: 50px;
+
+.fPSectionFigure {
+  width: 100%;
+}
+
+
+.fPSectionImg {
+
+  height: 400px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.fPSectionTitle {
+  grid-column: 1;
+  grid-row: 1;
   margin: auto;
-  width:  50px;
+  margin-left: -200px;
+  z-index: 2;
 }
-@keyframes wheel{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}
+
+.fPSectionTitle span {
+  margin-left: 40px;
+  font-size: 4rem;
+  text-transform: capitalize;
+}
 
 
 /* ---------------------------------------------------------------------------
@@ -670,49 +551,10 @@ img{
 }
 /* ---------------------------------------------------------------------------
 ------------------------------------------------------------------------------
-                               6.3) =ATFs:
+                              5.N) =ATF FRONT-PAGE:
 ------------------------------------------------------------------------------
 --------------------------------------------------------------------------- */
 
-
-
-
-
-/* ---------------------------------------------------------------------------
-------------------------------------------------------------------------------
-                             6.3.1) =homeATF:
-------------------------------------------------------------------------------
---------------------------------------------------------------------------- */
-.homeATF{
-  /* background: var(--color4); */
-  /* grid-template-columns:1fr 1fr 1fr; */
-  /* padding: 4rem; */
-  /* grid-gap: 1rem; */
-}
-
-.temporalGigantDiv {height: 1000px;}
-
-.homeATFCaption{
-  /* grid-column: span 3; */
-  margin: auto;
-  margin-bottom: 15vh;
-  text-align: center;
-  width: 100%;
-}
-.homeATFVideo{
-  height: 100%;
-  /* grid-column: span 3; */
-  object-fit: cover;
-  width: 100%;
-  z-index: -1;
-}
-.homeATFLogo{
-  height:100%;
-  /* grid-column: span 3; */
-  margin: auto;
-  object-fit: contain;
-  width:auto;
-}
 
 
 .ATF {
@@ -725,6 +567,7 @@ img{
   width: 100%;
 }
 
+
 .videoATF {
   grid-column: var(--videoATFGridC);
   grid-row: var(--videoATFGridR);
@@ -732,6 +575,27 @@ img{
   object-fit: cover;
   width: 100%;
 }
+
+.homeATFCaption{
+  margin: auto;
+  margin-bottom: 15vh;
+  text-align: center;
+  width: 100%;
+}
+.homeATFVideo{
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+  z-index: -1;
+}
+.homeATFLogo{
+  height:100%;
+  margin: auto;
+  object-fit: contain;
+  width:auto;
+}
+
+
 
 .ATFIsoLogo {
   display: grid;
@@ -750,148 +614,58 @@ img{
 }
 
 .cardATF1 {grid-column: var(--cardAtf1GridC);}
+/* ---------------------------------------------------------------------------
+------------------------------------------------------------------------------
+                            6.3.2) =LOCALIZACION SECTION FRONT-PAGE:
+------------------------------------------------------------------------------
+--------------------------------------------------------------------------- */
+
+
+
+
+
+.cbbcEs {
+  font-size: 1.8rem!important;
+}
 
 
 /* ---------------------------------------------------------------------------
 ------------------------------------------------------------------------------
-                            6.3.2) =section localizaciones:
+                            6.3.3) =GASTRONOMÍA SECTION FRONT-PAGE:
 ------------------------------------------------------------------------------
 --------------------------------------------------------------------------- */
 
-.fPSection, .magazineSection {
-  background: white;
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-gap: 20px;
-  grid-row-gap: 50px;
-  margin-top: 100px;
-  position: relative;
-  width: 100%;
-}
-
-.fPSectionHead {
-  grid-column: 3/ span 5;
-}
-
-.fPSectionFigure {
-  width: 100%;
-}
-
-
-.fPSectionImg {
-  filter: brightness(2) contrast(70%) sepia(0.1);
-  height: 400px;
-  object-fit: cover;
-  width: 100%;
-}
-
-.fPSectionTitle {
-  margin-left: -200px;
-  position:relative;
-  top: 50%;
-  z-index: 2;
-}
-
-.fPSectionTitle span {
-  margin-left: 40px;
-  font-size: 4rem;
-  text-transform: capitalize;
-}
-
-
-
-
-
-.itemTitleCenter a {text-decoration: none; color: black;}
-
-.magazineTitle {
-  grid-column: span 8;
-  font-size: 4rem;
-  text-align: center;
-}
-
-.experiencasItemImg {
-  height: 80vh;
-  width: 100%;
-}
-
-.standarCard {
-  grid-column: span 2;
-}
-
-.standarCardImg {
-  height: 30vh!important;
-  width: 100%;
-}
-
-.standarCard:nth-child(2) {
-  grid-column: 2/ span 2;
-}
-
-.magazineTitleBlue {color: #1D82BB;}
-
-/* ---------------------------------------------------------------------------
-------------------------------------------------------------------------------
-                            6.3.3) =section Gastronomía:
-------------------------------------------------------------------------------
---------------------------------------------------------------------------- */
 
 .gastronomiaContainer {
   display: flex;
   flex-wrap: wrap;
   grid-column: span 8;
+  height: max-content;
 }
 
-.gastronomiaItem33 {
-  flex-basis: 33.33333333333333333%;
-  flex-grow:1;
-  margin: 0 auto;
-  max-width: 33.33333333333333333%;
+.gastronomiaItem {
+  flex-basis: 33%;
+  flex-grow: 2;
+  flex-shrink: 1;
   position: relative;
-}
-
-.gastronomiaItem50 {
-  flex-basis: 50%;
-  flex-grow:2;
-  margin: 0 auto;
-  max-width: 50%;
-  position: relative;
+  height: 50vh;
 }
 
 .gastronomiaItemImg {
-  width:100%;
-  min-height: 100%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
-.gastronomiaItemFigcaption {z-index: 2;}
-
-.SectionItem {
-  position: relative;
-  display: grid;
-}
-.itemImg { grid-row: 1; grid-column: 1;}
 
 .imgOverlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  grid-column: 1;
+  grid-row: 1;
   width: 100%;
   opacity: 0;
   transition: .25s ease;
   background: rgba(255, 255, 255, 0.5);
   display: flex;
-}
-.gastronomiaItem33:hover .imgOverlay{
-  opacity: 1;
-}
-
-/* TODO: El texto se desborda mal (hacer que se desborde bien (text overflow: ellipsis?)) */
-
-.gastronomiaItem50:hover .imgOverlay{
-  opacity: 1;
 }
 
 
@@ -899,15 +673,161 @@ img{
   margin: auto;
   width: 50%;
   text-align: justify;
-
 }
 
-.titleTopRight {position: absolute; top: 0; right: 0;}
-
-.titleBottomLeft {position: absolute; bottom: 0; left: 0;}
 /* ---------------------------------------------------------------------------
 ------------------------------------------------------------------------------
-                             6.4) =holyLink:
+                            6.3.3) =EXPERIENCIAS SECTION FRONT-PAGE:
+------------------------------------------------------------------------------
+--------------------------------------------------------------------------- */
+
+.experiencasSection {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+
+.experiencasItemImg {
+  height: 80vh;
+  width: 100%;
+}
+
+.experienciasSectionColumn1{
+  grid-column: 1/2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.experienciasSectionColumn2 {
+  grid-column: 2/3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.experiencasMagazineItem {
+  display: grid;
+  grid-column: span 2;
+  grid-template-columns: 1fr 1fr;
+  margin: -100px auto 50px auto;
+  background: white;
+  width: 40vw;
+}
+
+.experienciasMainImg {
+  grid-column: span 2;
+}
+
+.experienciasItemImg {
+  grid-column: 1/2;
+  width: 20vw;
+  margin: auto;
+  z-index: 2;
+  background: white;
+}
+.experienciasItemFigcaption {
+  grid-column: 2/3;
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  z-index: 2;
+  background: white;
+}
+
+.experienciasCard {
+  grid-column: span 1!important;
+}
+
+.experienciasBottomCardsImg { width: 80%!important; margin: auto!important;}
+.experienciasBottomCardsTxt { width: 100%!important; padding: 10px 10%;}
+
+/* ---------------------------------------------------------------------------
+------------------------------------------------------------------------------
+                              5.N) =MAGAZINE SECTION FRONT-PAGE:
+------------------------------------------------------------------------------
+--------------------------------------------------------------------------- */
+.magazineHead {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+
+
+
+.magazineSectionTitle {
+  font-size: 6rem;
+  grid-row: 1;
+  margin: auto;
+  margin-left: 80px;
+  z-index: 2;
+}
+
+
+.magazineTitle {
+  grid-column: span 8;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.magazineTitleBlue {color: #1D82BB;}
+
+.magazineHead1 {
+  grid-column: 2/ span 6;
+}
+
+.magazineSectionFigure1 {
+  grid-column: 3/ span 4;
+  grid-row: 1;
+}
+.magazineSectionTitle1 {
+    grid-column: 2/ span 2;
+}
+
+.magazineHead2 {
+  grid-column: 1/ span 6;
+}
+
+.magazineSectionFigure2 {
+  grid-column: 2/ span 4;
+  grid-row: 1;
+}
+
+.magazineSectionTitle2 {
+  grid-column: 5/ span 2;
+}
+/* ---------------------------------------------------------------------------
+------------------------------------------------------------------------------
+                               6.1) =LOAD:
+------------------------------------------------------------------------------
+--------------------------------------------------------------------------- */
+.load{
+  background: var(--color2);
+  display: grid;
+  height: 100vh;
+  left:0;
+  position: fixed;
+  top:0;
+  transition: .5s;
+  width:  100vw;
+  z-index: 10000;
+}
+.circle{
+  animation: wheel 1s infinite;
+  border-radius: 50%;
+  border-top: 2px solid var(--color1);
+  height: 50px;
+  margin: auto;
+  width:  50px;
+}
+@keyframes wheel{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}
+
+
+/* ---------------------------------------------------------------------------
+------------------------------------------------------------------------------
+                             6.4) =HOLYLINK:
 ------------------------------------------------------------------------------
 --------------------------------------------------------------------------- */
 .holyLink{
@@ -1071,4 +991,135 @@ input[type="radio"]:checked:nth-of-type(4) + .slide + .nav + .dots .dot:nth-chil
   display: inline-block;
   height: 10px;
   width: 10px;
+}
+
+
+/* ---------------------------------------------------------------------------
+------------------------------------------------------------------------------
+                              6) =COMPONENTES:
+------------------------------------------------------------------------------
+--------------------------------------------------------------------------- */
+
+.sectionItem {
+  position: relative;
+  display: grid;
+}
+
+.itemImg { grid-row: 1; grid-column: 1;}
+
+/* CARDS */
+.cards {
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.25s cubic-bezier(.25,.8,.25,1);
+  z-index: 2;
+}
+.cards:hover {
+   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.cardsTxt {
+  display: flex;
+  height: 20%;
+  flex-direction: column;
+  font-size:;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+
+.standarCard {
+  grid-column: span 2;
+}
+
+.standarCardImg {
+  height: 30vh!important;
+  width: 100%;
+}
+
+.standarCard:nth-child(2) {
+  grid-column: 2/ span 2;
+}
+
+/* Items with images */
+
+
+
+.itemTitle {
+  background: white;
+  width: max-content;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  padding: 2rem;
+  text-align: center;
+  transition: .25s;
+  border-radius: 2px;
+  transition: .25s;
+  height: max-content;
+}
+.itemTitleCenter {
+  grid-row: 1;
+  grid-column: 1;
+  margin: auto;
+  z-index: 2;
+  margin-left: 50%;
+  transform: translateX(-50%)
+}
+.itemTitleCenter:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+
+.itemTitleCenter a {text-decoration: none; color: black;}
+
+/* ------------------------------------------ */
+
+.Container5050 {
+  display: flex;
+  grid-column: span 8;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.item5050 {
+  flex-basis: 50%;
+  display: grid;
+}
+.item5050Img {
+  height: 80vh;
+  width: 100%;
+}
+
+
+ /* ------------------------------------------ */
+
+.gastronomiaItemFigcaption {
+  display: grid;
+}
+
+
+.gastronomiaItemDescription {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  text-align: justify;
+  background: rgba(255,255,255, 0.4);
+  opacity: 0;
+  z-index: 1;
+  transition: .25s;
+  display: flex;
+}
+.itemDescriptionContent {
+  width: 80%;
+  height: 60%;
+  margin: auto auto 5% auto;
+  font-size: 1.3rem;
+}
+
+.gastronomiaItemDescription:hover {
+  opacity: 10;
+}
+
+.gastronomiaItemTitle {
+  margin: 0 0 auto auto;
+  z-index: 2;
 }
