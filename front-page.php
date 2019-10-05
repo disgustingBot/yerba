@@ -6,7 +6,7 @@
 
 <section class="ATF">
 
-  <video class="ATFvideo rowcol1" loop="loop" autoplay playsinline muted>
+  <video class="ATFvideo rowcol1" id="headerActivator" loop="loop" autoplay playsinline muted>
     <source type="video/mp4" src="<?php echo get_template_directory_uri(); ?>/img/home/shutterstock_25094927_4-1.mp4" alt="Fondo-de-video-del-mediterraneo-desde-arriba" />
   </video>
 
@@ -17,25 +17,25 @@
     </figcaption>
   </figure>
 
-  <flex class="ATFflex flex">
+  <flex class="ATFflex flex3">
 
     <figure class="card">
       <img class="standarCardImg" src="<?php echo get_template_directory_uri(); ?>/img/home/localizaciones.jpg" alt="">
-      <figcaption class="specialTitle">
+      <figcaption class="cardTitle specialTitle">
         <h3>Localizacion</h3>
       </figcaption>
     </figure>
 
     <figure class="card">
       <img class="standarCardImg" src="<?php echo get_template_directory_uri(); ?>/img/home/gastronomia.jpg" alt="">
-      <figcaption class="specialTitle">
+      <figcaption class="cardTitle specialTitle">
           <h3>Gastronomía</h3>
       </figcaption>
     </figure>
 
     <figure class="card">
       <img class="standarCardImg" src="<?php echo get_template_directory_uri(); ?>/img/home/experiencias.jpg" alt="">
-      <figcaption class="specialTitle">
+      <figcaption class="cardTitle specialTitle">
         <h3>Experiencias</h3>
       </figcaption>
     </figure>
@@ -52,128 +52,149 @@
 
 
 
-<section class="fPSection localizaciones">
+<section class="section">
 
-  <article class="localizacionesHead fPSectionHead">
-    <h4 class="localizacionTitle fPSectionTitle">CBbC es... <span class="specialTitle">localización</span></h4>
-    <figure class="localizacionesHeadFigure1 fPSectionFigure">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/home/localizaciones.jpg" alt="" class="localizacionesHeadImg fPSectionImg rowcol1">
-      <figcaption class="localizacionesHeadFigcaption">
+  <article class="superCard">
+    <h4 class="superCardTitle specialTitle rowcol1 colMax">
+      <span class="cbbcEs">CBbC es...</span>
+      <span class="">Localización</span>
+    </h4>
+    <figure class="superCardFigure rowcol1">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/home/localizaciones.jpg" alt="" class="localizacionesHeadImg superCardImg rowcol1">
+      <figcaption class="">
         <h5>En nuestros ambientes y restaurantes respirarás y sentirás que hasta el más mínimo detalle está por y para ti.</h5>
         <p>¿Eres mas de mar o de montaña?  Descubre lugares magicos en los que disfrutar de lo mejor de la vida.</p>
       </figcaption>
     </figure>
   </article>
 
-  <div class="Container5050">
-    <figure class="item5050 sectionItem">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/home/view-sandy-beach_23-2147836788.jpg" alt="" class="item5050Img rowcol1">
-      <figcaption class="localizacionItemFigcaption itemTitleCenter itemTitle">
+  <flex class="colMax flex2">
+    <figure class="grid">
+      <img class="item5050Img rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/view-sandy-beach_23-2147836788.jpg" alt="">
+      <figcaption class="itemTitleCenter itemTitle rowcol1">
         <a href="#"><h5>Ibiza</h5></a>
       </figcaption>
     </figure>
 
-    <figure class="item5050 sectionItem">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/home/pal-ski-resort-andorra-pyrenees_79295-10470.jpg" alt="" class="item5050Img rowcol1">
-      <figcaption class="localizacionItemFigcaption itemTitleCenter itemTitle">
+    <figure class="grid">
+      <img class="item5050Img rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/pal-ski-resort-andorra-pyrenees_79295-10470.jpg" alt="">
+      <figcaption class="itemTitleCenter itemTitle rowcol1">
         <a href="#"><h5>Andorra</h5></a>
       </figcaption>
     </figure>
-  </div>
+  </flex>
 
 </section>
 
-<section class="fPSection">
 
-  <article class="gastronomiaHead fPSectionHead">
-    <h4 class="gastronomiaTitle fPSectionTitle">CBbC es...<span class="specialTitle">Gastronomía</span></h4>
-    <figure class="gastronomiaHeadFigure2 fPSectionFigure">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/home/gastronomia.jpg" alt="" class="gastronomiaHeadImg fPSectionImg rowcol1">
-      <figcaption class="gastronomiaHeadFigcaption">
+
+<section class="section">
+
+  <article class="superCard">
+    <h4 class="superCardTitle specialTitle rowcol1 colMax">
+      <span class="cbbcEs">CBbC es...</span>
+      <span class="">Gastronomía</span>
+    </h4>
+    <figure class="superCardFigure rowcol1">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/home/gastronomia.jpg" alt="" class="gastronomiaHeadImg superCardImg rowcol1">
+      <figcaption class="">
         <h5>Disfruta de la esencia de la gastronomía en los mejores restauranes.</h5>
         <p>Cuando te sientes a la mesa, invita a todos tus sentidos. Cada plato presenta colores, sabores, aroma y texturas de auténtica tradición ibicenca. Del mar de un Bullit de Peix, a la tierra de un jamón de pata negra.</p>
       </figcaption>
     </figure>
   </article>
 
-  <div class="gastronomiaContainer">
+  <flex class="flex3 colMax">
 
-    <figure class="gastronomiaItem sectionItem">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/home/9948.jpg" alt="" class="gastronomiaItemImg rowcol1">
-      <figcaption class="gastronomiaItemFigcaption rowcol1">
-        <p class="itemTitle rowcol1 gastronomiaItemTitle">Soy el nene</p>
-        <p class="rowcol1 gastronomiaItemDescription"> <span class="itemDescriptionContent">Et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. </span></p>
+    <figure class="hidshow grid">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/home/9948.jpg" alt="" class="hidshowImg rowcol1">
+      <figcaption class="grid rowcol1">
+        <p class="itemTitle rowcol1 itemTitleTR">Soy el nene</p>
+        <p class="rowcol1 hidshowTxt">
+          Et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga
+        </p>
       </figcaption>
     </figure>
 
-    <figure class="gastronomiaItem sectionItem">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/home/9948.jpg" alt="" class="gastronomiaItemImg rowcol1">
-      <figcaption class="gastronomiaItemFigcaption rowcol1">
-        <p class="itemTitle rowcol1 gastronomiaItemTitle">Soy el nene</p>
-        <p class="rowcol1 gastronomiaItemDescription"> <span class="itemDescriptionContent">Et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. </span></p>
+    <figure class="hidshow grid">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/home/9948.jpg" alt="" class="hidshowImg rowcol1">
+      <figcaption class="grid rowcol1">
+        <p class="itemTitle rowcol1 itemTitleTR">Soy el nene</p>
+        <p class="rowcol1 hidshowTxt">
+          Et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga
+        </p>
       </figcaption>
     </figure>
 
-    <figure class="gastronomiaItem sectionItem">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/home/9948.jpg" alt="" class="gastronomiaItemImg rowcol1">
-      <figcaption class="gastronomiaItemFigcaption rowcol1">
-        <p class="itemTitle rowcol1 gastronomiaItemTitle">Soy el nene</p>
-        <p class="rowcol1 gastronomiaItemDescription"> <span class="itemDescriptionContent">Et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. </span></p>
+    <figure class="hidshow grid">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/home/9948.jpg" alt="" class="hidshowImg rowcol1">
+      <figcaption class="grid rowcol1">
+        <p class="itemTitle rowcol1 itemTitleTR">Soy el nene</p>
+        <p class="rowcol1 hidshowTxt">
+          Et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga
+        </p>
       </figcaption>
     </figure>
 
-    <figure class="gastronomiaItem sectionItem">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/home/9948.jpg" alt="" class="gastronomiaItemImg rowcol1">
-      <figcaption class="gastronomiaItemFigcaption rowcol1">
-        <p class="itemTitle rowcol1 gastronomiaItemTitle">Soy el nene</p>
-        <p class="rowcol1 gastronomiaItemDescription"> <span class="itemDescriptionContent">Et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. </span></p>
+    <figure class="hidshow grid">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/home/9948.jpg" alt="" class="hidshowImg rowcol1">
+      <figcaption class="grid rowcol1">
+        <p class="itemTitle rowcol1 itemTitleBR">Soy el nene</p>
+        <p class="rowcol1 hidshowTxt">
+          Et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga
+        </p>
       </figcaption>
     </figure>
 
-    <figure class="gastronomiaItem sectionItem">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/home/9948.jpg" alt="" class="gastronomiaItemImg rowcol1">
-      <figcaption class="gastronomiaItemFigcaption rowcol1">
-        <p class="itemTitle rowcol1 gastronomiaItemTitle">Soy el nene</p>
-        <p class="rowcol1 gastronomiaItemDescription"> <span class="itemDescriptionContent">Et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. </span></p>
+    <figure class="hidshow grid">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/home/9948.jpg" alt="" class="hidshowImg rowcol1">
+      <figcaption class="grid rowcol1">
+        <p class="itemTitle rowcol1 itemTitleBR">Soy el nene</p>
+        <p class="rowcol1 hidshowTxt">
+          Et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga
+        </p>
       </figcaption>
     </figure>
 
-
-
-
-  </div>
-
-
-
+  </flex>
 </section>
 
 
-<section class="fPSection experiencias">
 
-  <article class="experienciasHead fPSectionHead">
-    <h4 class="experiencasTitle fPSectionTitle">CBbC es...<span class="specialTitle">Experiencias</span></h4>
-    <figure class="experienciasHeadFigure1 fPSectionFigure">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/home/experiencias.jpg" alt="" class="experienciasHeadImg fPSectionImg rowcol1">
-      <figcaption class="experiencasHeadFigcaption">
+
+<section class="section experiencias">
+
+  <article class="superCard">
+    <h4 class="superCardTitle specialTitle rowcol1 colMax">
+      <span class="cbbcEs">CBbC es...</span>
+      <span class="">Experiencias</span>
+    </h4>
+    <figure class="superCardFigure rowcol1">
+      <img class="superCardImg rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/experiencias.jpg" alt="">
+      <figcaption class="">
         <h5>Disfruta de la esencia de la gastronomía en los mejores restauranes.</h5>
         <p>Cuando te sientes a la mesa, invita a todos tus sentidos. Cada plato presenta colores, sabores, aroma y texturas de auténtica tradición ibicenca. Del mar de un Bullit de Peix, a la tierra de un jamón de pata negra.</p>
       </figcaption>
     </figure>
   </article>
 
-  <div class="Container5050">
+  <flex class="colMax flex2">
 
-    <figure class="item5050 sectionItem">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/home/720.jpg" alt="" class="experiencasItemImg item5050Img rowcol1">
-      <figcaption class="gastronomiaItemFigcaption itemTitle itemTitleCenter">Snak CBbC</figcaption>
+    <figure class="grid">
+      <img class="item5050Img rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/720.jpg" alt="">
+      <figcaption class="itemTitle itemTitleCenter rowcol1">
+        <a href="#"><h5>Mar</h5></a>
+      </figcaption>
     </figure>
 
-    <figure class="sectionItem item5050 sectionItem">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/home/14459.jpg" alt="" class="experiencasItemImg item5050Img rowcol1">
-      <figcaption class="standarCardFigcaption itemTitle itemTitleCenter">Snak CBbC</figcaption>
+    <figure class="grid">
+      <img class="item5050Img rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/14459.jpg" alt="">
+      <figcaption class="itemTitle itemTitleCenter rowcol1">
+        <a href="#"><h5>Montaña</h5></a>
+      </figcaption>
     </figure>
 
-  </div>
+  </flex>
 
 
 
@@ -182,36 +203,43 @@
 
 </section>
 
-<section class="fPSection Magazine">
-  <h4 class="magazineTitle"> <span class="magazineTitle1">CBbC</span> <span class="specialTitle magazineTitleBlue">Life</span> <span class="magazineTitle3">Magazine</span></h4>
+<section class="section">
+  <h4 class="centerTitle colMax">
+    <span class="magazineTitle1">CBbC</span>
+    <span class="specialTitle magazineTitleBlue">Life</span>
+    <span class="magazineTitle3">Magazine</span>
+  </h4>
 
-  <figure class="standarCard sectionItem">
-    <img src="<?php echo get_template_directory_uri(); ?>/img/home/114579-261.jpg" alt="" class="standarCardImg rowcol1">
-    <h5 class="itemTitleCenter itemTitle">Platos de Andorra</h5>
-    <figcaption class="standarCardFigcaption">
-      <p>Dolor sit amet, consectetur adipiscing elit</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </figcaption>
-  </figure>
+  <flex class="magazineFlex flex3 colMax">
+    <figure class="standarCard">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/home/114579-261.jpg" alt="" class="standarCardImg rowcol1">
+      <h5 class="itemTitleCenter rowcol1 itemTitle">Platos de Andorra</h5>
+      <figcaption class="">
+        <p>Dolor sit amet, consectetur adipiscing elit</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </figcaption>
+    </figure>
 
 
-  <figure class="standarCard sectionItem">
-    <img src="<?php echo get_template_directory_uri(); ?>/img/home/23-2148153662.jpg" alt=""class="standarCardImg rowcol1">
-    <h5 class="itemTitleCenter itemTitle">pendant sky</h5>
-    <figcaption class="standarCardFigcaption">
-      <p>Dolor sit amet, consectetur adipiscing elit</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.</p>
-    </figcaption>
-  </figure>
+    <figure class="standarCard">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/home/23-2148153662.jpg" alt=""class="standarCardImg rowcol1">
+      <h5 class="itemTitleCenter rowcol1 itemTitle">pendant sky</h5>
+      <figcaption class="">
+        <p>Dolor sit amet, consectetur adipiscing elit</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.</p>
+      </figcaption>
+    </figure>
 
-  <figure class="standarCard sectionItem">
-    <img src="<?php echo get_template_directory_uri(); ?>/img/home/23-2147717087.png" alt=""class="standarCardImg rowcol1">
-    <h5 class="itemTitleCenter itemTitle">festival</h5>
-    <figcaption class="standarCardFigcaption">
-      <p>Dolor sit amet, consectetur adipiscing elit</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.</p>
-    </figcaption>
-  </figure>
+    <figure class="standarCard">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/home/23-2147717087.png" alt=""class="standarCardImg rowcol1">
+      <h5 class="itemTitleCenter rowcol1 itemTitle">festival</h5>
+      <figcaption class="">
+        <p>Dolor sit amet, consectetur adipiscing elit</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.</p>
+      </figcaption>
+    </figure>
+
+  </flex>
 
 
 </section>

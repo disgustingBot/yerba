@@ -29,7 +29,7 @@ const headerHandler=new IntersectionObserver(entries=>{
   })
 }, headerHandlerOpt);
 // HEADER TRANSPARENT HANDLER
-headerHandler.observe(d.querySelector(".ATFvideo"));
+headerHandler.observe(d.querySelector("#headerActivator"));
 
 // NAVBAR
 const alternateNavBar=()=>{const navBar=d.querySelector("#navBar");if(navBar.classList.contains("navBarActive")){navBar.classList.remove("navBarActive")}else{navBar.classList.add("navBarActive")}}
