@@ -454,7 +454,6 @@ img{
                               6.3) =footer:
 ------------------------------------------------------------------------------
 --------------------------------------------------------------------------- */
-
 .footer {
   background:#232323;
   display: grid;
@@ -463,7 +462,6 @@ img{
   padding: var(--footerPadding);
   width: 100%;
 }
-
 .footerLogo{
   grid-column: 1/9;
   grid-row: 1/6;
@@ -479,14 +477,11 @@ img{
   transition: .2s;
 }
 .footerContacto:hover {filter:brightness(140%);}
-
-
 .socialContainer {
   display: flex;
   grid-column: var(--socialContainerGridC);
   grid-row: var(--socialContainerGridR);
 }
-
 .socialItem {
   margin: auto;
   margin-left: var(--socialItemMarginLeft);
@@ -494,7 +489,6 @@ img{
   width: 50px;
   transition: .2s;
 }
-
 .facebookFooter:hover {color:#3b5998}
 .twitterFooter:hover  {color:#00acee}
 .instagramFooter:hover{color:#3f729b}
@@ -509,17 +503,13 @@ img{
   list-style: none;
   text-align: center;
 }
-
 .footerMenu1 {
   grid-column: var(--footerMenu1GridC);
   grid-row: var(--footerMenu1GridR);
 }
-
-
 .footerMenu2 {
   grid-column: var(--footerMenu2GridC);
   grid-row: var(--footerMenu2GridR);
-
 }
 .footerMenuItem {
   height: min-content;
@@ -527,7 +517,6 @@ img{
   padding: .3rem .8rem;
   transition: .2s;
 }
-
 .footerMenuItem:hover {
   background: #4b4b4b;
   box-shadow: inset 0 0 7px #000;
@@ -543,23 +532,18 @@ img{
                               6.4) =ATF:
 ------------------------------------------------------------------------------
 --------------------------------------------------------------------------- */
-
-
-
 .ATF {
   display: grid;
   grid-row:1 / span 3;
   grid-template-rows: 100vh 1fr;
   width: 100%;
 }
-
 .ATFvideo {
   grid-row: 1/-1;
   height: 110vh;
   object-fit: cover;
   width: 100%;
 }
-
 .ATFIsoLogo {
   display: grid;
   grid-row: 1/2;
@@ -568,7 +552,6 @@ img{
   text-align: center;
 }
 .ATFLogo{margin:auto;}
-/* .ATFtitle {margin-top: 0;} */
 .ATFflex{
   grid-row: 2/4;
   grid-column: 1;
@@ -610,12 +593,6 @@ img{
   height: 400px;
   width: 100%;
 }
-
-
-
-
-
-
 
 
 /* ---------------------------------------------------------------------------
