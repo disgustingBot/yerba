@@ -94,7 +94,7 @@
   <article class="magazineHead magazineHead1">
     <h4 class="magazineSectionTitle magazineSectionTitle1  specialTitle">News</h4>
     <figure class="newsFigure magazineSectionFigure1">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/home/experiencias.jpg" alt="" class="experienciasHeadImg fPSectionImg itemImg">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/home/experiencias.jpg" alt="" class="experienciasHeadImg fPSectionImg rowcol1">
       <figcaption class="newsHeadFigCaption">
         <h5>Disfruta de la esencia de la gastronomía en los mejores restauranes.</h5>
         <p>Cuando te sientes a la mesa, invita a todos tus sentidos. Cada plato presenta colores, sabores, aroma y texturas de auténtica tradición ibicenca. Del mar de un Bullit de Peix, a la tierra de un jamón de pata negra.</p>
@@ -103,7 +103,7 @@
   </article>
 
   <figure class="standarCard SectionItem">
-    <img class="standarCardImg itemImg" src="<?php echo get_template_directory_uri(); ?>/img/home/23-2147717087.png" alt="">
+    <img class="standarCardImg rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/23-2147717087.png" alt="">
     <h5 class="itemTitleCenter itemTitle">festival</h5>
     <figcaption class="standarCardFigcaption">
       <p>Dolor sit amet, consectetur adipiscing elit</p>
@@ -112,7 +112,7 @@
   </figure>
 
   <figure class="standarCard SectionItem">
-    <img class="standarCardImg itemImg" src="<?php echo get_template_directory_uri(); ?>/img/home/23-2147717087.png" alt="">
+    <img class="standarCardImg rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/23-2147717087.png" alt="">
     <h5 class="itemTitleCenter itemTitle">festival</h5>
     <figcaption class="standarCardFigcaption">
       <p>Dolor sit amet, consectetur adipiscing elit</p>
@@ -121,7 +121,7 @@
   </figure>
 
   <figure class="standarCard SectionItem">
-    <img class="standarCardImg itemImg" src="<?php echo get_template_directory_uri(); ?>/img/home/23-2147717087.png" alt="">
+    <img class="standarCardImg rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/23-2147717087.png" alt="">
     <h5 class="itemTitleCenter itemTitle">festival</h5>
     <figcaption class="standarCardFigcaption">
       <p>Dolor sit amet, consectetur adipiscing elit</p>
@@ -139,7 +139,7 @@
   <article class="magazineHead2 magazineHead">
     <h4 class="magazineSectionTitle2 magazineSectionTitle specialTitle">Lugares</h4>
     <figure class="magazineSectionFigure2 magazineSectionFigure">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/home/experiencias.jpg" alt="" class="experienciasHeadImg fPSectionImg itemImg">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/home/experiencias.jpg" alt="" class="experienciasHeadImg fPSectionImg rowcol1">
       <figcaption class="newsHeadFigCaption">
         <h5>Disfruta de la esencia de la gastronomía en los mejores restauranes.</h5>
         <p>Cuando te sientes a la mesa, invita a todos tus sentidos. Cada plato presenta colores, sabores, aroma y texturas de auténtica tradición ibicenca. Del mar de un Bullit de Peix, a la tierra de un jamón de pata negra.</p>
@@ -148,7 +148,7 @@
   </article>
 
   <figure class="standarCard SectionItem">
-    <img class="standarCardImg itemImg" src="<?php echo get_template_directory_uri(); ?>/img/home/23-2147717087.png" alt="">
+    <img class="standarCardImg rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/23-2147717087.png" alt="">
     <h5 class="itemTitleCenter itemTitle">festival</h5>
     <figcaption class="standarCardFigcaption">
       <p>Dolor sit amet, consectetur adipiscing elit</p>
@@ -157,7 +157,7 @@
   </figure>
 
   <figure class="standarCard SectionItem">
-    <img class="standarCardImg itemImg" src="<?php echo get_template_directory_uri(); ?>/img/home/23-2147717087.png" alt="">
+    <img class="standarCardImg rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/23-2147717087.png" alt="">
     <h5 class="itemTitleCenter itemTitle">festival</h5>
     <figcaption class="standarCardFigcaption">
       <p>Dolor sit amet, consectetur adipiscing elit</p>
@@ -166,7 +166,7 @@
   </figure>
 
   <figure class="standarCard SectionItem">
-    <img class="standarCardImg itemImg" src="<?php echo get_template_directory_uri(); ?>/img/home/23-2147717087.png" alt="">
+    <img class="standarCardImg rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/23-2147717087.png" alt="">
     <h5 class="itemTitleCenter itemTitle">festival</h5>
     <figcaption class="standarCardFigcaption">
       <p>Dolor sit amet, consectetur adipiscing elit</p>
@@ -182,7 +182,7 @@
   <article class="magazineHead1 magazineHead">
     <h4 class="magazineSectionTitle1 magazineSectionTitle specialTitle">Paladar</h4>
     <figure class="magazineSectionFigure1 magazineSectionFigure">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/home/experiencias.jpg" alt="" class="experienciasHeadImg fPSectionImg itemImg">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/home/experiencias.jpg" alt="" class="experienciasHeadImg fPSectionImg rowcol1">
       <figcaption class="newsHeadFigCaption">
         <h5>Disfruta de la esencia de la gastronomía en los mejores restauranes.</h5>
         <p>Cuando te sientes a la mesa, invita a todos tus sentidos. Cada plato presenta colores, sabores, aroma y texturas de auténtica tradición ibicenca. Del mar de un Bullit de Peix, a la tierra de un jamón de pata negra.</p>
@@ -191,7 +191,7 @@
   </article>
 
   <figure class="standarCard SectionItem">
-    <img class="standarCardImg itemImg" src="<?php echo get_template_directory_uri(); ?>/img/home/23-2147717087.png" alt="">
+    <img class="standarCardImg rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/23-2147717087.png" alt="">
     <h5 class="itemTitleCenter itemTitle">festival</h5>
     <figcaption class="standarCardFigcaption">
       <p>Dolor sit amet, consectetur adipiscing elit</p>
@@ -200,7 +200,7 @@
   </figure>
 
   <figure class="standarCard SectionItem">
-    <img class="standarCardImg itemImg" src="<?php echo get_template_directory_uri(); ?>/img/home/23-2147717087.png" alt="">
+    <img class="standarCardImg rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/23-2147717087.png" alt="">
     <h5 class="itemTitleCenter itemTitle">festival</h5>
     <figcaption class="standarCardFigcaption">
       <p>Dolor sit amet, consectetur adipiscing elit</p>
@@ -209,7 +209,7 @@
   </figure>
 
   <figure class="standarCard SectionItem">
-    <img class="standarCardImg itemImg" src="<?php echo get_template_directory_uri(); ?>/img/home/23-2147717087.png" alt="">
+    <img class="standarCardImg rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/23-2147717087.png" alt="">
     <h5 class="itemTitleCenter itemTitle">festival</h5>
     <figcaption class="standarCardFigcaption">
       <p>Dolor sit amet, consectetur adipiscing elit</p>
@@ -225,7 +225,7 @@
 
   <div class="experienciasSectionColumn1">
     <figure class="SectionItem experienciasMainImg">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/home/720.jpg" alt="" class="experienciasMagazineHeadImg item5050Img itemImg">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/home/720.jpg" alt="" class="experienciasMagazineHeadImg item5050Img rowcol1">
       <figcaption class="itemTitle itemTitleCenter">Ibiza</figcaption>
     </figure>
 
@@ -238,7 +238,7 @@
     </figure>
 
     <figure class="experienciasCard standarCard SectionItem">
-      <img class="standarCardImg itemImg experienciasBottomCardsImg" src="<?php echo get_template_directory_uri(); ?>/img/home/23-2147717087.png" alt="">
+      <img class="standarCardImg rowcol1 experienciasBottomCardsImg" src="<?php echo get_template_directory_uri(); ?>/img/home/23-2147717087.png" alt="">
       <figcaption class="standarCardFigcaption experienciasBottomCardsTxt">
         <p>Dolor sit amet, consectetur adipiscing elit</p>
         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.</p>
@@ -246,7 +246,7 @@
     </figure>
 
     <figure class="experienciasCard standarCard SectionItem">
-      <img class="standarCardImg itemImg experienciasBottomCardsImg" src="<?php echo get_template_directory_uri(); ?>/img/home/23-2147717087.png" alt="">
+      <img class="standarCardImg rowcol1 experienciasBottomCardsImg" src="<?php echo get_template_directory_uri(); ?>/img/home/23-2147717087.png" alt="">
       <figcaption class="standarCardFigcaption experienciasBottomCardsTxt">
         <p>Dolor sit amet, consectetur adipiscing elit</p>
         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.</p>
@@ -256,7 +256,7 @@
 
   <div class="experienciasSectionColumn2">
     <figure class="SectionItem experienciasMainImg">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/home/720.jpg" alt="" class="experienciasMagazineHeadImg item5050Img itemImg">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/home/720.jpg" alt="" class="experienciasMagazineHeadImg item5050Img rowcol1">
       <figcaption class="gastronomiaItemFigcaption itemTitle itemTitleCenter">Andorra</figcaption>
     </figure>
 
@@ -269,7 +269,7 @@
     </figure>
 
     <figure class="experienciasCard standarCard SectionItem">
-      <img class="standarCardImg itemImg experienciasBottomCardsImg" src="<?php echo get_template_directory_uri(); ?>/img/home/23-2147717087.png" alt="">
+      <img class="standarCardImg rowcol1 experienciasBottomCardsImg" src="<?php echo get_template_directory_uri(); ?>/img/home/23-2147717087.png" alt="">
       <figcaption class="standarCardFigcaption experienciasBottomCardsTxt">
         <p>Dolor sit amet, consectetur adipiscing elit</p>
         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.</p>
@@ -277,7 +277,7 @@
     </figure>
 
     <figure class="experienciasCard standarCard SectionItem">
-      <img class="standarCardImg itemImg experienciasBottomCardsImg" src="<?php echo get_template_directory_uri(); ?>/img/home/23-2147717087.png" alt="">
+      <img class="standarCardImg rowcol1 experienciasBottomCardsImg" src="<?php echo get_template_directory_uri(); ?>/img/home/23-2147717087.png" alt="">
       <figcaption class="standarCardFigcaption experienciasBottomCardsTxt">
         <p>Dolor sit amet, consectetur adipiscing elit</p>
         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.</p>
@@ -294,7 +294,7 @@
   <article class="magazineHead2 magazineHead">
     <h4 class="magazineSectionTitle2 magazineSectionTitle specialTitle">Planes</h4>
     <figure class="magazineSectionFigure2 magazineSectionFigure">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/home/experiencias.jpg" alt="" class="experienciasHeadImg fPSectionImg itemImg">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/home/experiencias.jpg" alt="" class="experienciasHeadImg fPSectionImg rowcol1">
       <figcaption class="newsHeadFigCaption">
         <h5>Disfruta de la esencia de la gastronomía en los mejores restauranes.</h5>
         <p>Cuando te sientes a la mesa, invita a todos tus sentidos. Cada plato presenta colores, sabores, aroma y texturas de auténtica tradición ibicenca. Del mar de un Bullit de Peix, a la tierra de un jamón de pata negra.</p>
@@ -303,7 +303,7 @@
   </article>
 
   <figure class="standarCard SectionItem">
-    <img class="standarCardImg itemImg" src="<?php echo get_template_directory_uri(); ?>/img/home/23-2147717087.png" alt="">
+    <img class="standarCardImg rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/23-2147717087.png" alt="">
     <h5 class="itemTitleCenter itemTitle">festival</h5>
     <figcaption class="standarCardFigcaption">
       <p>Dolor sit amet, consectetur adipiscing elit</p>
@@ -312,7 +312,7 @@
   </figure>
 
   <figure class="standarCard SectionItem">
-    <img class="standarCardImg itemImg" src="<?php echo get_template_directory_uri(); ?>/img/home/23-2147717087.png" alt="">
+    <img class="standarCardImg rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/23-2147717087.png" alt="">
     <h5 class="itemTitleCenter itemTitle">festival</h5>
     <figcaption class="standarCardFigcaption">
       <p>Dolor sit amet, consectetur adipiscing elit</p>
@@ -321,7 +321,7 @@
   </figure>
 
   <figure class="standarCard SectionItem">
-    <img class="standarCardImg itemImg" src="<?php echo get_template_directory_uri(); ?>/img/home/23-2147717087.png" alt="">
+    <img class="standarCardImg rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/23-2147717087.png" alt="">
     <h5 class="itemTitleCenter itemTitle">festival</h5>
     <figcaption class="standarCardFigcaption">
       <p>Dolor sit amet, consectetur adipiscing elit</p>

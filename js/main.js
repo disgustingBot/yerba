@@ -13,23 +13,23 @@ w.onload=()=>{
   }
 }
 
-const options = {
-  root: null, // it is the viewport, that's the default
-  threshold: .1, // that's the default
-  rootMargin: "0px 0px 0px 0px" // that's the default
+const headerHandlerOpt = {
+  root: null,
+  threshold: .2,
+  rootMargin: "0px 0px 0px 0px"
 };
 
-const menuHandler=new IntersectionObserver(function(entries,observer){
+const headerHandler=new IntersectionObserver(entries=>{
   entries.forEach(entry => {
     if(entry.isIntersecting){
-      d.querySelector(".header").style.background = "transparent";
+      d.querySelector(".header").classList.remove('headerTop');
     }else{
-      d.querySelector(".header").style.background = "var(--color2)";
+      d.querySelector(".header").classList.add('headerTop');
     }
   })
-}, options);
+}, headerHandlerOpt);
 // HEADER TRANSPARENT HANDLER
-// if(d.querySelector(".headerTransparent")){menuHandler.observe(d.querySelector(".headerTransparent"))}else{d.querySelector(".header").style.background="var(--color2)"}
+headerHandler.observe(d.querySelector(".ATFvideo"));
 
 // NAVBAR
 const alternateNavBar=()=>{const navBar=d.querySelector("#navBar");if(navBar.classList.contains("navBarActive")){navBar.classList.remove("navBarActive")}else{navBar.classList.add("navBarActive")}}

@@ -6,37 +6,40 @@
 
 <section class="ATF">
 
-  <video class="videoATF" loop="loop" autoplay playsinline muted>
+  <video class="ATFvideo rowcol1" loop="loop" autoplay playsinline muted>
     <source type="video/mp4" src="<?php echo get_template_directory_uri(); ?>/img/home/shutterstock_25094927_4-1.mp4" alt="Fondo-de-video-del-mediterraneo-desde-arriba" />
   </video>
 
-  <figure class="ATFIsoLogo">
-    <img class="ATFLogo rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/logoCalaBassa.png" alt="">
+  <figure class="ATFIsoLogo rowcol1">
+    <img class="ATFLogo" src="<?php echo get_template_directory_uri(); ?>/img/logoCalaBassa.png" alt="">
     <figcaption class="ATFtitle specialTitle">
-      <h2>More than an experience , <br> a lifestyle</h2>
+      <h2>More than an experience,<br>a lifestyle</h2>
     </figcaption>
   </figure>
 
-  <figure class="cards cardsATF cardATF1">
-    <img class="standarCardImg rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/localizaciones.jpg" alt="">
-    <figcaption class="cardsTxt specialTitle">
-      <h3>Localizacion</h3>
-    </figcaption>
-  </figure>
+  <flex class="ATFflex flex">
 
-  <figure class="cards cardsATF cardATF2">
-    <img class="standarCardImg rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/gastronomia.jpg" alt="">
-    <figcaption class="cardsTxt specialTitle">
-        <h3>Gastronomía</h3>
-    </figcaption>
-  </figure>
+    <figure class="card">
+      <img class="standarCardImg" src="<?php echo get_template_directory_uri(); ?>/img/home/localizaciones.jpg" alt="">
+      <figcaption class="specialTitle">
+        <h3>Localizacion</h3>
+      </figcaption>
+    </figure>
 
-  <figure class="cards cardsATF cardATF3">
-    <img class="standarCardImg rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/experiencias.jpg" alt="">
-    <figcaption class="cardsTxt specialTitle">
-      <h3>Experiencias</h3>
-    </figcaption>
-  </figure>
+    <figure class="card">
+      <img class="standarCardImg" src="<?php echo get_template_directory_uri(); ?>/img/home/gastronomia.jpg" alt="">
+      <figcaption class="specialTitle">
+          <h3>Gastronomía</h3>
+      </figcaption>
+    </figure>
+
+    <figure class="card">
+      <img class="standarCardImg" src="<?php echo get_template_directory_uri(); ?>/img/home/experiencias.jpg" alt="">
+      <figcaption class="specialTitle">
+        <h3>Experiencias</h3>
+      </figcaption>
+    </figure>
+  </flex>
 
 </section>
 
