@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 
-<div class='slider'>
+<div class='slider' id="headerActivator">
 
   <input checked id='slide-1' name='active' type='radio'>
   <div class='slide'>
@@ -89,149 +89,224 @@
 </div>
 
 
-<section class="magazineSection sectionNews">
 
-  <article class="magazineHead magazineHead1">
-    <h4 class="magazineSectionTitle magazineSectionTitle1  specialTitle">News</h4>
-    <figure class="newsFigure magazineSectionFigure1">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/home/experiencias.jpg" alt="" class="experienciasHeadImg fPSectionImg rowcol1">
-      <figcaption class="newsHeadFigCaption">
-        <h5>Disfruta de la esencia de la gastronomía en los mejores restauranes.</h5>
-        <p>Cuando te sientes a la mesa, invita a todos tus sentidos. Cada plato presenta colores, sabores, aroma y texturas de auténtica tradición ibicenca. Del mar de un Bullit de Peix, a la tierra de un jamón de pata negra.</p>
+
+
+
+<section class="section">
+  <article class="superCard">
+    <h4 class="superCardTitle specialTitle rowcol1">
+      <span class="">News</span>
+    </h4>
+    <figure class="superCardFigure rowcol1">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/home/localizaciones.jpg" alt="" class="superCardImg rowcol1">
+      <figcaption class="">
+        <h5>Dolor sit amet, consectetur adipiscing elit</h5>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       </figcaption>
     </figure>
   </article>
 
-  <figure class="standarCard SectionItem">
-    <img class="standarCardImg rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/23-2147717087.png" alt="">
-    <h5 class="itemTitleCenter itemTitle">festival</h5>
-    <figcaption class="standarCardFigcaption">
-      <p>Dolor sit amet, consectetur adipiscing elit</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.</p>
-    </figcaption>
-  </figure>
-
-  <figure class="standarCard SectionItem">
-    <img class="standarCardImg rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/23-2147717087.png" alt="">
-    <h5 class="itemTitleCenter itemTitle">festival</h5>
-    <figcaption class="standarCardFigcaption">
-      <p>Dolor sit amet, consectetur adipiscing elit</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.</p>
-    </figcaption>
-  </figure>
-
-  <figure class="standarCard SectionItem">
-    <img class="standarCardImg rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/23-2147717087.png" alt="">
-    <h5 class="itemTitleCenter itemTitle">festival</h5>
-    <figcaption class="standarCardFigcaption">
-      <p>Dolor sit amet, consectetur adipiscing elit</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.</p>
-    </figcaption>
-  </figure>
+  <flex class="magazineFlex colMax flex3">
+    <figure class="standarCard sectionItem">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/home/114579-261.jpg" alt="" class="standarCardImg rowcol1">
+      <h5 class="itemTitleCenter rowcol1 itemTitle">Platos de Andorra</h5>
+      <figcaption class="">
+        <p>Dolor sit amet, consectetur adipiscing elit</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </figcaption>
+    </figure>
 
 
+    <figure class="standarCard sectionItem">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/home/23-2148153662.jpg" alt=""class="standarCardImg rowcol1">
+      <h5 class="itemTitleCenter rowcol1 itemTitle">pendant sky</h5>
+      <figcaption class="">
+        <p>Dolor sit amet, consectetur adipiscing elit</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.</p>
+      </figcaption>
+    </figure>
+
+    <figure class="standarCard sectionItem">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/home/23-2147717087.png" alt=""class="standarCardImg rowcol1">
+      <h5 class="itemTitleCenter rowcol1 itemTitle">festival</h5>
+      <figcaption class="">
+        <p>Dolor sit amet, consectetur adipiscing elit</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.</p>
+      </figcaption>
+    </figure>
+  </flex>
 </section>
 
 
 
-<section class="magazineSection sectionLugares">
-
-  <article class="magazineHead2 magazineHead">
-    <h4 class="magazineSectionTitle2 magazineSectionTitle specialTitle">Lugares</h4>
-    <figure class="magazineSectionFigure2 magazineSectionFigure">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/home/experiencias.jpg" alt="" class="experienciasHeadImg fPSectionImg rowcol1">
-      <figcaption class="newsHeadFigCaption">
-        <h5>Disfruta de la esencia de la gastronomía en los mejores restauranes.</h5>
-        <p>Cuando te sientes a la mesa, invita a todos tus sentidos. Cada plato presenta colores, sabores, aroma y texturas de auténtica tradición ibicenca. Del mar de un Bullit de Peix, a la tierra de un jamón de pata negra.</p>
+<section class="section">
+  <article class="superCard">
+    <h4 class="superCardTitle specialTitle rowcol1">
+      <span class="">Lugares</span>
+    </h4>
+    <figure class="superCardFigure rowcol1">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/home/localizaciones.jpg" alt="" class="superCardImg rowcol1">
+      <figcaption class="">
+        <h5>Dolor sit amet, consectetur adipiscing elit</h5>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       </figcaption>
     </figure>
   </article>
 
-  <figure class="standarCard SectionItem">
-    <img class="standarCardImg rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/23-2147717087.png" alt="">
-    <h5 class="itemTitleCenter itemTitle">festival</h5>
-    <figcaption class="standarCardFigcaption">
-      <p>Dolor sit amet, consectetur adipiscing elit</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.</p>
-    </figcaption>
-  </figure>
+  <flex class="magazineFlex colMax flex3">
+    <figure class="standarCard sectionItem">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/home/114579-261.jpg" alt="" class="standarCardImg rowcol1">
+      <h5 class="itemTitleCenter rowcol1 itemTitle">Platos de Andorra</h5>
+      <figcaption class="">
+        <p>Dolor sit amet, consectetur adipiscing elit</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </figcaption>
+    </figure>
 
-  <figure class="standarCard SectionItem">
-    <img class="standarCardImg rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/23-2147717087.png" alt="">
-    <h5 class="itemTitleCenter itemTitle">festival</h5>
-    <figcaption class="standarCardFigcaption">
-      <p>Dolor sit amet, consectetur adipiscing elit</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.</p>
-    </figcaption>
-  </figure>
+    <figure class="standarCard sectionItem">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/home/23-2148153662.jpg" alt=""class="standarCardImg rowcol1">
+      <h5 class="itemTitleCenter rowcol1 itemTitle">pendant sky</h5>
+      <figcaption class="">
+        <p>Dolor sit amet, consectetur adipiscing elit</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.</p>
+      </figcaption>
+    </figure>
 
-  <figure class="standarCard SectionItem">
-    <img class="standarCardImg rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/23-2147717087.png" alt="">
-    <h5 class="itemTitleCenter itemTitle">festival</h5>
-    <figcaption class="standarCardFigcaption">
-      <p>Dolor sit amet, consectetur adipiscing elit</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.</p>
-    </figcaption>
-  </figure>
-
+    <figure class="standarCard sectionItem">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/home/23-2147717087.png" alt=""class="standarCardImg rowcol1">
+      <h5 class="itemTitleCenter rowcol1 itemTitle">festival</h5>
+      <figcaption class="">
+        <p>Dolor sit amet, consectetur adipiscing elit</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.</p>
+      </figcaption>
+    </figure>
+  </flex>
 </section>
 
 
-<section class="magazineSection sectionPaladar">
 
-  <article class="magazineHead1 magazineHead">
-    <h4 class="magazineSectionTitle1 magazineSectionTitle specialTitle">Paladar</h4>
-    <figure class="magazineSectionFigure1 magazineSectionFigure">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/home/experiencias.jpg" alt="" class="experienciasHeadImg fPSectionImg rowcol1">
-      <figcaption class="newsHeadFigCaption">
-        <h5>Disfruta de la esencia de la gastronomía en los mejores restauranes.</h5>
-        <p>Cuando te sientes a la mesa, invita a todos tus sentidos. Cada plato presenta colores, sabores, aroma y texturas de auténtica tradición ibicenca. Del mar de un Bullit de Peix, a la tierra de un jamón de pata negra.</p>
+<section class="section">
+  <article class="superCard">
+    <h4 class="superCardTitle specialTitle rowcol1">
+      <span class="">Paladar</span>
+    </h4>
+    <figure class="superCardFigure rowcol1">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/home/localizaciones.jpg" alt="" class="superCardImg rowcol1">
+      <figcaption class="">
+        <h5>Dolor sit amet, consectetur adipiscing elit</h5>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       </figcaption>
     </figure>
   </article>
 
-  <figure class="standarCard SectionItem">
-    <img class="standarCardImg rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/23-2147717087.png" alt="">
-    <h5 class="itemTitleCenter itemTitle">festival</h5>
-    <figcaption class="standarCardFigcaption">
-      <p>Dolor sit amet, consectetur adipiscing elit</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.</p>
-    </figcaption>
-  </figure>
+  <flex class="magazineFlex colMax flex3">
+    <figure class="standarCard sectionItem">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/home/114579-261.jpg" alt="" class="standarCardImg rowcol1">
+      <h5 class="itemTitleCenter rowcol1 itemTitle">Platos de Andorra</h5>
+      <figcaption class="">
+        <p>Dolor sit amet, consectetur adipiscing elit</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </figcaption>
+    </figure>
 
-  <figure class="standarCard SectionItem">
-    <img class="standarCardImg rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/23-2147717087.png" alt="">
-    <h5 class="itemTitleCenter itemTitle">festival</h5>
-    <figcaption class="standarCardFigcaption">
-      <p>Dolor sit amet, consectetur adipiscing elit</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.</p>
-    </figcaption>
-  </figure>
+    <figure class="standarCard sectionItem">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/home/23-2148153662.jpg" alt=""class="standarCardImg rowcol1">
+      <h5 class="itemTitleCenter rowcol1 itemTitle">pendant sky</h5>
+      <figcaption class="">
+        <p>Dolor sit amet, consectetur adipiscing elit</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.</p>
+      </figcaption>
+    </figure>
 
-  <figure class="standarCard SectionItem">
-    <img class="standarCardImg rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/23-2147717087.png" alt="">
-    <h5 class="itemTitleCenter itemTitle">festival</h5>
-    <figcaption class="standarCardFigcaption">
-      <p>Dolor sit amet, consectetur adipiscing elit</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.</p>
-    </figcaption>
-  </figure>
-
+    <figure class="standarCard sectionItem">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/home/23-2147717087.png" alt=""class="standarCardImg rowcol1">
+      <h5 class="itemTitleCenter rowcol1 itemTitle">festival</h5>
+      <figcaption class="">
+        <p>Dolor sit amet, consectetur adipiscing elit</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.</p>
+      </figcaption>
+    </figure>
+  </flex>
 </section>
 
 
 
-<section class="experiencasSection">
 
-  <div class="experienciasSectionColumn1">
-    <figure class="SectionItem experienciasMainImg">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/home/720.jpg" alt="" class="experienciasMagazineHeadImg item5050Img rowcol1">
-      <figcaption class="itemTitle itemTitleCenter">Ibiza</figcaption>
+
+
+
+
+
+
+
+
+
+
+<section class="section grid2C">
+  <h4 class="colMax centerTitle specialTitle">Experiencias</h4>
+
+  <div class="grid2C">
+    <figure class="grid colMax">
+      <img class="item5050Img rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/720.jpg" alt="">
+      <figcaption class="itemTitleCenter itemTitle rowcol1">
+        <a href="#"><h5>Ibiza</h5></a>
+      </figcaption>
     </figure>
 
-    <figure class="experiencasMagazineItem">
-      <img class="experienciasItemImg" src="<?php echo get_template_directory_uri(); ?>/img/home/720.jpg" alt="" >
-      <figcaption class="experienciasItemFigcaption">
+    <figure class="tarjeta grid2C colMax">
+      <img class="tarjetaImg" src="<?php echo get_template_directory_uri(); ?>/img/home/720.jpg" alt="" >
+      <figcaption class="tarjetaCaption ">
+        <h5>Dolor sit amet, consectetur adipiscing elit</h5>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </figcaption>
+    </figure>
+
+    <figure class="standarCard grid">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/home/114579-261.jpg" alt="" class="standarCardImg rowcol1">
+      <figcaption class="">
+        <p>Dolor sit amet, consectetur adipiscing elit</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </figcaption>
+    </figure>
+
+    <figure class="standarCard grid">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/home/114579-261.jpg" alt="" class="standarCardImg rowcol1">
+      <figcaption class="">
+        <p>Dolor sit amet, consectetur adipiscing elit</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </figcaption>
+    </figure>
+
+    <!-- <figure class="experienciasCard standarCard SectionItem">
+      <img class="standarCardImg rowcol1 experienciasBottomCardsImg" src="<?php echo get_template_directory_uri(); ?>/img/home/23-2147717087.png" alt="">
+      <figcaption class="standarCardFigcaption experienciasBottomCardsTxt">
+        <p>Dolor sit amet, consectetur adipiscing elit</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.</p>
+      </figcaption>
+    </figure>
+
+    <figure class="experienciasCard standarCard SectionItem">
+      <img class="standarCardImg rowcol1 experienciasBottomCardsImg" src="<?php echo get_template_directory_uri(); ?>/img/home/23-2147717087.png" alt="">
+      <figcaption class="standarCardFigcaption experienciasBottomCardsTxt">
+        <p>Dolor sit amet, consectetur adipiscing elit</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.</p>
+      </figcaption>
+    </figure> -->
+  </div>
+
+
+  <div class="grid2C">
+    <figure class="grid colMax">
+      <img class="item5050Img rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/pal-ski-resort-andorra-pyrenees_79295-10470.jpg" alt="">
+      <figcaption class="itemTitleCenter itemTitle rowcol1">
+        <a href="#"><h5>Andorra</h5></a>
+      </figcaption>
+    </figure>
+
+    <figure class="tarjeta grid2C colMax">
+      <img class="tarjetaImg" src="<?php echo get_template_directory_uri(); ?>/img/home/720.jpg" alt="" >
+      <figcaption class="tarjetaCaption">
         <h5>Dolor sit amet, consectetur adipiscing elit</h5>
         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       </figcaption>
@@ -252,95 +327,76 @@
         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.</p>
       </figcaption>
     </figure>
+
   </div>
 
-  <div class="experienciasSectionColumn2">
-    <figure class="SectionItem experienciasMainImg">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/home/720.jpg" alt="" class="experienciasMagazineHeadImg item5050Img rowcol1">
-      <figcaption class="gastronomiaItemFigcaption itemTitle itemTitleCenter">Andorra</figcaption>
-    </figure>
+</section>
 
-    <figure class="experiencasMagazineItem">
-      <img class="experienciasItemImg" src="<?php echo get_template_directory_uri(); ?>/img/home/720.jpg" alt="" >
-      <figcaption class="experienciasItemFigcaption">
+
+
+
+
+<section class="section">
+  <article class="superCard">
+    <h4 class="superCardTitle specialTitle rowcol1">
+      <span class="">Planes</span>
+    </h4>
+    <figure class="superCardFigure rowcol1">
+      <img class="superCardImg rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/localizaciones.jpg" alt="">
+      <figcaption class="">
         <h5>Dolor sit amet, consectetur adipiscing elit</h5>
         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       </figcaption>
     </figure>
-
-    <figure class="experienciasCard standarCard SectionItem">
-      <img class="standarCardImg rowcol1 experienciasBottomCardsImg" src="<?php echo get_template_directory_uri(); ?>/img/home/23-2147717087.png" alt="">
-      <figcaption class="standarCardFigcaption experienciasBottomCardsTxt">
-        <p>Dolor sit amet, consectetur adipiscing elit</p>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.</p>
-      </figcaption>
-    </figure>
-
-    <figure class="experienciasCard standarCard SectionItem">
-      <img class="standarCardImg rowcol1 experienciasBottomCardsImg" src="<?php echo get_template_directory_uri(); ?>/img/home/23-2147717087.png" alt="">
-      <figcaption class="standarCardFigcaption experienciasBottomCardsTxt">
-        <p>Dolor sit amet, consectetur adipiscing elit</p>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.</p>
-      </figcaption>
-    </figure>
-
-  </div>
-
-</section>
-
-
-<section class="sectionPlanes magazineSection">
-
-  <article class="magazineHead2 magazineHead">
-    <h4 class="magazineSectionTitle2 magazineSectionTitle specialTitle">Planes</h4>
-    <figure class="magazineSectionFigure2 magazineSectionFigure">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/home/experiencias.jpg" alt="" class="experienciasHeadImg fPSectionImg rowcol1">
-      <figcaption class="newsHeadFigCaption">
-        <h5>Disfruta de la esencia de la gastronomía en los mejores restauranes.</h5>
-        <p>Cuando te sientes a la mesa, invita a todos tus sentidos. Cada plato presenta colores, sabores, aroma y texturas de auténtica tradición ibicenca. Del mar de un Bullit de Peix, a la tierra de un jamón de pata negra.</p>
-      </figcaption>
-    </figure>
   </article>
 
-  <figure class="standarCard SectionItem">
-    <img class="standarCardImg rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/23-2147717087.png" alt="">
-    <h5 class="itemTitleCenter itemTitle">festival</h5>
-    <figcaption class="standarCardFigcaption">
-      <p>Dolor sit amet, consectetur adipiscing elit</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.</p>
-    </figcaption>
-  </figure>
+  <flex class="magazineFlex colMax flex3">
+    <figure class="standarCard sectionItem">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/home/114579-261.jpg" alt="" class="standarCardImg rowcol1">
+      <h5 class="itemTitleCenter rowcol1 itemTitle">Platos de Andorra</h5>
+      <figcaption class="">
+        <p>Dolor sit amet, consectetur adipiscing elit</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </figcaption>
+    </figure>
 
-  <figure class="standarCard SectionItem">
-    <img class="standarCardImg rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/23-2147717087.png" alt="">
-    <h5 class="itemTitleCenter itemTitle">festival</h5>
-    <figcaption class="standarCardFigcaption">
-      <p>Dolor sit amet, consectetur adipiscing elit</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.</p>
-    </figcaption>
-  </figure>
+    <figure class="standarCard sectionItem">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/home/23-2148153662.jpg" alt=""class="standarCardImg rowcol1">
+      <h5 class="itemTitleCenter rowcol1 itemTitle">pendant sky</h5>
+      <figcaption class="">
+        <p>Dolor sit amet, consectetur adipiscing elit</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.</p>
+      </figcaption>
+    </figure>
 
-  <figure class="standarCard SectionItem">
-    <img class="standarCardImg rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/23-2147717087.png" alt="">
-    <h5 class="itemTitleCenter itemTitle">festival</h5>
-    <figcaption class="standarCardFigcaption">
-      <p>Dolor sit amet, consectetur adipiscing elit</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.</p>
-    </figcaption>
-  </figure>
-
+    <figure class="standarCard sectionItem">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/home/23-2147717087.png" alt=""class="standarCardImg rowcol1">
+      <h5 class="itemTitleCenter rowcol1 itemTitle">festival</h5>
+      <figcaption class="">
+        <p>Dolor sit amet, consectetur adipiscing elit</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.</p>
+      </figcaption>
+    </figure>
+  </flex>
 </section>
 
 
-<section class="musicaMagazine">
-  <figure class="musicamagazineFigure">
-    <img src="" alt="" class="musicaMagazineImg">
-    <figcaption class="musicaMagazineFigcaption">
-      <h3 class="specialTitle"></h3>
-      <p></p>
-    </figcaption>
-  </figure>
-</section>
+
+
+
+
+
+
+<figure class="musical">
+  <img class="musicalImg" src="" alt="">
+  <figcaption class="musicalCaption">
+    <h3 class="specialTitle">Nuestra música</h3>
+    <p>
+      Una banda sonora muy original<br>
+      Música en vivo y Dj’s de todo Europa y más allá nos acercan sus últimas creaciones: chill out y fiesta, hay un ritmo para cada momento.
+    </p>
+  </figcaption>
+</figure>
 
 
 

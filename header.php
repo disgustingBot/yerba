@@ -19,7 +19,7 @@
 
     <header class="header">
       <a class="headerLogoCont" href="<?php echo site_url(''); ?>">
-        <img class="headerLogo" src="<?php echo get_template_directory_uri(); ?>/img/logoSN.png" alt="">
+        <img class="headerLogo" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="">
       </a>
       <nav id="navBar" class="headerCont navBar">
         <a class="headerLink homeLink<?php if(is_front_page()){echo ' headerLinkActive"';} ?>" href="<?php echo site_url(''); ?>">CBbC</a>
@@ -29,12 +29,10 @@
         <a class="headerLink<?php if(is_page("about")){echo ' headerLinkActive"';} ?>" href="<?php echo site_url('/about'); ?>">About Us</a>
         <a class="headerLink<?php if(is_page("eventos")){echo ' headerLinkActive"';} ?>" href="<?php echo site_url('/eventos'); ?>">Eventos</a>
         <a class="headerLink magazineLink<?php if(is_page("magazine")){echo ' headerLinkActive"';} ?>" href="<?php echo site_url('/magazine'); ?>">CBbC <span class="specialTxt">Live</span> Magazine</a>
-        <button class="suscribeButton">
-          <p>+SUSCRIBETE</p>
-          <div class="burger">
-            <div class="burgerBar"></div><div class="burgerBar"></div><div class="burgerBar"></div>
-          </div>
-        </button>
+        <button class="suscribeButton">+SUSCRIBETE</button>
       </nav>
+      <div class="burger">
+        <div class="burgerBar"></div><div class="burgerBar"></div><div class="burgerBar"></div>
+      </div>
 
     </header>
