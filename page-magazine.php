@@ -90,12 +90,15 @@
 
 
 
+<!-- HEADER -->
+
 
 
 
 <section class="section">
   <article class="superCard">
-    <h4 class="superCardTitle specialTitle rowcol1">
+    <h4 class="superCardTitle specialTitle rowcol1 colMax">
+      <span></span>
       <span class="">News</span>
     </h4>
     <figure class="superCardFigure rowcol1">
@@ -141,8 +144,9 @@
 
 
 <section class="section">
-  <article class="superCard">
-    <h4 class="superCardTitle specialTitle rowcol1">
+  <article class="superCard alt">
+    <h4 class="superCardTitle specialTitle rowcol1 colMax">
+      <span></span>
       <span class="">Lugares</span>
     </h4>
     <figure class="superCardFigure rowcol1">
@@ -188,7 +192,8 @@
 
 <section class="section">
   <article class="superCard">
-    <h4 class="superCardTitle specialTitle rowcol1">
+    <h4 class="superCardTitle specialTitle rowcol1 colMax">
+      <span></span>
       <span class="">Paladar</span>
     </h4>
     <figure class="superCardFigure rowcol1">
@@ -277,22 +282,6 @@
         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       </figcaption>
     </figure>
-
-    <!-- <figure class="experienciasCard standarCard SectionItem">
-      <img class="standarCardImg rowcol1 experienciasBottomCardsImg" src="<?php echo get_template_directory_uri(); ?>/img/home/23-2147717087.png" alt="">
-      <figcaption class="standarCardFigcaption experienciasBottomCardsTxt">
-        <p>Dolor sit amet, consectetur adipiscing elit</p>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.</p>
-      </figcaption>
-    </figure>
-
-    <figure class="experienciasCard standarCard SectionItem">
-      <img class="standarCardImg rowcol1 experienciasBottomCardsImg" src="<?php echo get_template_directory_uri(); ?>/img/home/23-2147717087.png" alt="">
-      <figcaption class="standarCardFigcaption experienciasBottomCardsTxt">
-        <p>Dolor sit amet, consectetur adipiscing elit</p>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.</p>
-      </figcaption>
-    </figure> -->
   </div>
 
 
@@ -337,8 +326,9 @@
 
 
 <section class="section">
-  <article class="superCard">
-    <h4 class="superCardTitle specialTitle rowcol1">
+  <article class="superCard alt">
+    <h4 class="superCardTitle specialTitle rowcol1 colMax">
+      <span></span>
       <span class="">Planes</span>
     </h4>
     <figure class="superCardFigure rowcol1">
@@ -388,9 +378,9 @@
 
 
 <figure class="musical">
-  <img class="musicalImg" src="" alt="">
-  <figcaption class="musicalCaption">
-    <h3 class="specialTitle">Nuestra música</h3>
+  <img class="musicalImg rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/magazine/musical.jpg" alt="">
+  <figcaption class="musicalCaption rowcol1">
+    <h3 class="specialTitle centerTitle">Nuestra música</h3>
     <p>
       Una banda sonora muy original<br>
       Música en vivo y Dj’s de todo Europa y más allá nos acercan sus últimas creaciones: chill out y fiesta, hay un ritmo para cada momento.
@@ -400,72 +390,13 @@
 
 
 
-<section class="InstagramSection">
-
-  <figure class="instagramSectionItem">
-    <img src="" alt="" class="InstagramImg">
-    <figcaption class="InstagramSectionFigccaption">
-      <p></p>
-      <p></p>
-    </figcaption>
-  </figure>
-
-  <figure class="instagramSectionItem">
-    <img src="" alt="" class="InstagramImg">
-    <figcaption class="InstagramSectionFigccaption">
-      <p></p>
-      <p></p>
-    </figcaption>
-  </figure>
-
-  <figure class="instagramSectionItem">
-    <img src="" alt="" class="InstagramImg">
-    <figcaption class="InstagramSectionFigccaption">
-      <p></p>
-      <p></p>
-    </figcaption>
-  </figure>
-
-  <figure class="instagramSectionItem">
-    <img src="" alt="" class="InstagramImg">
-    <figcaption class="InstagramSectionFigccaption">
-      <p></p>
-      <p></p>
-    </figcaption>
-  </figure>
-
-  <figure class="instagramSectionItem">
-    <img src="" alt="" class="InstagramImg">
-    <figcaption class="InstagramSectionFigccaption">
-      <p></p>
-      <p></p>
-    </figcaption>
-  </figure>
-
-  <figure class="instagramSectionItem">
-    <img src="" alt="" class="InstagramImg">
-    <figcaption class="InstagramSectionFigccaption">
-      <p></p>
-      <p></p>
-    </figcaption>
-  </figure>
-
-  <figure class="instagramSectionItem">
-    <img src="" alt="" class="InstagramImg">
-    <figcaption class="InstagramSectionFigccaption">
-      <p></p>
-      <p></p>
-    </figcaption>
-  </figure>
-
-  <figure class="instagramSectionItem">
-    <img src="" alt="" class="InstagramImg">
-    <figcaption class="InstagramSectionFigccaption">
-      <p></p>
-      <p></p>
-    </figcaption>
-  </figure>
-
+<section class="igBlock">
+  <img class="igLogo" src="<?php echo get_template_directory_uri(); ?>/img/magazine/instagram.png" alt="">
+  <slider class="flex3">
+    <img class="igPhoto" src="<?php echo get_template_directory_uri(); ?>/img/magazine/musical.jpg" alt="">
+    <img class="igPhoto" src="<?php echo get_template_directory_uri(); ?>/img/magazine/musical.jpg" alt="">
+    <img class="igPhoto" src="<?php echo get_template_directory_uri(); ?>/img/magazine/musical.jpg" alt="">
+  </slider>
 </section>
 
 
