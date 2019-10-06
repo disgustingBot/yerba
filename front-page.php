@@ -4,20 +4,22 @@
 <?php get_header(); ?>
 
 
-<section class="ATF">
+<section class="homeATF">
 
-  <video class="ATFvideo rowcol1" id="headerActivator" loop="loop" autoplay playsinline muted>
+  <video class="homeATFvideo rowcol1" id="headerActivator" loop="loop" autoplay playsinline muted>
     <source type="video/mp4" src="<?php echo get_template_directory_uri(); ?>/img/home/shutterstock_25094927_4-1.mp4" alt="Fondo-de-video-del-mediterraneo-desde-arriba" />
   </video>
 
-  <figure class="ATFIsoLogo rowcol1">
-    <img class="ATFLogo" src="<?php echo get_template_directory_uri(); ?>/img/logoCalaBassa.png" alt="">
-    <figcaption class="ATFtitle specialTitle">
+  <figure class="homeATFIsoLogo rowcol1">
+    <img class="homeATFLogo" src="<?php echo get_template_directory_uri(); ?>/img/logoCalaBassa.png" alt="">
+    <figcaption class="specialTitle">
       <h2>More than an experience,<br>a lifestyle</h2>
     </figcaption>
   </figure>
 
-  <flex class="ATFflex flex3">
+  <!-- HEADER -->
+
+  <flex class="homeATFflex flex3">
 
     <figure class="card">
       <img class="standarCardImg" src="<?php echo get_template_directory_uri(); ?>/img/home/localizaciones.jpg" alt="">
@@ -72,14 +74,14 @@
     <figure class="grid">
       <img class="item5050Img rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/view-sandy-beach_23-2147836788.jpg" alt="">
       <figcaption class="itemTitleCenter itemTitle rowcol1">
-        <a href="#"><h5>Ibiza</h5></a>
+        <a href="<?php echo site_url('/ibiza'); ?>"><h5>Ibiza</h5></a>
       </figcaption>
     </figure>
 
     <figure class="grid">
       <img class="item5050Img rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/pal-ski-resort-andorra-pyrenees_79295-10470.jpg" alt="">
       <figcaption class="itemTitleCenter itemTitle rowcol1">
-        <a href="#"><h5>Andorra</h5></a>
+        <a href="<?php echo site_url('/andorra'); ?>"><h5>Andorra</h5></a>
       </figcaption>
     </figure>
   </flex>
@@ -90,7 +92,7 @@
 
 <section class="section">
 
-  <article class="superCard">
+  <article class="superCard alt">
     <h4 class="superCardTitle specialTitle rowcol1 colMax">
       <span class="cbbcEs">CBbC es...</span>
       <span class="">Gastronomía</span>
@@ -193,20 +195,19 @@
         <a href="#"><h5>Montaña</h5></a>
       </figcaption>
     </figure>
-
   </flex>
-
-
-
-
-
-
 </section>
+
+
+
+
+
+
 
 <section class="section">
   <h4 class="centerTitle colMax">
     <span class="magazineTitle1">CBbC</span>
-    <span class="specialTitle magazineTitleBlue">Life</span>
+    <span class="specialTxt">Life</span>
     <span class="magazineTitle3">Magazine</span>
   </h4>
 
