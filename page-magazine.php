@@ -1,94 +1,30 @@
 <?php get_header(); ?>
 
-
-<div class='slider' id="headerActivator">
-
-  <input checked id='slide-1' name='active' type='radio'>
-  <div class='slide'>
-    <div class="slideTextWrapper">
-      <h3 class="slideTitle">Lorem Ipsum</h3>
-      <p class="slideTxt">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate</p>
-    </div>
-  </div>
-
-  <nav class='nav'>
-    <label class='prev' for='slide-4'></label>
-    <label class='next' for='slide-2'></label>
-  </nav>
-  <nav class='dots'>
-    <label class='dot' for='slide-1'></label>
-    <label class='dot' for='slide-2'></label>
-    <label class='dot' for='slide-3'></label>
-    <label class='dot' for='slide-4'></label>
-  </nav>
+<!-- <section class="magazineATF" id="headerActivator"> -->
+<section class="magazineATF">
+<?php
+$args=array(
+  'post_type'=>'post',
+  'posts_per_page'=>3,
+  'tag' => 'carousel',
+);$atf=new WP_Query($args);
+while($atf->have_posts()){$atf->the_post(); ?>
+  <figure class="carus carouselItem rowcol1" style="background-image:url(<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>)">
+    <!-- <img class="carusImg rowcol1" src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt=""> -->
+    <figcaption class="carusCaption rowcol1">
+      <h4 class="carusTitle"><?php the_title(); ?></h4>
+      <p class="carusTxt">
+        <?php echo  get_the_excerpt(); ?>
+      </p>
+    </figcaption>
+  </figure>
+<?php } wp_reset_query(); ?>
 
 
 
-  <input id='slide-2' name='active' type='radio'>
-  <div class='slide'>
-    <div class="slideTextWrapper">
-      <h3 class="slideTitle">Lorem Ipsum</h3>
-      <p class="slideTxt">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate</p>
-    </div>
-  </div>
-
-  <nav class='nav'>
-    <label class='prev' for='slide-1'></label>
-    <label class='next' for='slide-3'></label>
-  </nav>
-
-  <nav class='dots'>
-    <label class='dot' for='slide-1'></label>
-    <label class='dot' for='slide-2'></label>
-    <label class='dot' for='slide-3'></label>
-    <label class='dot' for='slide-4'></label>
-  </nav>
-
-  <input id='slide-3' name='active' type='radio'>
-  <div class='slide'>
-    <div class="slideTextWrapper">
-      <h3 class="slideTitle">Lorem Ipsum</h3>
-      <p class="slideTxt">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate</p>
-    </div>
-  </div>
-
-
-  <nav class='nav'>
-    <label class='prev' for='slide-2'></label>
-    <label class='next' for='slide-4'></label>
-  </nav>
-
-  <nav class='dots'>
-    <label class='dot' for='slide-1'></label>
-    <label class='dot' for='slide-2'></label>
-    <label class='dot' for='slide-3'></label>
-    <label class='dot' for='slide-4'></label>
-  </nav>
-
-  <input id='slide-4' name='active' type='radio'>
-  <div class='slide'>
-    <div class="slideTextWrapper">
-      <h3 class="slideTitle">Lorem Ipsum</h3>
-      <p class="slideTxt">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate</p>
-    </div>
-  </div>
-
-
-  <nav class='nav'>
-    <label class='prev' for='slide-3'></label>
-    <label class='next' for='slide-1'></label>
-  </nav>
-
-  <nav class='dots'>
-    <label class='dot' for='slide-1'></label>
-    <label class='dot' for='slide-2'></label>
-    <label class='dot' for='slide-3'></label>
-    <label class='dot' for='slide-4'></label>
-  </nav>
-
-</div>
-
-
+  <button class="slideButton rowcol1 slideLeft" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="slideButton rowcol1 slideRight" onclick="plusDivs(+1)">&#10095;</button>
+</section>
 
 <!-- HEADER -->
 
@@ -96,19 +32,19 @@
 
 
 <section class="section">
-  <article class="superCard">
-    <h4 class="superCardTitle specialTitle rowcol1 colMax">
-      <span></span>
-      <span class="">News</span>
-    </h4>
-    <figure class="superCardFigure rowcol1">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/home/localizaciones.jpg" alt="" class="superCardImg rowcol1">
-      <figcaption class="">
-        <h5>Dolor sit amet, consectetur adipiscing elit</h5>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </figcaption>
-    </figure>
-  </article>
+
+
+      <h4 class="sectionTitle specialTitle rowcol1 colMax">
+        <span class="cbbcEs"></span>
+        <span class="">News</span>
+      </h4>
+      <figure class="standarCard rowcol1">
+        <img class="standarCardImg rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/localizaciones.jpg" alt="">
+        <figcaption class="">
+          <h5>En nuestros ambientes y restaurantes respirarás y sentirás que hasta el más mínimo detalle está por y para ti.</h5>
+          <p>¿Eres mas de mar o de montaña?  Descubre lugares magicos en los que disfrutar de lo mejor de la vida.</p>
+        </figcaption>
+      </figure>
 
   <flex class="magazineFlex colMax flex3">
     <figure class="standarCard sectionItem">
@@ -143,20 +79,20 @@
 
 
 
-<section class="section">
-  <article class="superCard alt">
-    <h4 class="superCardTitle specialTitle rowcol1 colMax">
-      <span></span>
-      <span class="">Lugares</span>
-    </h4>
-    <figure class="superCardFigure rowcol1">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/home/localizaciones.jpg" alt="" class="superCardImg rowcol1">
-      <figcaption class="">
-        <h5>Dolor sit amet, consectetur adipiscing elit</h5>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </figcaption>
-    </figure>
-  </article>
+<section class="section alt">
+
+
+      <h4 class="sectionTitle specialTitle rowcol1 colMax">
+        <span class="cbbcEs"></span>
+        <span class="">Lugares</span>
+      </h4>
+      <figure class="standarCard rowcol1">
+        <img class="standarCardImg rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/localizaciones.jpg" alt="">
+        <figcaption class="">
+          <h5>En nuestros ambientes y restaurantes respirarás y sentirás que hasta el más mínimo detalle está por y para ti.</h5>
+          <p>¿Eres mas de mar o de montaña?  Descubre lugares magicos en los que disfrutar de lo mejor de la vida.</p>
+        </figcaption>
+      </figure>
 
   <flex class="magazineFlex colMax flex3">
     <figure class="standarCard sectionItem">
@@ -191,19 +127,19 @@
 
 
 <section class="section">
-  <article class="superCard">
-    <h4 class="superCardTitle specialTitle rowcol1 colMax">
-      <span></span>
-      <span class="">Paladar</span>
-    </h4>
-    <figure class="superCardFigure rowcol1">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/home/localizaciones.jpg" alt="" class="superCardImg rowcol1">
-      <figcaption class="">
-        <h5>Dolor sit amet, consectetur adipiscing elit</h5>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </figcaption>
-    </figure>
-  </article>
+
+
+      <h4 class="sectionTitle specialTitle rowcol1 colMax">
+        <span class="cbbcEs"></span>
+        <span class="">Paladar</span>
+      </h4>
+      <figure class="standarCard rowcol1">
+        <img class="standarCardImg rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/localizaciones.jpg" alt="">
+        <figcaption class="">
+          <h5>En nuestros ambientes y restaurantes respirarás y sentirás que hasta el más mínimo detalle está por y para ti.</h5>
+          <p>¿Eres mas de mar o de montaña?  Descubre lugares magicos en los que disfrutar de lo mejor de la vida.</p>
+        </figcaption>
+      </figure>
 
   <flex class="magazineFlex colMax flex3">
     <figure class="standarCard sectionItem">
@@ -325,20 +261,20 @@
 
 
 
-<section class="section">
-  <article class="superCard alt">
-    <h4 class="superCardTitle specialTitle rowcol1 colMax">
-      <span></span>
-      <span class="">Planes</span>
-    </h4>
-    <figure class="superCardFigure rowcol1">
-      <img class="superCardImg rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/localizaciones.jpg" alt="">
-      <figcaption class="">
-        <h5>Dolor sit amet, consectetur adipiscing elit</h5>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </figcaption>
-    </figure>
-  </article>
+<section class="section alt">
+
+
+      <h4 class="sectionTitle specialTitle rowcol1 colMax">
+        <span class="cbbcEs"></span>
+        <span class="">Planes</span>
+      </h4>
+      <figure class="standarCard rowcol1">
+        <img class="standarCardImg rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/localizaciones.jpg" alt="">
+        <figcaption class="">
+          <h5>En nuestros ambientes y restaurantes respirarás y sentirás que hasta el más mínimo detalle está por y para ti.</h5>
+          <p>¿Eres mas de mar o de montaña?  Descubre lugares magicos en los que disfrutar de lo mejor de la vida.</p>
+        </figcaption>
+      </figure>
 
   <flex class="magazineFlex colMax flex3">
     <figure class="standarCard sectionItem">
@@ -392,7 +328,8 @@
 
 <section class="igBlock">
   <img class="igLogo" src="<?php echo get_template_directory_uri(); ?>/img/magazine/instagram.png" alt="">
-  <slider class="flex3">
+  <slider class="flex4">
+    <img class="igPhoto" src="<?php echo get_template_directory_uri(); ?>/img/magazine/musical.jpg" alt="">
     <img class="igPhoto" src="<?php echo get_template_directory_uri(); ?>/img/magazine/musical.jpg" alt="">
     <img class="igPhoto" src="<?php echo get_template_directory_uri(); ?>/img/magazine/musical.jpg" alt="">
     <img class="igPhoto" src="<?php echo get_template_directory_uri(); ?>/img/magazine/musical.jpg" alt="">

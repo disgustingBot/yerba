@@ -18,7 +18,6 @@ const headerHandlerOpt = {
   threshold: .2,
   rootMargin: "0px 0px 0px 0px"
 };
-
 const headerHandler=new IntersectionObserver(entries=>{
   entries.forEach(entry => {
     if(entry.isIntersecting){
@@ -29,7 +28,11 @@ const headerHandler=new IntersectionObserver(entries=>{
   })
 }, headerHandlerOpt);
 // HEADER TRANSPARENT HANDLER
-headerHandler.observe(d.querySelector("#headerActivator"));
+if (d.querySelector("#headerActivator")) {
+  headerHandler.observe(d.querySelector("#headerActivator"));
+} else {
+    d.querySelector(".header").classList.add('headerTop');
+}
 
 // NAVBAR
 const alternateNavBar=()=>{const navBar=d.querySelector("#navBar");if(navBar.classList.contains("navBarActive")){navBar.classList.remove("navBarActive")}else{navBar.classList.add("navBarActive")}}
@@ -46,7 +49,7 @@ const carousel=()=>{j++;
   for(i=0;i<x.length;i++){x[i].classList.add("inactive")}
   if(j>x.length){j=1}
   x[j-1].classList.remove("inactive");
-  setTimeout(carousel, 8000); // Change image every 8 seconds
+  // setTimeout(carousel, 4000); // Change image every N/1000 seconds
 }
 const plusDivs=n=>{showDivs(j+=n)}
 if(x.length>0){showDivs(j);carousel()}
