@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css?family=Bitter|Raleway:300,400&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Amita:400,700|Great+Vibes|Niconne|Tangerine:400,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Allura|Qwigley&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -18,23 +19,49 @@
 
 
     <header class="header">
-      <a class="headerLogoCont" href="<?php echo site_url(''); ?>">
-        <?php if(is_front_page()){ ?><img class="headerLogo" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt=""><?php } ?>
-        <?php if(is_page("magazine")){ ?>CBbC <span class="specialTxt">Live</span> Magazine<?php } ?>
-        <!-- <img class="headerLogo" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt=""> -->
-      </a>
+      <?php if(is_front_page()){ ?>
+        <a class="headerLogoCont" href="<?php echo site_url(''); ?>">
+          <img class="headerLogo" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="">
+        </a>
+      <?php } ?>
+      <?php if(is_page(array("magazine"))){ ?>
+        <a class="headerLogoCont" href="<?php echo site_url('/magazine'); ?>">
+          CBbC <span class="specialTxt">Life</span> Magazine
+        </a>
+      <?php } ?>
       <nav id="navBar" class="headerCont navBar">
-        <a class="headerLink homeLink<?php if(is_front_page()){echo ' headerLinkActive"';} ?>" href="<?php echo site_url(''); ?>">CBbC</a>
-        <a class="headerLink<?php if(is_page("localizacion")){echo ' headerLinkActive"';} ?>" href="<?php echo site_url('/localizacion'); ?>">Localización</a>
-        <a class="headerLink<?php if(is_category("gastronomia")){echo ' headerLinkActive"';} ?>" href="<?php echo site_url('/category/gastronomia'); ?>">Gastronomía</a>
-        <a class="headerLink<?php if(is_category("experiencias")){echo ' headerLinkActive"';} ?>" href="<?php echo site_url('/category/experiencias'); ?>">Experiencias</a>
-        <a class="headerLink<?php if(is_page("about")){echo ' headerLinkActive"';} ?>" href="<?php echo site_url('/about'); ?>">About Us</a>
-        <a class="headerLink<?php if(is_page("eventos")){echo ' headerLinkActive"';} ?>" href="<?php echo site_url('/eventos'); ?>">Eventos</a>
-        <a class="headerLink magazineLink<?php if(is_page("magazine")){echo ' headerLinkActive"';} ?>" href="<?php echo site_url('/magazine'); ?>">CBbC <span class="specialTxt">Live</span> Magazine</a>
+        <a class="subrayable homeLink<?php if(is_front_page()){echo ' subrayado"';} ?>" href="<?php echo site_url(''); ?>">CBbC</a>
+        <a class="subrayable<?php if(is_page("localizacion")){echo ' subrayado"';} ?>" href="<?php echo site_url('/localizacion'); ?>">Localización</a>
+        <a class="subrayable<?php if(is_category("gastronomia")){echo ' subrayado"';} ?>" href="<?php echo site_url('/category/gastronomia'); ?>">Gastronomía</a>
+        <a class="subrayable<?php if(is_category("experiencias")){echo ' subrayado"';} ?>" href="<?php echo site_url('/category/experiencias'); ?>">Experiencias</a>
+        <a class="subrayable<?php if(is_page("about")){echo ' subrayado"';} ?>" href="<?php echo site_url('/about'); ?>">About Us</a>
+        <a class="subrayable<?php if(is_page("eventos")){echo ' subrayado"';} ?>" href="<?php echo site_url('/eventos'); ?>">Eventos</a>
+        <a class="subrayable magazineLink<?php if(is_page("magazine")){echo ' subrayado"';} ?>" href="<?php echo site_url('/magazine'); ?>">CBbC <span class="specialTxt">Life</span> Magazine</a>
         <button class="suscribeButton">+SUSCRIBETE</button>
       </nav>
-      <div class="burger">
+      <div class="burger" onclick="alternateNavBar()">
         <div class="burgerBar"></div><div class="burgerBar"></div><div class="burgerBar"></div>
       </div>
 
     </header>
+
+
+    <menu class="mobileMenu" id="mobileMenu">
+
+      <nav id="navBar" class="navBarAlt">
+        <a class="subrayable homeLink<?php if(is_front_page()){echo ' subrayado"';} ?>" href="<?php echo site_url(''); ?>">CBbC</a>
+        <a class="subrayable<?php if(is_page("localizacion")){echo ' subrayado"';} ?>" href="<?php echo site_url('/localizacion'); ?>">Localización</a>
+        <a class="subrayable<?php if(is_category("gastronomia")){echo ' subrayado"';} ?>" href="<?php echo site_url('/category/gastronomia'); ?>">Gastronomía</a>
+        <a class="subrayable<?php if(is_category("experiencias")){echo ' subrayado"';} ?>" href="<?php echo site_url('/category/experiencias'); ?>">Experiencias</a>
+        <a class="subrayable<?php if(is_page("about")){echo ' subrayado"';} ?>" href="<?php echo site_url('/about'); ?>">About Us</a>
+        <a class="subrayable<?php if(is_page("eventos")){echo ' subrayado"';} ?>" href="<?php echo site_url('/eventos'); ?>">Eventos</a>
+        <a class="subrayable magazineLink<?php if(is_page("magazine")){echo ' subrayado"';} ?>" href="<?php echo site_url('/magazine'); ?>">CBbC <span class="specialTxt">Life</span> Magazine</a>
+        <button class="suscribeButton">+SUSCRIBETE</button>
+      </nav>
+
+
+          <button class="close" onclick="alternateNavBar()">
+            <div class="cross"></div>
+            <div class="cross cross2"></div>
+          </button>
+    </menu>
