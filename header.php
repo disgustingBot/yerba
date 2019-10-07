@@ -19,7 +19,9 @@
 
     <header class="header">
       <a class="headerLogoCont" href="<?php echo site_url(''); ?>">
-        <img class="headerLogo" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="">
+        <?php if(is_front_page()){ ?><img class="headerLogo" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt=""><?php } ?>
+        <?php if(is_page("magazine")){ ?>CBbC <span class="specialTxt">Live</span> Magazine<?php } ?>
+        <!-- <img class="headerLogo" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt=""> -->
       </a>
       <nav id="navBar" class="headerCont navBar">
         <a class="headerLink homeLink<?php if(is_front_page()){echo ' headerLinkActive"';} ?>" href="<?php echo site_url(''); ?>">CBbC</a>
