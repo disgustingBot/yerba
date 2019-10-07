@@ -137,6 +137,13 @@ FIN DE MAPA DE CONTENIDOS */
     --socialItemMarginLeft: auto;
     --footerPadding: 10px;
     --footerContacto: auto;
+
+    /* componentes */
+
+
+
+
+
 }
 
 
@@ -199,14 +206,24 @@ FIN DE MAPA DE CONTENIDOS */
     --socialItemMarginLeft: 0;
     --footerPadding: 10px;
     --footerContacto: 0 0 auto auto;
+
+    /* componentes */
+
+
+
+
   }
+
 }
 
 /* fix for wordpress */
 @media screen and(min-width:783px){:root{
   --topCero: 32px;
   }
+
 }
+
+
 
 /* ---------------------------------------------------------------------------
 ------------------------------------------------------------------------------
@@ -310,10 +327,42 @@ img{object-fit:cover}
   grid-template-columns: repeat(8, 1fr);
   grid-gap: 1rem;
   grid-row-gap: 2rem;
+  align-items: center;
   margin-top: 100px;
   position: relative;
   width: 100%;
 }
+.section>.standarCard {
+  grid-column:3/8;
+}
+.section.alt>.standarCard {
+  grid-column:2/7;
+}
+.alt .sectionTitle{
+  justify-content: space-between;
+  text-align: right;
+}
+.cbbcEs {
+  font-size: 1rem!important;
+  margin-left: -12.5%;
+  margin-right: 30px;
+  font-family: none!important;
+}
+.sectionTitle {
+  margin: 30vh 0;
+  font-size: 4rem;
+  text-align: left;
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  padding: 0 12.5%;
+}
+
+
+
+
+
 
 
 .grid{display:grid}
@@ -776,12 +825,15 @@ input[type="radio"]:checked:nth-of-type(4) + .slide + .nav + .dots .dot:nth-chil
                           6.5.2) =standardCard:
 ------------------------------------------------------------------------------
 --------------------------------------------------------------------------- */
-.standarCard {display: grid;margin:.5rem}
+.standarCard {
+  display: grid;
+  margin:.5rem;
+  height: min-content;
+}
 .standarCardImg {
   height: 30vh;
   width: 100%;
 }
-
 
 /* ---------------------------------------------------------------------------
 ------------------------------------------------------------------------------
@@ -792,38 +844,6 @@ input[type="radio"]:checked:nth-of-type(4) + .slide + .nav + .dots .dot:nth-chil
          transforma en una simple standardCard siendo grande solo porque tiene
          mas espacio para ocupar) */
 
-.superCard {
-  display: grid;
-  grid-column: 2/ span 6;
-  grid-template-columns: 1fr 5fr;
-  grid-gap: inherit;
-}
-.cbbcEs {
-  font-size: 1rem!important;
-  margin-left: -12.5%;
-  font-family: none!important;
-}
-.superCardTitle {
-  margin: auto;
-  font-size: 4rem;
-  text-align: left;
-  width: 100%;
-  z-index: 2;
-  display: flex;
-  align-items: center;
-}
-.superCardFigure {
-  width: 100%;
-  grid-column: 2;
-}
-.superCardImg {
-  height: 400px;
-  width: 100%;
-}
-/* alt styles */
-.superCard.alt{grid-template-columns: 5fr 1fr}
-.alt .superCardTitle{justify-content: space-between;text-align: right;}
-.alt .superCardFigure{grid-column: 1;}
 
 
 /* ---------------------------------------------------------------------------
@@ -850,7 +870,9 @@ input[type="radio"]:checked:nth-of-type(4) + .slide + .nav + .dots .dot:nth-chil
 }
 
 
+.aguantameLosTrapo {
 
+}
 /* ---------------------------------------------------------------------------
 ------------------------------------------------------------------------------
                               6.5.5) =hidshow:
@@ -1046,7 +1068,6 @@ input[type="radio"]:checked:nth-of-type(4) + .slide + .nav + .dots .dot:nth-chil
   margin: auto;
 }
 .igPhoto{
-  /* width: 100%; */
   height: 5rem;
   margin: .5rem;
 }
