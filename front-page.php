@@ -56,19 +56,19 @@
 
 <section class="section">
 
-  <article class="superCard">
-    <h4 class="superCardTitle specialTitle rowcol1 colMax">
+
+    <h4 class="sectionTitle specialTitle rowcol1 colMax">
       <span class="cbbcEs">CBbC es...</span>
       <span class="">Localización</span>
     </h4>
-    <figure class="superCardFigure rowcol1">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/home/localizaciones.jpg" alt="" class="localizacionesHeadImg superCardImg rowcol1">
+    <figure class="standarCard rowcol1">
+      <img class="standarCardImg rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/localizaciones.jpg" alt="">
       <figcaption class="">
         <h5>En nuestros ambientes y restaurantes respirarás y sentirás que hasta el más mínimo detalle está por y para ti.</h5>
         <p>¿Eres mas de mar o de montaña?  Descubre lugares magicos en los que disfrutar de lo mejor de la vida.</p>
       </figcaption>
     </figure>
-  </article>
+
 
   <flex class="colMax flex2">
     <figure class="grid">
@@ -90,21 +90,20 @@
 
 
 
-<section class="section">
+<section class="section alt">
 
-  <article class="superCard alt">
-    <h4 class="superCardTitle specialTitle rowcol1 colMax">
-      <span class="cbbcEs">CBbC es...</span>
-      <span class="">Gastronomía</span>
-    </h4>
-    <figure class="superCardFigure rowcol1">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/home/gastronomia.jpg" alt="" class="gastronomiaHeadImg superCardImg rowcol1">
-      <figcaption class="">
-        <h5>Disfruta de la esencia de la gastronomía en los mejores restauranes.</h5>
-        <p>Cuando te sientes a la mesa, invita a todos tus sentidos. Cada plato presenta colores, sabores, aroma y texturas de auténtica tradición ibicenca. Del mar de un Bullit de Peix, a la tierra de un jamón de pata negra.</p>
-      </figcaption>
-    </figure>
-  </article>
+  <h4 class="sectionTitle specialTitle rowcol1 colMax">
+    <span class="cbbcEs">CBbC es...</span>
+    <span class="">Gastronomía</span>
+  </h4>
+  <figure class="standarCard rowcol1">
+    <img class="standarCardImg rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/localizaciones.jpg" alt="">
+    <figcaption class="">
+      <h5>En nuestros ambientes y restaurantes respirarás y sentirás que hasta el más mínimo detalle está por y para ti.</h5>
+      <p>¿Eres mas de mar o de montaña?  Descubre lugares magicos en los que disfrutar de lo mejor de la vida.</p>
+    </figcaption>
+  </figure>
+
 
   <flex class="flex3 colMax">
 
@@ -166,19 +165,17 @@
 
 <section class="section experiencias">
 
-  <article class="superCard">
-    <h4 class="superCardTitle specialTitle rowcol1 colMax">
-      <span class="cbbcEs">CBbC es...</span>
-      <span class="">Experiencias</span>
-    </h4>
-    <figure class="superCardFigure rowcol1">
-      <img class="superCardImg rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/experiencias.jpg" alt="">
-      <figcaption class="">
-        <h5>Disfruta de la esencia de la gastronomía en los mejores restauranes.</h5>
-        <p>Cuando te sientes a la mesa, invita a todos tus sentidos. Cada plato presenta colores, sabores, aroma y texturas de auténtica tradición ibicenca. Del mar de un Bullit de Peix, a la tierra de un jamón de pata negra.</p>
-      </figcaption>
-    </figure>
-  </article>
+  <h4 class="sectionTitle specialTitle rowcol1 colMax">
+    <span class="cbbcEs ">CBbC es...</span>
+    <span class="">Esperiencias</span>
+  </h4>
+  <figure class="standarCard rowcol1">
+    <img class="standarCardImg rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/localizaciones.jpg" alt="">
+    <figcaption class="">
+      <h5>En nuestros ambientes y restaurantes respirarás y sentirás que hasta el más mínimo detalle está por y para ti.</h5>
+      <p>¿Eres mas de mar o de montaña?  Descubre lugares magicos en los que disfrutar de lo mejor de la vida.</p>
+    </figcaption>
+  </figure>
 
   <flex class="colMax flex2">
 
