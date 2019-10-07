@@ -10,7 +10,7 @@ Text Domain: yerba
 
 
 /* MAPA DE CONTENIDOS:
-
+N) =Font:
 1) =VARIABLES:
 1.1) =Variables de personalizacion de pagina
 1.2) =Variables de cambio visual relacionado a al ancho de la pantalla
@@ -53,6 +53,21 @@ Text Domain: yerba
 
 
 FIN DE MAPA DE CONTENIDOS */
+/* ---------------------------------------------------------------------------
+------------------------------------------------------------------------------
+                               N) =Font:
+------------------------------------------------------------------------------
+--------------------------------------------------------------------------- */
+
+@font-face {
+    font-family: 'tahu';
+         /* Super Modern Browsers */
+    src: url('../fonts/tahu-webfont.woff2') format('woff2'),
+         /* Pretty Modern Browsers */
+         url('../fonts/tahu-webfont.woff') format('woff'),
+         /* Safari, Android, iOS */
+         url('../fonts/Tahu!.ttf') format('truetype');
+}
 
 
 /* ---------------------------------------------------------------------------
@@ -291,11 +306,11 @@ body.gutenberg-editor-page .editor-block-list__block,
 ------------------------------------------------------------------------------
 --------------------------------------------------------------------------- */
 .specialTitle {
-  font-family: 'Satisfy', cursive;
+  font-family: 'tahu', cursive;
 }
 .specialTxt{
   color:var(--color3);
-  font-family: 'Satisfy', cursive;
+  font-family: 'tahu', cursive;
 }
 .centerTitle {
   font-size: 4rem;
