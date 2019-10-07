@@ -32,19 +32,19 @@ while($atf->have_posts()){$atf->the_post(); ?>
 
 
 <section class="section">
-  <article class="superCard">
-    <h4 class="superCardTitle specialTitle rowcol1 colMax">
-      <span></span>
-      <span class="">News</span>
-    </h4>
-    <figure class="superCardFigure rowcol1">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/home/localizaciones.jpg" alt="" class="superCardImg rowcol1">
-      <figcaption class="">
-        <h5>Dolor sit amet, consectetur adipiscing elit</h5>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </figcaption>
-    </figure>
-  </article>
+
+
+      <h4 class="sectionTitle specialTitle rowcol1 colMax">
+        <span class="cbbcEs"></span>
+        <span class="">News</span>
+      </h4>
+      <figure class="standarCard rowcol1">
+        <img class="standarCardImg rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/localizaciones.jpg" alt="">
+        <figcaption class="">
+          <h5>En nuestros ambientes y restaurantes respirarás y sentirás que hasta el más mínimo detalle está por y para ti.</h5>
+          <p>¿Eres mas de mar o de montaña?  Descubre lugares magicos en los que disfrutar de lo mejor de la vida.</p>
+        </figcaption>
+      </figure>
 
   <flex class="magazineFlex colMax flex3">
     <figure class="standarCard sectionItem">
@@ -79,20 +79,20 @@ while($atf->have_posts()){$atf->the_post(); ?>
 
 
 
-<section class="section">
-  <article class="superCard alt">
-    <h4 class="superCardTitle specialTitle rowcol1 colMax">
-      <span></span>
-      <span class="">Lugares</span>
-    </h4>
-    <figure class="superCardFigure rowcol1">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/home/localizaciones.jpg" alt="" class="superCardImg rowcol1">
-      <figcaption class="">
-        <h5>Dolor sit amet, consectetur adipiscing elit</h5>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </figcaption>
-    </figure>
-  </article>
+<section class="section alt">
+
+
+      <h4 class="sectionTitle specialTitle rowcol1 colMax">
+        <span class="cbbcEs"></span>
+        <span class="">Lugares</span>
+      </h4>
+      <figure class="standarCard rowcol1">
+        <img class="standarCardImg rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/localizaciones.jpg" alt="">
+        <figcaption class="">
+          <h5>En nuestros ambientes y restaurantes respirarás y sentirás que hasta el más mínimo detalle está por y para ti.</h5>
+          <p>¿Eres mas de mar o de montaña?  Descubre lugares magicos en los que disfrutar de lo mejor de la vida.</p>
+        </figcaption>
+      </figure>
 
   <flex class="magazineFlex colMax flex3">
     <figure class="standarCard sectionItem">
@@ -127,19 +127,19 @@ while($atf->have_posts()){$atf->the_post(); ?>
 
 
 <section class="section">
-  <article class="superCard">
-    <h4 class="superCardTitle specialTitle rowcol1 colMax">
-      <span></span>
-      <span class="">Paladar</span>
-    </h4>
-    <figure class="superCardFigure rowcol1">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/home/localizaciones.jpg" alt="" class="superCardImg rowcol1">
-      <figcaption class="">
-        <h5>Dolor sit amet, consectetur adipiscing elit</h5>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </figcaption>
-    </figure>
-  </article>
+
+
+      <h4 class="sectionTitle specialTitle rowcol1 colMax">
+        <span class="cbbcEs"></span>
+        <span class="">Paladar</span>
+      </h4>
+      <figure class="standarCard rowcol1">
+        <img class="standarCardImg rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/localizaciones.jpg" alt="">
+        <figcaption class="">
+          <h5>En nuestros ambientes y restaurantes respirarás y sentirás que hasta el más mínimo detalle está por y para ti.</h5>
+          <p>¿Eres mas de mar o de montaña?  Descubre lugares magicos en los que disfrutar de lo mejor de la vida.</p>
+        </figcaption>
+      </figure>
 
   <flex class="magazineFlex colMax flex3">
     <figure class="standarCard sectionItem">
@@ -261,20 +261,20 @@ while($atf->have_posts()){$atf->the_post(); ?>
 
 
 
-<section class="section">
-  <article class="superCard alt">
-    <h4 class="superCardTitle specialTitle rowcol1 colMax">
-      <span></span>
-      <span class="">Planes</span>
-    </h4>
-    <figure class="superCardFigure rowcol1">
-      <img class="superCardImg rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/localizaciones.jpg" alt="">
-      <figcaption class="">
-        <h5>Dolor sit amet, consectetur adipiscing elit</h5>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </figcaption>
-    </figure>
-  </article>
+<section class="section alt">
+
+
+      <h4 class="sectionTitle specialTitle rowcol1 colMax">
+        <span class="cbbcEs"></span>
+        <span class="">Planes</span>
+      </h4>
+      <figure class="standarCard rowcol1">
+        <img class="standarCardImg rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/localizaciones.jpg" alt="">
+        <figcaption class="">
+          <h5>En nuestros ambientes y restaurantes respirarás y sentirás que hasta el más mínimo detalle está por y para ti.</h5>
+          <p>¿Eres mas de mar o de montaña?  Descubre lugares magicos en los que disfrutar de lo mejor de la vida.</p>
+        </figcaption>
+      </figure>
 
   <flex class="magazineFlex colMax flex3">
     <figure class="standarCard sectionItem">
