@@ -1,94 +1,30 @@
 <?php get_header(); ?>
 
-
-<div class='slider' id="headerActivator">
-
-  <input checked id='slide-1' name='active' type='radio'>
-  <div class='slide'>
-    <div class="slideTextWrapper">
-      <h3 class="slideTitle">Lorem Ipsum</h3>
-      <p class="slideTxt">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate</p>
-    </div>
-  </div>
-
-  <nav class='nav'>
-    <label class='prev' for='slide-4'></label>
-    <label class='next' for='slide-2'></label>
-  </nav>
-  <nav class='dots'>
-    <label class='dot' for='slide-1'></label>
-    <label class='dot' for='slide-2'></label>
-    <label class='dot' for='slide-3'></label>
-    <label class='dot' for='slide-4'></label>
-  </nav>
+<!-- <section class="magazineATF" id="headerActivator"> -->
+<section class="magazineATF">
+<?php
+$args=array(
+  'post_type'=>'post',
+  'posts_per_page'=>3,
+  'tag' => 'carousel',
+);$atf=new WP_Query($args);
+while($atf->have_posts()){$atf->the_post(); ?>
+  <figure class="carus carouselItem rowcol1" style="background-image:url(<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>)">
+    <!-- <img class="carusImg rowcol1" src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt=""> -->
+    <figcaption class="carusCaption rowcol1">
+      <h4 class="carusTitle"><?php the_title(); ?></h4>
+      <p class="carusTxt">
+        <?php echo  get_the_excerpt(); ?>
+      </p>
+    </figcaption>
+  </figure>
+<?php } wp_reset_query(); ?>
 
 
 
-  <input id='slide-2' name='active' type='radio'>
-  <div class='slide'>
-    <div class="slideTextWrapper">
-      <h3 class="slideTitle">Lorem Ipsum</h3>
-      <p class="slideTxt">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate</p>
-    </div>
-  </div>
-
-  <nav class='nav'>
-    <label class='prev' for='slide-1'></label>
-    <label class='next' for='slide-3'></label>
-  </nav>
-
-  <nav class='dots'>
-    <label class='dot' for='slide-1'></label>
-    <label class='dot' for='slide-2'></label>
-    <label class='dot' for='slide-3'></label>
-    <label class='dot' for='slide-4'></label>
-  </nav>
-
-  <input id='slide-3' name='active' type='radio'>
-  <div class='slide'>
-    <div class="slideTextWrapper">
-      <h3 class="slideTitle">Lorem Ipsum</h3>
-      <p class="slideTxt">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate</p>
-    </div>
-  </div>
-
-
-  <nav class='nav'>
-    <label class='prev' for='slide-2'></label>
-    <label class='next' for='slide-4'></label>
-  </nav>
-
-  <nav class='dots'>
-    <label class='dot' for='slide-1'></label>
-    <label class='dot' for='slide-2'></label>
-    <label class='dot' for='slide-3'></label>
-    <label class='dot' for='slide-4'></label>
-  </nav>
-
-  <input id='slide-4' name='active' type='radio'>
-  <div class='slide'>
-    <div class="slideTextWrapper">
-      <h3 class="slideTitle">Lorem Ipsum</h3>
-      <p class="slideTxt">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate</p>
-    </div>
-  </div>
-
-
-  <nav class='nav'>
-    <label class='prev' for='slide-3'></label>
-    <label class='next' for='slide-1'></label>
-  </nav>
-
-  <nav class='dots'>
-    <label class='dot' for='slide-1'></label>
-    <label class='dot' for='slide-2'></label>
-    <label class='dot' for='slide-3'></label>
-    <label class='dot' for='slide-4'></label>
-  </nav>
-
-</div>
-
-
+  <button class="slideButton rowcol1 slideLeft" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="slideButton rowcol1 slideRight" onclick="plusDivs(+1)">&#10095;</button>
+</section>
 
 <!-- HEADER -->
 
@@ -392,7 +328,8 @@
 
 <section class="igBlock">
   <img class="igLogo" src="<?php echo get_template_directory_uri(); ?>/img/magazine/instagram.png" alt="">
-  <slider class="flex3">
+  <slider class="flex4">
+    <img class="igPhoto" src="<?php echo get_template_directory_uri(); ?>/img/magazine/musical.jpg" alt="">
     <img class="igPhoto" src="<?php echo get_template_directory_uri(); ?>/img/magazine/musical.jpg" alt="">
     <img class="igPhoto" src="<?php echo get_template_directory_uri(); ?>/img/magazine/musical.jpg" alt="">
     <img class="igPhoto" src="<?php echo get_template_directory_uri(); ?>/img/magazine/musical.jpg" alt="">
