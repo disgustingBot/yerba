@@ -1,14 +1,7 @@
 <?php
 
-// database
-// user: lattedev_gaea
-// name: lattedev_gaea
-// pass: mVLx3OAi21PBW6C0
-// host: localhost
+require_once 'customPosts.php';
 
-// wp-admin
-// user: Zack
-// pass: GF7Fo!M(xggj!%os&n
 
 function gp_setup(){
   wp_enqueue_style('style', get_stylesheet_uri(), NULL, microtime(), 'all');
@@ -38,49 +31,6 @@ add_filter('get_the_archive_title',function($title){
 });
 
 
-// Custom Post Type
-
-function lattedev_restaurants() {
-  register_post_type('restaurant',
-    array(
-      'rewrite' => array('slug' => 'restaurants'),
-      'labels'  => array(
-        'name'          => 'Restaurants',
-        'singular_name' => 'Restarant',
-        'add_new_item'  => 'Add New Restarant',
-        'edit_item'     => 'Edit Restarant'
-      ),
-      'menu-icon'   => 'dashicons-clipboard',
-      'public'      => true,
-      'has_archive' => true,
-      'supports'    => array(
-        'title', 'thumbnail', 'editor', 'excerpt', 'comments'
-      )
-    )
-  );
-}
-add_action('init', 'lattedev_restaurants');
-
-function lattedev_locations() {
-  register_post_type('location',
-    array(
-      'rewrite' => array('slug' => 'locations'),
-      'labels'  => array(
-        'name'          => 'Locations',
-        'singular_name' => 'Location',
-        'add_new_item'  => 'Add New Location',
-        'edit_item'     => 'Edit Location'
-      ),
-      'menu-icon'   => 'dashicons-clipboard',
-      'public'      => true,
-      'has_archive' => true,
-      'supports'    => array(
-        'title', 'thumbnail', 'editor', 'excerpt', 'comments'
-      )
-    )
-  );
-}
-add_action('init', 'lattedev_locations');
 
 
 function ejr_jpeg_quality () {return 100;}
