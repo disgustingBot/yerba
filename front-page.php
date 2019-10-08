@@ -22,21 +22,21 @@
   <flex class="homeATFflex flex3">
 
     <figure class="card">
-      <img class="standarCardImg" src="<?php echo get_template_directory_uri(); ?>/img/home/localizaciones.jpg" alt="">
+      <img class="standarCardImg" src="<?php echo get_template_directory_uri(); ?>/img/home/OCNVW50.jpg" alt="">
       <figcaption class="cardTitle specialTitle">
         <h3>Localizacion</h3>
       </figcaption>
     </figure>
 
     <figure class="card">
-      <img class="standarCardImg" src="<?php echo get_template_directory_uri(); ?>/img/home/gastronomia.jpg" alt="">
+      <img class="standarCardImg" src="<?php echo get_template_directory_uri(); ?>/img/home/952.jpg" alt="">
       <figcaption class="cardTitle specialTitle">
           <h3>Gastronomía</h3>
       </figcaption>
     </figure>
 
     <figure class="card">
-      <img class="standarCardImg" src="<?php echo get_template_directory_uri(); ?>/img/home/experiencias.jpg" alt="">
+      <img class="standarCardImg" src="<?php echo get_template_directory_uri(); ?>/img/home/1485.jpg" alt="">
       <figcaption class="cardTitle specialTitle">
         <h3>Experiencias</h3>
       </figcaption>
@@ -62,7 +62,7 @@
       <span class="">Localización</span>
     </h4>
     <figure class="standarCard rowcol1">
-      <img class="standarCardImg rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/localizaciones.jpg" alt="">
+      <img class="standarCardImg rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/OCNVW50.jpg" alt="">
       <figcaption class="">
         <h5>En nuestros ambientes y restaurantes respirarás y sentirás que hasta el más mínimo detalle está por y para ti.</h5>
         <p>¿Eres mas de mar o de montaña?  Descubre lugares magicos en los que disfrutar de lo mejor de la vida.</p>
@@ -97,7 +97,7 @@
     <span class="">Gastronomía</span>
   </h4>
   <figure class="standarCard rowcol1">
-    <img class="standarCardImg rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/localizaciones.jpg" alt="">
+    <img class="standarCardImg rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/952.jpg" alt="">
     <figcaption class="">
       <h5>En nuestros ambientes y restaurantes respirarás y sentirás que hasta el más mínimo detalle está por y para ti.</h5>
       <p>¿Eres mas de mar o de montaña?  Descubre lugares magicos en los que disfrutar de lo mejor de la vida.</p>
@@ -118,7 +118,7 @@
     </figure>
 
     <figure class="hidshow grid">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/home/9948.jpg" alt="" class="hidshowImg rowcol1">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/home/80.jpg" alt="" class="hidshowImg rowcol1">
       <figcaption class="grid rowcol1">
         <p class="itemTitle rowcol1 itemTitleTR">Soy el nene</p>
         <p class="rowcol1 hidshowTxt">
@@ -128,7 +128,7 @@
     </figure>
 
     <figure class="hidshow grid">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/home/9948.jpg" alt="" class="hidshowImg rowcol1">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/home/7781.jpg" alt="" class="hidshowImg rowcol1">
       <figcaption class="grid rowcol1">
         <p class="itemTitle rowcol1 itemTitleTR">Soy el nene</p>
         <p class="rowcol1 hidshowTxt">
@@ -138,7 +138,7 @@
     </figure>
 
     <figure class="hidshow grid">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/home/9948.jpg" alt="" class="hidshowImg rowcol1">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/home/954.jpg" alt="" class="hidshowImg rowcol1">
       <figcaption class="grid rowcol1">
         <p class="itemTitle rowcol1 itemTitleBR">Soy el nene</p>
         <p class="rowcol1 hidshowTxt">
@@ -148,7 +148,7 @@
     </figure>
 
     <figure class="hidshow grid">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/home/9948.jpg" alt="" class="hidshowImg rowcol1">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/home/1301764.jpg" alt="" class="hidshowImg rowcol1">
       <figcaption class="grid rowcol1">
         <p class="itemTitle rowcol1 itemTitleBR">Soy el nene</p>
         <p class="rowcol1 hidshowTxt">
@@ -167,10 +167,10 @@
 
   <h4 class="sectionTitle specialTitle rowcol1 colMax">
     <span class="cbbcEs ">CBbC es...</span>
-    <span class="">Esperiencias</span>
+    <span class="">Experiencias</span>
   </h4>
   <figure class="standarCard rowcol1">
-    <img class="standarCardImg rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/localizaciones.jpg" alt="">
+    <img class="standarCardImg rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/surfer-ocean_1321-1255.jpg" alt="">
     <figcaption class="">
       <h5>En nuestros ambientes y restaurantes respirarás y sentirás que hasta el más mínimo detalle está por y para ti.</h5>
       <p>¿Eres mas de mar o de montaña?  Descubre lugares magicos en los que disfrutar de lo mejor de la vida.</p>

@@ -33,6 +33,19 @@ add_filter('get_the_archive_title',function($title){
 
 
 
+function excerpt($charNumber){
+  $excerpt = get_the_excerpt();
+  $excerpt = substr($excerpt, 0, $charNumber);
+  $result = substr($excerpt, 0, strrpos($excerpt, ' '));
+  echo $result;
+}
+
+
+
+
+
+
+
 function ejr_jpeg_quality () {return 100;}
 add_filter ('jpeg_quality', 'ejr_jpeg_quality');
 
