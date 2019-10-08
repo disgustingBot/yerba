@@ -25,18 +25,18 @@
 
   <ul class="footerMenu footerMenu1">
     <li class="footerMenuItem"><a href="#">SITEMAP</a></li>
-    <li class="footerMenuItem"><a href="#">Localizacion</a></li>
-    <li class="footerMenuItem"><a href="#">Gastronomia</a></li>
-    <li class="footerMenuItem"><a href="#">Experiencias</a></li>
-    <li class="footerMenuItem"><a href="#">CBbC Life Magazine</a></li>
+    <li class="footerMenuItem"><a href="<?php echo site_url('/localizacion'); ?>">Localizacion</a></li>
+    <li class="footerMenuItem"><a href="<?php echo site_url('/category/gastronomia'); ?>">Gastronomia</a></li>
+    <li class="footerMenuItem"><a href="<?php echo site_url('/category/experiencias'); ?>">Experiencias</a></li>
+    <li class="footerMenuItem"><a href="<?php echo site_url('/magazine'); ?>">CBbC Life Magazine</a></li>
 
   </ul>
   <ul class="footerMenu footerMenu2">
-    <li class="footerMenuItem"><a href="#">Home</a></li>
+    <li class="footerMenuItem"><a href="<?php echo site_url(''); ?>">Home</a></li>
     <li class="footerMenuItem"><a href="#">About Us</a></li>
     <li class="footerMenuItem"><a href="#">Services</a></li>
     <li class="footerMenuItem"><a href="#">Work With Us</a></li>
-    <li class="footerMenuItem"><a href="#">CBbC Magazine</a></li>
+    <li class="footerMenuItem"><a href="<?php echo site_url('/magazine'); ?>">CBbC Magazine</a></li>
     <li class="footerMenuItem"><a href="#">Aviso Legal</a></li>
     <li class="footerMenuItem"><a href="#">Política de Cookies</a></li>
   </ul>
