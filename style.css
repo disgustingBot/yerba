@@ -62,11 +62,11 @@ FIN DE MAPA DE CONTENIDOS */
 @font-face {
     font-family: 'tahu';
          /* Super Modern Browsers */
-    src: url('../fonts/tahu-webfont.woff2') format('woff2'),
+    src: url('fonts/tahu-webfont.woff2') format('woff2'),
          /* Pretty Modern Browsers */
-         url('../fonts/tahu-webfont.woff') format('woff'),
+         url('fonts/tahu-webfont.woff') format('woff'),
          /* Safari, Android, iOS */
-         url('../fonts/Tahu!.ttf') format('truetype');
+         url('fonts/Tahu!.ttf') format('truetype');
 }
 
 
