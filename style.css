@@ -8,6 +8,8 @@ Text Domain: yerba
 */
 
 
+/* TODO: agregar lazyloading de imagenes */
+
 
 /* MAPA DE CONTENIDOS:
 N) =Font:
@@ -44,8 +46,14 @@ N) =Font:
 6.5.5) =musical:
 6.5.6) =mega:
 6.5.7) =show:
+6.6) =BUTTONS:
+6.6.1) =subrayable:
+6.6.2) =suscribeButton:
+6.6.3) =burger:
+6.6.4) =close:
+6.6.5) =slideButton:
 
-6.6) =ayuda:
+6.7) =ayuda:
 
 6.3.2) =section localizaciones:
 6.3.3) =section Gastronomía:
@@ -199,7 +207,7 @@ FIN DE MAPA DE CONTENIDOS */
     /* header */
     --headerGTR:3fr 2fr;
     --headerGTC:100%;
-    --headerMarginTop:-5rem;
+    --headerMarginTop:-4.2rem;
     --headerLogoWidth:100%;
 
     /* ATF */
@@ -313,7 +321,7 @@ body.gutenberg-editor-page .editor-block-list__block,
   font-family: 'tahu', cursive;
 }
 .centerTitle {
-  font-size: 4rem;
+  font-size: 5rem;
   text-align: center;
 }
 /* ---------------------------------------------------------------------------
@@ -364,14 +372,16 @@ img{object-fit:cover}
   font-family: none!important;
 }
 .sectionTitle {
-  margin: 30vh 0;
-  font-size: 4rem;
+  margin: 20vh 0;
+  font-size: 5rem;
   text-align: left;
   width: 100%;
   z-index: 2;
   display: flex;
   align-items: center;
   padding: 0 12.5%;
+  text-transform: capitalize;
+
 }
 
 
@@ -422,9 +432,7 @@ img{object-fit:cover}
                              6.2) =header:
 ------------------------------------------------------------------------------
 --------------------------------------------------------------------------- */
-/* TODO: mejorar el height del header para que no tenga sobrande por debajo */
-/* TODO: hacer que si JS no encuentra a #headerActivator
-         le coloque la clase .headerTop */
+/* TODO: no anda el activador en scroll para firefox */
 .header{
   align-items: center;
   display: grid;
@@ -439,7 +447,7 @@ img{object-fit:cover}
   top:0;
   transition: .4s ease-in-out;
   width: 100%;
-  z-index: 100;
+  z-index: 10;
 }
 .headerTop{background:var(--color2)}
 .headerTop .headerLogo{opacity:1}
@@ -449,6 +457,10 @@ img{object-fit:cover}
   margin: .3rem .75rem;
   width:calc(100% - 1.5rem);
   transition: inherit;
+  text-align: center;
+  font-size: 2rem;
+  color:var(--color1);
+  text-decoration:none;
 }
 .headerLogo{
   height:100%;
@@ -457,78 +469,46 @@ img{object-fit:cover}
   opacity:0;
   transition: inherit;
 }
-/* TODO: hacer la version del menu de navegacion para movil */
 .navBar{
   display:var(--onlyDesktop);
   grid-auto-flow: column;
   justify-content: center;
   grid-gap:.5rem;
 }
-/* TODO: este link con efecto deberia ser un componente */
-.headerLink{
-  color:var(--color1);
-  display: flex;
-  align-items: center;
+
+
+/* TODO: esto deberia ser un componente */
+.mobileMenu{
   align-content: center;
-  margin: 0 auto;
-  position: relative;
-  text-decoration:none;
-  text-transform: uppercase;
-}
-.headerLink::after{
-  content:'';
-  position: absolute;
-  bottom: 6px;
-  width:100%;
-  height: 3px;
-  background:var(--color1);
-  left:0;
-  transform-origin:0;
-  transform:scaleX(0);
-  transition: .3s;
-}
-.headerLink:hover::after{transform-origin:right;transform:scaleX(1);}
-.headerLinkActive::after{transform:scaleX(1);}
-.magazineLink,.homeLink{text-transform: unset;}
-.homeLink{
-  font-weight: bolder;
-  font-size: 1rem;
-  transition: .4s ease-in-out;
-  margin-left:0;
-}
-/* TODO: suscribeButton deberia ser un componente */
-.suscribeButton{
-  align-items: center;
-  border: none;
   background:var(--color2);
-  color:var(--color3);
-  cursor: pointer;
-  display: flex;
-  font-size: .6rem;
-  font:unset;
-  margin-left: auto;
-  padding: .5rem 1rem;
-  width: max-content;
-  transition: .3s;
-}
-.suscribeButton:hover{
-  background:var(--color3);
-  color:var(--color2);
-}
-/* TODO: burger deberia ser un componente */
-.burger{
-  margin:auto;
-  margin-right:.2rem;
-  padding:0 .3rem;
   display:var(--onlyMobile);
+  grid-template-rows: min-content;
+  grid-gap: 1rem;
+  height:100vh;
+  justify-content: center;
+  padding: 2rem;
+  position:fixed;
+  right:-100%;
+  /* right:0; */
+  text-align: center;
+  top:0;
+  width: 100%;
+  z-index: 100;
+  transition:.4s;
 }
-.burgerBar{
-  width: 1.5rem;
-  height: 4px;
-  border-radius: 2px;
-  background: var(--color1);
+.mobileMenu.active{right:0}
+.navBarAlt{
+  display: grid;
+  grid-auto-rows: 3rem;
+  grid-auto-flow: row;
+  justify-content: center;
 }
-.burgerBar:nth-child(2){margin:4px 0}
+
+
+
+
+
+
 
 /* ---------------------------------------------------------------------------
 ------------------------------------------------------------------------------
@@ -654,143 +634,13 @@ img{object-fit:cover}
                             6.4.2) =magazineATF:
 ------------------------------------------------------------------------------
 --------------------------------------------------------------------------- */
-
-input[type="radio"] {
-  height: 0;
-  opacity: 0;
-  width: 0;
-}
-input[type="radio"]:checked ~ .slide {
-  -webkit-transform: translate3d(100%, 0, 0);
-          transform: translate3d(100%, 0, 0);
-}
-input[type="radio"]:checked + .slide {
-  opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-  z-index: 1;
-}
-input[type="radio"]:checked + .slide + .nav {z-index:1}
-input[type="radio"]:checked:nth-of-type(1) + .slide + .nav + .dots .dot:nth-child(1){background-color:#fff}
-input[type="radio"]:checked:nth-of-type(2) + .slide + .nav + .dots .dot:nth-child(2){background-color:#fff}
-input[type="radio"]:checked:nth-of-type(3) + .slide + .nav + .dots .dot:nth-child(3){background-color:#fff}
-input[type="radio"]:checked:nth-of-type(4) + .slide + .nav + .dots .dot:nth-child(4){background-color:#fff}
-
-.slider {
+.magazineATF{
   display: grid;
-  /* height: 100vh; */
   grid-row: 1/3;
+  height: 100vh;
   overflow: hidden;
-  position: relative;
-  width: 100%;
-  /* margin: 100px auto; */
-  padding: 0 100px;
-}
-
-.slideTextWrapper {
-  width: 100%;
-  height: 30%;
-  top: 20%;
-  padding: 10% 20%;
-  position: relative;
-}
-.slideTitle {text-align: center;}
-.slideTxt {text-align: justify;}
-
-.slide {
-  height: 100%;
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
-  -webkit-transform: translate3d(-100%, 0, 0);
-          transform: translate3d(-100%, 0, 0);
-  transition: all 1s ease;
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.slide::after {
-  color: #fff;
-  content: attr(data-content);
-  font-size: 2.5em;
-  font-family: "Consolas" arial, sans-serif;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate3d(-50%, -50%, 0);
-          transform: translate3d(-50%, -50%, 0);
-}
-.slide:nth-of-type(1){background-image:url("img/magazine/40.jpg")}
-.slide:nth-of-type(2){background-image:url("img/magazine/_8100687.jpg")}
-.slide:nth-of-type(3){background-image:url("img/magazine/_8100451.jpg")}
-.slide:nth-of-type(4){background-image:url("img/magazine/_8100518.jpg")}
-
-.nav {
-  padding: 20px;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translate3d(0, -50%, 0);
-          transform: translate3d(0, -50%, 0);
-  width: 100%;
-  z-index: 0;
-}
-
-.prev {
-  cursor: pointer;
-  float: left;
-}
-.prev::after {
-  border-top: 2px solid #fff;
-  border-left: 2px solid #fff;
-  border-radius: 1px;
-  content: "";
-  display: block;
-  height: 20px;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  width: 20px;
-}
-
-.next {
-  cursor: pointer;
-  float: right;
-}
-.next::before {
-  border-top: 2px solid #fff;
-  border-right: 2px solid #fff;
-  border-radius: 1px;
-  content: "";
-  display: block;
-  height: 20px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  width: 20px;
-}
-
-.dots {
-  padding: 20px;
-  padding-bottom: 5rem;
-  position: absolute;
-  bottom: 0;
-  z-index: 1;
-  text-align: center;
   width: 100%;
 }
-
-.dot {
-  border: 2px solid #fff;
-  border-radius: 50%;
-  cursor: pointer;
-  display: inline-block;
-  height: 10px;
-  width: 10px;
-}
-
-
-
 /* ---------------------------------------------------------------------------
 ------------------------------------------------------------------------------
                             6.4.3) =locATF:
@@ -858,6 +708,10 @@ input[type="radio"]:checked:nth-of-type(4) + .slide + .nav + .dots .dot:nth-chil
 .section.alt>.standarCard {
   grid-column:2/7;
 }
+
+.grid2C .standarCard:nth-last-child(2){margin-left :20%}
+.grid2C .standarCard:nth-last-child(1){margin-right:20%}
+
 
 /* ---------------------------------------------------------------------------
 ------------------------------------------------------------------------------
@@ -1001,12 +855,194 @@ input[type="radio"]:checked:nth-of-type(4) + .slide + .nav + .dots .dot:nth-chil
   font-size: 3rem;
 }
 
+/* ---------------------------------------------------------------------------
+------------------------------------------------------------------------------
+                            6.5.9) =carus:
+------------------------------------------------------------------------------
+--------------------------------------------------------------------------- */
+
+
+.carus{
+  display: grid;
+  transition: transform .5s;
+  transform-origin: 100% 0;
+  background-size: cover;
+}
+.carus.inactive{
+  transform:rotate(90deg);
+  transform-origin: 0 100%;
+}
+
+.carusImg{
+  height: 100vh;
+  width: 100%;
+}
+.carusCaption{
+  font-size: .8rem;
+  grid-template-rows: min-content;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  grid-template-columns: 50%;
+}
+.carusTitle{
+  font-size:2rem;
+  margin-bottom:1rem;
+  margin-top: 15vh;
+}
+
+/* ---------------------------------------------------------------------------
+------------------------------------------------------------------------------
+                            6.6) =BUTTONS:
+------------------------------------------------------------------------------
+--------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------
+------------------------------------------------------------------------------
+                          6.6.1) =subrayable:
+------------------------------------------------------------------------------
+--------------------------------------------------------------------------- */
+.subrayable{
+  color:var(--color1);
+  display: flex;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+  position: relative;
+  text-decoration:none;
+  text-transform: uppercase;
+}
+.subrayable::after{
+  content:'';
+  position: absolute;
+  bottom: 6px;
+  width:100%;
+  height: 3px;
+  background:var(--color1);
+  left:0;
+  transform-origin:0;
+  transform:scaleX(0);
+  transition: .3s;
+}
+.subrayable:hover::after{transform-origin:right;transform:scaleX(1);}
+.subrayado::after{transform:scaleX(1);}
+.magazineLink,.homeLink{text-transform: unset;}
+.homeLink{
+  font-weight: bolder;
+  font-size: 1rem;
+  transition: .4s ease-in-out;
+  margin-left:0;
+}
+
+
+/* ---------------------------------------------------------------------------
+------------------------------------------------------------------------------
+                          6.6.2) =suscribeButton:
+------------------------------------------------------------------------------
+--------------------------------------------------------------------------- */
+.suscribeButton{
+  align-items: center;
+  border: none;
+  background:var(--color2);
+  color:var(--color3);
+  cursor: pointer;
+  display: flex;
+  font-size: .6rem;
+  font:unset;
+  margin-left: auto;
+  padding: .5rem 1rem;
+  width: max-content;
+  transition: .3s;
+}
+.suscribeButton:hover{
+  background:var(--color3);
+  color:var(--color2);
+}
+
+
+/* ---------------------------------------------------------------------------
+------------------------------------------------------------------------------
+                          6.6.3) =burger:
+------------------------------------------------------------------------------
+--------------------------------------------------------------------------- */
+.burger{
+  margin:auto;
+  margin-right:.2rem;
+  padding:0 .3rem;
+  display:var(--onlyMobile);
+}
+.burgerBar{
+  width: 1.5rem;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--color1);
+}
+.burgerBar:nth-child(2){margin:4px 0}
+
 
 
 
 /* ---------------------------------------------------------------------------
 ------------------------------------------------------------------------------
-                            6.6) =ayuda:
+                          6.6.4) =close:
+------------------------------------------------------------------------------
+--------------------------------------------------------------------------- */
+.close{
+  background: transparent;
+  border:none;
+  display: var(--onlyMobile);
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  position:absolute;
+  top:0;
+  right: 0;
+  margin: .7rem;
+  transform: translateX(calc(30px + .7rem));
+  transition: .3s;
+  transition-delay: .7s;
+}
+.cross{
+  background: var(--color1);
+  border-radius: 2px;
+  height: 4px;
+  position: absolute;
+  transform-origin: center;
+  width: 100%;
+  transition: .3s;
+  transition-delay: 1s;
+}
+.active .close {transform:translateX(0)}
+.active .cross {transform:rotate( 45deg)}
+.active .cross2{transform:rotate(-45deg)}
+
+
+
+/* ---------------------------------------------------------------------------
+------------------------------------------------------------------------------
+                          6.6.5) =slideButton:
+------------------------------------------------------------------------------
+--------------------------------------------------------------------------- */
+.slideButton{
+  background-color: red;
+  background: linear-gradient(to left, transparent, rgba(0,0,0,.5));
+  border: none;
+  color:white;
+  height: 100%;
+  font-size: 2.5rem;
+  cursor: pointer;
+  padding-top: 30vh;
+  width: 10%;
+  z-index: 2;
+}
+.slideRight{
+  margin-left: auto;
+  background: linear-gradient(to right, transparent, rgba(0,0,0,.5));
+}
+
+
+/* ---------------------------------------------------------------------------
+------------------------------------------------------------------------------
+                            6.7) =ayuda:
 ------------------------------------------------------------------------------
 --------------------------------------------------------------------------- */
 .ayuda{
@@ -1038,10 +1074,12 @@ input[type="radio"]:checked:nth-of-type(4) + .slide + .nav + .dots .dot:nth-chil
 
 
 
-
-
-
+/* TODO: rincon de Tomi... trata de hacer algo con él */
+/* TODO: cuando hagas responsive tenes cosas al final por acomodar */
 /* TODO: acomodar esto, organizar nombres y tal */
+/* TODO: cuando acomodes esto fijate de no romper nada */
+/* TODO: hacelo con mucho amor y criterio y sin hardcode porfis */
+/* TODO: todas estas clases estan siendo usadas en algun lado */
 /* Items with images */
 .itemTitle {
   background: white;
@@ -1063,6 +1101,7 @@ input[type="radio"]:checked:nth-of-type(4) + .slide + .nav + .dots .dot:nth-chil
 .itemTitle a{text-decoration:none;color:var(--color1)}
 
 /* ------------------------------------------ */
+/* TODO: esto tiene un nombre muy de mierda seguramente podria ser mejor */
 .item5050Img {
   height: 80vh;
   width: 100%;
@@ -1085,9 +1124,11 @@ input[type="radio"]:checked:nth-of-type(4) + .slide + .nav + .dots .dot:nth-chil
   margin: .5rem;
 }
 
+
+/* TODO: con esto tampoco supe que hacer */
 /* ---------------------------------------------------------------------------
 ------------------------------------------------------------------------------
-                            6.3.3) =EXPERIENCIAS SECTION FRONT-PAGE:
+                             =EXPERIENCIAS SECTION FRONT-PAGE:
 ------------------------------------------------------------------------------
 --------------------------------------------------------------------------- */
 .experiencasSection {
@@ -1101,7 +1142,7 @@ input[type="radio"]:checked:nth-of-type(4) + .slide + .nav + .dots .dot:nth-chil
 
 /* ---------------------------------------------------------------------------
 ------------------------------------------------------------------------------
-                              5.N) =MAGAZINE SECTION FRONT-PAGE:
+                               =MAGAZINE SECTION FRONT-PAGE:
 ------------------------------------------------------------------------------
 --------------------------------------------------------------------------- */
 
