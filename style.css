@@ -372,8 +372,8 @@ img{object-fit:cover}
   font-family: none!important;
 }
 .sectionTitle {
-  margin: 20vh 0;
-  font-size: 5rem;
+  margin: 15vh auto auto auto;
+  font-size: 3.5rem;
   text-align: left;
   width: 100%;
   z-index: 2;
@@ -381,6 +381,7 @@ img{object-fit:cover}
   align-items: center;
   padding: 0 12.5%;
   text-transform: capitalize;
+  font-weight: 200;
 
 }
 
@@ -699,7 +700,7 @@ img{object-fit:cover}
   height: min-content;
 }
 .standarCardImg {
-  height: 30vh;
+  height: 40vh;
   width: 100%;
 }
 .section>.standarCard {
