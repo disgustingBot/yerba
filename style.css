@@ -62,21 +62,6 @@ N) =Font:
 
 
 FIN DE MAPA DE CONTENIDOS */
-/* ---------------------------------------------------------------------------
-------------------------------------------------------------------------------
-                               N) =Font:
-------------------------------------------------------------------------------
---------------------------------------------------------------------------- */
-
-@font-face {
-    font-family: 'tahu';
-         /* Super Modern Browsers */
-    src: url('fonts/tahu-webfont.woff2') format('woff2'),
-         /* Pretty Modern Browsers */
-         url('fonts/tahu-webfont.woff') format('woff'),
-         /* Safari, Android, iOS */
-         url('fonts/Tahu!.ttf') format('truetype');
-}
 
 
 /* ---------------------------------------------------------------------------
@@ -382,7 +367,15 @@ body.gutenberg-editor-page .editor-block-list__block,
 --------------------------------------------------------------------------- */
 
 body {
-  font-family: 'Abhaya Libre', serif;
+
+@font-face {
+    font-family: 'tahu';
+         /* Super Modern Browsers */
+    src: url('fonts/tahu-webfont.woff2') format('woff2'),
+         /* Pretty Modern Browsers */
+         url('fonts/tahu-webfont.woff') format('woff'),
+         /* Safari, Android, iOS */
+         url('fonts/Tahu!.ttf') format('truetype');
 }
 
 .specialTitle {
@@ -458,8 +451,15 @@ img{object-fit:cover}
   font-weight: 200;
 
 }
-
-
+.sectionTitle a:hover {
+  text-shadow: 10px 10px 0 var(--color3);
+}
+.sectionTitle a{
+  color: inherit;
+  text-decoration: none;
+  transition:.3s;
+  text-shadow: 2px 2px 0 var(--color3);
+}
 
 
 
@@ -712,7 +712,7 @@ img{object-fit:cover}
 .homeATFCopy {font-size: var(--homeATFCopyFont); margin-top: 1rem;}
 
 .homeATFflex{
-  grid-row: 2/4;
+  grid-row: 2/3;
   grid-column: 1;
   padding:5% 12.5%;
 }
@@ -790,7 +790,7 @@ img{object-fit:cover}
   height: min-content;
 }
 .standarCardImg {
-  height: var(--standarCardImgHeight);
+  height: 40vh;
   width: 100%;
 }
 .section>.standarCard {
