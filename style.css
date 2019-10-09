@@ -1,11 +1,12 @@
 /*
-Theme Name: yerba (theme for CBbC)
-Author: Lattedev
-Author URI: https://www.lattedev.com
-Description: Wordpress theme custom developed for CbBC Group by lattedev
+Theme Name: CBbC official theme
+Author: Gaeadev
+Author URI: https://www.gaeapeople.com
+Description: Wordpress theme custom developed for CbBC Group by Gaeadev
 Version: 1.0
 Text Domain: yerba
 */
+
 
 
 /* TODO: agregar lazyloading de imagenes */
@@ -136,7 +137,7 @@ FIN DE MAPA DE CONTENIDOS */
 
 
     /* ATF */
-
+  --homeATFCopyFont: 2rem;
 
 
     /*Footer*/
@@ -166,6 +167,35 @@ FIN DE MAPA DE CONTENIDOS */
 
     /* componentes */
 
+    /* estructura */
+    --sectionMarginTopBottom: 50px;
+    --sectionStandarCardGridC: 1/9;
+    --sectionAltStandarCardGridC: 1/9;
+    --sectionTitlePadding: 0 8%;
+    --cbbcEsMarginL: 0;
+    --cbbcEsMarginR: 0;
+    --itemTitlePadding: .75rem 3rem;
+    --sectionStandarCardTxtPadding: 0 10px;
+    --sectionTitleMargin: 20vh auto auto auto;
+
+
+
+    /* front-page */
+
+    --flex5050Flex: auto;
+    --item5050Img: 40vh;
+    --centerTitleFontSize: 3rem;
+    --restaurantFlexDisplay: block;
+    --hidShowHeight: 30vh;
+    --hidShowOpacity: 1;
+    --hidShowTxtFontSize: 1rem;
+
+
+
+
+
+
+
 
 
 
@@ -183,7 +213,15 @@ FIN DE MAPA DE CONTENIDOS */
                           2.1) min-width:  =360px
 ------------------------------------------------------------------------------
 --------------------------------------------------------------------------- */
-@media screen and (min-width: 360px){:root {--sizeR: calc(calc(var(--sizeRa) * 1px) + (var(--sizeRb) - var(--sizeRa)) * ((100vw - 360px) / (768 - 360)))}}
+@media screen and (min-width: 360px){:root {
+  --sizeR: calc(calc(var(--sizeRa) * 1px) + (var(--sizeRb) - var(--sizeRa)) * ((100vw - 360px) / (768 - 360)))
+
+
+  /* estructura */
+
+  }}
+
+
 /* ---------------------------------------------------------------------------
 ------------------------------------------------------------------------------
                           2.2) min-width:  =576px
@@ -237,9 +275,31 @@ FIN DE MAPA DE CONTENIDOS */
     --socialContainerMarginLeft: .8rem;
 
     /* componentes */
+    --standarCardImgHeight: 20vh;
+    --sectionTitleMargin: 5vh auto auto auto;
 
 
 
+    /* estructura */
+    --sectionMarginTopBottom: 50px;
+
+    --sectionStandarCardGridC: 3/8;
+    --sectionAltStandarCardGridC: 2/7;
+    --sectionTitlePadding: 0 12.5%;
+    --cbbcEsMarginL: -12.5%;
+    --cbbcEsMarginR: 30px;
+    --itemTitlePadding: .75rem 1.5rem;
+    --sectionStandarCardTxtPadding: 0;
+
+    /* front-page */
+
+    --flex5050Flex: 2 1 calc(50% - 1rem);
+    --item5050Img: 40vh;
+    --centerTitleFontSize: 5rem;
+    --restaurantFlexDisplay: flex;
+    --hidShowHeight: 50vh;
+    --hidShowOpacity: 0;
+    --hidShowTxtFontSize: .8rem;
 
   }
 
@@ -282,9 +342,16 @@ FIN DE MAPA DE CONTENIDOS */
   :root {
     --sizeR: calc(var(--sizeRd) * 1px);
 
+    /* componentes */
+    --standarCardImgHeight: 30vh;
+    --sectionTitleMargin: 10vh auto auto auto;
+
 
     /* Footer */
       --footerMenuFontSize: 1rem;
+
+      /* front-page */
+      --item5050Img: 80vh;
   }
 }
 
@@ -313,6 +380,11 @@ body.gutenberg-editor-page .editor-block-list__block,
                               3) =TIPOGRAFIAS:
 ------------------------------------------------------------------------------
 --------------------------------------------------------------------------- */
+
+body {
+  font-family: 'Abhaya Libre', serif;
+}
+
 .specialTitle {
   font-family: 'tahu', cursive;
 }
@@ -321,7 +393,7 @@ body.gutenberg-editor-page .editor-block-list__block,
   font-family: 'tahu', cursive;
 }
 .centerTitle {
-  font-size: 5rem;
+  font-size: var(--centerTitleFontSize);
   text-align: center;
 }
 /* ---------------------------------------------------------------------------
@@ -357,7 +429,8 @@ img{object-fit:cover}
   grid-gap: 1rem;
   grid-row-gap: 2rem;
   align-items: center;
-  margin-top: 100px;
+  margin-top: var(--sectionMarginTopBottom);
+  margin-bottom: var(--sectionMarginTopBottom);
   position: relative;
   width: 100%;
 }
@@ -367,20 +440,22 @@ img{object-fit:cover}
 }
 .cbbcEs {
   font-size: 1rem!important;
-  margin-left: -12.5%;
-  margin-right: 30px;
+  margin-left: var(--cbbcEsMarginL);
+  margin-right: var(--cbbcEsMarginR);
   font-family: none!important;
+  white-space: nowrap;
 }
 .sectionTitle {
-  margin: 20vh 0;
-  font-size: 5rem;
+  margin: var(--sectionTitleMargin);
+  font-size: 3.5rem;
   text-align: left;
   width: 100%;
   z-index: 2;
   display: flex;
   align-items: center;
-  padding: 0 12.5%;
+  padding: var(--sectionTitlePadding);
   text-transform: capitalize;
+  font-weight: 200;
 
 }
 
@@ -399,6 +474,16 @@ img{object-fit:cover}
 .flex2>*{flex:2 1 calc(50% - 1rem)}
 .flex3>*{flex:3 1 calc(33% - 1rem)}
 .flex4>*{flex:4 1 calc(25% - 1rem)}
+.flex5050>* {flex: var(--flex5050Flex)}
+.restaurantFlex {display: var(--restaurantFlexDisplay)}
+
+/* ---------------------------------------------------------------------------
+------------------------------------------------------------------------------
+                               6) =COMPONENTES:
+------------------------------------------------------------------------------
+--------------------------------------------------------------------------- */
+
+
 
 /* ---------------------------------------------------------------------------
 ------------------------------------------------------------------------------
@@ -607,9 +692,10 @@ img{object-fit:cover}
   grid-template-rows: 100vh 1fr;
   width: 100%;
 }
+
 .homeATFvideo {
   grid-row: 1/-1;
-  height: 110vh;
+  height: 120vh;
   object-fit: cover;
   width: 100%;
 }
@@ -620,11 +706,15 @@ img{object-fit:cover}
   margin: auto;
   text-align: center;
 }
+
 .homeATFLogo{margin:auto;}
+
+.homeATFCopy {font-size: var(--homeATFCopyFont); margin-top: 1rem;}
+
 .homeATFflex{
   grid-row: 2/4;
   grid-column: 1;
-  padding:0 12.5%;
+  padding:5% 12.5%;
 }
 
 
@@ -686,7 +776,8 @@ img{object-fit:cover}
   margin: .5rem;
 }
 .card:hover{box-shadow:0 14px 28px rgba(0,0,0,0.25),0 10px 10px rgba(0,0,0,0.22)}
-.cardTitle{padding:0 1em}
+
+.cardTitle{padding: 0 2rem}
 
 /* ---------------------------------------------------------------------------
 ------------------------------------------------------------------------------
@@ -699,15 +790,24 @@ img{object-fit:cover}
   height: min-content;
 }
 .standarCardImg {
-  height: 30vh;
+  height: var(--standarCardImgHeight);
   width: 100%;
 }
 .section>.standarCard {
-  grid-column:3/8;
+  grid-column: var(--sectionStandarCardGridC);
+}
+
+.section>.standarCard figcaption{
+  padding: var(--sectionStandarCardTxtPadding);
 }
 .section.alt>.standarCard {
-  grid-column:2/7;
+  grid-column: var(--sectionAltStandarCardGridC);
 }
+
+
+.standarCard h6 {font-size: .9rem; margin: .8rem 0;}
+.standarCard p {font-size: .8rem;}
+
 
 .grid2C .standarCard:nth-last-child(2){margin-left :20%}
 .grid2C .standarCard:nth-last-child(1){margin-right:20%}
@@ -745,7 +845,7 @@ img{object-fit:cover}
                               6.5.4) =hidshow:
 ------------------------------------------------------------------------------
 --------------------------------------------------------------------------- */
-.hidshow{height:50vh}
+.hidshow{height:var(--hidShowHeight)}
 .hidshowImg {
   width: 100%;
   height: 100%;
@@ -756,10 +856,10 @@ img{object-fit:cover}
 .hidshowTxt {
   background: rgba(255,255,255, 0.4);
   display: flex;
-  font-size: .8rem;
+  font-size: var(--hidShowTxtFontSize);
   height: 100%;
   margin: auto;
-  opacity: 0;
+  opacity: var(--hidShowOpacity);
   align-items: center;
   align-content: center;
   padding:3rem 10% 0 10%;
@@ -1073,7 +1173,6 @@ img{object-fit:cover}
 
 
 
-
 /* TODO: rincon de Tomi... trata de hacer algo con él */
 /* TODO: cuando hagas responsive tenes cosas al final por acomodar */
 /* TODO: acomodar esto, organizar nombres y tal */
@@ -1086,7 +1185,7 @@ img{object-fit:cover}
   /* width: max-content; */
   max-width: 90%;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  padding: .75rem 1.5rem;
+  padding: var(--itemTitlePadding);
   text-align: center;
   transition: .25s;
   border-radius: 2px;
@@ -1103,7 +1202,7 @@ img{object-fit:cover}
 /* ------------------------------------------ */
 /* TODO: esto tiene un nombre muy de mierda seguramente podria ser mejor */
 .item5050Img {
-  height: 80vh;
+  height: var(--item5050Img);
   width: 100%;
 }
  /* ------------------------------------------ */
