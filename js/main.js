@@ -13,6 +13,8 @@ w.onload=()=>{
   }
 }
 
+const header = d.querySelector(".header");
+// HEADER TRANSPARENT HANDLER
 const headerHandlerOpt = {
   root: null,
   threshold: .2,
@@ -20,21 +22,21 @@ const headerHandlerOpt = {
 };
 const headerHandler=new IntersectionObserver(entries=>{
   entries.forEach(entry => {
-    if(entry.isIntersecting){
-      d.querySelector(".header").classList.remove('headerTop');
-    }else{
-      d.querySelector(".header").classList.add('headerTop');
-    }
+    if(entry.isIntersecting){header.classList.remove('headerTop')}else{header.classList.add('headerTop')}
   })
 }, headerHandlerOpt);
 // HEADER TRANSPARENT HANDLER
-if (d.querySelector("#headerActivator")) {
-  headerHandler.observe(d.querySelector("#headerActivator"));
-} else {
-    d.querySelector(".header").classList.add('headerTop');
-}
+if(d.querySelector("#headerActivator")){headerHandler.observe(d.querySelector("#headerActivator"))}else{header.classList.add('headerTop')}
 
-// NAVBAR
+
+
+
+
+
+
+
+
+// NAVBAR HANDLER
 const alternateNavBar=()=>{const navBar=d.querySelector("#mobileMenu");if(navBar.classList.contains("active")){navBar.classList.remove("active")}else{navBar.classList.add("active")}}
 
 // SLIDER:

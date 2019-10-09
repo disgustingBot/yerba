@@ -61,21 +61,6 @@ N) =Font:
 
 
 FIN DE MAPA DE CONTENIDOS */
-/* ---------------------------------------------------------------------------
-------------------------------------------------------------------------------
-                               N) =Font:
-------------------------------------------------------------------------------
---------------------------------------------------------------------------- */
-
-@font-face {
-    font-family: 'tahu';
-         /* Super Modern Browsers */
-    src: url('fonts/tahu-webfont.woff2') format('woff2'),
-         /* Pretty Modern Browsers */
-         url('fonts/tahu-webfont.woff') format('woff'),
-         /* Safari, Android, iOS */
-         url('fonts/Tahu!.ttf') format('truetype');
-}
 
 
 /* ---------------------------------------------------------------------------
@@ -313,6 +298,17 @@ body.gutenberg-editor-page .editor-block-list__block,
                               3) =TIPOGRAFIAS:
 ------------------------------------------------------------------------------
 --------------------------------------------------------------------------- */
+
+@font-face {
+    font-family: 'tahu';
+         /* Super Modern Browsers */
+    src: url('fonts/tahu-webfont.woff2') format('woff2'),
+         /* Pretty Modern Browsers */
+         url('fonts/tahu-webfont.woff') format('woff'),
+         /* Safari, Android, iOS */
+         url('fonts/Tahu!.ttf') format('truetype');
+}
+
 .specialTitle {
   font-family: 'tahu', cursive;
 }
@@ -630,7 +626,7 @@ img{object-fit:cover}
 }
 .homeATFLogo{margin:auto;}
 .homeATFflex{
-  grid-row: 2/4;
+  grid-row: 2/3;
   grid-column: 1;
   padding:0 12.5%;
 }
