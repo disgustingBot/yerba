@@ -35,12 +35,9 @@
 
 <section>
   <figure class="hidshow grid">
-    <img src="<?php echo get_template_directory_uri(); ?>/img/home/9948.jpg" alt="" class="hidshowImg rowcol1">
+    <img src="<?php echo get_template_directory_uri(); ?>/img/ibiza/20.jpg" alt="" class="hidshowImg rowcol1">
     <figcaption class="grid rowcol1">
-      <p class="itemTitle rowcol1 itemTitleCenter">Soy el nene</p>
-      <!-- <p class="rowcol1 hidshowTxt">
-        Et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga
-      </p> -->
+      <p class="itemTitle rowcol1 itemTitleCenter">Una banda sonora muy original</p>
     </figcaption>
   </figure>
 
@@ -48,30 +45,30 @@
   <flex class="flex2">
 
     <figure class="hidshow grid">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/home/9948.jpg" alt="" class="hidshowImg rowcol1">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/ibiza/21.jpg" alt="" class="hidshowImg rowcol1">
       <figcaption class="grid rowcol1">
-        <p class="itemTitle rowcol1 itemTitleTR">Soy el nene</p>
+        <p class="itemTitle rowcol1 itemTitleTR">Motos de agua</p>
       </figcaption>
     </figure>
 
     <figure class="hidshow grid">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/home/9948.jpg" alt="" class="hidshowImg rowcol1">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/ibiza/22.jpg" alt="" class="hidshowImg rowcol1">
       <figcaption class="grid rowcol1">
-        <p class="itemTitle rowcol1 itemTitleTR">Soy el nene</p>
+        <p class="itemTitle rowcol1 itemTitleTR">Cenas románticas</p>
       </figcaption>
     </figure>
 
     <figure class="hidshow grid">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/home/9948.jpg" alt="" class="hidshowImg rowcol1">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/ibiza/23.jpg" alt="" class="hidshowImg rowcol1">
       <figcaption class="grid rowcol1">
-        <p class="itemTitle rowcol1 itemTitleTR">Soy el nene</p>
+        <p class="itemTitle rowcol1 itemTitleTR">Cenas románticas</p>
       </figcaption>
     </figure>
 
     <figure class="hidshow grid">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/home/9948.jpg" alt="" class="hidshowImg rowcol1">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/ibiza/24.jpg" alt="" class="hidshowImg rowcol1">
       <figcaption class="grid rowcol1">
-        <p class="itemTitle rowcol1 itemTitleTR">Soy el nene</p>
+        <p class="itemTitle rowcol1 itemTitleTR">Una banda sonora muy original</p>
       </figcaption>
     </figure>
   </flex>
@@ -91,10 +88,11 @@
 
 <flex class="flex3 colMax">
 
+
   <figure class="hidshow grid">
-    <img src="<?php echo get_template_directory_uri(); ?>/img/home/9948.jpg" alt="" class="hidshowImg rowcol1">
+    <img src="<?php echo get_template_directory_uri(); ?>/img/home/7.jpg" alt="" class="hidshowImg rowcol1">
     <figcaption class="grid rowcol1">
-      <p class="itemTitle rowcol1 itemTitleTR">Soy el nene</p>
+      <p class="itemTitle rowcol1 itemTitleTR">Restaurante CBbC</p>
       <p class="rowcol1 hidshowTxt">
         Et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga
       </p>
@@ -102,9 +100,13 @@
   </figure>
 
   <figure class="hidshow grid">
-    <img src="<?php echo get_template_directory_uri(); ?>/img/home/9948.jpg" alt="" class="hidshowImg rowcol1">
+
+    <img src="<?php echo get_template_directory_uri(); ?>/img/home/8.jpg" alt="" class="hidshowImg rowcol1">
+
+
+
     <figcaption class="grid rowcol1">
-      <p class="itemTitle rowcol1 itemTitleTR">Soy el nene</p>
+      <p class="itemTitle rowcol1 itemTitleTR">Chiringuito CBbC</p>
       <p class="rowcol1 hidshowTxt">
         Et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga
       </p>
@@ -112,9 +114,11 @@
   </figure>
 
   <figure class="hidshow grid">
-    <img src="<?php echo get_template_directory_uri(); ?>/img/home/9948.jpg" alt="" class="hidshowImg rowcol1">
+
+    <img src="<?php echo get_template_directory_uri(); ?>/img/home/shushi.jpg" alt="" class="hidshowImg rowcol1">
+
     <figcaption class="grid rowcol1">
-      <p class="itemTitle rowcol1 itemTitleTR">Soy el nene</p>
+      <p class="itemTitle rowcol1 itemTitleTR">Sushi CBbC</p>
       <p class="rowcol1 hidshowTxt">
         Et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga
       </p>
@@ -122,9 +126,12 @@
   </figure>
 
   <figure class="hidshow grid">
-    <img src="<?php echo get_template_directory_uri(); ?>/img/home/9948.jpg" alt="" class="hidshowImg rowcol1">
+
+    <img src="<?php echo get_template_directory_uri(); ?>/img/home/333.jpg" alt="" class="hidshowImg rowcol1">
+
+
     <figcaption class="grid rowcol1">
-      <p class="itemTitle rowcol1 itemTitleBR">Soy el nene</p>
+      <p class="itemTitle rowcol1 itemTitleBR">Barra Gourmet</p>
       <p class="rowcol1 hidshowTxt">
         Et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga
       </p>
@@ -132,15 +139,17 @@
   </figure>
 
   <figure class="hidshow grid">
-    <img src="<?php echo get_template_directory_uri(); ?>/img/home/9948.jpg" alt="" class="hidshowImg rowcol1">
+
+    <img src="<?php echo get_template_directory_uri(); ?>/img/home/10.jpg" alt="" class="hidshowImg rowcol1">
+
+
     <figcaption class="grid rowcol1">
-      <p class="itemTitle rowcol1 itemTitleBR">Soy el nene</p>
+      <p class="itemTitle rowcol1 itemTitleBR">Snack CBbC</p>
       <p class="rowcol1 hidshowTxt">
         Et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga
       </p>
     </figcaption>
   </figure>
-
 </flex>
 
 
