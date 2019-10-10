@@ -161,7 +161,7 @@ FIN DE MAPA DE CONTENIDOS */
     --cbbcEsMarginR: 0;
     --itemTitlePadding: .75rem 3rem;
     --sectionStandarCardTxtPadding: 0 10px;
-    --sectionTitleMargin: 20vh auto auto auto;
+    --sectionTitleMargin: 200px;
 
 
 
@@ -174,6 +174,12 @@ FIN DE MAPA DE CONTENIDOS */
     --hidShowHeight: 30vh;
     --hidShowOpacity: 1;
     --hidShowTxtFontSize: 1rem;
+    --item5050ImgPadding: .5rem;
+    --hidShowMargin: 1rem;
+    --sectionTitleFontSize: 2.5rem;
+    --sectionTitleMargin: 100px;
+    --sectionTitleImgHeight: 200px;
+
 
 
 
@@ -206,6 +212,7 @@ FIN DE MAPA DE CONTENIDOS */
 --------------------------------------------------------------------------- */
 @media screen and (min-width: 576px) {
   :root {
+
   }
 }
 /* ---------------------------------------------------------------------------
@@ -253,7 +260,6 @@ FIN DE MAPA DE CONTENIDOS */
 
     /* componentes */
     --standarCardImgHeight: 20vh;
-    --sectionTitleMargin: 5vh auto auto auto;
 
 
 
@@ -277,6 +283,9 @@ FIN DE MAPA DE CONTENIDOS */
     --hidShowHeight: 50vh;
     --hidShowOpacity: 0;
     --hidShowTxtFontSize: .8rem;
+    --item5050ImgPadding: 0;
+    --hidShowMargin: 0;
+    --sectionTitleFontSize: 3.5rem;
 
   }
 
@@ -305,6 +314,10 @@ FIN DE MAPA DE CONTENIDOS */
     --socialContainerGridC: 1/3;
     --footerLogoHeight: 350px;
 
+    /* front page */
+    --sectionTitleImgHeight: 300px;
+
+
 
   }
 }
@@ -321,7 +334,6 @@ FIN DE MAPA DE CONTENIDOS */
 
     /* componentes */
     --standarCardImgHeight: 30vh;
-    --sectionTitleMargin: 10vh auto auto auto;
 
 
     /* Footer */
@@ -431,8 +443,9 @@ img{object-fit:cover}
   white-space: nowrap;
 }
 .sectionTitle {
-  margin: var(--sectionTitleMargin);
-  font-size: 3.5rem;
+  margin: auto;
+  margin-top: var(--sectionTitleMargin);
+  font-size: var(--sectionTitleFontSize);
   text-align: left;
   width: 100%;
   z-index: 2;
@@ -782,7 +795,6 @@ img{object-fit:cover}
   height: min-content;
 }
 .standarCardImg {
-  height: 40vh;
   width: 100%;
 }
 .section>.standarCard {
@@ -797,7 +809,7 @@ img{object-fit:cover}
 }
 
 
-.standarCard h6 {font-size: .9rem; margin: .8rem 0;}
+
 .standarCard p {font-size: .8rem;}
 
 
@@ -837,7 +849,7 @@ img{object-fit:cover}
                               6.5.4) =hidshow:
 ------------------------------------------------------------------------------
 --------------------------------------------------------------------------- */
-.hidshow{height:var(--hidShowHeight)}
+.hidshow {height:var(--hidShowHeight); margin: var(--hidShowMargin)}
 .hidshowImg {
   width: 100%;
   height: 100%;
@@ -1192,10 +1204,10 @@ img{object-fit:cover}
 .itemTitle a{text-decoration:none;color:var(--color1)}
 
 /* ------------------------------------------ */
-/* TODO: esto tiene un nombre muy de mierda seguramente podria ser mejor */
 .item5050Img {
   height: var(--item5050Img);
   width: 100%;
+  padding: var(--item5050ImgPadding);
 }
  /* ------------------------------------------ */
 /* TODO: terminar bloque instagram (cuando sepamos más sobre las APIs para
@@ -1214,9 +1226,20 @@ img{object-fit:cover}
   height: 5rem;
   margin: .5rem;
 }
+/* ---------------------------------------------------------------------------
+------------------------------------------------------------------------------
+                             =FRONT-PAGE:
+------------------------------------------------------------------------------
+--------------------------------------------------------------------------- */
+
+.FrontPageCardTxt h5,h6 {
+  font-size: .9rem;
+  margin: .8rem 0;
+}
+
+.sectionTitleImg {height: var(--sectionTitleImgHeight)}
 
 
-/* TODO: con esto tampoco supe que hacer */
 /* ---------------------------------------------------------------------------
 ------------------------------------------------------------------------------
                              =EXPERIENCIAS SECTION FRONT-PAGE:
