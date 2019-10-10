@@ -287,7 +287,6 @@ FIN DE MAPA DE CONTENIDOS */
     --sectionStandarCardTxtPadding: 0;
 
     /* front-page */
-
     --flex5050Flex: 2 1 calc(50% - 1rem);
     --item5050Img: 40vh;
     --centerTitleFontSize: 5rem;
@@ -297,6 +296,8 @@ FIN DE MAPA DE CONTENIDOS */
     --hidShowTxtFontSize: .8rem;
     --sectionTitleImgHeight: 300px;
     --sectionTitleMargin: 120px;
+    --item5050ImgPadding: 0;
+
 
 
     /* localizaciones (página) */
