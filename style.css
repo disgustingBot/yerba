@@ -53,7 +53,6 @@ N) =Font:
 6.6.3) =burger:
 6.6.4) =close:
 6.6.5) =slideButton:
-
 6.7) =ayuda:
 
 6.3.2) =section localizaciones:
@@ -161,7 +160,6 @@ FIN DE MAPA DE CONTENIDOS */
     --cbbcEsMarginR: 0;
     --itemTitlePadding: .75rem 3rem;
     --sectionStandarCardTxtPadding: 0 10px;
-    --sectionTitleMargin: 20vh auto auto auto;
 
 
 
@@ -174,6 +172,19 @@ FIN DE MAPA DE CONTENIDOS */
     --hidShowHeight: 30vh;
     --hidShowOpacity: 1;
     --hidShowTxtFontSize: 1rem;
+    --sectionTitleImgHeight: 200px;
+    --sectionTitleMargin: 80px;
+
+
+    /* localizaciones (página) */
+
+    --localizacionesFlexDisplay: block;
+    --localizacionesFlexMargin: 1rem;
+    --megaMargin: 10% 3.125%;
+    --megaCaptionWidth: 100%;
+    --textJustifyCenter: justify;
+    --showMargin: 3rem 0;
+
 
 
 
@@ -253,7 +264,6 @@ FIN DE MAPA DE CONTENIDOS */
 
     /* componentes */
     --standarCardImgHeight: 20vh;
-    --sectionTitleMargin: 5vh auto auto auto;
 
 
 
@@ -277,6 +287,20 @@ FIN DE MAPA DE CONTENIDOS */
     --hidShowHeight: 50vh;
     --hidShowOpacity: 0;
     --hidShowTxtFontSize: .8rem;
+    --sectionTitleImgHeight: 300px;
+    --sectionTitleMargin: 120px;
+
+
+    /* localizaciones (página) */
+
+    --localizacionesFlexDisplay: flex;
+    --localizacionesFlexMargin: 0;
+    --megaMargin: 10% 12.5%;
+    --textJustifyCenter: center;
+    --showMargin: 4rem 0;
+
+
+
 
   }
 
@@ -318,10 +342,8 @@ FIN DE MAPA DE CONTENIDOS */
 @media  screen and (min-width: 1200px) {
   :root {
     --sizeR: calc(var(--sizeRd) * 1px);
-
     /* componentes */
     --standarCardImgHeight: 30vh;
-    --sectionTitleMargin: 10vh auto auto auto;
 
 
     /* Footer */
@@ -431,7 +453,8 @@ img{object-fit:cover}
   white-space: nowrap;
 }
 .sectionTitle {
-  margin: var(--sectionTitleMargin);
+  margin: auto;
+  margin-top: var(--sectionTitleMargin);
   font-size: 3.5rem;
   text-align: left;
   width: 100%;
@@ -769,7 +792,7 @@ img{object-fit:cover}
 }
 .card:hover{box-shadow:0 14px 28px rgba(0,0,0,0.25),0 10px 10px rgba(0,0,0,0.22)}
 
-.cardTitle{padding: 0 2rem}
+.cardTitle{padding: 0 2rem; background: white;}
 
 /* ---------------------------------------------------------------------------
 ------------------------------------------------------------------------------
@@ -782,9 +805,23 @@ img{object-fit:cover}
   height: min-content;
 }
 .standarCardImg {
-  height: 40vh;
   width: 100%;
+  max-height: 40vh;
 }
+
+.standarCardTxt h5,h6{
+  margin: .5rem 0;
+}
+
+.standarCard figcaption p {
+  margin: .5rem 0;
+}
+.standarCard figcaption p:first-child {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+
 .section>.standarCard {
   grid-column: var(--sectionStandarCardGridC);
 }
@@ -837,7 +874,8 @@ img{object-fit:cover}
                               6.5.4) =hidshow:
 ------------------------------------------------------------------------------
 --------------------------------------------------------------------------- */
-.hidshow{height:var(--hidShowHeight)}
+.hidshow{height:var(--hidShowHeight); margin: var(--localizacionesFlexMargin)}
+
 .hidshowImg {
   width: 100%;
   height: 100%;
@@ -862,7 +900,7 @@ img{object-fit:cover}
 .hidshowTxt:hover{opacity:1}
 
 
-
+.localizacionesFlex {display: var(--localizacionesFlexDisplay);}
 /* ---------------------------------------------------------------------------
 ------------------------------------------------------------------------------
                               6.5.5) =musical:
@@ -894,7 +932,7 @@ img{object-fit:cover}
 --------------------------------------------------------------------------- */
 .mega{
   display: grid;
-  margin:10% 12.5%;
+  margin: var(--megaMargin);
   text-align: center;
 }
 .megaImg{
@@ -904,13 +942,21 @@ img{object-fit:cover}
 .megaCaption{
   margin: auto;
   margin-top:-3rem;
-  width: min-content;
+  width: var(--megaCaptionWidth);
+  text-align: var(--textJustifyCenter);
 }
+
+.megaCaption h5 {
+  text-align: center;
+  margin: .5rem 0;
+}
+
 .megaTitle{width: max-content}
+
 /* alt styles */
 .megaCaption.alt{
   margin: auto;
-  width: 70%;
+  width: var(--megaCaptionWidth);
 }
 .megaCaption.alt .megaTitle{
   width: unset;
@@ -928,7 +974,7 @@ img{object-fit:cover}
   text-align: center;
   align-items: center;
   justify-content: center;
-  margin: 4rem 0;
+  margin: var(--showMargin);
 }
 .showImg{
   width: 100%;
@@ -942,7 +988,14 @@ img{object-fit:cover}
 }
 .showCaption{
   margin:0 10%;
+  text-align: var(--textJustifyCenter);
 }
+.showCaption h5 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: .5rem 0;
+}
+
 .showTitle{
   font-size: 3rem;
 }
@@ -1132,6 +1185,11 @@ img{object-fit:cover}
 }
 
 
+
+
+
+
+
 /* ---------------------------------------------------------------------------
 ------------------------------------------------------------------------------
                             6.7) =ayuda:
@@ -1215,8 +1273,17 @@ img{object-fit:cover}
   margin: .5rem;
 }
 
+/* ---------------------------------------------------------------------------
+------------------------------------------------------------------------------
+                             =FRONT-PAGE:
+------------------------------------------------------------------------------
+--------------------------------------------------------------------------- */
+.sectonTitleImg {
+  height: var(--sectionTitleImgHeight);
+}
 
-/* TODO: con esto tampoco supe que hacer */
+
+
 /* ---------------------------------------------------------------------------
 ------------------------------------------------------------------------------
                              =EXPERIENCIAS SECTION FRONT-PAGE:

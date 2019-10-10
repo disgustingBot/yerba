@@ -86,7 +86,7 @@
 </figure>
 
 
-<flex class="flex3 colMax">
+<flex class="flex3 colMax localizacionesFlex">
 
 
   <figure class="hidshow grid">
