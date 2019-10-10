@@ -198,15 +198,7 @@ FIN DE MAPA DE CONTENIDOS */
                           2.1) min-width:  =360px
 ------------------------------------------------------------------------------
 --------------------------------------------------------------------------- */
-@media screen and (min-width: 360px){:root {
-  --sizeR: calc(calc(var(--sizeRa) * 1px) + (var(--sizeRb) - var(--sizeRa)) * ((100vw - 360px) / (768 - 360)))
-
-
-  /* estructura */
-
-  }}
-
-
+@media screen and (min-width: 360px){:root {--sizeR: calc(calc(var(--sizeRa) * 1px) + (var(--sizeRb) - var(--sizeRa)) * ((100vw - 360px) / (768 - 360)))}}
 /* ---------------------------------------------------------------------------
 ------------------------------------------------------------------------------
                           2.2) min-width:  =576px
@@ -365,11 +357,8 @@ body.gutenberg-editor-page .editor-block-list__block,
                               3) =TIPOGRAFIAS:
 ------------------------------------------------------------------------------
 --------------------------------------------------------------------------- */
-
-body {
-
 @font-face {
-    font-family: 'tahu';
+  font-family: 'tahu';
          /* Super Modern Browsers */
     src: url('fonts/tahu-webfont.woff2') format('woff2'),
          /* Pretty Modern Browsers */
@@ -377,6 +366,9 @@ body {
          /* Safari, Android, iOS */
          url('fonts/Tahu!.ttf') format('truetype');
 }
+body {font-family: 'tahu';}
+
+
 
 .specialTitle {
   font-family: 'tahu', cursive;
