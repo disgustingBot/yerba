@@ -7,7 +7,7 @@
 <section class="homeATF">
 
   <video class="homeATFvideo rowcol1" id="headerActivator" loop="loop" autoplay playsinline muted>
-    <source type="video/mp4" src="<?php echo get_template_directory_uri(); ?>/img/home/shutterstock_25094927_4-1.mp4" alt="Fondo-de-video-del-mediterraneo-desde-arriba" />
+    <source class="homeATFvideoSrc" type="video/mp4" src="<?php echo get_template_directory_uri(); ?>/img/home/shutterstock_25094927_4-1.mp4" alt="Fondo-de-video-del-mediterraneo-desde-arriba" />
   </video>
 
   <figure class="homeATFIsoLogo rowcol1">
