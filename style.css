@@ -185,6 +185,13 @@ FIN DE MAPA DE CONTENIDOS */
     --textJustifyCenter: justify;
     --showMargin: 3rem 0;
 
+    --item5050ImgPadding: .5rem;
+    --hidShowMargin: 1rem;
+    --sectionTitleFontSize: 2.5rem;
+    --sectionTitleMargin: 100px;
+    --sectionTitleImgHeight: 200px;
+
+
 
 
 
@@ -217,6 +224,7 @@ FIN DE MAPA DE CONTENIDOS */
 --------------------------------------------------------------------------- */
 @media screen and (min-width: 576px) {
   :root {
+
   }
 }
 /* ---------------------------------------------------------------------------
@@ -301,7 +309,6 @@ FIN DE MAPA DE CONTENIDOS */
 
 
 
-
   }
 
 }
@@ -328,6 +335,10 @@ FIN DE MAPA DE CONTENIDOS */
     --footerMenuFontSize: .8rem;
     --socialContainerGridC: 1/3;
     --footerLogoHeight: 350px;
+
+    /* front page */
+    --sectionTitleImgHeight: 300px;
+
 
 
   }
@@ -834,7 +845,7 @@ img{object-fit:cover}
 }
 
 
-.standarCard h6 {font-size: .9rem; margin: .8rem 0;}
+
 .standarCard p {font-size: .8rem;}
 
 
@@ -874,7 +885,9 @@ img{object-fit:cover}
                               6.5.4) =hidshow:
 ------------------------------------------------------------------------------
 --------------------------------------------------------------------------- */
+
 .hidshow{height:var(--hidShowHeight); margin: var(--localizacionesFlexMargin)}
+
 
 .hidshowImg {
   width: 100%;
@@ -1250,10 +1263,10 @@ img{object-fit:cover}
 .itemTitle a{text-decoration:none;color:var(--color1)}
 
 /* ------------------------------------------ */
-/* TODO: esto tiene un nombre muy de mierda seguramente podria ser mejor */
 .item5050Img {
   height: var(--item5050Img);
   width: 100%;
+  padding: var(--item5050ImgPadding);
 }
  /* ------------------------------------------ */
 /* TODO: terminar bloque instagram (cuando sepamos más sobre las APIs para
@@ -1272,6 +1285,18 @@ img{object-fit:cover}
   height: 5rem;
   margin: .5rem;
 }
+/* ---------------------------------------------------------------------------
+------------------------------------------------------------------------------
+                             =FRONT-PAGE:
+------------------------------------------------------------------------------
+--------------------------------------------------------------------------- */
+
+.FrontPageCardTxt h5,h6 {
+  font-size: .9rem;
+  margin: .8rem 0;
+}
+
+.sectionTitleImg {height: var(--sectionTitleImgHeight)}
 
 /* ---------------------------------------------------------------------------
 ------------------------------------------------------------------------------

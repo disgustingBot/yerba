@@ -61,9 +61,11 @@
       <span class="cbbcEs">CBbC es...</span>
       <span class="">Localización</span>
     </h4>
+  
     <figure class="standarCard rowcol1">
       <img class="standarCardImg rowcol1 sectonTitleImg" src="<?php echo get_template_directory_uri(); ?>/img/home/1.jpg" alt="">
       <figcaption class="standarCardTxt">
+
         <h5>En nuestros ambientes y restaurantes respirarás y sentirás que hasta el más mínimo detalle está por y para ti.</h5>
         <p>¿Eres mas de mar o de montaña?  Descubre lugares magicos en los que disfrutar de lo mejor de la vida.</p>
       </figcaption>
@@ -97,8 +99,10 @@
     <span class="">Gastronomía</span>
   </h4>
   <figure class="standarCard rowcol1">
+
     <img class="standarCardImg rowcol1 sectonTitleImg" src="<?php echo get_template_directory_uri(); ?>/img/home/6.jpg" alt="">
     <figcaption class="standarCardTxt">
+
       <h5>En nuestros ambientes y restaurantes respirarás y sentirás que hasta el más mínimo detalle está por y para ti.</h5>
       <p>¿Eres mas de mar o de montaña?  Descubre lugares magicos en los que disfrutar de lo mejor de la vida.</p>
     </figcaption>
@@ -169,9 +173,11 @@
     <span class="cbbcEs ">CBbC es...</span>
     <span class="">Experiencias</span>
   </h4>
+
   <figure class="standarCard rowcol1">
     <img class="standarCardImg rowcol1 sectonTitleImg" src="<?php echo get_template_directory_uri(); ?>/img/home/11.jpg" alt="">
     <figcaption class="standarCardTxt">
+
       <h5>En nuestros ambientes y restaurantes respirarás y sentirás que hasta el más mínimo detalle está por y para ti.</h5>
       <p>¿Eres mas de mar o de montaña?  Descubre lugares magicos en los que disfrutar de lo mejor de la vida.</p>
     </figcaption>
@@ -212,7 +218,9 @@
     <figure class="standarCard">
       <img src="<?php echo get_template_directory_uri(); ?>/img/home/14.jpg" alt="" class="standarCardImg rowcol1">
       <p class="itemTitleCenter rowcol1 itemTitle">Platos de Andorra</p>
+
       <figcaption class="standarCardTxt">
+
         <h6>Dolor sit amet, consectetur adipiscing elit</h6>
         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       </figcaption>
@@ -232,6 +240,7 @@
       <img src="<?php echo get_template_directory_uri(); ?>/img/home/16.jpg" alt=""class="standarCardImg rowcol1">
       <p class="itemTitleCenter rowcol1 itemTitle">festival</p>
       <figcaption class="standarCardTxt">
+
         <h6>Dolor sit amet, consectetur adipiscing elit</h6>
         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.</p>
       </figcaption>
