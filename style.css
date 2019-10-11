@@ -162,6 +162,7 @@ FIN DE MAPA DE CONTENIDOS */
     --cbbcEsMarginR: 0;
     --itemTitlePadding: .75rem 3rem;
     --sectionStandarCardTxtPadding: 0 10px;
+    --standarCardImgHeight: 200px;
 
 
 
@@ -196,6 +197,9 @@ FIN DE MAPA DE CONTENIDOS */
 
 
 
+    /* magazine (página) */
+
+    --dividedSectionDisplay: block;
 
 
 
@@ -219,6 +223,23 @@ FIN DE MAPA DE CONTENIDOS */
 ------------------------------------------------------------------------------
 --------------------------------------------------------------------------- */
 @media screen and (min-width: 360px){:root {--sizeR: calc(calc(var(--sizeRa) * 1px) + (var(--sizeRb) - var(--sizeRa)) * ((100vw - 360px) / (768 - 360)))}}
+
+
+
+/* ---------------------------------------------------------------------------
+------------------------------------------------------------------------------
+                          2.2) min-width:  =480px
+------------------------------------------------------------------------------
+--------------------------------------------------------------------------- */
+@media screen and (min-width: 480px) {
+  :root {
+    --standarCardImgHeight: 250px;
+
+  }
+}
+
+
+
 /* ---------------------------------------------------------------------------
 ------------------------------------------------------------------------------
                           2.2) min-width:  =576px
@@ -226,6 +247,7 @@ FIN DE MAPA DE CONTENIDOS */
 --------------------------------------------------------------------------- */
 @media screen and (min-width: 576px) {
   :root {
+    --standarCardImgHeight: 300px;
 
   }
 }
@@ -273,7 +295,6 @@ FIN DE MAPA DE CONTENIDOS */
     --socialContainerMarginLeft: .8rem;
 
     /* componentes */
-    --standarCardImgHeight: 20vh;
 
 
 
@@ -288,6 +309,8 @@ FIN DE MAPA DE CONTENIDOS */
     --cbbcEsMarginR: 30px;
     --itemTitlePadding: .75rem 1.5rem;
     --sectionStandarCardTxtPadding: 0;
+    --standarCardImgHeight: 150px;
+
 
     /* front-page */
     --flex5050Flex: 2 1 calc(50% - 1rem);
@@ -311,6 +334,7 @@ FIN DE MAPA DE CONTENIDOS */
     --textJustifyCenter: center;
     --showMargin: 4rem 0;
 
+    /* magazine (página) */
 
 
   }
@@ -343,6 +367,13 @@ FIN DE MAPA DE CONTENIDOS */
     /* front page */
     --sectionTitleImgHeight: 300px;
 
+    /* estructura */
+
+    --standarCardImgHeight: 200px;
+
+    /* magazine (página) */
+
+    --dividedSectionDisplay: grid;
 
 
   }
@@ -358,19 +389,27 @@ FIN DE MAPA DE CONTENIDOS */
   :root {
     --sizeR: calc(var(--sizeRd) * 1px);
     /* componentes */
-    --standarCardImgHeight: 30vh;
 
 
     /* Footer */
       --footerMenuFontSize: 1rem;
 
-      /* front-page */
-      --item5050Img: 80vh;
+    /* front-page */
+    --item5050Img: 80vh;
+
+    /* estructura */
+
+    --standarCardImgHeight: 250px;
   }
 }
 
+@media  screen and (min-width: 1400px) {
+  :root {
 
+    --standarCardImgHeight: 350px;
 
+  }
+}
 
 
 /* ---------------------------------------------------------------------------
@@ -822,7 +861,7 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
 }
 .standarCardImg {
   width: 100%;
-  max-height: 40vh;
+  height: var(--standarCardImgHeight);
 }
 
 
@@ -865,6 +904,7 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
   background: var(--color2);
   margin:0 10%;
   margin-top: -100px;
+  height: 250px;
 }
 .tarjetaImg {
   height: 100%;
@@ -1238,7 +1278,16 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
 }
 
 
+/* ---------------------------------------------------------------------------
+------------------------------------------------------------------------------
+                             =MAGAZINE:
+------------------------------------------------------------------------------
+--------------------------------------------------------------------------- */
 
+
+.dividedSection {
+  display: var(--dividedSectionDisplay)!important;
+}
 
 
 /* TODO: rincon de Tomi... trata de hacer algo con él */
@@ -1260,7 +1309,7 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
   height: max-content;
 }
 .itemTitle:hover{box-shadow:0 14px 28px rgba(0,0,0,.25),0 10px 10px rgba(0,0,0,.22)}
-/* .itemTitleCenter{margin:auto; text-align: center} */
+
 .itemTitleCenter {
   margin: auto;
   margin-left: 50%;
