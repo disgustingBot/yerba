@@ -152,6 +152,8 @@ FIN DE MAPA DE CONTENIDOS */
     /* componentes */
 
     /* estructura */
+    --pTextAlign: justify;
+    --h5H6TextAlign: center;
     --sectionMarginTopBottom: 50px;
     --sectionStandarCardGridC: 1/9;
     --sectionAltStandarCardGridC: 1/9;
@@ -276,8 +278,9 @@ FIN DE MAPA DE CONTENIDOS */
 
 
     /* estructura */
+    --pTextAlign: left;
+    --h5H6TextAlign: left;
     --sectionMarginTopBottom: 50px;
-
     --sectionStandarCardGridC: 3/8;
     --sectionAltStandarCardGridC: 2/7;
     --sectionTitlePadding: 0 12.5%;
@@ -435,6 +438,9 @@ body{
 body>*{grid-column:1}
 img{object-fit:cover}
 
+p {text-align: var(--pTextAlign);}
+h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
+
 
 /* ---------------------------------------------------------------------------
 ------------------------------------------------------------------------------
@@ -561,7 +567,7 @@ img{object-fit:cover}
   width: 100%;
   z-index: 10;
 }
-.headerTop{background:var(--color2)}
+.headerTop{background:var(--color2); padding: 10px 0;}
 .headerTop .headerLogo{opacity:1}
 .headerTop .homeLink{margin-left:-500px}
 .headerLogoCont{
@@ -590,7 +596,7 @@ img{object-fit:cover}
 
 
 /* TODO: esto deberia ser un componente */
-.mobileMenu{
+.mobileMenu {
   align-content: center;
   background:var(--color2);
   display:var(--onlyMobile);
@@ -601,7 +607,6 @@ img{object-fit:cover}
   padding: 2rem;
   position:fixed;
   right:-100%;
-  /* right:0; */
   text-align: center;
   top:0;
   width: 100%;
@@ -799,12 +804,11 @@ img{object-fit:cover}
   transition: .3s ease-in-out;
   z-index: 2;
   display: grid;
-  text-align: center;
   margin: .5rem;
 }
 .card:hover{box-shadow:0 14px 28px rgba(0,0,0,0.25),0 10px 10px rgba(0,0,0,0.22)}
 
-.cardTitle{padding: 0 2rem; background: white;}
+.cardTitle{padding: 0 2rem; background: white; text-align: center;}
 
 /* ---------------------------------------------------------------------------
 ------------------------------------------------------------------------------
@@ -821,16 +825,14 @@ img{object-fit:cover}
   max-height: 40vh;
 }
 
-.standarCardTxt h5,h6{
-  margin: .5rem 0;
-}
+
 
 .standarCard figcaption p {
   margin: .5rem 0;
 }
 .standarCard figcaption p:first-child {
   font-weight: bold;
-  font-size: 1rem;
+  font-size: .8rem;
 }
 
 
@@ -947,7 +949,6 @@ img{object-fit:cover}
 .mega{
   display: grid;
   margin: var(--megaMargin);
-  text-align: center;
 }
 .megaImg{
   width: 100%;
@@ -957,11 +958,9 @@ img{object-fit:cover}
   margin: auto;
   margin-top:-3rem;
   width: var(--megaCaptionWidth);
-  text-align: var(--textJustifyCenter);
 }
 
 .megaCaption h5 {
-  text-align: center;
   margin: .5rem 0;
 }
 
@@ -985,7 +984,6 @@ img{object-fit:cover}
 --------------------------------------------------------------------------- */
 .show{
   display: grid;
-  text-align: center;
   align-items: center;
   justify-content: center;
   margin: var(--showMargin);
@@ -1002,7 +1000,6 @@ img{object-fit:cover}
 }
 .showCaption{
   margin:0 10%;
-  text-align: var(--textJustifyCenter);
 }
 .showCaption h5 {
   font-size: 1rem;
@@ -1125,10 +1122,17 @@ img{object-fit:cover}
 --------------------------------------------------------------------------- */
 .burger{
   margin:auto;
-  margin-right:.2rem;
+  /* margin-right:.2rem; */
   padding:0 .3rem;
   display:var(--onlyMobile);
+  grid-column: 1/-1;
+  transition: .25s;
 }
+.headerTop .burger {
+  margin: auto;
+  margin-right: 10px;
+}
+
 .burgerBar{
   width: 1.5rem;
   height: 4px;
@@ -1246,11 +1250,9 @@ img{object-fit:cover}
 /* Items with images */
 .itemTitle {
   background: white;
-  /* width: max-content; */
   max-width: 90%;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   padding: var(--itemTitlePadding);
-  text-align: center;
   transition: .25s;
   border-radius: 2px;
   z-index: 2;
@@ -1258,7 +1260,15 @@ img{object-fit:cover}
   height: max-content;
 }
 .itemTitle:hover{box-shadow:0 14px 28px rgba(0,0,0,.25),0 10px 10px rgba(0,0,0,.22)}
-.itemTitleCenter{margin:auto}
+/* .itemTitleCenter{margin:auto; text-align: center} */
+.itemTitleCenter {
+  margin: auto;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  text-align: center;
+}
+
 .itemTitleTR{margin:0 0 auto auto}
 .itemTitleBR{margin:auto 0 0 auto}
 .itemTitle a{text-decoration:none;color:var(--color1)}
