@@ -117,6 +117,9 @@ FIN DE MAPA DE CONTENIDOS */
     --headerGTC:1fr 1fr;
     --headerMarginTop:-2.6rem;
     --headerLogoWidth:;
+    --headerLogoMarginLeft: 1rem;
+    --headerLogoMarginBottom: 0;
+    --headerLogoSize: 50px;
 
 
 
@@ -163,6 +166,7 @@ FIN DE MAPA DE CONTENIDOS */
     --itemTitlePadding: .75rem 3rem;
     --sectionStandarCardTxtPadding: 0 10px;
     --standarCardImgHeight: 200px;
+    --navBarGridR: 1;
 
 
 
@@ -263,10 +267,13 @@ FIN DE MAPA DE CONTENIDOS */
     --sizeR: calc(calc(var(--sizeRc) * 1px) + (var(--sizeRd) - var(--sizeRc)) * ((100vw - 768px) / (1200 - 768)));
 
     /* header */
-    --headerGTR:3fr 2fr;
+    --headerGTR:1fr 1fr;
     --headerGTC:100%;
     --headerMarginTop:-4.2rem;
-    --headerLogoWidth:100%;
+    --headerLogoWidth: auto;
+    --headerLogoMarginLeft: calc(50% - 25px);
+    --headerLogoMarginBottom: 1rem;
+    --headerLogoSize: 75px;
 
     /* ATF */
 
@@ -310,6 +317,8 @@ FIN DE MAPA DE CONTENIDOS */
     --itemTitlePadding: .75rem 1.5rem;
     --sectionStandarCardTxtPadding: 0;
     --standarCardImgHeight: 150px;
+    --navBarGridR: 2;
+
 
 
     /* front-page */
@@ -590,12 +599,11 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
 ------------------------------------------------------------------------------
 --------------------------------------------------------------------------- */
 /* TODO: no anda el activador en scroll para firefox */
-.header{
+.header {
   align-items: center;
   display: grid;
   font-size: .6rem;
   grid-template-columns:var(--headerGTC);
-  grid-template-rows:var(--headerGTR);
   grid-row:2;
   height: min-content;
   justify-content: center;
@@ -608,30 +616,41 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
 }
 .headerTop{background:var(--color2); padding: 10px 0;}
 .headerTop .headerLogo{opacity:1}
-.headerTop .homeLink{margin-left:-500px}
+.headerTop .homeLink{margin-left:-1000px}
 .headerLogoCont{
-  height:2rem;
-  margin: .3rem .75rem;
-  width:calc(100% - 1.5rem);
+  height: min-content;
+  margin: auto;
+  margin-left: var(--headerLogoMarginLeft);
+  margin-top: var(--headerLogoMarginBottom);
   transition: inherit;
   text-align: center;
   font-size: 2rem;
   color:var(--color1);
   text-decoration:none;
+  grid-column: 1;
+  grid-row: 1;
+  width: min-content;
 }
 .headerLogo{
-  height:100%;
+  height: var(--headerLogoSize);
+  width:  var(--headerLogoSize);
   object-fit: contain;
   width:var(--headerLogoWidth);
   opacity:0;
   transition: inherit;
 }
+
+
 .navBar{
   display:var(--onlyDesktop);
   grid-auto-flow: column;
   justify-content: center;
   grid-gap:.5rem;
+  grid-column: 1/ -1;
+  grid-row: var(--navBarGridR);
 }
+
+
 
 
 /* TODO: esto deberia ser un componente */
@@ -1160,24 +1179,29 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
                           6.6.3) =burger:
 ------------------------------------------------------------------------------
 --------------------------------------------------------------------------- */
-.burger{
-  margin:auto;
-  /* margin-right:.2rem; */
-  padding:0 .3rem;
+.burger {
+  margin: auto;
+  padding: 1rem .5rem;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background: white;
   display:var(--onlyMobile);
-  grid-column: 1/-1;
+  grid-column: 2;
+  grid-row: 1;
   transition: .25s;
 }
 .headerTop .burger {
   margin: auto;
-  margin-right: 10px;
+  margin-right: .5rem;
 }
 
-.burgerBar{
-  width: 1.5rem;
+.burgerBar {
+  width: 100%;
   height: 4px;
   border-radius: 2px;
   background: var(--color1);
+  margin: auto;
 }
 .burgerBar:nth-child(2){margin:4px 0}
 
