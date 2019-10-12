@@ -640,14 +640,17 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
   transition: inherit;
 }
 
-
+.header.headerTop .navBar{
+  grid-row: var(--navBarGridR);
+}
 .navBar{
   display:var(--onlyDesktop);
   grid-auto-flow: column;
   justify-content: center;
   grid-gap:.5rem;
   grid-column: 1/ -1;
-  grid-row: var(--navBarGridR);
+  grid-row: 1;
+
 }
 
 
