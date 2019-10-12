@@ -18,7 +18,7 @@
     <header class="header">
       <?php if(is_front_page()){ ?>
         <a class="headerLogoCont" href="<?php echo site_url(''); ?>">
-          <img class="headerLogo" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="">
+          <img class="headerLogo" src="<?php echo get_template_directory_uri(); ?>/img/logoCasiLimpio.png" alt="">
         </a>
       <?php } ?>
       <?php if(is_page(array("magazine"))){ ?>
