@@ -14,7 +14,7 @@
     <figcaption class="carusCaption rowcol1">
       <h4 class="carusTitle"><?php the_title(); ?></h4>
       <p class="carusTxt">
-        <?php echo  get_the_excerpt(); ?>
+        <?php echo get_the_excerpt(); ?>
       </p>
     </figcaption>
   </figure>
