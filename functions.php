@@ -4,6 +4,8 @@ require_once 'customPosts.php';
 
 
 function gp_setup(){
+  wp_localize_script('mylib', 'WPURLS', array( 'siteurl' => get_option('siteurl') ));
+
   wp_enqueue_style('style', get_stylesheet_uri(), NULL, microtime(), 'all');
   // wp_enqueue_script('main', get_theme_file_uri('/js/custom.js'), NULL, microtime(), true);
   // wp_enqueue_script('main', get_theme_file_uri('/js/custom2.js'), NULL, microtime(), true);
@@ -36,7 +38,8 @@ add_filter('get_the_archive_title',function($title){
 function excerpt($charNumber){
   $excerpt = get_the_excerpt();
   $excerpt = substr($excerpt, 0, $charNumber);
-  $result = substr($excerpt, 0, strrpos($excerpt, ' '));
+  $result  = substr($excerpt, 0, strrpos($excerpt, ' '));
+  // $result += $result . '(...)';
   echo $result;
 }
 

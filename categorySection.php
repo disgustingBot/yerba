@@ -24,7 +24,7 @@
       <img class="standarCardImg rowcol1" src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt="">
       <figcaption class="">
         <h5><?php the_title(); ?></h5>
-        <p><?php excerpt(100); ?></p>
+        <p><?php excerpt(200); ?></p>
       </figcaption>
     </figure>
     <?php } ?>
@@ -74,7 +74,7 @@
         $blogPosts=new WP_Query($args);
         while($blogPosts->have_posts()){$blogPosts->the_post(); ?>
           <figure class="grid colMax">
-            <img class="item5050Img rowcol1" src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt="">
+            <img class="simpleCardImg rowcol1" src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt="">
             <figcaption class="itemTitleCenter itemTitle rowcol1">
               <a href="#"><h5><?php the_title(); ?></h5></a>
             </figcaption>

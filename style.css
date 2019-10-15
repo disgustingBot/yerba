@@ -40,13 +40,15 @@ N) =Font:
 6.4.2) =magazineATF:
 6.4.3) =locATF:
 6.5) =MULTI CARDS:
-6.5.1) =card:
-6.5.2) =standardCard:
-6.5.3) =tarjeta:
-6.5.4) =hidshow:
-6.5.5) =musical:
-6.5.6) =mega:
-6.5.7) =show:
+6.5.01) =card:
+6.5.02) =standardCard:
+6.5.03) =tarjeta:
+6.5.04) =hidshow:
+6.5.05) =musical:
+6.5.06) =mega:
+6.5.07) =show:
+6.5.08) =carus:
+6.5.09) =simpleCard:
 6.6) =BUTTONS:
 6.6.1) =subrayable:
 6.6.2) =suscribeButton:
@@ -173,7 +175,7 @@ FIN DE MAPA DE CONTENIDOS */
     /* front-page */
 
     --flex5050Flex: auto;
-    --item5050Img: 40vh;
+    --simpleCardImgHeight: 40vh;
     --centerTitleFontSize: 3rem;
     --restaurantFlexDisplay: block;
     --hidShowHeight: 30vh;
@@ -192,7 +194,7 @@ FIN DE MAPA DE CONTENIDOS */
     --textJustifyCenter: justify;
     --showMargin: 3rem 0;
 
-    --item5050ImgPadding: .5rem;
+    --simpleCardImgPadding: .5rem;
     --hidShowMargin: 1rem;
     --sectionTitleFontSize: 2.5rem;
     --sectionTitleMargin: 100px;
@@ -323,7 +325,7 @@ FIN DE MAPA DE CONTENIDOS */
 
     /* front-page */
     --flex5050Flex: 2 1 calc(50% - 1rem);
-    --item5050Img: 40vh;
+    --simpleCardImgHeight: 40vh;
     --centerTitleFontSize: 5rem;
     --restaurantFlexDisplay: flex;
     --hidShowHeight: 50vh;
@@ -331,7 +333,7 @@ FIN DE MAPA DE CONTENIDOS */
     --hidShowTxtFontSize: .8rem;
     --sectionTitleImgHeight: 300px;
     --sectionTitleMargin: 120px;
-    --item5050ImgPadding: 0;
+    --simpleCardImgPadding: 0;
 
 
 
@@ -403,9 +405,8 @@ FIN DE MAPA DE CONTENIDOS */
     /* Footer */
       --footerMenuFontSize: 1rem;
 
-    /* front-page */
-    --item5050Img: 80vh;
-
+      /* front-page */
+      --simpleCardImgHeight: 80vh;
     /* estructura */
 
     --standarCardImgHeight: 250px;
@@ -436,6 +437,7 @@ body.gutenberg-editor-page .editor-post-title__block,
 body.gutenberg-editor-page .editor-default-block-appender,
 body.gutenberg-editor-page .editor-block-list__block,
 .block-editor__container .wp-block{max-width:none!important}
+
 
 /* ---------------------------------------------------------------------------
 ------------------------------------------------------------------------------
@@ -856,7 +858,7 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
 --------------------------------------------------------------------------- */
 /* ---------------------------------------------------------------------------
 ------------------------------------------------------------------------------
-                              6.5.1) =card:
+                            6.5.01) =card:
 ------------------------------------------------------------------------------
 --------------------------------------------------------------------------- */
 .card {
@@ -873,7 +875,7 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
 
 /* ---------------------------------------------------------------------------
 ------------------------------------------------------------------------------
-                          6.5.2) =standardCard:
+                          6.5.02) =standardCard:
 ------------------------------------------------------------------------------
 --------------------------------------------------------------------------- */
 .standarCard {
@@ -883,7 +885,7 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
 }
 .standarCardImg {
   width: 100%;
-  height: var(--standarCardImgHeight);
+  height: var(--standarCardImgHeight)!important;
 }
 
 
@@ -919,7 +921,7 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
 
 /* ---------------------------------------------------------------------------
 ------------------------------------------------------------------------------
-                              6.5.3) =tarjeta:
+                              6.5.03) =tarjeta:
 ------------------------------------------------------------------------------
 --------------------------------------------------------------------------- */
 .tarjeta{
@@ -947,7 +949,7 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
 }
 /* ---------------------------------------------------------------------------
 ------------------------------------------------------------------------------
-                              6.5.4) =hidshow:
+                              6.5.04) =hidshow:
 ------------------------------------------------------------------------------
 --------------------------------------------------------------------------- */
 
@@ -956,7 +958,7 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
 
 .hidshowImg {
   width: 100%;
-  height: 100%;
+  height: 100%!important;
 }
 .hidshowTitle {
   margin: 0 0 auto auto;
@@ -981,7 +983,7 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
 .localizacionesFlex {display: var(--localizacionesFlexDisplay);}
 /* ---------------------------------------------------------------------------
 ------------------------------------------------------------------------------
-                              6.5.5) =musical:
+                              6.5.05) =musical:
 ------------------------------------------------------------------------------
 --------------------------------------------------------------------------- */
 .musical{
@@ -1005,7 +1007,7 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
 
 /* ---------------------------------------------------------------------------
 ------------------------------------------------------------------------------
-                            6.5.6) =mega:
+                            6.5.06) =mega:
 ------------------------------------------------------------------------------
 --------------------------------------------------------------------------- */
 .mega{
@@ -1041,7 +1043,7 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
 
 /* ---------------------------------------------------------------------------
 ------------------------------------------------------------------------------
-                            6.5.7) =show:
+                            6.5.07) =show:
 ------------------------------------------------------------------------------
 --------------------------------------------------------------------------- */
 .show{
@@ -1075,7 +1077,7 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
 
 /* ---------------------------------------------------------------------------
 ------------------------------------------------------------------------------
-                            6.5.9) =carus:
+                            6.5.08) =carus:
 ------------------------------------------------------------------------------
 --------------------------------------------------------------------------- */
 
@@ -1109,6 +1111,19 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
   margin-top: 15vh;
 }
 
+
+/* ---------------------------------------------------------------------------
+------------------------------------------------------------------------------
+                          6.5.09) =simpleCard:
+------------------------------------------------------------------------------
+--------------------------------------------------------------------------- */
+
+.simpleCard{}
+.simpleCardImg {
+  height: var(--simpleCardImgHeight)!important;
+  width: 100%;
+  padding: var(--simpleCardImgPadding);
+}
 /* ---------------------------------------------------------------------------
 ------------------------------------------------------------------------------
                             6.6) =BUTTONS:
@@ -1350,11 +1365,7 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
 .itemTitle a{text-decoration:none;color:var(--color1)}
 
 /* ------------------------------------------ */
-.item5050Img {
-  height: var(--item5050Img);
-  width: 100%;
-  padding: var(--item5050ImgPadding);
-}
+
  /* ------------------------------------------ */
 /* TODO: terminar bloque instagram (cuando sepamos más sobre las APIs para
          saber que info va a ir) */
