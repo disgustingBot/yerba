@@ -119,6 +119,9 @@ FIN DE MAPA DE CONTENIDOS */
     --headerGTC:1fr 1fr;
     --headerMarginTop:-2.6rem;
     --headerLogoWidth:;
+    --headerLogoMarginLeft: 1rem;
+    --headerLogoMarginBottom: 0;
+    --headerLogoSize: 50px;
 
 
 
@@ -164,6 +167,8 @@ FIN DE MAPA DE CONTENIDOS */
     --cbbcEsMarginR: 0;
     --itemTitlePadding: .75rem 3rem;
     --sectionStandarCardTxtPadding: 0 10px;
+    --standarCardImgHeight: 200px;
+    --navBarGridR: 1;
 
 
 
@@ -198,6 +203,9 @@ FIN DE MAPA DE CONTENIDOS */
 
 
 
+    /* magazine (página) */
+
+    --dividedSectionDisplay: block;
 
 
 
@@ -221,6 +229,23 @@ FIN DE MAPA DE CONTENIDOS */
 ------------------------------------------------------------------------------
 --------------------------------------------------------------------------- */
 @media screen and (min-width: 360px){:root {--sizeR: calc(calc(var(--sizeRa) * 1px) + (var(--sizeRb) - var(--sizeRa)) * ((100vw - 360px) / (768 - 360)))}}
+
+
+
+/* ---------------------------------------------------------------------------
+------------------------------------------------------------------------------
+                          2.2) min-width:  =480px
+------------------------------------------------------------------------------
+--------------------------------------------------------------------------- */
+@media screen and (min-width: 480px) {
+  :root {
+    --standarCardImgHeight: 250px;
+
+  }
+}
+
+
+
 /* ---------------------------------------------------------------------------
 ------------------------------------------------------------------------------
                           2.2) min-width:  =576px
@@ -228,6 +253,7 @@ FIN DE MAPA DE CONTENIDOS */
 --------------------------------------------------------------------------- */
 @media screen and (min-width: 576px) {
   :root {
+    --standarCardImgHeight: 300px;
 
   }
 }
@@ -243,10 +269,13 @@ FIN DE MAPA DE CONTENIDOS */
     --sizeR: calc(calc(var(--sizeRc) * 1px) + (var(--sizeRd) - var(--sizeRc)) * ((100vw - 768px) / (1200 - 768)));
 
     /* header */
-    --headerGTR:3fr 2fr;
+    --headerGTR:1fr 1fr;
     --headerGTC:100%;
     --headerMarginTop:-4.2rem;
-    --headerLogoWidth:100%;
+    --headerLogoWidth: auto;
+    --headerLogoMarginLeft: calc(50% - 25px);
+    --headerLogoMarginBottom: 1rem;
+    --headerLogoSize: 75px;
 
     /* ATF */
 
@@ -275,7 +304,6 @@ FIN DE MAPA DE CONTENIDOS */
     --socialContainerMarginLeft: .8rem;
 
     /* componentes */
-    --standarCardImgHeight: 20vh;
 
 
 
@@ -290,6 +318,10 @@ FIN DE MAPA DE CONTENIDOS */
     --cbbcEsMarginR: 30px;
     --itemTitlePadding: .75rem 1.5rem;
     --sectionStandarCardTxtPadding: 0;
+    --standarCardImgHeight: 150px;
+    --navBarGridR: 2;
+
+
 
     /* front-page */
     --flex5050Flex: 2 1 calc(50% - 1rem);
@@ -313,6 +345,7 @@ FIN DE MAPA DE CONTENIDOS */
     --textJustifyCenter: center;
     --showMargin: 4rem 0;
 
+    /* magazine (página) */
 
 
   }
@@ -345,6 +378,13 @@ FIN DE MAPA DE CONTENIDOS */
     /* front page */
     --sectionTitleImgHeight: 300px;
 
+    /* estructura */
+
+    --standarCardImgHeight: 200px;
+
+    /* magazine (página) */
+
+    --dividedSectionDisplay: grid;
 
 
   }
@@ -360,7 +400,6 @@ FIN DE MAPA DE CONTENIDOS */
   :root {
     --sizeR: calc(var(--sizeRd) * 1px);
     /* componentes */
-    --standarCardImgHeight: 30vh;
 
 
     /* Footer */
@@ -368,11 +407,19 @@ FIN DE MAPA DE CONTENIDOS */
 
       /* front-page */
       --simpleCardImgHeight: 80vh;
+    /* estructura */
+
+    --standarCardImgHeight: 250px;
   }
 }
 
+@media  screen and (min-width: 1400px) {
+  :root {
 
+    --standarCardImgHeight: 350px;
 
+  }
+}
 
 
 /* ---------------------------------------------------------------------------
@@ -554,12 +601,11 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
 ------------------------------------------------------------------------------
 --------------------------------------------------------------------------- */
 /* TODO: no anda el activador en scroll para firefox */
-.header{
+.header {
   align-items: center;
   display: grid;
   font-size: .6rem;
   grid-template-columns:var(--headerGTC);
-  grid-template-rows:var(--headerGTR);
   grid-row:2;
   height: min-content;
   justify-content: center;
@@ -572,30 +618,44 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
 }
 .headerTop{background:var(--color2); padding: 10px 0;}
 .headerTop .headerLogo{opacity:1}
-.headerTop .homeLink{margin-left:-500px}
+.headerTop .homeLink{margin-left:-1000px}
 .headerLogoCont{
-  height:2rem;
-  margin: .3rem .75rem;
-  width:calc(100% - 1.5rem);
+  height: min-content;
+  margin: auto;
+  margin-left: var(--headerLogoMarginLeft);
+  margin-top: var(--headerLogoMarginBottom);
   transition: inherit;
   text-align: center;
   font-size: 2rem;
   color:var(--color1);
   text-decoration:none;
+  grid-column: 1;
+  grid-row: 1;
+  width: min-content;
 }
 .headerLogo{
-  height:100%;
+  height: var(--headerLogoSize);
+  width:  var(--headerLogoSize);
   object-fit: contain;
   width:var(--headerLogoWidth);
   opacity:0;
   transition: inherit;
+}
+
+.header.headerTop .navBar{
+  grid-row: var(--navBarGridR);
 }
 .navBar{
   display:var(--onlyDesktop);
   grid-auto-flow: column;
   justify-content: center;
   grid-gap:.5rem;
+  grid-column: 1/ -1;
+  grid-row: 1;
+
 }
+
+
 
 
 /* TODO: esto deberia ser un componente */
@@ -825,7 +885,7 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
 }
 .standarCardImg {
   width: 100%;
-  height: 40vh!important;
+  height: var(--standarCardImgHeight)!important;
 }
 
 
@@ -868,6 +928,7 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
   background: var(--color2);
   margin:0 10%;
   margin-top: -100px;
+  height: 250px;
 }
 .tarjetaImg {
   height: 100%;
@@ -1136,24 +1197,29 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
                           6.6.3) =burger:
 ------------------------------------------------------------------------------
 --------------------------------------------------------------------------- */
-.burger{
-  margin:auto;
-  /* margin-right:.2rem; */
-  padding:0 .3rem;
+.burger {
+  margin: auto;
+  padding: 1rem .5rem;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background: white;
   display:var(--onlyMobile);
-  grid-column: 1/-1;
+  grid-column: 2;
+  grid-row: 1;
   transition: .25s;
 }
 .headerTop .burger {
   margin: auto;
-  margin-right: 10px;
+  margin-right: .5rem;
 }
 
-.burgerBar{
-  width: 1.5rem;
+.burgerBar {
+  width: 100%;
   height: 4px;
   border-radius: 2px;
   background: var(--color1);
+  margin: auto;
 }
 .burgerBar:nth-child(2){margin:4px 0}
 
@@ -1254,7 +1320,16 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
 }
 
 
+/* ---------------------------------------------------------------------------
+------------------------------------------------------------------------------
+                             =MAGAZINE:
+------------------------------------------------------------------------------
+--------------------------------------------------------------------------- */
 
+
+.dividedSection {
+  display: var(--dividedSectionDisplay)!important;
+}
 
 
 /* TODO: rincon de Tomi... trata de hacer algo con él */
@@ -1276,7 +1351,7 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
   height: max-content;
 }
 .itemTitle:hover{box-shadow:0 14px 28px rgba(0,0,0,.25),0 10px 10px rgba(0,0,0,.22)}
-/* .itemTitleCenter{margin:auto; text-align: center} */
+
 .itemTitleCenter {
   margin: auto;
   margin-left: 50%;

@@ -60,7 +60,7 @@
 
 
 <?php function categorySection2C ($cat, $loc){ ?>
-  <section class="section grid2C" style="align-items:flex-start;">
+  <section class="section grid2C dividedSection" style="align-items:flex-start;">
     <h4 class="colMax centerTitle specialTitle"><?php echo get_category_by_slug($cat)->name; ?></h4>
       <?php $a=0; while ($a <= 1) { ?>
         <div class="grid2C">
