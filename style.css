@@ -1118,7 +1118,7 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
 ------------------------------------------------------------------------------
 --------------------------------------------------------------------------- */
 
-.simpleCard{}
+.simpleCard{display:grid}
 .simpleCardImg {
   height: var(--simpleCardImgHeight)!important;
   width: 100%;

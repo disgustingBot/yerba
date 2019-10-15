@@ -61,7 +61,7 @@
       <span class="cbbcEs">CBbC es...</span>
       <span class="">Localización</span>
     </h4>
-  
+
     <figure class="standarCard rowcol1">
       <img class="standarCardImg rowcol1 sectonTitleImg" src="<?php echo get_template_directory_uri(); ?>/img/home/1.jpg" alt="">
       <figcaption class="standarCardTxt">
@@ -73,15 +73,15 @@
 
 
     <flex class="colMax flex2 flex5050">
-    <figure class="grid">
-      <img class="item5050Img rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/4.jpg" alt="">
+    <figure class="simpleCard">
+      <img class="simpleCardImg rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/4.jpg" alt="">
       <figcaption class="itemTitleCenter itemTitle rowcol1">
         <a href="<?php echo site_url('/ibiza'); ?>"><h5>Ibiza</h5></a>
       </figcaption>
     </figure>
 
-    <figure class="grid">
-      <img class="item5050Img rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/5.jpg" alt="">
+    <figure class="simpleCard">
+      <img class="simpleCardImg rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/5.jpg" alt="">
       <figcaption class="itemTitleCenter itemTitle rowcol1">
         <a href="<?php echo site_url('/andorra'); ?>"><h5>Andorra</h5></a>
       </figcaption>
@@ -185,15 +185,15 @@
 
   <flex class="colMax flex2 flex5050">
 
-    <figure class="grid">
-      <img class="item5050Img rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/12.jpg" alt="">
+    <figure class="simpleCard">
+      <img class="simpleCardImg rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/12.jpg" alt="">
       <figcaption class="itemTitle itemTitleCenter rowcol1">
         <a href="#"><h5>Mar</h5></a>
       </figcaption>
     </figure>
 
-    <figure class="grid">
-      <img class="item5050Img rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/13.jpg" alt="">
+    <figure class="simpleCard">
+      <img class="simpleCardImg rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/home/13.jpg" alt="">
       <figcaption class="itemTitle itemTitleCenter rowcol1">
         <a href="#"><h5>Montaña</h5></a>
       </figcaption>
