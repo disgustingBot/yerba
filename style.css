@@ -60,6 +60,7 @@ N) =Font:
 6.3.2) =section localizaciones:
 6.3.3) =section Gastronomía:
 6.4) =holyLink:
+7) =single.php
 
 
 FIN DE MAPA DE CONTENIDOS */
@@ -1442,3 +1443,44 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
 --------------------------------------------------------------------------- */
 
 .magazineFlex{padding: 0 12.5%}
+
+
+/* ---------------------------------------------------------------------------
+------------------------------------------------------------------------------
+                               7) =single.php
+------------------------------------------------------------------------------
+--------------------------------------------------------------------------- */
+
+
+.singleATFImg {
+  width: 100%;
+  height: 100vh;
+}
+
+.singleContent {
+  padding: 0 2.5%;
+}
+
+.singleContent p {
+  margin: 50px 0;
+}
+
+
+.singleContent img {
+  width: 80%;
+}
+
+.theContent {
+  grid-column: span 6;
+  padding: 0 2.5%;
+}
+
+.singleBanner {
+  position: sticky;
+  top: 10%;
+  margin: 0 0 auto auto;
+  background: #bbb;
+  grid-column: span 2;
+  height: 80vh;
+  width: 100%;
+}
