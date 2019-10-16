@@ -13,8 +13,6 @@
 </figure>
 
 
-
-
 <section class="section singleContent">
 
   <div class="theContent">
