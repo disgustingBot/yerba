@@ -40,7 +40,7 @@ function excerpt($charNumber){
   $excerpt = substr($excerpt, 0, $charNumber);
   $result  = substr($excerpt, 0, strrpos($excerpt, ' '));
   // $result += $result . '(...)';
-  echo $result;
+  return $result;
 }
 
 
@@ -108,3 +108,84 @@ function wpb_move_comment_field_to_bottom( $fields ) {
 }
 
 add_filter( 'comment_form_fields', 'wpb_move_comment_field_to_bottom');
+
+
+
+
+
+
+
+
+
+
+
+
+// [restaurants  location='ibiza' cant=5]
+add_shortcode( 'restaurants', 'lattedev_call_restaurants' );
+function lattedev_call_restaurants( $atts ) {
+  $q = new WP_Query(array(
+      'post_type' => 'restaurant',
+      'posts_per_page' => $atts['cant'],
+      'tax_query' => array(
+          array(
+              'taxonomy' => 'loc',   // taxonomy name
+              'field' => 'slug',           // term_id, slug or name
+              'terms' => $atts['location'],                  // term id, term slug or term name
+          )
+      ),
+  ));
+  while ($q->have_posts()) {$q->the_post();
+    $buffer .= '<figure class="hidshow grid">';
+      $buffer .= '<img class="hidshowImg rowcol1" src="'.get_the_post_thumbnail_url(get_the_ID()).'" alt="">';
+      $buffer .= '<figcaption class="grid rowcol1">';
+        $buffer .= '<p class="itemTitle rowcol1 itemTitleTR">'.get_the_title().'</p>';
+        $buffer .= '<p class="rowcol1 hidshowTxt">'.get_the_excerpt().'</p>';
+      $buffer .= '</figcaption>';
+    $buffer .= '</figure>';
+  } wp_reset_postdata();
+  return $buffer;
+}
+
+
+// [magazine  tag='featured']
+add_shortcode( 'magazine', 'lattedev_call_magazine' );
+function lattedev_call_magazine( $atts ) {
+  $buffer .= '<section class="section">
+                <h4 class="centerTitle colMax">
+                  <span class="magazineTitle1">CBbC</span>
+                  <span class="specialTxt">Life</span>
+                  <span class="magazineTitle3">Magazine</span>
+                </h4>
+                <flex class="magazineFlex flex3 colMax">';
+
+    $q = new WP_Query(array(
+        'post_type' => 'post',
+        'posts_per_page' => 3,
+        'tag' => $atts['tag'],
+    ));
+    while ($q->have_posts()) {$q->the_post();
+      $buffer .= '<figure class="standarCard">';
+        $buffer .= '<img class="standarCardImg rowcol1" src="'.get_the_post_thumbnail_url(get_the_ID()).'" alt="">';
+        $buffer .= '<figcaption class="standarCardTxt">';
+          $buffer .= '<h6>'.get_the_title().'</h6>';
+          $buffer .= '<p>'.excerpt(100).'</p>';
+        $buffer .= '</figcaption>';
+      $buffer .= '</figure>';
+    } wp_reset_postdata();
+
+    $buffer .= '</flex></section>';
+
+    return $buffer;
+}
+
+
+
+// [map]
+add_shortcode( 'map', 'lattedev_call_map' );
+function lattedev_call_map( $atts ) {
+  $buffer .= '<section class="ayuda">
+                <iframe class="ayudaMap" src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=Cala%20bassa%20CBbC%2C%20ibiza+(CBbC)&amp;ie=UTF8&amp;t=&amp;z=16&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+              </section>';
+
+  return $buffer;
+}

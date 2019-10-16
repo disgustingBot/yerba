@@ -177,8 +177,10 @@
 
 
 <section class="ayuda">
-  <img class="ayudaimg" src="<?php echo get_template_directory_uri(); ?>/img/ibiza/mapa1.jpg" alt="">
-  <h4 class="ayudaTitle specialTitle rowcol1">¿En qué podemos ayudarte?</h4>
+  <iframe class="ayudaMap" src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=Cala%20bassa%20CBbC%2C%20ibiza+(CBbC)&amp;ie=UTF8&amp;t=&amp;z=16&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+  <!-- <img class="ayudaMap" src="<?php echo get_template_directory_uri(); ?>/img/ibiza/mapa1.jpg" alt=""> -->
+
+  <!-- <h4 class="ayudaTitle specialTitle rowcol1">¿En qué podemos ayudarte?</h4>
   <flex class="ayudaFlex flex4">
     <figure class="info">
       <img class="infoImg" src="<?php echo get_template_directory_uri(); ?>/img/ibiza/parking.png" alt="">
@@ -208,7 +210,7 @@
         <p>Lorem ipsum dolor sit amet ipsum dolor.</p>
       </figcaption>
     </figure>
-  </flex>
+  </flex> -->
 </section>
 
 
@@ -257,6 +259,17 @@
 
 </section>
 
+
+
+
+<!-- <div>
+  <iframe src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=Cala%20bassa%20CBbC%2C%20ibiza+(CBbC)&amp;ie=UTF8&amp;t=&amp;z=16&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+  <div style="position: absolute;width: 80%;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;">
+    <small style="line-height: 1.8;font-size: 2px;background: #fff;">Powered by <a href="http://www.googlemapsgenerator.com/ja/">Googlemapsgenerator.com/ja/</a> & <a href="https://energiawiatru.eu/">groen gas nederland</a></small>
+  </div>
+  <style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+</div>
+<br /> -->
 
 
 <?php get_footer(); ?>
