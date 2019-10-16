@@ -29,7 +29,11 @@
       <?php } ?>
       <nav id="navBar" class="headerCont navBar">
         <a class="subrayable homeLink<?php if(is_front_page()){echo ' subrayado"';} ?>" href="<?php echo site_url(''); ?>">CBbC</a>
-        <a class="subrayable<?php if(is_page("localizacion")){echo ' subrayado"';} ?>" href="<?php echo site_url('/localizacion'); ?>">Localización</a>
+        <a class="subrayable locationLink<?php if(is_page("localizacion")){echo ' subrayado"';} ?>" href="<?php echo site_url('/localizacion'); ?>">Localización</a>
+        <!-- <div class="headerLocations">
+          <a class="subrayable" href="">Ibiza</a>
+          <a class="subrayable" href="">Andorra</a>
+        </div> -->
         <a class="subrayable<?php if(is_category("gastronomia")){echo ' subrayado"';} ?>" href="<?php echo site_url('/category/gastronomia'); ?>">Gastronomía</a>
         <a class="subrayable<?php if(is_category("experiencias")){echo ' subrayado"';} ?>" href="<?php echo site_url('/category/experiencias'); ?>">Experiencias</a>
         <?php if ( !$isMagazine ): ?>
