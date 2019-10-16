@@ -24,7 +24,7 @@
       <img class="standarCardImg rowcol1" src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt="">
       <figcaption class="">
         <h5><?php the_title(); ?></h5>
-        <p><?php excerpt(200); ?></p>
+        <p><?php echo excerpt(200); ?></p>
       </figcaption>
     </figure>
     <?php } ?>
@@ -45,7 +45,7 @@
         <img class="standarCardImg rowcol1" src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt="">
         <h5 class="itemTitleCenter rowcol1 itemTitle"><?php the_title(); ?></h5>
         <figcaption class="">
-          <p><?php excerpt(100); ?></p>
+          <p><?php echo excerpt(100); ?></p>
         </figcaption>
       </figure>
 
@@ -94,7 +94,7 @@
             <img class="tarjetaImg" src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt="" >
             <figcaption class="tarjetaCaption ">
               <h5><?php the_title(); ?></h5>
-              <p><?php excerpt(100); ?></p>
+              <p><?php echo excerpt(100); ?></p>
             </figcaption>
           </figure>
         <?php } ?>
@@ -113,7 +113,7 @@
             <img class="standarCardImg rowcol1" src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt="">
             <figcaption class="">
               <h5><?php the_title(); ?></h5>
-              <p><?php excerpt(100); ?></p>
+              <p><?php echo excerpt(100); ?></p>
             </figcaption>
           </figure>
         <?php } ?>
