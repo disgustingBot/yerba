@@ -14,14 +14,15 @@
 
 	<view id="load" class="load"><div class="circle"></div></view>
 
+  <?php if( is_page("magazine") || is_single() || is_archive()){ $isMagazine = true; } else { $isMagazine = false; } ?>
 
-    <header class="header">
-      <?php if(is_front_page()){ ?>
+    <header class="header<?php if($isMagazine){echo " alt";} ?>">
+      <?php if( !$isMagazine ){ ?>
         <a class="headerLogoCont" href="<?php echo site_url(''); ?>">
           <img class="headerLogo" src="<?php echo get_template_directory_uri(); ?>/img/logoCasiLimpio.png" alt="">
         </a>
       <?php } ?>
-      <?php if(is_page(array("magazine"))){ ?>
+      <?php if( $isMagazine ){ ?>
         <a class="headerLogoCont" href="<?php echo site_url('/magazine'); ?>">
           CBbC <span class="specialTxt">Life</span> Magazine
         </a>
@@ -31,7 +32,9 @@
         <a class="subrayable<?php if(is_page("localizacion")){echo ' subrayado"';} ?>" href="<?php echo site_url('/localizacion'); ?>">Localización</a>
         <a class="subrayable<?php if(is_category("gastronomia")){echo ' subrayado"';} ?>" href="<?php echo site_url('/category/gastronomia'); ?>">Gastronomía</a>
         <a class="subrayable<?php if(is_category("experiencias")){echo ' subrayado"';} ?>" href="<?php echo site_url('/category/experiencias'); ?>">Experiencias</a>
-        <a class="subrayable<?php if(is_page("about")){echo ' subrayado"';} ?>" href="<?php echo site_url('/about'); ?>">About Us</a>
+        <?php if ( !$isMagazine ): ?>
+          <a class="subrayable<?php if(is_page("about")){echo ' subrayado"';} ?>" href="<?php echo site_url('/about'); ?>">About Us</a>
+        <?php endif; ?>
         <a class="subrayable<?php if(is_page("eventos")){echo ' subrayado"';} ?>" href="<?php echo site_url('/eventos'); ?>">Eventos</a>
         <a class="subrayable magazineLink<?php if(is_page("magazine")){echo ' subrayado"';} ?>" href="<?php echo site_url('/magazine'); ?>">CBbC <span class="specialTxt">Life</span> Magazine</a>
         <button class="suscribeButton">+SUSCRIBETE</button>

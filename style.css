@@ -613,6 +613,21 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
 
 }
 
+.header.alt{
+  grid-row: 1;
+  width: min-content;
+  margin: auto;
+  margin-top:0;
+}
+.header.alt .headerLogoCont{
+  width: max-content;
+  margin:auto;
+}
+
+
+
+
+
 
 
 
