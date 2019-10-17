@@ -170,6 +170,14 @@ FIN DE MAPA DE CONTENIDOS */
     --sectionStandarCardTxtPadding: 0 10px;
     --standarCardImgHeight: 200px;
     --navBarGridR: 1;
+    --singleBannerDisplay: none;
+    --theContentGridC: 1/ -1;
+    --theStringWidth: 300px;
+    --singleSocialWidth: 25px;
+    --singleSocialMargin: 5px;
+
+
+
 
 
 
@@ -254,7 +262,6 @@ FIN DE MAPA DE CONTENIDOS */
 @media screen and (min-width: 576px) {
   :root {
     --standarCardImgHeight: 300px;
-
   }
 }
 /* ---------------------------------------------------------------------------
@@ -320,6 +327,12 @@ FIN DE MAPA DE CONTENIDOS */
     --sectionStandarCardTxtPadding: 0;
     --standarCardImgHeight: 150px;
     --navBarGridR: 2;
+    --singleBannerDisplay: block;
+    --theContentGridC: span 6;
+    --theStringWidth: 400px;
+    --singleSocialWidth: 30px;
+    --singleSocialMargin: 10px;
+
 
 
 
@@ -1515,8 +1528,8 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
   display: flex;
 }
 .singleSocialContainer svg{
-  width: 30px;
-  margin: 10px;
+  width: var(--singleSocialWidth);
+  margin: var(--singleSocialMargin);
 }
 
 .singleSocialContainer svg:first-child{
@@ -1526,7 +1539,7 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
 
 .theString {
   grid-column: span 2;
-  width: 400px;
+  width: var(--theStringWidth);
   height:4px;
   background: black;
   margin: auto;
@@ -1550,11 +1563,12 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
 }
 
 .theContent {
-  grid-column: span 6;
+  grid-column: var(--theContentGridC);
   padding: 0 2.5%;
 }
 
 .singleBanner {
+  display: var(--singleBannerDisplay);
   position: sticky;
   top: 10%;
   margin: 0 0 auto auto;

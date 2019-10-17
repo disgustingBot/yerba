@@ -8,7 +8,6 @@
   <img class="singleATFImg rowcol1 lazy" data-url="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt="">
   <figcaption class="imgAuthor flex rowcol1">
     <p><span><em>Arthur Livingston</em></span><span>&nbsp/&nbsp</span><span><p>Lorem ipsum</p></span></p>
-
   </figcaption>
 </figure>
 
