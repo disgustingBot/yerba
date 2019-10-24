@@ -7,12 +7,22 @@
 
   <?php wp_head(); ?>
   <link href="https://fonts.googleapis.com/css?family=Abhaya+Libre:400,600&display=swap" rel="stylesheet">
+
+  <?php if (session_id()) { ?>
+    <style>.popup{display:none}</style>
+  <?php } ?>
 </head>
 <body>
 
+
+
   <?php if(is_user_logged_in()){ ?><style>:root{--top0: var(--topCero)}</style><?php }; ?>
 
-	<view id="load" class="load"><div class="circle"></div></view>
+	<view id="load" class="load">
+    <svg class="roll">
+      <circle cx="50" cy="50" r="45"></circle>
+    </svg>
+  </view>
 
   <?php if( is_page("magazine") || is_single() || is_archive()){ $isMagazine = true; } else { $isMagazine = false; } ?>
 
@@ -29,11 +39,13 @@
       <?php } ?>
       <nav id="navBar" class="headerCont navBar">
         <a class="subrayable homeLink<?php if(is_front_page()){echo ' subrayado"';} ?>" href="<?php echo site_url(''); ?>">CBbC</a>
-        <a class="subrayable locationLink<?php if(is_page("localizacion")){echo ' subrayado"';} ?>" href="<?php echo site_url('/localizacion'); ?>">Localización</a>
-        <!-- <div class="headerLocations">
-          <a class="subrayable" href="">Ibiza</a>
-          <a class="subrayable" href="">Andorra</a>
-        </div> -->
+        <div class="subrayable locationLink">
+          <p class="locationText">Localización</p>
+          <div class="headerLocations">
+            <a class="subrayable" href="">Ibiza</a>
+            <a class="subrayable" href="">Andorra</a>
+          </div>
+        </div>
         <a class="subrayable<?php if(is_category("gastronomia")){echo ' subrayado"';} ?>" href="<?php echo site_url('/category/gastronomia'); ?>">Gastronomía</a>
         <a class="subrayable<?php if(is_category("experiencias")){echo ' subrayado"';} ?>" href="<?php echo site_url('/category/experiencias'); ?>">Experiencias</a>
         <?php if ( !$isMagazine ): ?>
@@ -54,7 +66,13 @@
 
       <nav id="navBar" class="navBarAlt">
         <a class="subrayable homeLink<?php if(is_front_page()){echo ' subrayado"';} ?>" href="<?php echo site_url(''); ?>">CBbC</a>
-        <a class="subrayable<?php if(is_page("localizacion")){echo ' subrayado"';} ?>" href="<?php echo site_url('/localizacion'); ?>">Localización</a>
+        <div class="subrayable mobileMenuLocationLink">
+          <p class="locationText">Localización</p>
+          <div class="navBarLocations">
+            <a class="navBarLocationLinks subrayable" href="">Ibiza</a>
+            <a class="navBarLocationLinks subrayable" href="">Andorra</a>
+          </div>
+        </div>
         <a class="subrayable<?php if(is_category("gastronomia")){echo ' subrayado"';} ?>" href="<?php echo site_url('/category/gastronomia'); ?>">Gastronomía</a>
         <a class="subrayable<?php if(is_category("experiencias")){echo ' subrayado"';} ?>" href="<?php echo site_url('/category/experiencias'); ?>">Experiencias</a>
         <a class="subrayable<?php if(is_page("about")){echo ' subrayado"';} ?>" href="<?php echo site_url('/about'); ?>">About Us</a>
@@ -64,8 +82,8 @@
       </nav>
 
 
-          <button class="close" onclick="alternateNavBar()">
-            <div class="cross"></div>
-            <div class="cross cross2"></div>
-          </button>
+      <button class="close" onclick="alternateNavBar()">
+        <div class="cross"></div>
+        <div class="cross cross2"></div>
+      </button>
     </menu>
