@@ -212,7 +212,6 @@ function lattedev_call_map( $atts ) {
 
 
 
-
 // https://rudrastyh.com/instagram/get-recent-photos-php.html
 
 function rudr_instagram_api_curl_connect( $api_url ){
@@ -224,3 +223,19 @@ function rudr_instagram_api_curl_connect( $api_url ){
 	curl_close( $connection_c ); // close connection
 	return json_decode( $json_return ); // decode and return
 }
+
+
+
+
+
+
+//Add our widget locations
+
+function CBbCWidgetsInit() {
+  register_sidebar( array (
+    'name' => 'sidebar',
+    'id'   => 'sidebar1'
+  ));
+}
+
+ add_action('widgets_init', 'CBbCWidgetsInit');
