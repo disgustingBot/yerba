@@ -1560,6 +1560,7 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
 }
 .singleContent img {
   margin: auto;
+  max-width: 80%;
 }
 
 .theContent {

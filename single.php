@@ -104,5 +104,10 @@
 </section>
 
 
+
+<?php echo get_sidebar('sidebar1')?>
+
+
+
 <?php } wp_reset_query(); ?>
 <?php get_footer(); ?>
