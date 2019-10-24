@@ -24,6 +24,14 @@ function gp_init() {
 }
 add_action('after_setup_theme', 'gp_init');
 
+
+// add_action('init', 'cyb_session_start', 1);
+// function cyb_session_start() {
+//     if( ! session_id() ) {
+//         session_start();
+//     }
+// }
+
 // this removes the "Archive" word from the archive title in the archive page
 add_filter('get_the_archive_title',function($title){
   if(is_category()){$title=single_cat_title('',false);
@@ -189,6 +197,33 @@ function lattedev_call_map( $atts ) {
 
   return $buffer;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// https://rudrastyh.com/instagram/get-recent-photos-php.html
+
+function rudr_instagram_api_curl_connect( $api_url ){
+	$connection_c = curl_init(); // initializing
+	curl_setopt( $connection_c, CURLOPT_URL, $api_url ); // API URL to connect
+	curl_setopt( $connection_c, CURLOPT_RETURNTRANSFER, 1 ); // return the result, do not print
+	curl_setopt( $connection_c, CURLOPT_TIMEOUT, 20 );
+	$json_return = curl_exec( $connection_c ); // connect and get json data
+	curl_close( $connection_c ); // close connection
+	return json_decode( $json_return ); // decode and return
+}
+
 
 
 
