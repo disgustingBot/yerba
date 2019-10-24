@@ -189,3 +189,18 @@ function lattedev_call_map( $atts ) {
 
   return $buffer;
 }
+
+
+
+
+
+//Add our widget locations
+
+function CBbCWidgetsInit() {
+  register_sidebar( array (
+    'name' => 'sidebar',
+    'id'   => 'sidebar1'
+  ));
+}
+
+ add_action('widgets_init', 'CBbCWidgetsInit');
