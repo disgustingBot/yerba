@@ -178,6 +178,10 @@ FIN DE MAPA DE CONTENIDOS */
     --theStringWidth: 300px;
     --singleSocialWidth: 25px;
     --singleSocialMargin: 5px;
+    --respondPadding: 20px;
+    --respondFormGridTemplateC: 1fr;
+    --formSubmitGridC: 1;
+    --respondFormHeight: 500px;
 
 
     /* front-page */
@@ -262,6 +266,17 @@ FIN DE MAPA DE CONTENIDOS */
   :root {
     --standarCardImgHeight: 300px;
 
+    /* =single */
+    --singleBannerDisplay: block;
+    --theContentGridC: span 6;
+    --theStringWidth: 400px;
+    --singleSocialWidth: 30px;
+    --singleSocialMargin: 10px;
+    --respondPadding: 50px;
+    --respondFormGridTemplateC: 1fr 1fr;
+    --formSubmitGridC: 2;
+    --respondFormHeight: 300px;
+
   }
 }
 /* ---------------------------------------------------------------------------
@@ -326,12 +341,9 @@ FIN DE MAPA DE CONTENIDOS */
     --standarCardImgHeight: 150px;
     --navBarGridR: 2;
 
-    /* =single */
-    --singleBannerDisplay: block;
-    --theContentGridC: span 6;
-    --theStringWidth: 400px;
-    --singleSocialWidth: 30px;
-    --singleSocialMargin: 10px;
+
+
+
 
 
 
@@ -1457,6 +1469,7 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
 /* TODO: hacelo con mucho amor y criterio y sin hardcode porfis */
 /* TODO: todas estas clases estan siendo usadas en algun lado */
 /* Items with images */
+
 .itemTitle {
   background: white;
   max-width: 90%;
@@ -1721,3 +1734,65 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
 
 .rssSingle {margin: auto!important;}
 .rssSingle svg {margin: 0;}
+
+
+.singleCommentBox {
+  display: flex;
+}
+
+#respond {
+  display: flex;
+  flex-direction: column;
+  background: #232323;
+  color: white;
+  justify-content: center;
+  padding: var(--respondPadding);
+}
+
+#respond form {
+  height: var(--respondFormHeight);
+  display: grid;
+  grid-template-columns: var(--respondFormGridTemplateC);
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 20px;
+}
+
+
+#respond form input {
+  padding: 5px 10px;
+  grid-template-columns: 1fr;
+}
+#respond form input::placeholder {color:black;}
+#wp-comment-cookies-consent {width: 20px;height: 20px; margin: 5px 20px;}
+
+
+#reply-title {
+  font-size: var(--size8);
+  margin: 10px 0;
+}
+
+.form-submit {
+  grid-column: var(--formSubmitGridC);
+  width: fit-content;
+  height: min-content;
+  margin: 0 auto!important;
+}
+
+.form-submit input {
+  border: none;
+  background: #358EE9;
+  padding: 15px 30px!important;
+  color: white;
+  font-size: var(--color5);
+
+}
+
+.comment-form-cookies-consent {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+#comment {
+  grid-column: 1;
+  grid-row: 1/ -1;
+}
