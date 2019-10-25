@@ -43,8 +43,9 @@
 
       <figure class="standarCard sectionItem">
         <img class="standarCardImg rowcol1" src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt="">
-        <h5 class="itemTitleCenter rowcol1 itemTitle"><?php the_title(); ?></h5>
+        <!-- <h5 class="itemTitleCenter rowcol1 itemTitle"><?php the_title(); ?></h5> -->
         <figcaption class="">
+          <h5><?php the_title(); ?></h5>
           <p><?php echo excerpt(100); ?></p>
         </figcaption>
       </figure>

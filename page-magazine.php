@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
-<!-- <section class="magazineATF" id="headerActivator"> -->
-<section class="magazineATF">
+<!-- <section class="sliderATF" id="headerActivator"> -->
+<section class="sliderATF">
 <?php
   $args=array(
     'post_type'=>'post',
