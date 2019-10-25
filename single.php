@@ -105,7 +105,7 @@
 
 
 
-<?php echo get_sidebar('sidebar1')?>
+<?php //echo get_sidebar('sidebar1'); ?>
 
 
 
