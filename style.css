@@ -172,6 +172,13 @@ FIN DE MAPA DE CONTENIDOS */
     --navBarGridR: 1;
 
 
+      /* =single */
+    --singleBannerDisplay: none;
+    --theContentGridC: 1/ -1;
+    --theStringWidth: 300px;
+    --singleSocialWidth: 25px;
+    --singleSocialMargin: 5px;
+
 
     /* front-page */
 
@@ -318,6 +325,13 @@ FIN DE MAPA DE CONTENIDOS */
     --sectionStandarCardTxtPadding: 0;
     --standarCardImgHeight: 150px;
     --navBarGridR: 2;
+
+    /* =single */
+    --singleBannerDisplay: block;
+    --theContentGridC: span 6;
+    --theStringWidth: 400px;
+    --singleSocialWidth: 30px;
+    --singleSocialMargin: 10px;
 
 
 
@@ -1610,6 +1624,62 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
   height: 100vh;
 }
 
+
+.imgAuthor{
+  background: white;
+  border-radius: 0 8px 0 0;
+  padding: 5px 20px;
+  height: 45px;
+  width: auto;
+  z-index: 2;
+  margin: auto auto 0 0;
+}
+
+.imgAuthor p {
+  margin: auto auto 0 0;
+  font-size: 1rem;
+}
+
+.singleTitleContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr min-content;
+  color: black;
+}
+.singleTitle {padding-right: 20px; text-align: right; font-size: 1.5rem;}
+.singleTitleInfo {padding-left: 20px; padding-top: 10px; color: #434343;}
+
+
+.theCategory li {list-style: none; margin: 10px 0;}
+
+.theCategory li a {
+  text-decoration: none;
+  color: #434343;
+  text-transform: uppercase;
+}
+
+.singleSocialContainer {
+  display: flex;
+}
+.singleSocialContainer svg{
+  width: var(--singleSocialWidth);
+  margin: var(--singleSocialMargin);
+}
+
+.singleSocialContainer svg:first-child{
+  margin-left: 0;
+}
+
+
+.theString {
+  grid-column: span 2;
+  width: var(--theStringWidth);
+  height:4px;
+  background: black;
+  margin: auto;
+  margin-top: 0;
+}
+
 .singleContent {
   padding: 0 2.5%;
 }
@@ -1624,14 +1694,16 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
 }
 .singleContent img {
   margin: auto;
+  max-width: 80%;
 }
 
 .theContent {
-  grid-column: span 6;
+  grid-column: var(--theContentGridC);
   padding: 0 2.5%;
 }
 
 .singleBanner {
+  display: var(--singleBannerDisplay);
   position: sticky;
   top: 10%;
   margin: 0 0 auto auto;
