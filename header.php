@@ -66,8 +66,8 @@
           <a class="subrayable<?php if(is_category("lugares")){echo ' subrayado"';} ?>" href="<?php echo site_url('/category/lugares'); ?>">Lugares</a>
           <a class="subrayable<?php if(is_category("paladar")){echo ' subrayado"';} ?>" href="<?php echo site_url('/category/paladar'); ?>">Paladar</a>
           <a class="subrayable<?php if(is_category("experiencias")){echo ' subrayado"';} ?>" href="<?php echo site_url('/category/experiencias'); ?>">Experiencias</a>
-          <a class="subrayable<?php if(is_category("gastronomia")){echo ' subrayado"';} ?>" href="<?php echo site_url('/category/gastronomia'); ?>">Gastronomía</a>
-          <a class="subrayable<?php if(is_page("eventos")){echo ' subrayado"';} ?>" href="<?php echo site_url('/eventos'); ?>">Eventos</a>
+          <a class="subrayable<?php if(is_category("planes")){echo ' subrayado"';} ?>" href="<?php echo site_url('/category/planes'); ?>">Planes</a>
+          <a class="subrayable<?php if(is_category("music")){echo ' subrayado"';} ?>" href="<?php echo site_url('/category/music'); ?>">Musica</a>
           <button class="suscribeButton">+SUSCRIBETE</button>
         </nav>
       <?php } ?>
@@ -81,6 +81,7 @@
     <menu class="mobileMenu" id="mobileMenu">
 
       <nav id="navBar" class="navBarAlt">
+        <?php if( !$isMagazine ){ ?>
         <a class="subrayable homeLink<?php if(is_front_page()){echo ' subrayado"';} ?>" href="<?php echo site_url(''); ?>">CBbC</a>
         <div class="subrayable mobileMenuLocationLink">
           <p class="locationText">Localización</p>
@@ -95,6 +96,24 @@
         <a class="subrayable<?php if(is_page("eventos")){echo ' subrayado"';} ?>" href="<?php echo site_url('/eventos'); ?>">Eventos</a>
         <a class="subrayable magazineLink<?php if(is_page("magazine")){echo ' subrayado"';} ?>" href="<?php echo site_url('/magazine'); ?>">CBbC <span class="specialTxt">Life</span> Magazine</a>
         <button class="suscribeButton">+SUSCRIBETE</button>
+      <?php } ?>
+
+
+
+
+
+      <?php if( $isMagazine ){ ?>
+        <a class="subrayable<?php if(is_front_page()){echo ' subrayado"';} ?>" href="<?php echo site_url(''); ?>">Home</a>
+        <a class="subrayable<?php if(is_category("news")){echo ' subrayado"';} ?>" href="<?php echo site_url('/category/news'); ?>">News</a>
+        <a class="subrayable<?php if(is_category("lugares")){echo ' subrayado"';} ?>" href="<?php echo site_url('/category/lugares'); ?>">Lugares</a>
+        <a class="subrayable<?php if(is_category("paladar")){echo ' subrayado"';} ?>" href="<?php echo site_url('/category/paladar'); ?>">Paladar</a>
+        <a class="subrayable<?php if(is_category("experiencias")){echo ' subrayado"';} ?>" href="<?php echo site_url('/category/experiencias'); ?>">Experiencias</a>
+        <a class="subrayable<?php if(is_category("planes")){echo ' subrayado"';} ?>" href="<?php echo site_url('/category/planes'); ?>">Planes</a>
+        <a class="subrayable<?php if(is_category("music")){echo ' subrayado"';} ?>" href="<?php echo site_url('/category/music'); ?>">Musica</a>
+        <button class="suscribeButton">+SUSCRIBETE</button>
+      <?php } ?>
+
+
       </nav>
 
 
