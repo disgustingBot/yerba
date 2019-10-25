@@ -1574,6 +1574,10 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
 ------------------------------------------------------------------------------
 --------------------------------------------------------------------------- */
 
+.singleATF {
+  grid-row: 1/3;
+}
+
 
 .singleATFImg {
   width: 100%;
@@ -1668,3 +1672,12 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
   height: 80vh;
   width: 100%;
 }
+
+.singleSocialContainer.altSocial {
+  margin: auto;
+  width: fit-content;
+  height: min-content;
+}
+
+.rssSingle {margin: auto!important;}
+.rssSingle svg {margin: 0;}
