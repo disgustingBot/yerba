@@ -669,15 +669,21 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
 
 .header.alt{
   grid-row: 1;
-  width: min-content;
+  width: max-content;
+  grid-auto-columns: min-content;
   margin: auto;
   margin-top:0;
+  /* padding:.2rem 1rem; */
 }
 .header.alt .headerLogoCont{
   width: max-content;
   margin:auto;
+  padding:0 1rem;
 }
 
+.header.alt .navBar{
+  padding: 0 3rem;
+}
 
 
 .locationLink{
@@ -1016,6 +1022,11 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
   grid-column: var(--sectionStandarCardGridC);
 }
 
+.section>.standarCard .standarCardImg {
+  height: calc( var(--sectionTitleImgHeight) * 1px);
+}
+
+
 .section>.standarCard figcaption{
   padding: var(--sectionStandarCardTxtPadding);
 }
@@ -1324,17 +1335,16 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
 ------------------------------------------------------------------------------
 --------------------------------------------------------------------------- */
 .burger {
-  margin: auto;
-  padding: .5rem .5rem;
-  /* border-radius: 50%; */
-  width: 50px;
-  height: 2rem;
-  /* background: white; */
+  cursor: pointer;
   display:var(--onlyMobile);
   grid-column: 2;
   grid-row: 1;
-  transition: .25s;
+  height: 2rem;
+  margin: auto;
   margin-right: .5rem;
+  padding: .5rem .5rem;
+  transition: .25s;
+  width: 50px;
 }
 /* .headerTop .burger {
   margin: auto;
@@ -1395,7 +1405,7 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
 --------------------------------------------------------------------------- */
 .slideButton{
   background-color: red;
-  background: linear-gradient(to left, transparent, rgba(0,0,0,.5));
+  background: linear-gradient(to left, transparent, rgba(0,0,0,.4));
   border: none;
   color:white;
   height: 100%;
@@ -1407,7 +1417,7 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
 }
 .slideRight{
   margin-left: auto;
-  background: linear-gradient(to right, transparent, rgba(0,0,0,.5));
+  background: linear-gradient(to right, transparent, rgba(0,0,0,.4));
 }
 
 
@@ -1577,11 +1587,6 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
   text-transform: capitalize;
   justify-content: var(--sectionTitleJustifyContent);
   font-weight: 200;
-}
-
-
-.sectonTitleImg {
-  height: calc( var(--sectionTitleImgHeight) * 1px);
 }
 
 /* IMG height con Pixel perfect line height igual al font size en REM, luego calcular el margin top en base a esos valores */
