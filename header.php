@@ -46,7 +46,7 @@
             <a class="subrayable<?php if(is_page("about")){echo ' subrayado"';} ?>" href="<?php echo site_url('/about'); ?>">About Us</a>
           <?php endif; ?>
           <a class="subrayable<?php if(is_page("eventos")){echo ' subrayado"';} ?>" href="<?php echo site_url('/eventos'); ?>">Eventos</a>
-          <a class="subrayable magazineLink<?php if(is_page("magazine")){echo ' subrayado"';} ?>" href="<?php echo site_url('/magazine'); ?>">CBbC <span class="specialTxt">Life</span> Magazine</a>
+          <a class="subrayable magazineLink<?php if(is_page("magazine")){echo ' subrayado"';} ?>" href="<?php echo site_url('/magazine'); ?>">CBbC <span class="specialTxt">life</span> Magazine</a>
           <button class="suscribeButton">+SUSCRIBETE</button>
         </nav>
       <?php } ?>

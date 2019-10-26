@@ -210,7 +210,7 @@
 <section class="section">
   <h4 class="centerTitle colMax">
     <span class="magazineTitle1">CBbC</span>
-    <span class="specialTxt">Life</span>
+    <span class="specialTxt">life</span>
     <span class="magazineTitle3">Magazine</span>
   </h4>
 

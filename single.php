@@ -184,6 +184,35 @@
 
 </section>
 
+<flex class="magazineFlex flex3 colMax articulosRelacionados">
+  <h4><span class="blueTxt">Artículos relacionados</span> / más del autor</h4>
+  <figure class="standarCard">
+    <img src="<?php echo get_template_directory_uri(); ?>/img/home/114579-261.jpg" alt="" class="standarCardImg rowcol1">
+    <figcaption class="">
+      <p>Dolor sit amet, consectetur adipiscing elit</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </figcaption>
+  </figure>
+
+
+  <figure class="standarCard">
+    <img src="<?php echo get_template_directory_uri(); ?>/img/home/23-2148153662.jpg" alt=""class="standarCardImg rowcol1">
+    <figcaption class="">
+      <p>Dolor sit amet, consectetur adipiscing elit</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.</p>
+    </figcaption>
+  </figure>
+
+  <figure class="standarCard">
+    <img src="<?php echo get_template_directory_uri(); ?>/img/home/23-2147717087.png" alt=""class="standarCardImg rowcol1">
+    <figcaption class="">
+      <p>Dolor sit amet, consectetur adipiscing elit</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.</p>
+    </figcaption>
+  </figure>
+
+</flex>
+
 <!-- .comment-list -->
     <ul class="comment-list comments">
       <?php wp_list_comments(array('callback' => 'better_comments')); ?>
