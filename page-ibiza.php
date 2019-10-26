@@ -228,7 +228,6 @@
   <flex class="magazineFlex flex3 colMax">
     <figure class="standarCard">
       <img src="<?php echo get_template_directory_uri(); ?>/img/home/114579-261.jpg" alt="" class="standarCardImg rowcol1">
-      <h5 class="itemTitleCenter rowcol1 itemTitle">Platos de Andorra</h5>
       <figcaption class="">
         <p>Dolor sit amet, consectetur adipiscing elit</p>
         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -238,7 +237,6 @@
 
     <figure class="standarCard">
       <img src="<?php echo get_template_directory_uri(); ?>/img/home/23-2148153662.jpg" alt=""class="standarCardImg rowcol1">
-      <h5 class="itemTitleCenter rowcol1 itemTitle">pendant sky</h5>
       <figcaption class="">
         <p>Dolor sit amet, consectetur adipiscing elit</p>
         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.</p>
@@ -247,7 +245,6 @@
 
     <figure class="standarCard">
       <img src="<?php echo get_template_directory_uri(); ?>/img/home/23-2147717087.png" alt=""class="standarCardImg rowcol1">
-      <h5 class="itemTitleCenter rowcol1 itemTitle">festival</h5>
       <figcaption class="">
         <p>Dolor sit amet, consectetur adipiscing elit</p>
         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.</p>

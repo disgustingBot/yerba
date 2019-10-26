@@ -93,7 +93,7 @@ FIN DE MAPA DE CONTENIDOS */
 
   --color1:#0F0F0F; /* BLACK */
   --color2:#FFFFFF; /* WHITE */
-  --color3:#627DAE; /* BLUE  */
+  --color3:#358EE9; /* BLUE  */
   --color4:#232323; /* GREY  */
 
   --color5:#5A9894;
@@ -335,7 +335,7 @@ FIN DE MAPA DE CONTENIDOS */
     --sectionAltStandarCardGridC: 2/7;
     --sectionTitlePadding: 0 12.5%;
     --cbbcEsMarginL: -12.5%;
-    --cbbcEsMarginR: 30px;
+    --cbbcEsMarginR: 10px;
     --itemTitlePadding: .75rem 1.5rem;
     --sectionStandarCardTxtPadding: 0;
     --standarCardImgHeight: 150px;
@@ -350,7 +350,7 @@ FIN DE MAPA DE CONTENIDOS */
     /* front-page */
     --flex5050Flex: 2 1 calc(50% - 1rem);
     --simpleCardImgHeight: 40vh;
-    --centerTitleFontSize: 5rem;
+    --centerTitleFontSize: 4rem;
     --restaurantFlexDisplay: flex;
     --hidShowHeight: 50vh;
     --hidShowOpacity: 0;
@@ -489,15 +489,26 @@ body {font-family: 'Abhaya';}
 
 .specialTitle {
   font-family: 'tahu', cursive;
+  font-weight: 500!important;
+}
+.homeATFCopy {
+  font-weight: 500!important;
+  font-size: 4rem!important;
 }
 .specialTxt{
   color:var(--color3);
   font-family: 'tahu', cursive;
+  font-weight: 100;
 }
 .centerTitle {
   font-size: var(--centerTitleFontSize);
   text-align: center;
+  margin: auto;
 }
+
+.blueTxt {color: var(--color3)}
+
+.logged-in-as a {color: var(--color3); font-weight: bolder; text-decoration: none;}
 /* ---------------------------------------------------------------------------
 ------------------------------------------------------------------------------
                            4) =ETIQUETAS GLOBALES:
@@ -561,8 +572,6 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
                                6) =COMPONENTES:
 ------------------------------------------------------------------------------
 --------------------------------------------------------------------------- */
-
-
 
 /* ---------------------------------------------------------------------------
 ------------------------------------------------------------------------------
@@ -661,7 +670,7 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
   grid-column: 1/ -1;
   grid-row: 1;
   grid-row: var(--navBarGridR);
-  font-size: .5rem;
+  font-size: .6rem;
   height: 1.5rem;
 }
 
@@ -673,12 +682,13 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
   grid-auto-columns: min-content;
   margin: auto;
   margin-top:0;
-  /* padding:.2rem 1rem; */
+  padding: 1.2rem;
 }
 .header.alt .headerLogoCont{
   width: max-content;
   margin:auto;
   padding:0 1rem;
+  font-size: 1.5rem;
 }
 
 .header.alt .navBar{
@@ -914,12 +924,20 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
 
 .homeATFLogo{margin:auto;}
 
-.homeATFCopy {font-size: var(--homeATFCopyFont); margin-top: 1rem;}
+.homeATFCopy {
+  font-size: var(--homeATFCopyFont);
+  /* margin-top: 1rem; */
+}
 
 .homeATFflex{
   grid-row: 2/3;
   grid-column: 1;
   padding:5% 12.5%;
+}
+
+.homeATFflex h3 {
+  font-size: 2rem;
+  font-weight: 500;
 }
 
 
@@ -1007,7 +1025,7 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
   height: var(--standarCardImgHeight);
 }
 
-
+.standarCard figcaption {padding: 0 .5rem}
 
 .standarCard figcaption p {
   margin: .5rem 0;
@@ -1144,7 +1162,11 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
 .megaImg{
   width: 100%;
   height: 50vh;
+  /* box-shadow: inset 0px 0px 20px 30px rgba(255,255,255,1)!important; */
 }
+/* TODO: Como difuminar bordes de la img de mega en el fondo blanco? */
+
+
 .megaCaption{
   margin: auto;
   margin-top:-3rem;
@@ -1153,7 +1175,15 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
 
 .megaCaption h5 {
   margin: .5rem 0;
+  text-align: center;
 }
+.megaCaption p {
+  padding: 20px 200px;
+  text-align: left;
+  font-size: .9rem;
+}
+
+
 
 .megaTitle{width: max-content}
 
@@ -1164,7 +1194,7 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
 }
 .megaCaption.alt .megaTitle{
   width: unset;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 
@@ -1179,7 +1209,10 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
   grid-template-columns: 100%;
   justify-content: center;
   margin: var(--showMargin);
+  text-align: center;
+
 }
+.show h5, p {text-align: center;}
 .showImg{
   width: 100%;
   height: 50vh;
@@ -1268,10 +1301,10 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
   align-items: center;
   align-content: center;
   margin: 0 auto;
-  font-size: inherit;
+  font-size: .8rem;
   position: relative;
   text-decoration:none;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 .subrayable::after{
   content:'';
@@ -1311,7 +1344,9 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
   color:var(--color3);
   cursor: pointer;
   display: flex;
-  font-size: .6rem;
+  font-size: .7rem!important;
+  font-weight: 700!important;
+  letter-spacing: 1px;
   font:unset;
   margin: 10px;
   margin-left: auto;
@@ -1467,6 +1502,7 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
 --------------------------------------------------------------------------- */
 
 
+
 .dividedSection {
   display: var(--dividedSectionDisplay)!important;
 }
@@ -1486,7 +1522,7 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   padding: var(--itemTitlePadding);
   transition: .25s;
-  border-radius: 2px;
+  border-radius: 4px;
   z-index: 2;
   transition: .25s;
   height: max-content;
@@ -1499,6 +1535,7 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
   margin: auto;
   margin-left: 50%;
   transform: translateX(-50%);
+  padding: .75rem 4rem;
 }
 .itemTitleC {
   margin: auto;
@@ -1572,6 +1609,7 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
   margin-right: var(--cbbcEsMarginR);
   font-family: none!important;
   white-space: nowrap;
+  font-weight: bold;
 }
 .sectionTitle {
   margin: auto;
@@ -1624,6 +1662,16 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
 --------------------------------------------------------------------------- */
 
 .magazineFlex{padding: 0 12.5%}
+.magazineFlex .standarCard {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: .3s ease-in-out;
+}
+.magazineFlex .standarCard:hover{box-shadow:0 14px 28px rgba(0,0,0,0.25),0 10px 10px rgba(0,0,0,0.22)}
+
+.magazineTitle1 {}
+.magazineTitle3 {font-weight: 100; font-size: calc( var(--centerTitleFontSize) * .75 )}
+
+
 
 
 /* ---------------------------------------------------------------------------
@@ -1785,10 +1833,10 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
 
 .form-submit input {
   border: none;
-  background: #358EE9;
+  background: var(--color3);
   padding: 15px 30px!important;
   color: white;
-  font-size: var(--color5);
+  font-size: var(--size5);
 
 }
 
@@ -1801,3 +1849,7 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
   grid-column: 1;
   grid-row: 1/ -1;
 }
+
+.articulosRelacionados h4 {flex-basis: 100%; margin: .5rem; font-size: 1.2rem;}
+
+.articulosRelacionados {padding: 0 2.5%!important; margin-bottom: 5rem;}
