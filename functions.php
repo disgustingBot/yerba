@@ -187,7 +187,7 @@ function lattedev_call_magazine( $atts ) {
 }
 
 
-
+// TODO: mejorar el shorcode del mapa
 // [map]
 add_shortcode( 'map', 'lattedev_call_map' );
 function lattedev_call_map( $atts ) {
