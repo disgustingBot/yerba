@@ -170,6 +170,8 @@ FIN DE MAPA DE CONTENIDOS */
     --sectionStandarCardTxtPadding: 0 10px;
     --standarCardImgHeight: 200px;
     --navBarGridR: 1;
+    --megaCaptionP: 20px 25px;
+
 
 
       /* =single */
@@ -277,6 +279,8 @@ FIN DE MAPA DE CONTENIDOS */
     --formSubmitGridC: 2;
     --respondFormHeight: 300px;
 
+
+
   }
 }
 /* ---------------------------------------------------------------------------
@@ -373,6 +377,9 @@ FIN DE MAPA DE CONTENIDOS */
 
     /* magazine (página) */
 
+    --megaCaptionP: 20px 50px;
+
+
 
   }
 
@@ -414,6 +421,9 @@ FIN DE MAPA DE CONTENIDOS */
 
     --dividedSectionDisplay: grid;
 
+    --megaCaptionP: 20px 100px;
+
+
 
   }
 }
@@ -438,6 +448,8 @@ FIN DE MAPA DE CONTENIDOS */
     /* estructura */
     --sectionTitleMargin: 8%;
     --standarCardImgHeight: 250px;
+
+    --megaCaptionP: 20px 200px;
   }
 }
 
@@ -1178,7 +1190,7 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
   text-align: center;
 }
 .megaCaption p {
-  padding: 20px 200px;
+  padding: var(--megaCaptionP);
   text-align: left;
   font-size: .9rem;
 }
@@ -1212,7 +1224,7 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
   text-align: center;
 
 }
-.show h5, p {text-align: center;}
+.show h5, p {text-align: left;}
 .showImg{
   width: 100%;
   height: 50vh;
@@ -1356,7 +1368,7 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
 }
 .suscribeButton:hover{
   background:var(--color3);
-  color:var(--color2);
+  color:var(--color1);
 }
 
 .mobileMenu .suscribeButton {
