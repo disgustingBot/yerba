@@ -176,7 +176,7 @@ function lattedev_call_magazine( $atts ) {
         $buffer .= '<img class="standarCardImg rowcol1" src="'.get_the_post_thumbnail_url(get_the_ID()).'" alt="">';
         $buffer .= '<figcaption class="standarCardTxt">';
           $buffer .= '<h6>'.get_the_title().'</h6>';
-          $buffer .= '<p>'.excerpt(100).'</p>';
+          $buffer .= '<p>'.excerpt(65).'</p>';
         $buffer .= '</figcaption>';
       $buffer .= '</figure>';
     } wp_reset_postdata();
