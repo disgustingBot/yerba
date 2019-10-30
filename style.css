@@ -170,8 +170,6 @@ FIN DE MAPA DE CONTENIDOS */
     --sectionStandarCardTxtPadding: 0 10px;
     --standarCardImgHeight: 200px;
     --navBarGridR: 1;
-    --megaCaptionP: 20px 25px;
-
 
 
       /* =single */
@@ -279,8 +277,6 @@ FIN DE MAPA DE CONTENIDOS */
     --formSubmitGridC: 2;
     --respondFormHeight: 300px;
 
-
-
   }
 }
 /* ---------------------------------------------------------------------------
@@ -377,9 +373,6 @@ FIN DE MAPA DE CONTENIDOS */
 
     /* magazine (página) */
 
-    --megaCaptionP: 20px 50px;
-
-
 
   }
 
@@ -421,9 +414,6 @@ FIN DE MAPA DE CONTENIDOS */
 
     --dividedSectionDisplay: grid;
 
-    --megaCaptionP: 20px 100px;
-
-
 
   }
 }
@@ -448,8 +438,6 @@ FIN DE MAPA DE CONTENIDOS */
     /* estructura */
     --sectionTitleMargin: 8%;
     --standarCardImgHeight: 250px;
-
-    --megaCaptionP: 20px 200px;
   }
 }
 
@@ -1190,7 +1178,7 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
   text-align: center;
 }
 .megaCaption p {
-  padding: var(--megaCaptionP);
+  padding: 20px 200px;
   text-align: left;
   font-size: .9rem;
 }
@@ -1224,7 +1212,7 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
   text-align: center;
 
 }
-.show h5, p {text-align: left;}
+.show h5, p {text-align: center;}
 .showImg{
   width: 100%;
   height: 50vh;
@@ -1368,7 +1356,7 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
 }
 .suscribeButton:hover{
   background:var(--color3);
-  color:var(--color1);
+  color:var(--color2);
 }
 
 .mobileMenu .suscribeButton {
@@ -1832,13 +1820,17 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
   margin: 0 auto!important;
 }
 
-.form-submit input {
+.form-submit input, .wpcf7-submit {
   border: none;
   background: var(--color3);
   padding: 15px 30px!important;
   color: white;
   font-size: var(--size5);
+  transition: .25s;
+}
 
+.form-submit input:hover, .wpcf7-submit:hover {
+  color: black;
 }
 
 .comment-form-cookies-consent {
@@ -1854,3 +1846,46 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
 .articulosRelacionados h4 {flex-basis: 100%; margin: .5rem; font-size: 1.2rem;}
 
 .articulosRelacionados {padding: 0 2.5%!important; margin-bottom: 5rem;}
+
+
+
+/* contacto.php */
+
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+
+#wpcf7-f218-o1 {width: 100%; height: 70vh; margin: auto;}
+
+.wpcf7-form {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 10px;
+  padding: 50px;
+  background: #232323;
+}
+
+.wpcf7-form-control-wrap {width: 100%; height: 100%;}
+.wpcf7-form-control-wrap input {width: 100%; padding: 5px 10px;}
+.wpcf7-form p span input::placeholder {color:black;}
+
+
+.wpcf7-form p:nth-child(5) {grid-column: 1; grid-row: 1/6; height: 100%;}
+.wpcf7-form p:nth-child(5) input {grid-column: 1; grid-row: 1/6; height: 100%;}
+.wpcf7-form p:nth-child(6) label { display: flex; justify-content: center;}
+.wpcf7-form p:nth-child(6) label input { width: 30px; height: 30px; margin: auto; margin-top: 0;}
+.wpcf7-form p:nth-child(6) label span { color: white;}
+.wpcf7-form p:nth-child(6) label span a { color: white;}
+
+
+.contactoHgroup {}
+.contactTitle {text-align: center; margin: .75rem 0}
+.contactSubTitle {text-align: left; margin: .75rem 0}
