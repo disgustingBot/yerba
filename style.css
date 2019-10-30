@@ -484,7 +484,7 @@ body.gutenberg-editor-page .editor-block-list__block,
          url('fonts/Tahu!.ttf') format('truetype');
 }
 body {font-family: 'Abhaya';}
-
+html{scroll-behavior:smooth}
 
 
 .specialTitle {
@@ -703,7 +703,8 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
 .locationText{
   position: relative;
   z-index: 2;
-  cursor: default;
+  color:inherit;
+  text-decoration: none;
 }
 .headerLocations {
   display: grid;
@@ -970,6 +971,7 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
 --------------------------------------------------------------------------- */
 
 .locATF{
+  grid-row:1/3;
   display: grid;
   align-items: center;
 }

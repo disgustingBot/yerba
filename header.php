@@ -34,14 +34,14 @@
         <nav id="navBar" class="headerCont navBar">
           <a class="subrayable homeLink<?php if(is_front_page()){echo ' subrayado"';} ?>" href="<?php echo site_url(''); ?>">CBbC</a>
           <div class="subrayable locationLink">
-            <p class="locationText">Localización</p>
+            <a class="locationText" href="#localizacion">Localización</a>
             <div class="headerLocations">
-              <a class="subrayable" href="">Ibiza</a>
-              <a class="subrayable" href="">Andorra</a>
+              <a class="subrayable" href="<?php echo site_url('/location/ibiza'); ?>">Ibiza</a>
+              <a class="subrayable" href="<?php echo site_url('/location/andorra'); ?>">Andorra</a>
             </div>
           </div>
-          <a class="subrayable<?php if(is_category("gastronomia")){echo ' subrayado"';} ?>" href="<?php echo site_url('/category/gastronomia'); ?>">Gastronomía</a>
-          <a class="subrayable<?php if(is_category("experiencias")){echo ' subrayado"';} ?>" href="<?php echo site_url('/category/experiencias'); ?>">Experiencias</a>
+          <a class="subrayable<?php if(is_category("gastronomia")){echo ' subrayado"';} ?>" href="#gastronomia">Gastronomía</a>
+          <a class="subrayable<?php if(is_category("experiencias")){echo ' subrayado"';} ?>" href="#experiencias">Experiencias</a>
           <?php if ( !$isMagazine ): ?>
             <a class="subrayable<?php if(is_page("about")){echo ' subrayado"';} ?>" href="<?php echo site_url('/about'); ?>">About Us</a>
           <?php endif; ?>
