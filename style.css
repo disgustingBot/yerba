@@ -158,6 +158,7 @@ FIN DE MAPA DE CONTENIDOS */
     /* componentes */
 
     /* estructura */
+
     --pTextAlign: justify;
     --h5H6TextAlign: center;
     --sectionMarginTopBottom: 50px;
@@ -170,6 +171,7 @@ FIN DE MAPA DE CONTENIDOS */
     --sectionStandarCardTxtPadding: 0 10px;
     --standarCardImgHeight: 200px;
     --navBarGridR: 1;
+    --megaCaptionPPadding:20px 25px;
 
 
       /* =single */
@@ -340,6 +342,8 @@ FIN DE MAPA DE CONTENIDOS */
     --sectionStandarCardTxtPadding: 0;
     --standarCardImgHeight: 150px;
     --navBarGridR: 2;
+    --megaCaptionPPadding:20px 50px;
+
 
 
 
@@ -409,6 +413,7 @@ FIN DE MAPA DE CONTENIDOS */
     /* estructura */
 
     --standarCardImgHeight: 200px;
+    --megaCaptionPPadding:20px 100px;
 
     /* magazine (página) */
 
@@ -438,6 +443,8 @@ FIN DE MAPA DE CONTENIDOS */
     /* estructura */
     --sectionTitleMargin: 8%;
     --standarCardImgHeight: 250px;
+
+    --megaCaptionPPadding:20px 200px;
   }
 }
 
@@ -941,6 +948,18 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
   font-weight: 500;
 }
 
+.homeATFflex h5 {
+  text-align: center;
+}
+
+.homeATFflex h5 a {
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: 200;
+}
+
 
 
 /* ---------------------------------------------------------------------------
@@ -1031,6 +1050,7 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
 
 .standarCard figcaption p {
   margin: .5rem 0;
+  text-align: left;
 }
 .standarCard figcaption p:first-child {
   font-weight: bold;
@@ -1049,6 +1069,7 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
 
 .section>.standarCard figcaption{
   padding: var(--sectionStandarCardTxtPadding);
+  text-align: left;
 }
 .section.alt>.standarCard {
   grid-column: var(--sectionAltStandarCardGridC);
@@ -1180,7 +1201,7 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
   text-align: center;
 }
 .megaCaption p {
-  padding: 20px 200px;
+  padding: var(--megaCaptionPPadding);
   text-align: left;
   font-size: .9rem;
 }
@@ -1358,7 +1379,7 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
 }
 .suscribeButton:hover{
   background:var(--color3);
-  color:var(--color2);
+  color:var(--color1);
 }
 
 .mobileMenu .suscribeButton {
