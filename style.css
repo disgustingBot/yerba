@@ -219,6 +219,7 @@ FIN DE MAPA DE CONTENIDOS */
     /* magazine (página) */
 
     --dividedSectionDisplay: block;
+    --tarjetaMarginTop: -50px;
 
 
 
@@ -241,7 +242,11 @@ FIN DE MAPA DE CONTENIDOS */
                           2.1) min-width:  =360px
 ------------------------------------------------------------------------------
 --------------------------------------------------------------------------- */
-@media screen and (min-width: 360px){:root {--sizeR: calc(calc(var(--sizeRa) * 1px) + (var(--sizeRb) - var(--sizeRa)) * ((100vw - 360px) / (768 - 360)))}}
+@media screen and (min-width: 360px){
+  :root {--sizeR: calc(calc(var(--sizeRa) * 1px) + (var(--sizeRb) - var(--sizeRa)) * ((100vw - 360px) / (768 - 360)))
+
+  }
+}
 
 
 
@@ -278,6 +283,8 @@ FIN DE MAPA DE CONTENIDOS */
     --respondFormGridTemplateC: 1fr 1fr;
     --formSubmitGridC: 2;
     --respondFormHeight: 300px;
+
+
 
   }
 }
@@ -375,7 +382,7 @@ FIN DE MAPA DE CONTENIDOS */
     --textJustifyCenter: center;
     --showMargin: 4rem 0;
 
-    /* magazine (página) */
+
 
 
   }
@@ -420,6 +427,7 @@ FIN DE MAPA DE CONTENIDOS */
     --dividedSectionDisplay: grid;
 
 
+
   }
 }
 
@@ -435,16 +443,19 @@ FIN DE MAPA DE CONTENIDOS */
     /* componentes */
 
 
-    /* Footer */
+      /* Footer */
       --footerMenuFontSize: 1rem;
 
       /* front-page */
       --simpleCardImgHeight: 80vh;
+
     /* estructura */
     --sectionTitleMargin: 8%;
     --standarCardImgHeight: 250px;
-
     --megaCaptionPPadding:20px 200px;
+
+    /* magazine (página) */
+    --tarjetaMarginTop: -100px;
   }
 }
 
@@ -1084,6 +1095,11 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
 
 
 .grid2C .standarCard:nth-last-child(2){margin-left :20%}
+
+.tarjetaCaption p {
+  text-align: left!important;
+  font-size: .8rem;
+}
 .grid2C .standarCard:nth-last-child(1){margin-right:20%}
 
 
@@ -1095,7 +1111,7 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
 .tarjeta{
   background: var(--color2);
   margin:0 10%;
-  margin-top: -100px;
+  margin-top: var(--tarjetaMarginTop);
   height: 250px;
 }
 .tarjetaImg {
@@ -1748,7 +1764,17 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
   margin-left: 0;
 }
 
+.singleSocialContainer svg {
+  color: #212121;
+  transition: .25s;
+}
 
+.facebookFooter:hover {color:#3b5998}
+.twitterFooter:hover  {color:#00acee}
+.instagramFooter:hover{color:#3f729b}
+.googleFooter:hover   {color:#d34836}
+
+.singleRss {margin-bottom: -5px!important} 
 .theString {
   grid-column: span 2;
   width: var(--theStringWidth);
