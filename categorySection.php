@@ -77,7 +77,7 @@
           <figure class="grid colMax">
             <img class="simpleCardImg rowcol1" src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt="">
             <figcaption class="itemTitleCenter itemTitle rowcol1">
-              <a href="#"><h5><?php the_title(); ?></h5></a>
+              <a href="<?php echo get_permalink(); ?>"><h5><?php the_title(); ?></h5></a>
             </figcaption>
           </figure>
         <?php } ?>
@@ -92,10 +92,10 @@
         while($blogPosts->have_posts()) {
           $blogPosts->the_post();$featuredID=get_the_ID(); ?>
           <figure class="tarjeta grid2C colMax">
-            <img class="tarjetaImg" src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt="" >
+            <a class="tarjetaImg" href="<?php echo get_permalink(); ?>"><img class="tarjetaImg" src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt="" ></a>
             <figcaption class="tarjetaCaption ">
-              <h5><?php the_title(); ?></h5>
-              <p><?php echo excerpt(100); ?></p>
+              <h5><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h5>
+              <p><a href="<?php echo get_permalink(); ?>"><?php echo excerpt(100); ?></a></p>
             </figcaption>
           </figure>
         <?php } ?>
@@ -111,10 +111,11 @@
         $blogPosts=new WP_Query($args);
         while($blogPosts->have_posts()){$blogPosts->the_post(); ?>
           <figure class="standarCard grid">
-            <img class="standarCardImg rowcol1" src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt="">
+            <a class="standarCardImg rowcol1" href="<?php echo get_permalink(); ?>"><img class="standarCardImg" src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt=""></a>
+
             <figcaption class="">
-              <h5><?php the_title(); ?></h5>
-              <p><?php echo excerpt(100); ?></p>
+              <h5><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h5>
+              <p><a href="<?php echo get_permalink(); ?>"><?php echo excerpt(100); ?></a></p>
             </figcaption>
           </figure>
         <?php } ?>

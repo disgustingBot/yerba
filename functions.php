@@ -144,10 +144,10 @@ function lattedev_call_restaurants( $atts ) {
   ));
   while ($q->have_posts()) {$q->the_post();
     $buffer .= '<figure class="hidshow grid">';
-      $buffer .= '<img class="hidshowImg rowcol1" src="'.get_the_post_thumbnail_url(get_the_ID()).'" alt="">';
+      $buffer .= '<a class="hidshowImg rowcol1" href="'.get_permalink().'"><img class="hidshowImg" src="'.get_the_post_thumbnail_url(get_the_ID()).'" alt=""></a>';
       $buffer .= '<figcaption class="grid rowcol1">';
-        $buffer .= '<p class="itemTitle rowcol1 itemTitleTR">'.get_the_title().'</p>';
-        $buffer .= '<p class="rowcol1 hidshowTxt">'.get_the_excerpt().'</p>';
+        $buffer .= '<p class="itemTitle rowcol1 itemTitleTR"><a href="'.get_permalink().'"></a>'.get_the_title().'</p>';
+        $buffer .= '<p class="rowcol1 hidshowTxt"><a href="'.get_permalink().'"></a>'.get_the_excerpt().'</p>';
       $buffer .= '</figcaption>';
     $buffer .= '</figure>';
   } wp_reset_postdata();
