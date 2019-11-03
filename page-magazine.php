@@ -26,6 +26,8 @@
   <button class="slideButton rowcol1 slideRight" onclick="plusDivs(+1)">&#10095;</button>
 </section>
 
+
+
 <!-- HEADER -->
 
 <?php require_once 'categorySection.php'; ?>
