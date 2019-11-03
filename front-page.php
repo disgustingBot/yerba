@@ -4,7 +4,7 @@
 <?php get_header(); ?>
 
 
-<!-- <section class="homeATF">
+<section class="homeATF">
 
   <video class="homeATFvideo rowcol1" id="headerActivator" loop="loop" autoplay playsinline muted>
     <source type="video/mp4" src="<?php echo get_template_directory_uri(); ?>/img/home/shutterstock_25094927_4-1.mp4" alt="Fondo-de-video-del-mediterraneo-desde-arriba" />
@@ -18,31 +18,31 @@
   </figure>
 
 
-  <flex class="homeATFflex flex3">
+  <flex class="homeATFflex">
 
     <figure class="card">
-      <img class="standarCardImg" src="<?php echo get_template_directory_uri(); ?>/img/home/1.jpg" alt="">
+      <img class="cardImg" src="<?php echo get_template_directory_uri(); ?>/img/home/1.jpg" alt="">
       <figcaption class="cardTitle specialTitle">
         <h3>Localizacion</h3>
       </figcaption>
     </figure>
 
     <figure class="card">
-      <img class="standarCardImg" src="<?php echo get_template_directory_uri(); ?>/img/home/2.jpg" alt="">
+      <img class="cardImg" src="<?php echo get_template_directory_uri(); ?>/img/home/2.jpg" alt="">
       <figcaption class="cardTitle specialTitle">
           <h3>Gastronomía</h3>
       </figcaption>
     </figure>
 
     <figure class="card">
-      <img class="standarCardImg" src="<?php echo get_template_directory_uri(); ?>/img/home/3.jpg" alt="">
+      <img class="cardImg" src="<?php echo get_template_directory_uri(); ?>/img/home/3.jpg" alt="">
       <figcaption class="cardTitle specialTitle">
         <h3>Experiencias</h3>
       </figcaption>
     </figure>
   </flex>
 
-</section> -->
+</section>
 
 
 
@@ -53,7 +53,7 @@
 
 
 
-<!-- <section class="section">
+<section class="section">
 
 
     <h4 class="sectionTitle specialTitle rowcol1 colMax">
@@ -87,11 +87,11 @@
     </figure>
   </flex>
 
-</section> -->
+</section>
 
 
 
-<!-- <section class="section alt">
+<section class="section alt">
 
   <h4 class="sectionTitle specialTitle rowcol1 colMax">
     <span class="cbbcEs">CBbC es...</span>
@@ -161,12 +161,12 @@
     </figure>
 
   </flex>
-</section> -->
+</section>
 
 
 
 
-<!-- <section class="section experiencias">
+<section class="section experiencias">
 
   <h4 class="sectionTitle specialTitle rowcol1 colMax">
     <span class="cbbcEs ">CBbC es...</span>
@@ -198,7 +198,7 @@
       </figcaption>
     </figure>
   </flex>
-</section> -->
+</section>
 
 
 
@@ -206,14 +206,14 @@
 
 
 
-<!-- <section class="section">
+<section class="section">
   <h4 class="centerTitle colMax">
     <span class="magazineTitle1">CBbC</span>
     <span class="specialTxt">life</span>
     <span class="magazineTitle3">Magazine</span>
   </h4>
 
-  <flex class="magazineFlex flex3 colMax">
+  <flex class="magazineFlex colMax">
     <figure class="standarCard">
       <img src="<?php echo get_template_directory_uri(); ?>/img/home/14.jpg" alt="" class="standarCardImg rowcol1">
       <figcaption class="standarCardTxt">
@@ -242,7 +242,7 @@
   </flex>
 
 
-</section> -->
+</section>
 
 
 </div>
