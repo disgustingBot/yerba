@@ -228,7 +228,9 @@
 
 </flex>
 
-<!-- .comment-list -->
+    <div style="display:none"><?php comments_template(); ?></div>
+
+    <!-- .comment-list -->
     <ul class="comment-list comments">
       <?php wp_list_comments(array('callback' => 'better_comments')); ?>
     </ul>

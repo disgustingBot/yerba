@@ -12,10 +12,6 @@ w.onload=()=>{
     lIs.forEach(lI=>{lIO.observe(lI)});lBs.forEach(lB=>{lBO.observe(lB)});
   }
 
-
-
-
-
 }
 
 
@@ -64,3 +60,45 @@ const carousel=()=>{j++;
 }
 const plusDivs=n=>{showDivs(j+=n)}
 if(x.length>0){showDivs(j);carousel()}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const options = {
+  root: null, // it is the viewport, that's the default
+  threshold: .2, // that's the default
+  // rootMargin: "3rem 0px 0px 0px" // that's the default
+};
+
+const observer = new IntersectionObserver((entries, observer)=>{
+  entries.forEach(entry => {
+    id=entry.target.getAttribute('data-target')
+    if (entry.isIntersecting) {
+      d.getElementById(id).classList.add('subrayado');
+      // c.log(d.getElementById(id));
+    } else {
+      d.getElementById(id).classList.remove('subrayado');
+    }
+    // c.log(entry);
+  })
+}, options);
+
+const sections = d.querySelectorAll('section');
+c.log(!!sections[1].id);
+// c.log(sections);
+// observer.observe(sections);
+sections.forEach(e => {
+  if (!!sections[1].id) {
+    observer.observe(e);
+  }
+})

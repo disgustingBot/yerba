@@ -14,7 +14,7 @@
 </head>
 <body>
 
-
+<?php global $post; $post_slug = $post->post_name; ?>
 
   <?php if(is_user_logged_in()){ ?><style>:root{--top0: var(--topCero)}</style><?php }; ?>
 
@@ -24,7 +24,9 @@
     </svg>
   </view>
 
-  <?php if( is_page("magazine") || is_single() || is_archive()){ $isMagazine = true; } else { $isMagazine = false; } ?>
+  <?php
+  if( (is_page("magazine") || is_single() || is_archive()) && get_post_type() != 'location' ){ $isMagazine = true; } else { $isMagazine = false; }
+  ?>
 
     <header class="header<?php if($isMagazine){echo " alt";} ?>">
       <?php if( !$isMagazine ){ ?>
@@ -33,15 +35,15 @@
         </a>
         <nav id="navBar" class="headerCont navBar">
           <a class="subrayable homeLink<?php if(is_front_page()){echo ' subrayado"';} ?>" href="<?php echo site_url(''); ?>">CBbC</a>
-          <div class="subrayable locationLink">
+          <div class="subrayable locationLink" id="localizacionLink">
             <a class="locationText" href="#localizacion">Localización</a>
             <div class="headerLocations">
-              <a class="subrayable" href="<?php echo site_url('/location/ibiza'); ?>">Ibiza</a>
-              <a class="subrayable" href="<?php echo site_url('/location/andorra'); ?>">Andorra</a>
+              <a class="subrayable<?php if( $post_slug=='ibiza'   ){ echo ' subrayado'; } ?>" href="<?php echo site_url('/location/ibiza'); ?>">Ibiza</a>
+              <a class="subrayable<?php if( $post_slug=='andorra' ){ echo ' subrayado'; } ?>" href="<?php echo site_url('/location/andorra'); ?>">Andorra</a>
             </div>
           </div>
-          <a class="subrayable<?php if(is_category("gastronomia")){echo ' subrayado"';} ?>" href="#gastronomia">Gastronomía</a>
-          <a class="subrayable<?php if(is_category("experiencias")){echo ' subrayado"';} ?>" href="#experiencias">Experiencias</a>
+          <a class="subrayable" id="gastronomiaLink" href="#gastronomia">Gastronomía</a>
+          <a class="subrayable" id="experienciasLink" href="#experiencias">Experiencias</a>
           <?php if ( !$isMagazine ): ?>
             <a class="subrayable<?php if(is_page("about")){echo ' subrayado"';} ?>" href="<?php echo site_url('/about'); ?>">About Us</a>
           <?php endif; ?>

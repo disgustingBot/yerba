@@ -188,12 +188,18 @@ function lattedev_call_magazine( $atts ) {
 
 
 // TODO: mejorar el shorcode del mapa
-// [map]
+// [map location='ibiza']
 add_shortcode( 'map', 'lattedev_call_map' );
 function lattedev_call_map( $atts ) {
-  $buffer .= '<section class="ayuda">
-                <iframe class="ayudaMap" src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=Cala%20bassa%20CBbC%2C%20ibiza+(CBbC)&amp;ie=UTF8&amp;t=&amp;z=16&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-              </section>';
+  if ($atts['location'] == "ibiza") {
+    $map = '<iframe class="ayudaMap" src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=Cala%20bassa%20CBbC%2C%20ibiza+(CBbC)&amp;ie=UTF8&amp;t=&amp;z=16&amp;iwloc=B&amp;output=embed"                                                                                                                       frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>';
+  } elseif ($atts['location'] == "andorra") {
+    $map = '<iframe class="ayudaMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d33260.739969159324!2d1.7120075146981708!3d42.536989346729236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a58760b67c9eb5%3A0x6dcc9cf8116988!2sCBbC%20Costa%20Rodona!5e0!3m2!1ses-419!2sde!4v1572768018279!5m2!1ses-419!2sde" frameborder="0" style="border:0;" allowfullscreen=""></iframe>';
+  } else {
+    // $map = '<iframe class="ayudaMap" src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=Cala%20bassa%20CBbC%2C%20ibiza+(CBbC)&amp;ie=UTF8&amp;t=&amp;z=16&amp;iwloc=B&amp;output=embed"                                                                                                                       frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>';
+    $map = 'El coso';
+  }
+  $buffer .= '<section class="ayuda">'.$map.'</section>';
 
   return $buffer;
 }
