@@ -173,6 +173,10 @@ FIN DE MAPA DE CONTENIDOS */
     --navBarGridR: 1;
     --megaCaptionPPadding:20px 25px;
 
+    --cardsSize: 300px;
+    --cardWidth: 100%;
+    --homeATFflexPadding: 5%;
+
 
       /* =single */
     --singleBannerDisplay: none;
@@ -285,6 +289,12 @@ FIN DE MAPA DE CONTENIDOS */
     --respondFormHeight: 300px;
 
 
+    /* estructura */
+    --cardsSize: 200px;
+    --cardWidth: var(--cardsSize);
+    --homeATFflexPadding: 5%;
+
+
 
   }
 }
@@ -351,6 +361,9 @@ FIN DE MAPA DE CONTENIDOS */
     --navBarGridR: 2;
     --megaCaptionPPadding:20px 50px;
 
+    --cardsSize: 200px;
+    --homeATFflexPadding: 5%;
+
 
 
 
@@ -371,6 +384,7 @@ FIN DE MAPA DE CONTENIDOS */
     --sectionTitleJustifyContent: ;
     --sectionTitleMargin: 2%;
     --simpleCardImgPadding: 0;
+
 
 
 
@@ -422,6 +436,9 @@ FIN DE MAPA DE CONTENIDOS */
     --standarCardImgHeight: 200px;
     --megaCaptionPPadding:20px 100px;
 
+    --cardsSize: 250px;
+    --homeATFflexPadding: 5%;
+
     /* magazine (página) */
 
     --dividedSectionDisplay: grid;
@@ -453,6 +470,8 @@ FIN DE MAPA DE CONTENIDOS */
     --sectionTitleMargin: 8%;
     --standarCardImgHeight: 250px;
     --megaCaptionPPadding:20px 200px;
+    --cardsSize: 300px;
+
 
     /* magazine (página) */
     --tarjetaMarginTop: -100px;
@@ -466,9 +485,21 @@ FIN DE MAPA DE CONTENIDOS */
     --sectionTitleMargin: 10%;
 
 
+    --cardsSize: 300px;
+    --homeATFflexPadding: 5% 10%;
+
+
+
   }
 }
 
+@media  screen and (min-width: 1700px) {
+  :root {
+    --cardsSize: 450px;
+
+
+  }
+}
 
 /* ---------------------------------------------------------------------------
 ------------------------------------------------------------------------------
@@ -549,7 +580,7 @@ body>*{grid-column:1}
 img{object-fit:cover}
 
 p {text-align: var(--pTextAlign);}
-h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
+h5, h6 {text-align: left; margin: .5rem 0;}
 
 
 /* ---------------------------------------------------------------------------
@@ -951,8 +982,13 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
 .homeATFflex{
   grid-row: 2/3;
   grid-column: 1;
-  padding:5% 12.5%;
+  padding: var(--homeATFflexPadding);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+
+
 
 .homeATFflex h3 {
   font-size: 2rem;
@@ -1034,13 +1070,27 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
   border-radius: 2px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: .3s ease-in-out;
-  z-index: 2;
+  z-index: 3;
   display: grid;
   margin: .5rem;
+  grid-template-rows: auto min-content;
+  width: var(--cardWidth);
+
+}
+
+.cardImg {
+  height: var(--cardsSize);
+  width: 100%;
 }
 .card:hover{box-shadow:0 14px 28px rgba(0,0,0,0.25),0 10px 10px rgba(0,0,0,0.22)}
 
-.cardTitle{padding: 0 2rem; background: white; text-align: center;}
+.cardTitle {
+  width: min-content;
+  background: white;
+  text-align: center;
+  width: 100%;
+}
+
 
 /* ---------------------------------------------------------------------------
 ------------------------------------------------------------------------------
@@ -1050,14 +1100,15 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
 .standarCard {
   display: grid;
   margin:.5rem;
-  height: min-content;
+  grid-template-rows: auto min-content;
+  width: min-content;
 }
 .standarCardImg {
-  width: 100%;
-  height: var(--standarCardImgHeight);
 }
 
-.standarCard figcaption {padding: 0 .5rem}
+.standarCardTxt {
+  padding: 0 .5rem;
+}
 
 .standarCard figcaption p {
   margin: .5rem 0;
@@ -1071,10 +1122,13 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
 
 .section>.standarCard {
   grid-column: var(--sectionStandarCardGridC);
+  width:100%;
+  margin: 0;
 }
 
 .section>.standarCard .standarCardImg {
   height: calc( var(--sectionTitleImgHeight) * 1px);
+  width: 100%;
 }
 
 
@@ -1082,6 +1136,7 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
   padding: var(--sectionStandarCardTxtPadding);
   text-align: left;
 }
+
 .section.alt>.standarCard {
   grid-column: var(--sectionAltStandarCardGridC);
 }
@@ -1689,7 +1744,12 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
 ------------------------------------------------------------------------------
 --------------------------------------------------------------------------- */
 
-.magazineFlex{padding: 0 12.5%}
+.magazineFlex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 12.5%;
+}
 .magazineFlex .standarCard {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: .3s ease-in-out;
@@ -1774,7 +1834,7 @@ h5, h6 {text-align: var(--h5H6TextAlign); margin: .5rem 0;}
 .instagramFooter:hover{color:#3f729b}
 .googleFooter:hover   {color:#d34836}
 
-.singleRss {margin-bottom: -5px!important} 
+.singleRss {margin-bottom: -5px!important}
 .theString {
   grid-column: span 2;
   width: var(--theStringWidth);
