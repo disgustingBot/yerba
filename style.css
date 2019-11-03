@@ -225,6 +225,7 @@ FIN DE MAPA DE CONTENIDOS */
 
     --dividedSectionDisplay: block;
     --tarjetaMarginTop: -50px;
+    --magazineFlex3: 3 1 60%;
 
 
 
@@ -295,6 +296,9 @@ FIN DE MAPA DE CONTENIDOS */
     --cardWidth: var(--cardsSize);
     --homeATFflexPadding: 2.5%;
     --magazineFlexPadding:  0 2.5%;
+
+    /* Magazine */
+    --magazineFlex3: 3 1 calc(33% - 1rem);
 
 
 
@@ -1120,7 +1124,7 @@ h5, h6 {text-align: left; margin: .5rem 0;}
   padding: 0 .5rem;
 }
 
-.standarCardCaption {padding: 0 5px;}
+.standarCardCaption {padding: 0 10px;}
 
 .standarCard figcaption p {
   margin: .5rem 0;
@@ -1773,6 +1777,11 @@ h5, h6 {text-align: left; margin: .5rem 0;}
   justify-content: center;
   padding: var(--magazineFlexPadding);
 }
+
+.magazineFlex.flex3>* {
+  flex: var(--magazineFlex3);
+}
+
 .magazineFlex .standarCard {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: .3s ease-in-out;
