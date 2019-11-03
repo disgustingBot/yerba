@@ -1133,7 +1133,7 @@ h5, h6 {text-align: left; margin: .5rem 0;}
 }
 
 .section>.standarCard .standarCardImg {
-  height: calc( var(--sectionTitleImgHeight) * 1px);
+  height: calc( var(--sectionTitleImgHeight) * 1px)!important;
   width: 100%;
 }
 

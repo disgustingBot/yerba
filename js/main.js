@@ -12,9 +12,16 @@ w.onload=()=>{
     lIs.forEach(lI=>{lIO.observe(lI)});lBs.forEach(lB=>{lBO.observe(lB)});
   }
 
+  resizeImgs();
 }
+w.onresize=()=>{resizeImgs()}
 
-
+const resizeImgs = () => {
+  standarCard = d.querySelectorAll('.standarCard');
+  standarCard.forEach( e => {
+    e.querySelector('img').style.height = e.querySelector('img').clientWidth + 'px';
+  });
+}
 
 
 
@@ -102,3 +109,8 @@ sections.forEach(e => {
     observer.observe(e);
   }
 })
+
+
+
+
+// document.getElementById(id_attribute_value).clientHeight;
