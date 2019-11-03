@@ -176,6 +176,7 @@ FIN DE MAPA DE CONTENIDOS */
     --cardsSize: 300px;
     --cardWidth: 100%;
     --homeATFflexPadding: 5%;
+    --magazineFlexPadding:  0 5%;
 
 
       /* =single */
@@ -208,7 +209,7 @@ FIN DE MAPA DE CONTENIDOS */
     /* localizaciones (página) */
 
     --localizacionesFlexDisplay: block;
-    --localizacionesFlexMargin: 1rem;
+    --localizacionesFlexMargin: 2.5%;
     --megaMargin: 10% 3.125%;
     --megaCaptionWidth: 100%;
     --textJustifyCenter: justify;
@@ -292,7 +293,8 @@ FIN DE MAPA DE CONTENIDOS */
     /* estructura */
     --cardsSize: 200px;
     --cardWidth: var(--cardsSize);
-    --homeATFflexPadding: 5%;
+    --homeATFflexPadding: 2.5%;
+    --magazineFlexPadding:  0 2.5%;
 
 
 
@@ -363,6 +365,7 @@ FIN DE MAPA DE CONTENIDOS */
 
     --cardsSize: 200px;
     --homeATFflexPadding: 5%;
+    --magazineFlexPadding:  0 5%;
 
 
 
@@ -434,10 +437,11 @@ FIN DE MAPA DE CONTENIDOS */
     /* estructura */
 
     --standarCardImgHeight: 200px;
-    --megaCaptionPPadding:20px 100px;
+    --megaCaptionPPadding: 20px 100px;
 
     --cardsSize: 250px;
     --homeATFflexPadding: 5%;
+    --magazineFlexPadding:  0 7.5%;
 
     /* magazine (página) */
 
@@ -471,6 +475,7 @@ FIN DE MAPA DE CONTENIDOS */
     --standarCardImgHeight: 250px;
     --megaCaptionPPadding:20px 200px;
     --cardsSize: 300px;
+    --magazineFlexPadding:  0 12.5%;
 
 
     /* magazine (página) */
@@ -1081,7 +1086,6 @@ h5, h6 {text-align: left; margin: .5rem 0;}
   margin: .5rem;
   grid-template-rows: auto min-content;
   width: var(--cardWidth);
-
 }
 
 .cardImg {
@@ -1765,11 +1769,13 @@ h5, h6 {text-align: left; margin: .5rem 0;}
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 0 12.5%;
+  padding: var(--magazineFlexPadding);
 }
 .magazineFlex .standarCard {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: .3s ease-in-out;
+  width: var(--cardWidth);
+  height: var(--cardssize);
 }
 .magazineFlex .standarCard:hover{box-shadow:0 14px 28px rgba(0,0,0,0.25),0 10px 10px rgba(0,0,0,0.22)}
 
