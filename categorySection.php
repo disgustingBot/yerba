@@ -5,7 +5,7 @@
   <section class="section<?php if ($alt) { echo ' alt'; } ?>">
     <h4 class="sectionTitle specialTitle rowcol1 colMax">
       <span class="cbbcEs"></span>
-      <span class=""><?php echo $arg; ?></span>
+      <span><?php echo $arg; ?></span>
     </h4>
 
     <?php
@@ -22,7 +22,7 @@
 
     <figure class="standarCard rowcol1">
       <a class="standarCardImg rowcol1" href="<?php echo get_permalink(); ?>"><img class="standarCardImg" src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt=""></a>
-      <figcaption class="">
+      <figcaption class="standarCardCaption">
         <h5><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h5>
         <p><a href="<?php echo get_permalink(); ?>"><?php echo excerpt(200); ?></a></p>
       </figcaption>
@@ -44,7 +44,7 @@
       <figure class="standarCard sectionItem">
         <a class="standarCardImg rowcol1" href="<?php echo get_permalink(); ?>"><img class="standarCardImg" src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt=""></a>
         <!-- <h5 class="itemTitleCenter rowcol1 itemTitle"><?php the_title(); ?></h5> -->
-        <figcaption class="">
+        <figcaption class="standarCardCaption">
           <h5><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h5>
           <p><a href="<?php echo get_permalink(); ?>"><?php echo excerpt(100); ?></a></p>
         </figcaption>
@@ -112,7 +112,7 @@
         while($blogPosts->have_posts()){$blogPosts->the_post(); ?>
           <figure class="standarCard grid">
             <img class="standarCardImg rowcol1" src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt="">
-            <figcaption class="">
+            <figcaption class="standarCardCaption">
               <h5><?php the_title(); ?></h5>
               <p><?php echo excerpt(100); ?></p>
             </figcaption>

@@ -1110,7 +1110,7 @@ h5, h6 {text-align: left; margin: .5rem 0;}
 .standarCard {
   display: grid;
   margin:.5rem;
-  grid-template-rows: auto min-content;
+  grid-template-rows: min-content min-content;
 }
 .standarCardImg {
   width: 100%;
@@ -1119,6 +1119,8 @@ h5, h6 {text-align: left; margin: .5rem 0;}
 .standarCardTxt {
   padding: 0 .5rem;
 }
+
+.standarCardCaption {padding: 0 5px;}
 
 .standarCard figcaption p {
   margin: .5rem 0;
