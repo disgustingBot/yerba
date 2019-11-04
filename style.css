@@ -179,6 +179,10 @@ FIN DE MAPA DE CONTENIDOS */
     --homeATFflexPadding: 5%;
 
 
+    --flex3StandarCardMinWidth:100%;
+
+
+
       /* =single */
     --singleBannerDisplay: none;
     --theContentGridC: 1/ -1;
@@ -225,7 +229,6 @@ FIN DE MAPA DE CONTENIDOS */
 
     --dividedSectionDisplay: block;
     --tarjetaMarginTop: -50px;
-    --magazineFlex3: 3 1 60%;
 
 
 
@@ -296,9 +299,9 @@ FIN DE MAPA DE CONTENIDOS */
     --cardWidth: var(--cardsSize);
     --homeATFflexPadding: 5%;
 
-    /* Magazine */
-    --magazineFlex3: 3 1 calc(33% - 1rem);
 
+
+    --flex3StandarCardMinWidth:170px;
 
 
   }
@@ -380,7 +383,7 @@ FIN DE MAPA DE CONTENIDOS */
 
     /* front-page */
     --flex5050Flex: 2 1 calc(50% - 1rem);
-    --simpleCardImgHeight: 50vh;
+    --simpleCardImgHeight: 40vh;
     --centerTitleFontSize: 4rem;
     --restaurantFlexDisplay: flex;
     --hidShowHeight: 50vh;
@@ -471,7 +474,7 @@ FIN DE MAPA DE CONTENIDOS */
       --footerMenuFontSize: 1rem;
 
       /* front-page */
-      --simpleCardImgHeight: 70vh;
+      --simpleCardImgHeight: 80vh;
 
     /* estructura */
     --sectionTitleMargin: 8%;
@@ -548,7 +551,7 @@ figure a{
 
 
 .specialTitle {
-  font-family: 'tahu', y;
+  font-family: 'tahu', cursive;
   font-weight: 500!important;
 }
 .homeATFCopy {
@@ -622,10 +625,21 @@ h5, h6 {text-align: left; margin: .5rem 0;}
 
 .flex2,.flex3,.flex4{display:flex;flex-wrap:wrap}
 .flex2>*{flex:2 1 calc(50% - 1rem)}
-.flex3>*{flex:3 1 calc(33% - 1rem)}
+/* .flex3>*{flex:3 1 calc(33% - 1rem)} */
 .flex4>*{flex:4 1 calc(25% - 1rem)}
 .flex5050>* {flex: var(--flex5050Flex)}
 .restaurantFlex {display: var(--restaurantFlexDisplay)}
+
+.flex3 .standarCard{
+  width:calc((100% - 3rem) / 3);
+  /* width:var(--flex3StandarCardWidth); */
+  /* min-width: 170px; */
+  min-width:var(--flex3StandarCardMinWidth);
+  /* max-height: 300px; */
+}
+/* .standarCardImg{
+  max-height: 250px;
+} */
 
 /* ---------------------------------------------------------------------------
 ------------------------------------------------------------------------------
@@ -1009,7 +1023,11 @@ h5, h6 {text-align: left; margin: .5rem 0;}
   font-weight: 500;
 }
 
-.homeATFflex h5 a, .homeATFflex h5{
+.homeATFflex h5 {
+  text-align: center;
+}
+
+.homeATFflex h5 a {
     color: black;
     text-align: center;
     font-size: 1.5rem;
@@ -1110,17 +1128,16 @@ h5, h6 {text-align: left; margin: .5rem 0;}
 .standarCard {
   display: grid;
   margin:.5rem;
-  grid-template-rows: auto min-content;
+  grid-template-rows: min-content min-content;
 }
 .standarCardImg {
   width: 100%;
 }
-
 .standarCardTxt {
   padding: 0 .5rem;
 }
+.standarCard figcaption{padding:0 .5rem}
 
-.standarCardCaption {padding: 0 10px;}
 .standarCard figcaption p {
   margin: .5rem 0;
   text-align: left;
@@ -1129,7 +1146,6 @@ h5, h6 {text-align: left; margin: .5rem 0;}
   font-weight: bold;
   font-size: .8rem;
 }
-
 
 .section>.standarCard {
   grid-column: var(--sectionStandarCardGridC);
@@ -1158,10 +1174,6 @@ h5, h6 {text-align: left; margin: .5rem 0;}
 
 .grid2C .standarCard:nth-last-child(2){margin-left :20%}
 
-.tarjetaCaption p {
-  text-align: left!important;
-  font-size: .8rem;
-}
 .grid2C .standarCard:nth-last-child(1){margin-right:20%}
 
 
@@ -1188,10 +1200,9 @@ h5, h6 {text-align: left; margin: .5rem 0;}
   padding: 1rem;
   width: 100%;
 }
-
-
-.aguantameLosTrapo {
-
+.tarjetaTxt{
+  text-align: left!important;
+  font-size: .7rem;
 }
 /* ---------------------------------------------------------------------------
 ------------------------------------------------------------------------------
