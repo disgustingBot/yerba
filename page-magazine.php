@@ -24,6 +24,8 @@
 
   <button class="slideButton rowcol1 slideLeft" onclick="plusDivs(-1)">&#10094;</button>
   <button class="slideButton rowcol1 slideRight" onclick="plusDivs(+1)">&#10095;</button>
+
+
 </section>
 
 

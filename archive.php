@@ -48,6 +48,7 @@ if(is_category()){
       <banner>
         BANNER
       </banner>
+      <!-- banner 1 -->
       <section class="cincoPost">
     <?php } ?>
 

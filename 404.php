@@ -5,7 +5,7 @@
   <div class="notFound">
     <p class="p404">No pudimos encontrar tu página, tal vez te interese:</p>
     <a class="links404" href="<?php echo site_url(''); ?>" class="irAHome"><p>Ir al Inicio</p></a>
-    <a class="links404" href="<?php echo site_url('/magazine'); ?>" class="irAHome"><p>Conocer nuestra<br><span class="blueTxt specialTitle">life </span>Magazine</p></a>
+    <a class="links404" href="<?php echo site_url('/magazine'); ?>" class="irAHome"><p>Conoce nuestra<br><span class="blueTxt specialTitle">life </span>Magazine</p></a>
 
   </div>
 
