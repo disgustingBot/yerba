@@ -225,7 +225,6 @@ FIN DE MAPA DE CONTENIDOS */
 
     --dividedSectionDisplay: block;
     --tarjetaMarginTop: -50px;
-    --magazineFlex3: 3 1 60%;
 
 
 
@@ -295,9 +294,6 @@ FIN DE MAPA DE CONTENIDOS */
     --cardsSize: 200px;
     --cardWidth: var(--cardsSize);
     --homeATFflexPadding: 5%;
-
-    /* Magazine */
-    --magazineFlex3: 3 1 calc(33% - 1rem);
 
 
 
@@ -380,7 +376,7 @@ FIN DE MAPA DE CONTENIDOS */
 
     /* front-page */
     --flex5050Flex: 2 1 calc(50% - 1rem);
-    --simpleCardImgHeight: 50vh;
+    --simpleCardImgHeight: 40vh;
     --centerTitleFontSize: 4rem;
     --restaurantFlexDisplay: flex;
     --hidShowHeight: 50vh;
@@ -471,7 +467,7 @@ FIN DE MAPA DE CONTENIDOS */
       --footerMenuFontSize: 1rem;
 
       /* front-page */
-      --simpleCardImgHeight: 70vh;
+      --simpleCardImgHeight: 80vh;
 
     /* estructura */
     --sectionTitleMargin: 8%;
@@ -548,7 +544,7 @@ figure a{
 
 
 .specialTitle {
-  font-family: 'tahu', y;
+  font-family: 'tahu', cursive;
   font-weight: 500!important;
 }
 .homeATFCopy {
@@ -1009,7 +1005,11 @@ h5, h6 {text-align: left; margin: .5rem 0;}
   font-weight: 500;
 }
 
-.homeATFflex h5 a, .homeATFflex h5{
+.homeATFflex h5 {
+  text-align: center;
+}
+
+.homeATFflex h5 a {
     color: black;
     text-align: center;
     font-size: 1.5rem;
@@ -1110,7 +1110,7 @@ h5, h6 {text-align: left; margin: .5rem 0;}
 .standarCard {
   display: grid;
   margin:.5rem;
-  grid-template-rows: auto min-content;
+  grid-template-rows: min-content min-content;
 }
 .standarCardImg {
   width: 100%;
@@ -1120,7 +1120,9 @@ h5, h6 {text-align: left; margin: .5rem 0;}
   padding: 0 .5rem;
 }
 
-.standarCardCaption {padding: 0 10px;}
+.standarCard figcaption {
+  padding: 0 .5rem;
+}
 .standarCard figcaption p {
   margin: .5rem 0;
   text-align: left;
@@ -1158,10 +1160,6 @@ h5, h6 {text-align: left; margin: .5rem 0;}
 
 .grid2C .standarCard:nth-last-child(2){margin-left :20%}
 
-.tarjetaCaption p {
-  text-align: left!important;
-  font-size: .8rem;
-}
 .grid2C .standarCard:nth-last-child(1){margin-right:20%}
 
 
@@ -1188,10 +1186,9 @@ h5, h6 {text-align: left; margin: .5rem 0;}
   padding: 1rem;
   width: 100%;
 }
-
-
-.aguantameLosTrapo {
-
+.tarjetaTxt{
+  text-align: left!important;
+  font-size: .7rem;
 }
 /* ---------------------------------------------------------------------------
 ------------------------------------------------------------------------------
@@ -1768,11 +1765,6 @@ h5, h6 {text-align: left; margin: .5rem 0;}
   justify-content: center;
   padding: 0 12.5%;
 }
-
-.magazineFlex.flex3>* {
-  flex: var(--magazineFlex3);
-}
-
 .magazineFlex .standarCard {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: .3s ease-in-out;
@@ -2021,68 +2013,3 @@ h5, h6 {text-align: left; margin: .5rem 0;}
 .contactoHgroup {}
 .contactTitle {text-align: center; margin: .75rem 0}
 .contactSubTitle {text-align: left; margin: .75rem 0}
-
-.contactMessege {width: 100%; height: 100%;}
-
-  /* =adds - Advanced Ads*/
-
-  .add {
-    background: #e9e9e9;
-    padding: 20px 0;
-  }
-
-  .add img {
-    display: inline-block;
-    width: 90%;
-    height: auto;
-  }
-
-  /* =404 */
-
-.Video404 {
-  height: 100vh;
-  width: 100%;
-  object-fit: cover;
-}
-
-.notFound {
-  background: var(--color2);
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  border-radius: 4px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-left: 50%;
-  margin-top: 10%;
-  padding: 30px;
-  position: absolute;
-  transform: translateX(-50%);
-  z-index: 3;
-}
-
-.p404 {
-  margin-top: 20px 0;
-  width: 100%;
-  text-align: center;
-}
-
-.links404 {
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  color: black;
-  display: flex;
-  height: 100px;
-  margin: 10px;
-  text-decoration: none;
-  transition: .25s;
-  width: 200px;
-}
-
-.links404:hover {background: var(--color1); color: white;}
-
-.links404 p {
-  margin: auto;
-  padding: 10px;
-  text-align: center;
-  width: max-content;
-  height: min-content;
-}

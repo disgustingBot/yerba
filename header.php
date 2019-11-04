@@ -45,10 +45,10 @@
           <a class="subrayable" id="gastronomiaLink" href="#gastronomia">Gastronomía</a>
           <a class="subrayable" id="experienciasLink" href="#experiencias">Experiencias</a>
           <?php if ( !$isMagazine ): ?>
-            <a class="subrayable<?php if(is_page("about")){echo ' subrayado"';} ?>" href="<?php echo site_url('/about'); ?> target="_blank"">About Us</a>
+            <a class="subrayable<?php if(is_page("about")){echo ' subrayado"';} ?>" href="<?php echo site_url('/about'); ?>" target="_blank">About Us</a>
           <?php endif; ?>
-          <a class="subrayable<?php if(is_page("eventos")){echo ' subrayado"';} ?>" href="<?php echo site_url('/eventos'); ?> target="_blank"">Eventos</a>
-          <a class="subrayable magazineLink<?php if(is_page("magazine")){echo ' subrayado"';} ?>" href="<?php echo site_url('/magazine'); ?> target="_blank"">CBbC <span class="specialTxt">&nbsplife&nbsp</span> Magazine</a>
+          <a class="subrayable<?php if(is_page("eventos")){echo ' subrayado"';} ?>" href="<?php echo site_url('/eventos'); ?>" target="_blank">Eventos</a>
+          <a class="subrayable magazineLink<?php if(is_page("magazine")){echo ' subrayado"';} ?>" href="<?php echo site_url('/magazine'); ?>" target="_blank">CBbC <span class="specialTxt">&nbsplife&nbsp</span> Magazine</a>
           <button class="suscribeButton">+SUSCRIBETE</button>
         </nav>
       <?php } ?>

@@ -93,9 +93,9 @@
           $blogPosts->the_post();$featuredID=get_the_ID(); ?>
           <figure class="tarjeta grid2C colMax">
             <a class="tarjetaImg" href="<?php echo get_permalink(); ?>"><img class="tarjetaImg" src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt="" ></a>
-            <figcaption class="tarjetaCaption ">
-              <h5><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h5>
-              <p><a href="<?php echo get_permalink(); ?>"><?php echo excerpt(100); ?></a></p>
+            <figcaption class="tarjetaCaption">
+              <h5 class="tarjetaTitle"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h5>
+              <p class="tarjetaTxt"><a href="<?php echo get_permalink(); ?>"><?php echo excerpt(100); ?></a></p>
             </figcaption>
           </figure>
         <?php } ?>
