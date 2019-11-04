@@ -88,7 +88,7 @@
             </g>
             </svg>
           </a>
-          <a "'.$pinterestURL.'" target="_blank">
+          <a href="<?php echo $pinterestURL; ?>" target="_blank">
             <svg class="googleFooter" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
   	        width="38.062px" height="38.061px" viewBox="0 0 38.062 38.061" enable-background="new 0 0 38.062 38.061" xml:space="preserve">
               <g id="XMLID_1678_">
