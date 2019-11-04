@@ -201,35 +201,29 @@
 
 <flex class="magazineFlex flex3 colMax articulosRelacionados">
   <h4><span class="blueTxt">Artículos relacionados</span> / más del autor</h4>
-  <figure class="standarCard">
-    <img src="<?php echo get_template_directory_uri(); ?>/img/home/114579-261.jpg" alt="" class="standarCardImg rowcol1">
-    <figcaption class="">
-      <p>Dolor sit amet, consectetur adipiscing elit</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </figcaption>
-  </figure>
+  <?php $i=0;
+  $related = gp_get_related_posts( get_the_ID(), 3 );
+  if ( $related->have_posts() ): ?>
 
-
-  <figure class="standarCard">
-    <img src="<?php echo get_template_directory_uri(); ?>/img/home/23-2148153662.jpg" alt=""class="standarCardImg rowcol1">
-    <figcaption class="">
-      <p>Dolor sit amet, consectetur adipiscing elit</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.</p>
-    </figcaption>
-  </figure>
-
-  <figure class="standarCard">
-    <img src="<?php echo get_template_directory_uri(); ?>/img/home/23-2147717087.png" alt=""class="standarCardImg rowcol1">
-    <figcaption class="">
-      <p>Dolor sit amet, consectetur adipiscing elit</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.</p>
-    </figcaption>
-  </figure>
-
+    <?php while($related->have_posts()): $related->the_post(); ?>
+      <figure class="standarCard">
+        <a class="standarCardImg" href="<?php the_permalink(); ?>"><img class="standarCardImg lazy" data-url="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt=""></a>
+        <figcaption class="standarCardCaption">
+          <h5 class="standarCardTitle"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
+          <p class="standarCardTxt">
+            <a href="<?php the_permalink(); ?>"><?php echo excerpt(65); ?></a>
+          </p>
+        </figcaption>
+      </figure>
+    <?php endwhile; ?>
+  <?php endif; wp_reset_postdata(); ?>
 </flex>
 
-    <div style="display:none"><?php comments_template(); ?></div>
 
+
+
+
+    <div style="display:none"><?php comments_template(); ?></div>
     <!-- .comment-list -->
     <ul class="comment-list comments">
       <?php wp_list_comments(array('callback' => 'better_comments')); ?>

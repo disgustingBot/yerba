@@ -12,9 +12,9 @@
   <figure class="carus carouselItem rowcol1">
     <img class="carusImg rowcol1" src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt="">
     <figcaption class="carusCaption rowcol1">
-      <h4 class="carusTitle"><?php the_title(); ?></h4>
+      <h4 class="carusTitle"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h4>
       <p class="carusTxt">
-        <?php echo get_the_excerpt(); ?>
+        <a href="<?php echo get_permalink(); ?>"><?php echo get_the_excerpt(); ?></a>
       </p>
     </figcaption>
   </figure>
