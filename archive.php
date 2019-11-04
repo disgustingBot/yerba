@@ -24,12 +24,10 @@ if(is_category()){
   <figure class="carus carouselItem rowcol1">
     <img class="carusImg rowcol1" src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt="">
     <figcaption class="carusCaption rowcol1">
-      <a class="standarCardLink" href="<?php the_permalink(); ?>">
-        <h4 class="carusTitle"><?php the_title(); ?></h4>
-        <p class="carusTxt">
-          <?php echo excerpt(200); ?>
-        </p>
-      </a>
+      <h4 class="carusTitle"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+      <p class="carusTxt">
+        <a href="<?php the_permalink(); ?>"><?php echo excerpt(200); ?></a>
+      </p>
     </figcaption>
   </figure>
   <?php } wp_reset_query(); ?>
@@ -54,12 +52,12 @@ if(is_category()){
     <?php } ?>
 
     <figure class="standarCard">
-      <img class="standarCardImg lazy" data-url="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt="">
+      <a class="standarCardImg" href="<?php the_permalink(); ?>"><img class="standarCardImg lazy" data-url="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt=""></a>
       <figcaption class="standarCardCaption">
-        <a class="standarCardLink" href="<?php the_permalink(); ?>">
-          <h5><?php the_title(); ?></h5>
-          <p><?php echo excerpt(100); ?></p>
-        </a>
+        <h4 class="standarCardTitle"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+        <p class="standarCardTxt">
+          <a href="<?php the_permalink(); ?>"><?php echo excerpt(200); ?></a>
+        </p>
       </figcaption>
     </figure>
 

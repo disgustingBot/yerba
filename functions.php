@@ -144,10 +144,10 @@ function lattedev_call_restaurants( $atts ) {
   ));
   while ($q->have_posts()) {$q->the_post();
     $buffer .= '<figure class="hidshow grid">';
-      $buffer .= '<a class="hidshowImg rowcol1" href="'.get_permalink().'"><img class="hidshowImg" src="'.get_the_post_thumbnail_url(get_the_ID()).'" alt=""></a>';
+      $buffer .= '<img class="hidshowImg rowcol1" src="'.get_the_post_thumbnail_url(get_the_ID()).'" alt="">';
       $buffer .= '<figcaption class="grid rowcol1">';
-        $buffer .= '<p class="itemTitle rowcol1 itemTitleTR"><a href="'.get_permalink().'"></a>'.get_the_title().'</p>';
-        $buffer .= '<p class="rowcol1 hidshowTxt"><a href="'.get_permalink().'"></a>'.get_the_excerpt().'</p>';
+        $buffer .= '<p class="itemTitle rowcol1 itemTitleTR">'.get_the_title().'</p>';
+        $buffer .= '<p class="rowcol1 hidshowTxt">'.get_the_excerpt().'</p>';
       $buffer .= '</figcaption>';
     $buffer .= '</figure>';
   } wp_reset_postdata();
@@ -173,10 +173,10 @@ function lattedev_call_magazine( $atts ) {
     ));
     while ($q->have_posts()) {$q->the_post();
       $buffer .= '<figure class="standarCard">';
-        $buffer .= '<img class="standarCardImg rowcol1" src="'.get_the_post_thumbnail_url(get_the_ID()).'" alt="">';
+        $buffer .= '<a class="standarCardImg rowcol1" href="'.get_permalink().'"><img class="standarCardImg" src="'.get_the_post_thumbnail_url(get_the_ID()).'" alt=""></a>';
         $buffer .= '<figcaption class="standarCardTxt">';
-          $buffer .= '<h6>'.get_the_title().'</h6>';
-          $buffer .= '<p>'.excerpt(65).'</p>';
+          $buffer .= '<h6><a href="'.get_permalink().'">'.get_the_title().'</a></h6>';
+          $buffer .= '<p><a href="'.get_permalink().'">'.excerpt(65).'</a></p>';
         $buffer .= '</figcaption>';
       $buffer .= '</figure>';
     } wp_reset_postdata();
@@ -245,3 +245,79 @@ function CBbCWidgetsInit() {
 }
 
  add_action('widgets_init', 'CBbCWidgetsInit');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ // 
+ // function gp_get_related_posts( $post_id, $related_count, $args = array() ) {
+ // 	$args = wp_parse_args( (array) $args, array(
+ // 		'orderby' => 'rand',
+ // 		'return'  => 'query', // Valid values are: 'query' (WP_Query object), 'array' (the arguments array)
+ // 	) );
+ //
+ // 	$related_args = array(
+ // 		'post_type'      => get_post_type( $post_id ),
+ // 		'posts_per_page' => $related_count,
+ // 		'post_status'    => 'publish',
+ // 		'post__not_in'   => array( $post_id ),
+ // 		'orderby'        => $args['orderby'],
+ // 		'tax_query'      => array()
+ // 	);
+ //
+ // 	$post       = get_post( $post_id );
+ // 	$taxonomies = get_object_taxonomies( $post, 'names' );
+ //
+ // 	foreach ( $taxonomies as $taxonomy ) {
+ // 		$terms = get_the_terms( $post_id, $taxonomy );
+ // 		if ( empty( $terms ) ) {
+ // 			continue;
+ // 		}
+ // 		$term_list                   = wp_list_pluck( $terms, 'slug' );
+ // 		$related_args['tax_query'][] = array(
+ // 			'taxonomy' => $taxonomy,
+ // 			'field'    => 'slug',
+ // 			'terms'    => $term_list
+ // 		);
+ // 	}
+ //
+ // 	if ( count( $related_args['tax_query'] ) > 1 ) {
+ // 		$related_args['tax_query']['relation'] = 'OR';
+ // 	}
+ //
+ // 	if ( $args['return'] == 'query' ) {
+ // 		return new WP_Query( $related_args );
+ // 	} else {
+ // 		return $related_args;
+ // 	}
+ // }

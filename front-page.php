@@ -3,7 +3,7 @@
 
 <?php get_header(); ?>
 
-
+<!-- 
 <section class="homeATF">
 
   <video class="homeATFvideo rowcol1" id="headerActivator" loop="loop" autoplay playsinline muted>
@@ -42,7 +42,7 @@
     </figure>
   </flex>
 
-</section>
+</section> -->
 
 
 
@@ -51,7 +51,7 @@
 <?php while(have_posts()){the_post();the_content();} ?>
 
 
-
+<!--
 
 <section class="section">
 
@@ -245,5 +245,5 @@
 </section>
 
 
-</div>
+</div> -->
 <?php get_footer(); ?>
