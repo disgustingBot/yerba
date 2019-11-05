@@ -195,12 +195,14 @@
       </p>
     </div>
   </div>
-  <div class="singleBanner"></div>
+  <div class="singleBanner">
+    <?php echo do_shortcode('[the_ad id="1137"]'); ?>
+  </div>
 
 </section>
 
-<flex class="magazineFlex flex3 colMax articulosRelacionados">
-  <h4><span class="blueTxt">Artículos relacionados</span> / más del autor</h4>
+<flex class="colMax articulosRelacionados">
+  <h4 class="relacionadosTitle"><span class="blueTxt">Artículos relacionados</span> / más del autor</h4>
   <?php $i=0;
   $related = gp_get_related_posts( get_the_ID(), 3 );
   if ( $related->have_posts() ): ?>
