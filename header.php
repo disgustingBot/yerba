@@ -12,7 +12,7 @@
     <style>.popup{display:none}</style>
   <?php } ?>
 </head>
-<body>
+<body <?php if(is_page('events')){echo 'cless="bodyEvents"';} ?>>
 
 <?php global $post; $post_slug = $post->post_name; ?>
 
