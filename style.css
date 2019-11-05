@@ -543,11 +543,6 @@ body.gutenberg-editor-page .editor-block-list__block,
          url('fonts/Tahu!.ttf') format('truetype');
 }
 body {font-family: 'Abhaya';}
-html{scroll-behavior:smooth}
-figure a{
-  color:inherit;
-  text-decoration: none;
-}
 
 
 .specialTitle {
@@ -583,12 +578,21 @@ figure a{
   margin: 0;
   padding: 0;
 }
+html{scroll-behavior:smooth}
 body{
   display: grid;
   grid-auto-rows:auto;
   grid-template-columns:100%;
   /* grid-template-rows:100vh min-content; */
   grid-template-rows:calc(100vh - var(--headerHeight)) var(--headerHeight);
+}
+body .bodyEvents{
+  display:block;
+  /* grid-template-rows:calc(100vh - var(--headerHeight)) var(--headerHeight); */
+}
+figure a{
+  color:inherit;
+  text-decoration: none;
 }
 body>*{grid-column:1}
 img{object-fit:cover}
