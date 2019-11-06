@@ -45,9 +45,7 @@ if(is_category()){
   while(have_posts()){the_post();
     if ($i>0 && $i%5==0) { ?>
       </section>
-      <banner>
-        BANNER
-      </banner>
+      <?php echo do_shortcode('[the_ad id="1132"]') ?>
       <!-- banner 1 -->
       <section class="cincoPost">
     <?php } ?>
@@ -64,6 +62,7 @@ if(is_category()){
 
   <?php $i++; } wp_reset_query(); ?>
 </section>
+<?php echo do_shortcode('[the_ad id="1133"]') ?>
 
 
 

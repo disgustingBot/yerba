@@ -51,6 +51,7 @@
       </figure>
 
     <?php } ?>
+
   </section>
 <?php } ?>
 
@@ -120,5 +121,6 @@
         <?php } ?>
       </div>
     <?php $a++; } ?>
+
   </section>
 <?php } ?>

@@ -37,8 +37,11 @@
 
 
 <?php categorySectionSimple('news'   , 0); ?>
+<?php echo do_shortcode('[the_ad id="1134"]') ?>
 <?php categorySectionSimple('lugares', 1); ?>
+<?php echo do_shortcode('[the_ad id="1135"]') ?>
 <?php categorySectionSimple('paladar', 0); ?>
+<?php echo do_shortcode('[the_ad id="1136"]') ?>
 
 <?php categorySection2C('experiencias', ['ibiza', 'andorra']); ?>
 
