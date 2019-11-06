@@ -304,6 +304,11 @@ FIN DE MAPA DE CONTENIDOS */
     --flex3StandarCardMinWidth:170px;
 
 
+    /* Magazine */
+    --singleBannerHeight: 266px;
+    --singleBannerWidth: 100px;
+
+
   }
 }
 /* ---------------------------------------------------------------------------
@@ -406,6 +411,9 @@ FIN DE MAPA DE CONTENIDOS */
     --textJustifyCenter: center;
     --showMargin: 4rem 0;
 
+    /* magazine */
+    --singleBannerHeight: 400px;
+    --singleBannerWidth: 150px;
 
 
 
@@ -453,6 +461,9 @@ FIN DE MAPA DE CONTENIDOS */
 
     --dividedSectionDisplay: grid;
 
+    --singleBannerHeight: 530px;
+    --singleBannerWidth: 200px;
+
 
 
   }
@@ -485,6 +496,9 @@ FIN DE MAPA DE CONTENIDOS */
 
     /* magazine (página) */
     --tarjetaMarginTop: -100px;
+
+    --singleBannerHeight: 665px;
+    --singleBannerWidth: 250px;
   }
 }
 
@@ -497,6 +511,9 @@ FIN DE MAPA DE CONTENIDOS */
 
     --cardsSize: 300px;
     --homeATFflexPadding: 5% 10%;
+
+    --singleBannerHeight: 800px;
+    --singleBannerWidth: 300px;
 
 
 
@@ -1807,7 +1824,7 @@ h5, h6 {text-align: left; margin: .5rem 0;}
 
 .singleATFImg {
   width: 100%;
-  height: 100vh;
+  height: 80vh;
 }
 
 
@@ -1818,7 +1835,7 @@ h5, h6 {text-align: left; margin: .5rem 0;}
   height: 45px;
   width: auto;
   z-index: 2;
-  margin: auto auto 0 0;
+  margin: auto auto 20vh 0;
 }
 
 .imgAuthor p {
@@ -1878,6 +1895,7 @@ h5, h6 {text-align: left; margin: .5rem 0;}
 
 .singleContent {
   padding: 0 2.5%;
+  margin-top: -20vh;
 }
 
 .singleContent p {
@@ -1902,11 +1920,11 @@ h5, h6 {text-align: left; margin: .5rem 0;}
   display: var(--singleBannerDisplay);
   position: sticky;
   top: 10%;
-  margin: 0 0 auto auto;
+  margin: 10% auto auto auto;
   background: #bbb;
   grid-column: span 2;
-  height: 80vh;
-  width: 100%;
+  height: var(--singleBannerHeight);
+  width: var(--singleBannerWidth);
 }
 
 .singleSocialContainer.altSocial {
@@ -2120,12 +2138,16 @@ h5, h6 {text-align: left; margin: .5rem 0;}
   .add {
     background: #e9e9e9;
     padding: 20px 0;
+    width: 100%;
+    height: 100%;
   }
 
   .add img {
     display: inline-block;
     width: 90%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
+    margin: auto;
   }
 
   /* =404 */

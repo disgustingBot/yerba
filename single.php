@@ -196,7 +196,7 @@
     </div>
   </div>
   <div class="singleBanner">
-    <?php echo do_shortcode('[the_ad id="1137"]'); ?>
+    <?php echo do_shortcode('[the_ad id="253"]'); ?>
   </div>
 
 </section>

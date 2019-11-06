@@ -52,8 +52,6 @@
 
     <?php } ?>
 
-    <?php echo do_shortcode('[the_ad id="1132"]'); ?>
-
   </section>
 <?php } ?>
 
@@ -123,6 +121,6 @@
         <?php } ?>
       </div>
     <?php $a++; } ?>
-    
+
   </section>
 <?php } ?>
