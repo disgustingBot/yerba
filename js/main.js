@@ -26,19 +26,25 @@ const resizeImgs = () => {
 
 
 const header = d.querySelector(".header");
+
+
 // HEADER TRANSPARENT HANDLER
 const headerHandlerOpt = {
   root: null,
-  threshold: .2,
-  rootMargin: "0px 0px 0px 0px"
+  threshold: 0,
+  rootMargin: "-" + header.clientHeight + "px 0px 0px 0px"
 };
 const headerHandler=new IntersectionObserver(entries=>{
   entries.forEach(entry => {
-    if(entry.isIntersecting){header.classList.remove('headerTop')}else{header.classList.add('headerTop')}
+    if(entry.isIntersecting){
+      header.classList.remove('headerTop')
+    }else{header.classList.add('headerTop')}
   })
 }, headerHandlerOpt);
 // HEADER TRANSPARENT HANDLER
-if(d.querySelector("#headerActivator")){headerHandler.observe(d.querySelector("#headerActivator"))}else{header.classList.add('headerTop')}
+if(d.querySelector("#headerActivator")){
+  headerHandler.observe(d.querySelector("#headerActivator"))
+}else{header.classList.add('headerTop')}
 
 
 
@@ -83,18 +89,23 @@ if(x.length>0){showDivs(j);carousel()}
 
 const options = {
   root: null, // it is the viewport, that's the default
-  threshold: .2, // that's the default
-  // rootMargin: "3rem 0px 0px 0px" // that's the default
+  threshold: 0,
+  rootMargin: "-" + header.clientHeight + "px 0px 0px 0px"
 };
 
 const observer = new IntersectionObserver((entries, observer)=>{
   entries.forEach(entry => {
-    id=entry.target.getAttribute('data-target')
-    if (entry.isIntersecting) {
-      d.getElementById(id).classList.add('subrayado');
-      // c.log(d.getElementById(id));
-    } else {
-      d.getElementById(id).classList.remove('subrayado');
+    // c.log(entry.target);
+    id=entry.target.getAttribute('data-target');
+    // c.log(id);
+    if (id) {
+
+      if (entry.isIntersecting) {
+        d.getElementById(id).classList.add('subrayado');
+        // c.log(d.getElementById(id));
+      } else {
+        d.getElementById(id).classList.remove('subrayado');
+      }
     }
     // c.log(entry);
   })
@@ -105,7 +116,8 @@ c.log(!!sections[1].id);
 // c.log(sections);
 // observer.observe(sections);
 sections.forEach(e => {
-  if (!!sections[1].id) {
+  if (!!e.id) {
+    // c.log(e)
     observer.observe(e);
   }
 })

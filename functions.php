@@ -269,6 +269,10 @@ function CBbCWidgetsInit() {
 
 
 
+ function register_my_menu() {
+ register_nav_menu('navigation-menu',__( 'Navigation Menu' ));
+ }
+ add_action( 'init', 'register_my_menu' );
 
 
 
@@ -278,8 +282,7 @@ function CBbCWidgetsInit() {
 
 
 
-
- // 
+ //
  // function gp_get_related_posts( $post_id, $related_count, $args = array() ) {
  // 	$args = wp_parse_args( (array) $args, array(
  // 		'orderby' => 'rand',
