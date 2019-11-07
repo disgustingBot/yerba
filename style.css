@@ -566,10 +566,6 @@ body {font-family: 'Abhaya';}
   font-family: 'tahu', cursive;
   font-weight: 500!important;
 }
-.homeATFCopy {
-  font-weight: 500!important;
-  font-size: 4rem!important;
-}
 .specialTxt{
   color:var(--color3);
   font-family: 'tahu', cursive;
@@ -603,10 +599,11 @@ body{
   /* grid-template-rows:100vh min-content; */
   grid-template-rows:calc(100vh - var(--headerHeight)) var(--headerHeight);
 }
-body .bodyEvents{
-  display:block;
-  /* grid-template-rows:calc(100vh - var(--headerHeight)) var(--headerHeight); */
+body.bodyEvents,
+body.wp-admin{
+  display:block!important;
 }
+
 figure a{
   color:inherit;
   text-decoration: none;
@@ -651,12 +648,10 @@ h5, h6 {text-align: left; margin: .5rem 0;}
 .flex5050>* {flex: var(--flex5050Flex)}
 .restaurantFlex {display: var(--restaurantFlexDisplay)}
 
-.flex3 .standarCard{
+.flex3 .standarCard,
+.flex3 .card{
   width:calc((100% - 3rem) / 3);
-  /* width:var(--flex3StandarCardWidth); */
-  /* min-width: 170px; */
   min-width:var(--flex3StandarCardMinWidth);
-  /* max-height: 300px; */
 }
 /* .standarCardImg{
   max-height: 250px;
@@ -1026,8 +1021,9 @@ h5, h6 {text-align: left; margin: .5rem 0;}
 .homeATFCopy {
   font-size: var(--homeATFCopyFont);
   /* margin-top: 1rem; */
+  font-weight: 500!important;
+  font-size: 4rem!important;
 }
-
 .homeATFflex{
   grid-row: 2/3;
   grid-column: 1;
@@ -1039,12 +1035,12 @@ h5, h6 {text-align: left; margin: .5rem 0;}
 
 
 
-.homeATFflex h3 {
+.cardTitleTxt {
   font-size: 2rem;
   font-weight: 500;
 }
 
-.homeATFflex h5 {
+/* .homeATFflex h5 {
   text-align: center;
 }
 
@@ -1054,7 +1050,7 @@ h5, h6 {text-align: left; margin: .5rem 0;}
     font-size: 1.5rem;
     text-decoration: none;
     font-weight: 200;
-}
+} */
 
 
 
@@ -1725,12 +1721,13 @@ h5, h6 {text-align: left; margin: .5rem 0;}
   width: 100%;
 }
 .cbbcEs {
-  font-size: 1rem!important;
+  font-size: 1.5rem!important;
   margin-left: var(--cbbcEsMarginL);
   margin-right: var(--cbbcEsMarginR);
   font-family: none!important;
   white-space: nowrap;
   font-weight: bold;
+  margin-bottom: 50px;
 }
 .sectionTitle {
   margin: auto;
