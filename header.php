@@ -12,7 +12,23 @@
     <style>.popup{display:none}</style>
   <?php } ?>
 </head>
-<body <?php if(is_page('events')){echo 'cless="bodyEvents"';} ?>>
+<body
+<?php
+global $wp_query;
+if(isset($wp_query->query['post_type']) && $wp_query->query['post_type'] == "tribe_events"){echo 'class="bodyEvents"';}
+?>
+>
+
+<?php
+
+  // var_dump($wp_query->query['post_type']);
+  // if (isset($wp_query->query['post_type']) && $wp_query->query['post_type'] == "tribe_events") {
+  //   echo "bodyEvents";
+  // } else {
+  //   echo "no!";
+  // }
+  // echo get_queried_object("name");
+?>
 
 <?php global $post; $post_slug = $post->post_name; ?>
 
