@@ -50,7 +50,7 @@ if(isset($wp_query->query['post_type']) && $wp_query->query['post_type'] == "tri
           <img class="headerLogo" src="<?php echo get_template_directory_uri(); ?>/img/logoCasiLimpio.png" alt="">
         </a>
         <nav id="navBar" class="headerCont navBar">
-          <a class="subrayable homeLink<?php if(is_front_page()){echo ' subrayado"';} ?>" href="<?php echo site_url(''); ?>">CBbC</a>
+          <a class="subrayable homeLink<?php if(is_front_page()){echo ' subrayado"';} ?>" href="<?php echo site_url(''); ?>">CBbC Group</a>
           <div class="subrayable locationLink" id="localizacionLink">
             <a class="locationText" href="#localizacion">Localización</a>
             <div class="headerLocations">
@@ -61,11 +61,11 @@ if(isset($wp_query->query['post_type']) && $wp_query->query['post_type'] == "tri
           <a class="subrayable" id="gastronomiaLink" href="#gastronomia">Gastronomía</a>
           <a class="subrayable" id="experienciasLink" href="#experiencias">Experiencias</a>
           <?php if ( !$isMagazine ): ?>
-            <a class="subrayable<?php if(is_page("about")){echo ' subrayado"';} ?>" href="<?php echo site_url('/about'); ?>" target="_blank">About Us</a>
+
           <?php endif; ?>
-          <a class="subrayable<?php if(is_page("eventos")){echo ' subrayado"';} ?>" href="<?php echo site_url('/eventos'); ?>" target="_blank">Eventos</a>
+
           <a class="subrayable magazineLink<?php if(is_page("magazine")){echo ' subrayado"';} ?>" href="<?php echo site_url('/magazine'); ?>" target="_blank">CBbC <span class="specialTxt">&nbsplife&nbsp</span> Magazine</a>
-          <button class="suscribeButton">+SUSCRIBETE</button>
+          <button class="suscribeButton" onclick="alternateNewsLetter()">+SUSCRIBETE</button>
         </nav>
       <?php } ?>
 
@@ -86,7 +86,7 @@ if(isset($wp_query->query['post_type']) && $wp_query->query['post_type'] == "tri
           <a class="subrayable<?php if(is_category("experiencias")){echo ' subrayado"';} ?>" href="<?php echo site_url('/category/experiencias'); ?>">Experiencias</a>
           <a class="subrayable<?php if(is_category("planes")){echo ' subrayado"';} ?>" href="<?php echo site_url('/category/planes'); ?>">Planes</a>
           <a class="subrayable<?php if(is_category("music")){echo ' subrayado"';} ?>" href="<?php echo site_url('/category/music'); ?>">Musica</a>
-          <button class="suscribeButton">+SUSCRIBETE</button>
+          <button class="suscribeButton" onclick="alternateNewsLetter()">+SUSCRIBETE</button>
         </nav>
       <?php } ?>
       <div class="burger" onclick="alternateNavBar()">
@@ -113,7 +113,7 @@ if(isset($wp_query->query['post_type']) && $wp_query->query['post_type'] == "tri
         <a class="subrayable<?php if(is_page("about")){echo ' subrayado"';} ?>" href="<?php echo site_url('/about'); ?>">About Us</a>
         <a class="subrayable<?php if(is_page("eventos")){echo ' subrayado"';} ?>" href="<?php echo site_url('/eventos'); ?>">Eventos</a>
         <a class="subrayable magazineLink<?php if(is_page("magazine")){echo ' subrayado"';} ?>" href="<?php echo site_url('/magazine'); ?>">CBbC <span class="specialTxt">Life</span> Magazine</a>
-        <button class="suscribeButton">+SUSCRIBETE</button>
+        <button class="suscribeButton" onclick="alternateNewsLetter()">+SUSCRIBETE</button>
       <?php } ?>
 
 
@@ -128,7 +128,7 @@ if(isset($wp_query->query['post_type']) && $wp_query->query['post_type'] == "tri
         <a class="subrayable<?php if(is_category("experiencias")){echo ' subrayado"';} ?>" href="<?php echo site_url('/category/experiencias'); ?>">Experiencias</a>
         <a class="subrayable<?php if(is_category("planes")){echo ' subrayado"';} ?>" href="<?php echo site_url('/category/planes'); ?>">Planes</a>
         <a class="subrayable<?php if(is_category("music")){echo ' subrayado"';} ?>" href="<?php echo site_url('/category/music'); ?>">Musica</a>
-        <button class="suscribeButton">+SUSCRIBETE</button>
+        <button class="suscribeButton" onclick="alternateNewsLetter()">+SUSCRIBETE</button>
       <?php } ?>
 
 

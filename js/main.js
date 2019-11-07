@@ -13,6 +13,10 @@ w.onload=()=>{
   }
 
   resizeImgs();
+
+  if (readCookie('popUpClosed')) {
+    closeNewsLetter();
+  }
 }
 w.onresize=()=>{resizeImgs()}
 
@@ -122,6 +126,27 @@ sections.forEach(e => {
   }
 })
 
+
+//newsletter behavior
+function alternateNewsLetter() {
+  const popUp = d.querySelector('#mc4wp-form-1');
+  if(popUp.classList.contains('popUpHidden')) {
+    popUp.classList.remove('popUpHidden');
+    popUp.querySelector('#newsName').focus();
+  }else {popUp.classList.add('popUpHidden');
+  createCookie('popUpClosed',true,10);
+}
+}
+
+function closeNewsLetter() {
+  const popUp = d.querySelector('#mc4wp-form-1');
+  popUp.classList.add('popUpHidden');
+}
+
+
+function createCookie(n,value,days){if(days){var date=new Date();date.setTime(date.getTime()+(days*24*60*60*1000));var expires="; expires="+date.toUTCString();}else var expires="";d.cookie=n+"="+value+expires+"; path=/";}
+function readCookie  (n){var m=n+"=",a=d.cookie.split(';');for(var i=0;i<a.length;i++){var c=a[i];while(c.charAt(0)==' ')c=c.substring(1,c.length);if(c.indexOf(m)==0)return c.substring(m.length,c.length);}return null;}
+function eraseCookie (n){createCookie(n,"",-1)}
 
 
 
