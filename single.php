@@ -10,7 +10,7 @@
     <p>
       <span><em><?php the_author(); ?></em></span>
       <span>&nbsp/&nbsp</span>
-      <span><?php the_excerpt(); ?></span>
+      <span><?php echo excerpt(60); ?></span>
     </p>
   </figcaption>
 </figure>
