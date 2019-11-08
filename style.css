@@ -301,9 +301,10 @@ FIN DE MAPA DE CONTENIDOS */
     --cardWidth: var(--cardsSize);
     --homeATFflexPadding: 5%;
 
-
-
     --flex3StandarCardMinWidth:170px;
+
+    --singleBannerHeight: 200px;
+    --singleBannerWidth: 100px;
 
 
   }
@@ -377,6 +378,9 @@ FIN DE MAPA DE CONTENIDOS */
 
     --cardsSize: 200px;
     --homeATFflexPadding: 5%;
+
+    --singleBannerHeight: 300px;
+    --singleBannerWidth: 150px;
 
 
 
@@ -459,6 +463,9 @@ FIN DE MAPA DE CONTENIDOS */
 
     --dividedSectionDisplay: grid;
 
+    --singleBannerHeight: 400px;
+    --singleBannerWidth: 200px;
+
 
 
   }
@@ -488,6 +495,8 @@ FIN DE MAPA DE CONTENIDOS */
     --megaCaptionPPadding:20px 200px;
     --cardsSize: 300px;
 
+    --singleBannerHeight: 500px;
+    --singleBannerWidth: 250px;
 
     /* magazine (página) */
     --tarjetaMarginTop: -100px;
@@ -504,6 +513,9 @@ FIN DE MAPA DE CONTENIDOS */
     --cardsSize: 300px;
     --homeATFflexPadding: 5% 10%;
 
+    --singleBannerHeight: 600px;
+    --singleBannerWidth: 300px;
+
 
 
   }
@@ -512,8 +524,6 @@ FIN DE MAPA DE CONTENIDOS */
 @media  screen and (min-width: 1700px) {
   :root {
     --cardsSize: 450px;
-
-
   }
 }
 
@@ -2017,13 +2027,13 @@ a:hover + .sub-menu,
 
 .theContent {
   grid-column: var(--theContentGridC);
-  padding: 0 2.5%;
+  padding: 0 5%;
 }
 
 .singleBanner {
   display: var(--singleBannerDisplay);
   position: sticky;
-  top: 10%;
+  top: 19%;
   background: #bbb;
   grid-column: span 2;
   height: var(--singleBannerHeight);
