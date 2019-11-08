@@ -67,7 +67,7 @@ if(isset($wp_query->query['post_type']) && $wp_query->query['post_type'] == "tri
         <nav id="navBar" class="headerCont navBar">
           <?php wp_nav_menu( array( 'theme_location' => 'magazine-menu', 'magazine-menu' => 'new_menu_class' ) ); ?>
           <!-- <a class="subrayable<?php if(is_front_page()){echo ' subrayado"';} ?>" href="<?php echo site_url(''); ?>">Home</a>
-          <a class="subrayable<?php if(is_category("news")){echo ' subrayado"';} ?>" href="<?php echo site_url('/category/news'); ?>">News</a>
+          <a class="subrayable<?php if(is_category("news")){echo ' subrayado"';} ?>" href="<?php echo site_url('/category/news'); ?>">Noticias</a>
           <a class="subrayable<?php if(is_category("lugares")){echo ' subrayado"';} ?>" href="<?php echo site_url('/category/lugares'); ?>">Lugares</a>
           <a class="subrayable<?php if(is_category("paladar")){echo ' subrayado"';} ?>" href="<?php echo site_url('/category/paladar'); ?>">Paladar</a>
           <a class="subrayable<?php if(is_category("experiencias")){echo ' subrayado"';} ?>" href="<?php echo site_url('/category/experiencias'); ?>">Experiencias</a>
