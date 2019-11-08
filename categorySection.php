@@ -23,8 +23,8 @@
     <figure class="standarCard rowcol1">
       <a class="standarCardImg rowcol1" href="<?php echo get_permalink(); ?>"><img class="standarCardImg" src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt=""></a>
       <figcaption class="standarCardCaption">
-        <h5><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h5>
-        <p><a href="<?php echo get_permalink(); ?>"><?php echo excerpt(200); ?></a></p>
+        <h5 class="standarCardTitle"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h5>
+        <p class="standarCardTxt"><a href="<?php echo get_permalink(); ?>"><?php echo excerpt(200); ?></a></p>
       </figcaption>
     </figure>
     <?php } ?>
@@ -45,8 +45,8 @@
         <a class="standarCardImg rowcol1" href="<?php echo get_permalink(); ?>"><img class="standarCardImg" src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt=""></a>
         <!-- <h5 class="itemTitleCenter rowcol1 itemTitle"><?php the_title(); ?></h5> -->
         <figcaption class="standarCardCaption">
-          <h5><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h5>
-          <p><a href="<?php echo get_permalink(); ?>"><?php echo excerpt(100); ?></a></p>
+          <h5 class="standarCardTitle"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h5>
+          <p class="standarCardTxt"><a href="<?php echo get_permalink(); ?>"><?php echo excerpt(100); ?></a></p>
         </figcaption>
       </figure>
 
@@ -54,12 +54,6 @@
 
   </section>
 <?php } ?>
-
-
-
-
-
-
 
 <?php function categorySection2C ($cat, $loc){ ?>
   <section class="section grid2C dividedSection" style="align-items:flex-start;">
