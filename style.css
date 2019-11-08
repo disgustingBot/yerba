@@ -1166,6 +1166,12 @@ h5, h6 {text-align: left; margin: .5rem 0;}
   margin: .5rem 0;
   text-align: left;
 }
+
+.standarCardTxt h6 {font-size: .8rem}
+.standarCardTxt p {font-size: .7rem}
+.standarCardCaption .standardCardTitle {font-size: .9rem}
+.cardTxt {font-size: .8rem}
+
 .standarCard figcaption p:first-child {
   font-weight: bold;
   font-size: .8rem;
@@ -1193,7 +1199,7 @@ h5, h6 {text-align: left; margin: .5rem 0;}
 }
 
 
-.standarCard p {font-size: .8rem;}
+
 
 
 .grid2C .standarCard:nth-last-child(2){margin-left :20%}
