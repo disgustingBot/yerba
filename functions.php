@@ -209,6 +209,51 @@ function lattedev_call_map( $atts ) {
 
 
 
+add_shortcode( 'instagram', 'lattedev_instagram' );
+function lattedev_instagram( $atts ) {
+
+  $access_token = 'YOUR ACCESS TOKEN';
+  $tag = 'wordcamprussia2015';
+  $return = rudr_instagram_api_curl_connect('https://api.instagram.com/v1/tags/' . $tag . '/media/recent?access_token=' . $access_token);
+
+  //var_dump( $return ); // if you want to display everything the function returns
+
+  foreach ( $return->data as $post ) {
+  	$buffer .= '<a href="' . $post->images->standard_resolution->url . '"><img src="' . $post->images->thumbnail->url . '" /></a>';
+  	/*
+  	$post->images->standard_resolution->url - URL of 612x612 image
+  	$post->images->low_resolution->url - URL of 150x150 image
+  	$post->images->thumbnail->url - URL of 306x306 image
+
+  	$post->type - "image" or "video"
+  	$post->videos->low_resolution->url - URL of 480x480 video
+  	$post->videos->standard_resolution->url - URL of 640x640 video
+
+  	$post->link - URL of an Instagram post
+  	$post->tags - array of assigned tags
+  	$post->id - Instagram post ID
+  	$post->filter - photo filter
+  	$post->likes->count - the number of likes to this photo
+  	$post->comments->count - the number of comments
+  	$post->caption->text
+  	$post->created_time
+
+  	$post->user->username
+  	$post->user->profile_picture
+  	$post->user->id
+
+  	$post->location->latitude
+  	$post->location->longitude
+  	$post->location->street_address
+  	$post->location->name
+  	*/
+
+  }
+
+  // $buffer .= '<section class="ayuda">'.$map.'</section>';
+
+  return $buffer;
+}
 
 
 
@@ -236,15 +281,8 @@ function rudr_instagram_api_curl_connect( $api_url ){
 
 
 //Add our widget locations
-
-function CBbCWidgetsInit() {
-  register_sidebar( array (
-    'name' => 'sidebar',
-    'id'   => 'sidebar1'
-  ));
-}
-
- add_action('widgets_init', 'CBbCWidgetsInit');
+function CBbCWidgetsInit() { register_sidebar( array ( 'name' => 'sidebar', 'id'   => 'sidebar1' )); }
+add_action('widgets_init', 'CBbCWidgetsInit');
 
 
 
@@ -269,10 +307,13 @@ function CBbCWidgetsInit() {
 
 
 
- function register_my_menu() {
- register_nav_menu('navigation-menu',__( 'Navigation Menu' ));
+ function register_menus() {
+   register_nav_menu('home-menu',__( 'Home Menu' ));
+   register_nav_menu('homeMobile-menu',__( 'Home Mobile Menu' ));
+   register_nav_menu('magazine-menu',__( 'Magazine Menu' ));
+   register_nav_menu('magazineMobile-menu',__( 'Magazine Mobile Menu' ));
  }
- add_action( 'init', 'register_my_menu' );
+ add_action( 'init', 'register_menus' );
 
 
 
@@ -282,7 +323,6 @@ function CBbCWidgetsInit() {
 
 
 
- //
  // function gp_get_related_posts( $post_id, $related_count, $args = array() ) {
  // 	$args = wp_parse_args( (array) $args, array(
  // 		'orderby' => 'rand',
