@@ -55,7 +55,7 @@ if(is_category()){
       <figcaption class="standarCardCaption">
         <h4 class="standarCardTitle"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
         <p class="standarCardTxt">
-          <a href="<?php the_permalink(); ?>"><?php echo excerpt(200); ?></a>
+          <a href="<?php the_permalink(); ?>"><?php echo excerpt(80); ?></a>
         </p>
       </figcaption>
     </figure>
