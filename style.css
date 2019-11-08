@@ -581,7 +581,6 @@ body {font-family: 'Abhaya';}
 html{scroll-behavior:smooth}
 body{
   /* display: grid; */
-  padding:0 10%;
   grid-auto-rows:auto;
   grid-template-columns:100%;
   /* grid-template-rows:100vh min-content; */
