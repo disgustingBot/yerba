@@ -6,25 +6,24 @@
 
 <figure class="singleATF grid">
   <img class="singleATFImg rowcol1 lazy" data-url="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt="">
-  <figcaption class="imgAuthor flex rowcol1">
+  <figcaption class="imgAuthor rowcol1">
     <p>
-      <span><em>Arthur Livingston</em></span>
+      <span><em><?php the_author(); ?></em></span>
       <span>&nbsp/&nbsp</span>
-      <span>Lorem ipsum</span>
+      <span><?php the_excerpt(); ?></span>
     </p>
   </figcaption>
 </figure>
 
-
 <section class="section singleContent">
-
   <div class="theContent">
+      <?php if(function_exists('yoast_breadcrumb')){yoast_breadcrumb('<p id="breadcrumbs">','</p>');} ?>
     <div class="singleTitleContainer">
       <h1 class="singleTitle"><?php the_title(); ?></h1>
       <div class="singleTitleInfo">
         <h4 class="singleTitleInfoTxt">
-          <span class="theAuthor"><?php the_author(); ?></span> /
-          <span class="theDate"><?php the_date(); ?></span>
+          <span class="theDate"><?php the_date(); ?></span> /
+          <span class="theAuthor"><?php the_author(); ?></span>
           <span class="theCategory"><br><?php the_category(); ?></span>
         </h4>
         <div class="singleSocialContainer">
@@ -107,7 +106,6 @@
           </a>
         </div>
       </div>
-      <div class="theString"></div>
     </div>
     <?php the_content(); ?>
 
@@ -193,6 +191,9 @@
       <p class="rssSingle" onclick="alternateNewsLetter()">/ RSS
         <svg class="singleRss" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><circle cx="6.18" cy="17.82" r="2.18"/><path d="M4 4.44v2.83c7.03 0 12.73 5.7 12.73 12.73h2.83c0-8.59-6.97-15.56-15.56-15.56zm0 5.66v2.83c3.9 0 7.07 3.17 7.07 7.07h2.83c0-5.47-4.43-9.9-9.9-9.9z"/></svg>
       </p>
+    </div>
+    <div class="theTags">
+      <?php echo get_the_tag_list(); ?>
     </div>
   </div>
   <div class="singleBanner">

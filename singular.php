@@ -2,4 +2,5 @@
 
 <h1>singular.php</h1>
 
+
 <?php get_footer(); ?>
