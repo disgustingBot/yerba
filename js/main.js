@@ -60,6 +60,17 @@ if(d.querySelector("#headerActivator")){
 
 // NAVBAR HANDLER
 const alternateNavBar=()=>{const navBar=d.querySelector("#mobileMenu");if(navBar.classList.contains("active")){navBar.classList.remove("active")}else{navBar.classList.add("active")}}
+var links = d.querySelectorAll('.menu-navbar-container a');
+links.forEach(e=>{
+  e.addEventListener("click", ()=>{
+    const navBar=d.querySelector("#mobileMenu");
+    if(navBar.classList.contains("active")){navBar.classList.remove("active")}
+  });
+})
+
+
+
+
 
 // SLIDER:
 var j=1,x=d.getElementsByClassName("carouselItem");
