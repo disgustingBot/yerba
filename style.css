@@ -236,6 +236,7 @@ FIN DE MAPA DE CONTENIDOS */
 
 
 
+    --ayudaFlexWidth:90%;
 
 
 
@@ -295,6 +296,7 @@ FIN DE MAPA DE CONTENIDOS */
     --formSubmitGridC: 2;
     --respondFormHeight: 300px;
 
+    --ayudaFlexWidth:75%;
 
     /* estructura */
     --cardsSize: 200px;
@@ -385,7 +387,7 @@ FIN DE MAPA DE CONTENIDOS */
 
 
 
-
+    --ayudaFlexWidth:50%;
 
 
 
@@ -667,6 +669,10 @@ h5, h6 {text-align: left; margin: .5rem 0;}
 .flex3 .card{
   width:calc((100% - 3rem) / 3);
   min-width:var(--flex3StandarCardMinWidth);
+}
+.wp-admin .flex3 .card{
+  width: 250px;
+  padding: 0;
 }
 /* .standarCardImg{
   max-height: 250px;
@@ -1516,6 +1522,26 @@ a:hover + .sub-menu,
   width: 100%;
   padding: var(--simpleCardImgPadding);
 }
+
+
+/* ---------------------------------------------------------------------------
+------------------------------------------------------------------------------
+                          6.5.10) =info:
+------------------------------------------------------------------------------
+--------------------------------------------------------------------------- */
+.info{
+  /* width: min-content; */
+  margin-bottom: 2rem;
+}
+.infoCaption{
+  /* width: min-content; */
+}
+.infoTitle{
+  /* width: max-content; */
+  text-align: center;
+}
+
+
 /* ---------------------------------------------------------------------------
 ------------------------------------------------------------------------------
                             6.6) =BUTTONS:
@@ -1713,16 +1739,26 @@ a:hover + .sub-menu,
   grid-column: 1;
   height: 100%;
   width: 100%;
+  z-index: 1;
+  position: relative;
   /* z-index: -1; */
 }
 .ayudaTitle{
   font-size: 2.5rem;
   margin:2rem auto;
+  z-index: 2;
+  position: relative;
 }
 .ayudaFlex{
   grid-column:1;
   grid-row: 2;
   margin-bottom:2rem;
+  z-index: 2;
+  position: relative;
+  /* padding:0 25%; */
+  /* width: 50%; */
+  width: var(--ayudaFlexWidth);
+  margin: auto;
 }
 
 
@@ -1913,8 +1949,13 @@ a:hover + .sub-menu,
 .magazineTitle3 {font-weight: 100; font-size: calc( var(--centerTitleFontSize) * .75 )}
 
 
-
-
+/* WARNING:  */
+/* WARNING:  */
+/* WARNING:  */
+/* WARNING:  */
+/* WARNING: Danger zone */
+/* WARNING: code here under your own risk */
+/* TOMI CULIADO, no me seguis en el orden del css, te voy a ponerr en penitencia */
 /* ---------------------------------------------------------------------------
 ------------------------------------------------------------------------------
                                7) =single.php

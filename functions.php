@@ -199,7 +199,36 @@ function lattedev_call_map( $atts ) {
     // $map = '<iframe class="ayudaMap" src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=Cala%20bassa%20CBbC%2C%20ibiza+(CBbC)&amp;ie=UTF8&amp;t=&amp;z=16&amp;iwloc=B&amp;output=embed"                                                                                                                       frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>';
     $map = 'El coso';
   }
-  $buffer .= '<section class="ayuda">'.$map.'</section>';
+  $buffer .= '<section class="ayuda">'.$map;
+  $buffer .=   '<h4 class="ayudaTitle specialTitle rowcol1">¿En qué podemos ayudarte?</h4>
+                <flex class="ayudaFlex flex2">
+                  <figure class="info">
+                    <a href="'.site_url('/contacto').'">
+                      <img class="infoImg" src="'.get_template_directory_uri().'/img/ibiza/booking.png" alt="">
+                    </a>
+                    <figcaption class="infoCaption">
+                      <a href="'.site_url('/contacto').'">
+                        <h5 class="infoTitle">Reserva</h5>
+                      </a>
+                      <a href="'.site_url('/contacto').'">
+                        <p>Lorem ipsum dolor sit amet ipsum dolor.</p>
+                      </a>
+                    </figcaption>
+                  </figure>
+                  <figure class="info">
+                    <a href="'.site_url('/contacto').'">
+                      <img class="infoImg" src="'.get_template_directory_uri().'/img/ibiza/info.png" alt="">
+                    </a>
+                    <figcaption class="infoCaption">
+                      <a href="'.site_url('/contacto').'">
+                        <h5 class="infoTitle">Donde Aparcar</h5>
+                      </a>
+                      <a href="'.site_url('/contacto').'">
+                        <p>Lorem ipsum dolor sit amet ipsum dolor.</p>
+                      </a>
+                    </figcaption>
+                  </figure>';
+  $buffer .= '</flex></section>';
 
   return $buffer;
 }
