@@ -232,6 +232,7 @@
       <?php wp_list_comments(array('callback' => 'better_comments')); ?>
     </ul>
 
+    <?php if(function_exists('the_ratings')) { the_ratings(); } ?>
 
 
     <?php
