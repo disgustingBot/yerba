@@ -164,7 +164,7 @@ FIN DE MAPA DE CONTENIDOS */
 
     --pTextAlign: justify;
     --h5H6TextAlign: center;
-    --sectionMarginTopBottom: 50px;
+    --sectionMarginTopBottom: 20px;
     --sectionStandarCardGridC: 1/9;
     --sectionAltStandarCardGridC: 1/9;
     --sectionTitlePadding: 0 8%;
@@ -217,7 +217,7 @@ FIN DE MAPA DE CONTENIDOS */
 
     --localizacionesFlexDisplay: block;
     --localizacionesFlexMargin: 1rem;
-    --megaMargin: 10% 3.125%;
+    --megaMargin: 5% 3.125%;
     --megaCaptionWidth: 100%;
     --textJustifyCenter: justify;
     --showMargin: 3rem 0;
@@ -366,7 +366,7 @@ FIN DE MAPA DE CONTENIDOS */
     /* estructura */
     --pTextAlign: left;
     --h5H6TextAlign: left;
-    --sectionMarginTopBottom: 50px;
+    --sectionMarginTopBottom: 20px;
     --sectionStandarCardGridC: 3/8;
     --sectionAltStandarCardGridC: 2/7;
     --sectionTitlePadding: 0 12.5%;
@@ -412,7 +412,7 @@ FIN DE MAPA DE CONTENIDOS */
 
     --localizacionesFlexDisplay: flex;
     --localizacionesFlexMargin: 0;
-    --megaMargin: 10% 12.5%;
+    --megaMargin: 5% 12.5%;
     --textJustifyCenter: center;
     --showMargin: 4rem 0;
 
@@ -573,12 +573,13 @@ a {
   font-family: inherit;
 }
 
-.specialTitle h2, .specialTitle h3, .specialTitle h4 {font-family: 'tahu', cursive!important;}
-
+/* .specialTitle h2, .specialTitle h3, .specialTitle h4 {font-family: 'tahu', cursive!important;} */
+.specialTitle * {font-family: inherit;}
 .specialTitle {
   font-family: 'tahu', cursive!important;
   font-weight: 500!important;
 }
+
 .specialTxt{
   color:var(--color3);
   font-family: 'tahu', cursive;
@@ -2077,13 +2078,13 @@ a:hover + .sub-menu,
 .singleBanner {
   display: var(--singleBannerDisplay);
   position: sticky;
-  top: 19%;
+  top: 0;
   background: #bbb;
   grid-column: span 2;
   height: var(--singleBannerHeight);
   width: var(--singleBannerWidth);
   margin: auto;
-  margin-top: -100vh;
+  margin-top: 50px;
   z-index: 1;
 }
 
@@ -2337,9 +2338,36 @@ a:hover + .sub-menu,
 
 .comment-reply-link:hover {color: black;}
 
+.post-ratings {
+    display: grid;
+    grid-template-columns: repeat(5, max-content);
+    grid-gap: 2px;
+    background: #232323;
+    font-size: .8rem;
+    color: white;
+    padding:10px;
+}
+
+.post-ratings img{
+  grid-row: 2;
+  max-width: 16px;
+}
+
+.post-ratings p {
+  margin: 10px 0;
+  grid-column: span 5;
+}
+
+.post-ratings-loading {
+    display: none;
+    height: 16px;
+    text-align: left;
+}
 
 
-
+.post-ratings * {
+  font-family: 'poppins', sans-serif;
+}
 
 
 /* contacto.php */
