@@ -62,6 +62,11 @@ if(is_category()){
 
   <?php $i++; } wp_reset_query(); ?>
 </section>
+
+<div class="pagination">
+  <?php echo paginate_links(); ?>
+</div>
+
 <?php echo do_shortcode('[the_ad id="1133"]') ?>
 
 

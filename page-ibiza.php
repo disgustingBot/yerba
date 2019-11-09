@@ -180,37 +180,42 @@
   <iframe class="ayudaMap" src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=Cala%20bassa%20CBbC%2C%20ibiza+(CBbC)&amp;ie=UTF8&amp;t=&amp;z=16&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
   <!-- <img class="ayudaMap" src="<?php echo get_template_directory_uri(); ?>/img/ibiza/mapa1.jpg" alt=""> -->
 
-  <!-- <h4 class="ayudaTitle specialTitle rowcol1">¿En qué podemos ayudarte?</h4>
-  <flex class="ayudaFlex flex4">
-    <figure class="info">
+  <h4 class="ayudaTitle specialTitle rowcol1">¿En qué podemos ayudarte?</h4>
+  <flex class="ayudaFlex flex2">
+
+    <!-- <figure class="info">
       <img class="infoImg" src="<?php echo get_template_directory_uri(); ?>/img/ibiza/parking.png" alt="">
       <figcaption class="infoCaption">
         <h5>Donde Aparcar</h5>
         <p>Lorem ipsum dolor sit amet ipsum dolor.</p>
       </figcaption>
-    </figure>
+    </figure> -->
+
     <figure class="info">
       <img class="infoImg" src="<?php echo get_template_directory_uri(); ?>/img/ibiza/booking.png" alt="">
       <figcaption class="infoCaption">
-        <h5>Reserva</h5>
+        <h5 class="infoTitle">Reserva</h5>
         <p>Lorem ipsum dolor sit amet ipsum dolor.</p>
       </figcaption>
     </figure>
+    <a href="site_url('/category/lugares')"></a>
     <figure class="info">
       <img class="infoImg" src="<?php echo get_template_directory_uri(); ?>/img/ibiza/info.png" alt="">
       <figcaption class="infoCaption">
-        <h5>Donde Aparcar</h5>
+        <h5 class="infoTitle">Donde Aparcar</h5>
         <p>Lorem ipsum dolor sit amet ipsum dolor.</p>
       </figcaption>
     </figure>
-    <figure class="info">
+
+    <!-- <figure class="info">
       <img class="infoImg" src="<?php echo get_template_directory_uri(); ?>/img/ibiza/visitas.png" alt="">
       <figcaption class="infoCaption">
         <h5>Donde Aparcar</h5>
         <p>Lorem ipsum dolor sit amet ipsum dolor.</p>
       </figcaption>
-    </figure>
-  </flex> -->
+    </figure> -->
+
+  </flex>
 </section>
 
 
