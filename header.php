@@ -12,12 +12,7 @@
     <style>.popup{display:none}</style>
   <?php } ?>
 </head>
-<body
-<?php
-global $wp_query;
-if(isset($wp_query->query['post_type']) && $wp_query->query['post_type'] == "tribe_events"){echo 'class="bodyEvents"';}
-?>
->
+<body <?php global $wp_query; if(isset($wp_query->query['post_type']) && $wp_query->query['post_type'] == "tribe_events"){echo 'class="bodyEvents"';} ?>>
 
 <?php global $post; $post_slug = $post->post_name; ?>
 
@@ -31,9 +26,10 @@ if(isset($wp_query->query['post_type']) && $wp_query->query['post_type'] == "tri
 
   <?php
   if( (is_page("magazine") || is_single() || is_archive()) && get_post_type() != 'location' ){ $isMagazine = true; } else { $isMagazine = false; }
+  if( is_front_page() || get_post_type() == 'location' ){ $headerIsDrunk = true; } else { $headerIsDrunk = false; }
   ?>
 
-    <header class="header<?php if($isMagazine){echo " alt";} ?>">
+    <header class="header<?php if($isMagazine){echo " alt";} if($headerIsDrunk){echo ' drunk';} ?>">
       <?php if( !$isMagazine ){ ?>
         <a class="headerLogoCont" href="<?php echo site_url(''); ?>">
           <img class="headerLogo" src="<?php echo get_template_directory_uri(); ?>/img/logoCasiLimpio.png" alt="">

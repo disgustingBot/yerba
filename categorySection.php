@@ -51,9 +51,16 @@
       </figure>
 
     <?php } ?>
-
+    <a class="verMas" href="<?php echo site_url('/location/ibiza'); ?>">Ver más</a>
   </section>
 <?php } ?>
+
+
+
+
+
+
+
 
 <?php function categorySection2C ($cat, $loc){ ?>
   <section class="section grid2C dividedSection" style="align-items:flex-start;">
@@ -113,6 +120,7 @@
             </figcaption>
           </figure>
         <?php } ?>
+        <a class="verMas alt" href="<?php echo site_url('/location/ibiza'); ?>">Ver más</a>
       </div>
     <?php $a++; } ?>
 

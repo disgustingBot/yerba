@@ -147,7 +147,7 @@ function lattedev_call_restaurants( $atts ) {
       $buffer .= '<img class="hidshowImg rowcol1" src="'.get_the_post_thumbnail_url(get_the_ID()).'" alt="">';
       $buffer .= '<figcaption class="grid rowcol1">';
         $buffer .= '<p class="itemTitle rowcol1 itemTitleTR">'.get_the_title().'</p>';
-        $buffer .= '<p class="rowcol1 hidshowTxt">'.get_the_excerpt().'</p>';
+        $buffer .= '<p class="rowcol1 hidshowTxt">'.excerpt(200).'</p>';
       $buffer .= '</figcaption>';
     $buffer .= '</figure>';
   } wp_reset_postdata();
@@ -210,9 +210,6 @@ function lattedev_call_map( $atts ) {
                       <a href="'.site_url('/contacto').'">
                         <h5 class="infoTitle">Reserva</h5>
                       </a>
-                      <a href="'.site_url('/contacto').'">
-                        <p>Lorem ipsum dolor sit amet ipsum dolor.</p>
-                      </a>
                     </figcaption>
                   </figure>
                   <figure class="info">
@@ -221,10 +218,7 @@ function lattedev_call_map( $atts ) {
                     </a>
                     <figcaption class="infoCaption">
                       <a href="'.site_url('/contacto').'">
-                        <h5 class="infoTitle">Donde Aparcar</h5>
-                      </a>
-                      <a href="'.site_url('/contacto').'">
-                        <p>Lorem ipsum dolor sit amet ipsum dolor.</p>
+                        <h5 class="infoTitle">Contacto</h5>
                       </a>
                     </figcaption>
                   </figure>';
