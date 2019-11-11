@@ -24,21 +24,20 @@
   </div>
 
   <ul class="footerMenu footerMenu1">
-    <li class="footerMenuItem"><a href="#">SITEMAP</a></li>
-    <li class="footerMenuItem"><a href="<?php echo site_url('/localizacion'); ?>">Localizacion</a></li>
-    <li class="footerMenuItem"><a href="<?php echo site_url('/category/gastronomia'); ?>">Gastronomia</a></li>
-    <li class="footerMenuItem"><a href="<?php echo site_url('/category/experiencias'); ?>">Experiencias</a></li>
-    <li class="footerMenuItem"><a href="<?php echo site_url('/magazine'); ?>">CBbC Life Magazine</a></li>
+    <li class="footerMenuItem" onclick="alternateNavBar()"><a href="#">SITEMAP</a></li>
+    <li class="footerMenuItem"><a href="<?php echo site_url('/ibiza'); ?>">Ibiza</a></li>
+    <li class="footerMenuItem"><a href="<?php echo site_url('/andorra'); ?>">Andorra</a></li>
+    <li class="footerMenuItem"><a href="<?php echo site_url('/contacto'); ?>">Grupos y eventos</a></li>
+    <li class="footerMenuItem"><a href="<?php echo site_url('/contacto'); ?>">+Restauración</a></li>
+    <li class="footerMenuItem"><a href="<?php echo site_url('/contacto'); ?>">+Reservas y contacto</a></li>
 
   </ul>
   <ul class="footerMenu footerMenu2">
-    <li class="footerMenuItem"><a href="<?php echo site_url(''); ?>">Home</a></li>
-    <li class="footerMenuItem"><a href="#">About Us</a></li>
-    <li class="footerMenuItem"><a href="#">Services</a></li>
-    <li class="footerMenuItem"><a href="#">Work With Us</a></li>
-    <li class="footerMenuItem"><a href="<?php echo site_url('/magazine'); ?>">CBbC Magazine</a></li>
-    <li class="footerMenuItem"><a href="#">Aviso Legal</a></li>
-    <li class="footerMenuItem"><a href="#">Política de Cookies</a></li>
+    <li class="footerMenuItem"><a href="<?php echo site_url('/home'); ?>">© Copyright 2019 CBbC Group</a></li>
+    <li class="footerMenuItem"><a href="<?php echo site_url('/contacto'); ?>">Empleo</a></li>
+    <li class="footerMenuItem"><a href="<?php echo site_url('/aviso-legal-y-confidencialidad'); ?>">Aviso legal & Privacidad</a></li>
+    <li class="footerMenuItem"><a href="<?php echo site_url('/magazine'); ?>">Publicidad</a></li>
+    <li class="footerMenuItem" onclick="alternateNewsLetter()"><a href="<?php echo site_url('/magazine'); ?>">NewsLetter</a></li>
   </ul>
 
 
