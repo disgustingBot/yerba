@@ -198,7 +198,7 @@
         <p>Lorem ipsum dolor sit amet ipsum dolor.</p>
       </figcaption>
     </figure>
-    <a href="site_url('/category/lugares')"></a>
+    <!-- <a href="site_url('/category/lugares')"></a> -->
     <figure class="info">
       <img class="infoImg" src="<?php echo get_template_directory_uri(); ?>/img/ibiza/info.png" alt="">
       <figcaption class="infoCaption">

@@ -13,9 +13,7 @@
     <img class="carusImg rowcol1" src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt="">
     <figcaption class="carusCaption rowcol1">
       <h4 class="carusTitle"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h4>
-      <p class="carusTxt">
-        <a href="<?php echo get_permalink(); ?>"><?php echo get_the_excerpt(); ?></a>
-      </p>
+      <!-- <p class="carusTxt"><a href="<?php echo get_permalink(); ?>"><?php echo get_the_excerpt(); ?></a></p> -->
     </figcaption>
   </figure>
   <?php } wp_reset_query(); ?>
@@ -56,7 +54,7 @@
 <figure class="musical">
   <img class="musicalImg rowcol1" src="<?php echo get_template_directory_uri(); ?>/img/magazine/musical.jpg" alt="">
   <figcaption class="musicalCaption rowcol1">
-    <h3 class="specialTitle centerTitle">Nuestra música</h3>
+    <h3 class="specialTitle centerTitle"><a href="<?php echo site_url('/category/music') ?>">Nuestra música</a></h3>
     <p>
       Una banda sonora muy original<br>
       Música en vivo y Dj’s de todo Europa y más allá nos acercan sus últimas creaciones: chill out y fiesta, hay un ritmo para cada momento.
