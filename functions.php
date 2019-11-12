@@ -143,9 +143,9 @@ function lattedev_call_restaurants( $atts ) {
       ),
   ));
   while ($q->have_posts()) {$q->the_post();
-    $buffer .= '<figure class="hidshow grid">';
-      $buffer .= '<img class="hidshowImg rowcol1" src="'.get_the_post_thumbnail_url(get_the_ID()).'" alt="">';
-      $buffer .= '<figcaption class="grid rowcol1">';
+    $buffer .= '<figure class="hidshow">';
+      $buffer .= '<img class="hidshowImg" src="'.get_the_post_thumbnail_url(get_the_ID()).'" alt="">';
+      $buffer .= '<figcaption class="hidshowCaption">';
         $buffer .= '<p class="itemTitle rowcol1 itemTitleTR">'.get_the_title().'</p>';
         $buffer .= '<p class="rowcol1 hidshowTxt">'.excerpt(200).'</p>';
       $buffer .= '</figcaption>';
