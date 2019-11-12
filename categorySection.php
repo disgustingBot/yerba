@@ -97,7 +97,7 @@
             <a class="tarjetaImg" href="<?php echo get_permalink(); ?>"><img class="tarjetaImg" src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt="" ></a>
             <figcaption class="tarjetaCaption">
               <h5 class="tarjetaTitle"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h5>
-              <p class="tarjetaTxt"><a href="<?php echo get_permalink(); ?>"><?php echo excerpt(100); ?></a></p>
+              <p class="tarjetaTxt"><a href="<?php echo get_permalink(); ?>"><?php echo excerpt(70); ?></a></p>
             </figcaption>
           </figure>
         <?php } ?>
@@ -116,7 +116,7 @@
             <a class="standarCardImg rowcol1" href="<?php echo get_permalink(); ?>"><img class="standarCardImg" src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt=""></a>
             <figcaption class="">
               <h5><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h5>
-              <p><a href="<?php echo get_permalink(); ?>"><?php echo excerpt(100); ?></a></p>
+              <p><a href="<?php echo get_permalink(); ?>"><?php echo excerpt(70); ?></a></p>
             </figcaption>
           </figure>
         <?php } ?>

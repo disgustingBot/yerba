@@ -39,6 +39,7 @@ N) =Font:
 6.4.1) =homeATF:
 6.4.2) =sliderATF:
 6.4.3) =locATF:
+6.4.4) =contactATF:
 6.5) =MULTI CARDS:
 6.5.01) =card:
 6.5.02) =standarCard:
@@ -63,6 +64,9 @@ N) =Font:
 6.4) =holyLink:
 7) =single.php
 
+
+8) =VISUALS:
+8.1) =attention:
 
 FIN DE MAPA DE CONTENIDOS */
 
@@ -601,7 +605,9 @@ body.gutenberg-editor-page .editor-block-list__block,
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Poppins', sans-serif;
 }
-
+.theContent{
+  font-family: 'Roboto', sans-serif;
+}
 p {
   font-family: 'Roboto', sans-serif;
 }
@@ -673,7 +679,7 @@ h5, h6 {text-align: left; margin: .5rem 0;}
 --------------------------------------------------------------------------- */
 
 .pageWrapper {
-  padding: 0 10%;
+  padding: 2rem 10%;
 }
 
 .cincoPost{
@@ -794,10 +800,10 @@ h5, h6 {text-align: left; margin: .5rem 0;}
   padding: .3em 0;
   /* margin-top:calc(100vh - 4rem); */
   /* margin-bottom:-100vh; */
-  margin-bottom:-4rem;
+  /* margin-bottom:-4rem; */
 }
 .header.drunk{
-  margin-top:calc(100vh - 4rem);
+  margin-top:calc(100vh - 4.3rem);
   margin-bottom:-100vh;
 }
 .headerTop{background:var(--color2)}
@@ -831,7 +837,7 @@ h5, h6 {text-align: left; margin: .5rem 0;}
   display:grid;
   grid-auto-flow: column;
   justify-content: center;
-  grid-gap:.5rem;
+  grid-gap:.8rem;
   grid-column: 1/ -1;
   grid-row: 1;
   grid-row: var(--navBarGridR);
@@ -1033,7 +1039,8 @@ a:hover + .sub-menu,
 }
 .navBarAlt .menu{
   display: grid;
-  grid-auto-rows: 2rem;
+  grid-auto-rows: 3rem;
+  font-size: 10rem;
   grid-auto-flow: row;
   justify-content: center;
 }
@@ -1248,6 +1255,31 @@ a:hover + .sub-menu,
 .locATFTitle{
   font-size: 6rem;
 }
+
+
+/* ---------------------------------------------------------------------------
+------------------------------------------------------------------------------
+                            6.4.4) =contactATF:
+------------------------------------------------------------------------------
+--------------------------------------------------------------------------- */
+.contactATF{
+  height: 100vh;
+  width: 100%;
+  display:grid;
+}
+.contactATFImg{
+  height: 100vh;
+  width: 100%;
+}
+.contactATFCaption{
+  margin: auto;
+}
+.contactATFTitle{
+  font-size: 5rem;
+  color:white;
+  text-align: center;
+  margin: auto;
+}
 /* ---------------------------------------------------------------------------
 ------------------------------------------------------------------------------
                             6.5) =MULTI CARDS:
@@ -1345,9 +1377,8 @@ a:hover + .sub-menu,
 
 
 
-.grid2C .standarCard:nth-last-child(2){margin-left :20%}
-
-.grid2C .standarCard:nth-last-child(1){margin-right:20%}
+.grid2C .standarCard:nth-last-child(3){margin-left :20%}
+.grid2C .standarCard:nth-last-child(2){margin-right:20%}
 
 
 /* ---------------------------------------------------------------------------
@@ -1621,7 +1652,7 @@ a:hover + .sub-menu,
   align-items: center;
   align-content: center;
   margin: 0 auto;
-  font-size: .8rem;
+  font-size: 1rem;
   position: relative;
   text-decoration:none;
   text-transform: capitalize;
@@ -2725,6 +2756,90 @@ a:hover + .sub-menu,
   padding: 5px 10px;
   text-align: center;
 }
+
+
+
+
+
+/* ---------------------------------------------------------------------------
+------------------------------------------------------------------------------
+                               8) =VISUALS:
+------------------------------------------------------------------------------
+--------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------
+------------------------------------------------------------------------------
+                               8.1) =attention:
+------------------------------------------------------------------------------
+--------------------------------------------------------------------------- */
+.attentionMarker{
+  color:white;
+  font-size: 2rem;
+  margin: 2rem auto;
+  background: #358EE9;
+  border-radius: 50%;
+  width: 4rem;
+  height:4rem;
+  text-align: center;
+  line-height: 4rem;
+}
+.attentionTxt{
+  padding:0 12.5%;
+
+}
+
+
+
+
+
+
+/* ---------------------------------------------------------------------------
+------------------------------------------------------------------------------
+                               8.2) =formularioDeContacto:
+------------------------------------------------------------------------------
+--------------------------------------------------------------------------- */
+.formularioDeContacto .wpcf7-form{
+  background: white;
+  grid-template-rows: min-content;
+}
+.formularioDeContacto .wpcf7-form h3{
+  grid-column: 1/3;
+}
+
+.formularioDeContacto .wpcf7-form p:nth-child(5) {
+  grid-row:unset;
+}
+.wpcf7-form p:nth-child(6) label{
+  display: block;
+}
+
+.wpcf7-form p:nth-child(6) label input{
+  width: 100%;
+}
+.wpcf7-select{
+  width: 100%;
+  height: 30px;
+  background: var(--color3);
+  font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    color:white;
+}
+
+.formularioDeContacto .wpcf7-form p:nth-last-child(3){
+  grid-column: 1/3;
+}
+.formularioDeContacto .wpcf7-form p:nth-last-child(3) textarea{
+  width: 100%;
+}
+.formularioDeContacto .wpcf7-form p:nth-last-child(2){
+  grid-column: 1/3;
+  margin: auto;
+}
+
+
+
+
+
 
 
 /* Instagram Feeds */

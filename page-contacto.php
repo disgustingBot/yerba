@@ -1,12 +1,24 @@
+<?php get_header(); ?>
 
 
-<section class="contactContainer">
-  <hgroup class="contactoHgroup">
-    <h2 class="contactTitle">Contáctanos</h2>
-    <h3 class="contactSubTitle">Para Reservas, consultas y sugerencias</h3>
-  </hgroup>
-  <?php echo do_shortcode('[contact-form-7 id="218" title="Untitled"]') ?>
-</section>
+
+<figure class="contactATF" id="headerActivator">
+  <img class="contactATFImg rowcol1 lazy" data-url="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt="">
+  <figcaption class="contactATFCaption rowcol1">
+    <h2 class="contactATFTitle specialTitle">Contacto</h2>
+  </figcaption>
+</figure>
+
+
+<p class="attentionMarker">!</p>
+<p class="attentionTxt">Para reservas para el mismo día sólo en el +34 971 342 661, gracias!
+La reserva quedará confirmada una vez reciba el código de reserva.</p>
+
+
+<div class="formularioDeContacto">
+  <?php while(have_posts()){the_post();the_content();} ?>
+</div>
+
 
 
 

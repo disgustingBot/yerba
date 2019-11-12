@@ -26,7 +26,7 @@
 
   <?php
   if( (is_page("magazine") || is_single() || is_archive()) && get_post_type() != 'location' ){ $isMagazine = true; } else { $isMagazine = false; }
-  if( is_front_page() || get_post_type() == 'location' ){ $headerIsDrunk = true; } else { $headerIsDrunk = false; }
+  if( is_front_page() || get_post_type() == 'location' || is_page("contacto") ){ $headerIsDrunk = true; } else { $headerIsDrunk = false; }
   ?>
 
     <header class="header<?php if($isMagazine){echo " alt";} if($headerIsDrunk){echo ' drunk';} ?>">
