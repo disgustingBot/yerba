@@ -176,7 +176,6 @@ FIN DE MAPA DE CONTENIDOS */
     --sectionStandarCardTxtPadding: 0 10px;
     --standarCardImgHeight: 200px;
     --navBarGridR: 1;
-    --megaCaptionPPadding:20px 25px;
 
     --cardsSize: 300px;
     --cardWidth: 100%;
@@ -189,6 +188,11 @@ FIN DE MAPA DE CONTENIDOS */
 
 
     --hidshowFlex: 1 1 100%;
+
+    --standarCardCincoPost1GridC: 1/-1;
+    --standarCardCincoPost2-5GridC: span 2;
+    --cincoPostGridTemplateC: 1fr 1fr 1fr 1fr;
+
 
 
       /* =single */
@@ -217,6 +221,7 @@ FIN DE MAPA DE CONTENIDOS */
     --hidShowHeight: 30vh;
     --hidShowOpacity: 1;
     --hidShowTxtFontSize: 1rem;
+    --showTxtPadding: 0;
     --sectionTitleImgHeight: 200;
     --sectionTitleFontSize: 3;
     --sectionTitleJustifyContent: space-between;
@@ -242,6 +247,10 @@ FIN DE MAPA DE CONTENIDOS */
 
     --dividedSectionDisplay: block;
     --tarjetaMarginTop: -50px;
+
+    --verMasMarginTop: 3rem;
+
+
 
 
 
@@ -321,6 +330,8 @@ FIN DE MAPA DE CONTENIDOS */
 
     --flex3StandarCardMinWidth:170px;
 
+    --verMasWidth: 70%;
+
 
 
 
@@ -393,13 +404,20 @@ FIN DE MAPA DE CONTENIDOS */
     --sectionStandarCardTxtPadding: 0;
     --standarCardImgHeight: 150px;
     --navBarGridR: 2;
-    --megaCaptionPPadding:20px 50px;
 
     --cardsSize: 200px;
     --homeATFflexPadding: 5%;
 
     --singleBannerHeight: 300px;
     --singleBannerWidth: 150px;
+
+    --verMasMarginTop: .5rem;
+    --verMasWidth: 70%;
+
+    --standarCardCincoPost1GridC: 1/3;
+    --standarCardCincoPost2-5GridC: span 1;
+    --cincoPostGridTemplateC: 1fr 1fr 1fr;
+
 
 
 
@@ -416,6 +434,7 @@ FIN DE MAPA DE CONTENIDOS */
     --hidShowHeight: 50vh;
     --hidShowOpacity: 0;
     --hidShowTxtFontSize: .8rem;
+    --showTxtPadding: 0 20px;
     --sectionTitleImgHeight: 300;
     --sectionTitleFontSize: 3.5;
     --sectionTitleJustifyContent: ;
@@ -441,8 +460,11 @@ FIN DE MAPA DE CONTENIDOS */
 }
 
 /* fix for wordpress */
-@media screen and(min-width:783px){:root{
+@media screen and (min-width:783px) {
+  :root {
   --topCero: 32px;
+
+  --verMasWidth: auto;
   }
 
 }
@@ -471,7 +493,6 @@ FIN DE MAPA DE CONTENIDOS */
     /* estructura */
 
     --standarCardImgHeight: 200px;
-    --megaCaptionPPadding:20px 100px;
 
     --cardsSize: 250px;
     --homeATFflexPadding: 5%;
@@ -511,7 +532,6 @@ FIN DE MAPA DE CONTENIDOS */
     /* estructura */
     --sectionTitleMargin: 8%;
     --standarCardImgHeight: 250px;
-    --megaCaptionPPadding:20px 200px;
     --cardsSize: 300px;
 
     --singleBannerHeight: 500px;
@@ -658,13 +678,22 @@ h5, h6 {text-align: left; margin: .5rem 0;}
 
 .cincoPost{
   display: grid;
-  grid-template-columns:1fr 1fr 1fr;
+  grid-template-columns: var(--cincoPostGridTemplateC);
   padding:0 12.5%;
   margin: 100px 0;
 }
+
+.cincoPost .standarCard {box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); transition: .25s}
+.cincoPost .standarCard:hover{box-shadow:0 14px 28px rgba(0,0,0,0.25),0 10px 10px rgba(0,0,0,0.22)}
+
 .cincoPost > .standarCard:first-child{
-  grid-column: 1/3;
+  grid-column: var(--standarCardCincoPost1GridC);
 }
+.cincoPost > .standarCard:nth-child(2) {grid-column: var(--standarCardCincoPost2-5GridC);}
+.cincoPost > .standarCard:nth-child(3) {grid-column: var(--standarCardCincoPost2-5GridC);}
+.cincoPost > .standarCard:nth-child(4) {grid-column: var(--standarCardCincoPost2-5GridC);}
+.cincoPost > .standarCard:nth-child(5) {grid-column: var(--standarCardCincoPost2-5GridC);}
+
 .cincoPost > .standarCard:first-child .standarCardImg{
   height: calc(var(--standarCardImgHeight) * 1.3)!important;
 }
@@ -1361,7 +1390,6 @@ a:hover + .sub-menu,
   flex: var(--hidshowFlex);
 }
 
-
 .hidshowImg {
   width: 100%;
   height: 100%!important;
@@ -1385,6 +1413,9 @@ a:hover + .sub-menu,
 }
 .hidshowTxt:hover{opacity:1}
 
+.showTxt {
+  padding: var(--showTxtPadding);
+}
 
 .localizacionesFlex {display: var(--localizacionesFlexDisplay);}
 /* ---------------------------------------------------------------------------
@@ -1439,7 +1470,6 @@ a:hover + .sub-menu,
   text-align: center;
 }
 .megaCaption p {
-  padding: var(--megaCaptionPPadding);
   text-align: left;
   font-size: .9rem;
 }
@@ -1535,6 +1565,11 @@ a:hover + .sub-menu,
   margin-bottom:1rem;
   margin-top: 15vh;
   text-align: center;
+}
+
+.carusTxt {
+  text-align: center;
+  color: white;
 }
 
 
@@ -1783,6 +1818,8 @@ a:hover + .sub-menu,
   padding: .4rem 1.2rem;
   margin: .5rem auto;
   position: relative;
+  width: var(--verMasWidth);
+  margin-top: var(--verMasMarginTop);
 }
 .verMas::before, .verMas::after{
   content:'';
@@ -2172,7 +2209,7 @@ a:hover + .sub-menu,
 .singleBanner {
   display: var(--singleBannerDisplay);
   position: sticky;
-  top: 0;
+  top: 15%;
   background: #bbb;
   grid-column: span 2;
   height: var(--singleBannerHeight);
@@ -2688,3 +2725,16 @@ a:hover + .sub-menu,
   padding: 5px 10px;
   text-align: center;
 }
+
+
+/* Instagram Feeds */
+
+.sb_instagram_header a {
+  color: black;
+}
+
+.sbi_photo_wrap {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); transition: .25s;
+}
+
+.sbi_photo_wrap:hover {box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);}
