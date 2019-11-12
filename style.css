@@ -193,6 +193,7 @@ FIN DE MAPA DE CONTENIDOS */
 
 
     --hidshowFlex: 1 1 100%;
+    --hidshowCaptionGR: ;
 
 
       /* =single */
@@ -218,7 +219,7 @@ FIN DE MAPA DE CONTENIDOS */
     --simpleCardImgHeight: 40vh;
     --centerTitleFontSize: 3rem;
     --restaurantFlexDisplay: block;
-    --hidShowHeight: 30vh;
+    --hidShowHeight: 80vh;
     --hidShowOpacity: 1;
     --hidShowTxtFontSize: 1rem;
     --sectionTitleImgHeight: 200;
@@ -381,6 +382,8 @@ FIN DE MAPA DE CONTENIDOS */
 
     /* componentes */
     --hidshowFlex: 3 1 33%;
+    --hidshowCaptionGR: 1;
+
 
 
 
@@ -1386,6 +1389,7 @@ a:hover + .sub-menu,
 --------------------------------------------------------------------------- */
 
 .hidshow{
+  display: grid;
   height:var(--hidShowHeight);
   margin: var(--localizacionesFlexMargin);
   overflow: hidden;
@@ -1394,8 +1398,16 @@ a:hover + .sub-menu,
 
 
 .hidshowImg {
+  grid-column:1;
+  grid-row:   1;
   width: 100%;
   height: 100%!important;
+}
+.hidshowCaption{
+  display: grid;
+  grid-column:1;
+  grid-row:   var(--hidshowCaptionGR);
+
 }
 .hidshowTitle {
   margin: 0 0 auto auto;
