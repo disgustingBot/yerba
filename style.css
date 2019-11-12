@@ -223,7 +223,7 @@ FIN DE MAPA DE CONTENIDOS */
     --simpleCardImgHeight: 40vh;
     --centerTitleFontSize: 3rem;
     --restaurantFlexDisplay: block;
-    --hidShowHeight: 80vh;
+    --hidShowHeight: auto;
     --hidShowOpacity: 1;
     --hidShowTxtFontSize: 1rem;
     --showTxtPadding: 0;
@@ -244,6 +244,7 @@ FIN DE MAPA DE CONTENIDOS */
 
     --simpleCardImgPadding: .5rem;
     --hidShowMargin: 1rem;
+    --hidshowGTR: 50vh min-content;
 
 
 
@@ -394,6 +395,7 @@ FIN DE MAPA DE CONTENIDOS */
     /* componentes */
     --hidshowFlex: 3 1 33%;
     --hidshowCaptionGR: 1;
+    --hidshowGTR: auto;
 
 
 
@@ -1220,6 +1222,7 @@ a:hover + .sub-menu,
 }
 .sliderATFTitle{
   /* grid-row:  */
+  color:white;
   position: relative;
   z-index: 5;
   margin: 4rem auto;
@@ -1422,6 +1425,8 @@ a:hover + .sub-menu,
   height:var(--hidShowHeight);
   margin: var(--localizacionesFlexMargin);
   overflow: hidden;
+  /* grid-template-rows: 50vh min-content; */
+  grid-template-rows:var(--hidshowGTR);
   flex: var(--hidshowFlex);
 }
 
@@ -1429,12 +1434,13 @@ a:hover + .sub-menu,
   grid-column:1;
   grid-row:   1;
   width: 100%;
-  height: 100%!important;
+  /* height:100%!important; */
+  height:50vh;
 }
 .hidshowCaption{
   display: grid;
   grid-column:1;
-  grid-row:   var(--hidshowCaptionGR);
+  grid-row:var(--hidshowCaptionGR);
 
 }
 .hidshowTitle {
@@ -1613,6 +1619,7 @@ a:hover + .sub-menu,
 .carusTxt {
   text-align: center;
   color: white;
+  /* display:none; */
 }
 
 

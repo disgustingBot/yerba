@@ -25,9 +25,9 @@ if(is_category()){
     <img class="carusImg rowcol1" src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt="">
     <figcaption class="carusCaption rowcol1">
       <h4 class="carusTitle"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-      <p class="carusTxt">
+      <!-- <p class="carusTxt">
         <a href="<?php the_permalink(); ?>"><?php echo excerpt(200); ?></a>
-      </p>
+      </p> -->
     </figcaption>
   </figure>
   <?php } wp_reset_query(); ?>

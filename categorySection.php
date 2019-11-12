@@ -51,7 +51,7 @@
       </figure>
 
     <?php } ?>
-    <a class="verMas" href="<?php echo site_url('/location/ibiza'); ?>">Ver más</a>
+    <a class="verMas" href="<?php echo site_url('/category/').$arg; ?>">Ver más</a>
   </section>
 <?php } ?>
 
@@ -120,7 +120,7 @@
             </figcaption>
           </figure>
         <?php } ?>
-        <a class="verMas alt" href="<?php echo site_url('/location/ibiza'); ?>">Ver más</a>
+        <a class="verMas alt" href="<?php echo site_url('/tag/').$loc[$a]; ?>">Ver más</a>
       </div>
     <?php $a++; } ?>
 

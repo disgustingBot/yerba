@@ -44,11 +44,15 @@ add_filter('get_the_archive_title',function($title){
 
 
 function excerpt($charNumber){
+  if(!$charNumber){$charNumber=1000000;}
   $excerpt = get_the_excerpt();
-  $excerpt = substr($excerpt, 0, $charNumber);
-  $result  = substr($excerpt, 0, strrpos($excerpt, ' '));
-  // $result += $result . '(...)';
-  return $result;
+  if(strlen($excerpt)<=$charNumber){return $excerpt;}else{
+    $excerpt = substr($excerpt, 0, $charNumber);
+    $result  = substr($excerpt, 0, strrpos($excerpt, ' '));
+    // $result .= $result . '(...)';
+    // return var_dump($excerpt);
+    return $result;
+  }
 }
 
 
