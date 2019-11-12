@@ -64,7 +64,7 @@
 
 
 
-<section class="igBlock">
+<!-- <section class="igBlock">
   <img class="igLogo" src="<?php echo get_template_directory_uri(); ?>/img/magazine/instagram.png" alt="">
   <slider class="flex4">
     <img class="igPhoto" src="<?php echo get_template_directory_uri(); ?>/img/magazine/musical.jpg" alt="">
@@ -72,8 +72,8 @@
     <img class="igPhoto" src="<?php echo get_template_directory_uri(); ?>/img/magazine/musical.jpg" alt="">
     <img class="igPhoto" src="<?php echo get_template_directory_uri(); ?>/img/magazine/musical.jpg" alt="">
   </slider>
-</section>
+</section> -->
 
-
+<<?php echo do_shortcode('[instagram-feed]') ?>
 
 <?php get_footer(); ?>
