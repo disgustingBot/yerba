@@ -151,7 +151,7 @@ function lattedev_call_restaurants( $atts ) {
       $buffer .= '<img class="hidshowImg" src="'.get_the_post_thumbnail_url(get_the_ID()).'" alt="">';
       $buffer .= '<figcaption class="hidshowCaption">';
         $buffer .= '<p class="itemTitle rowcol1 itemTitleTR">'.get_the_title().'</p>';
-        $buffer .= '<p class="rowcol1 hidshowTxt">'.excerpt(200).'</p>';
+        $buffer .= '<p class="rowcol1 hidshowTxt">'.excerpt(0).'</p>';
       $buffer .= '</figcaption>';
     $buffer .= '</figure>';
   } wp_reset_postdata();
