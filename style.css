@@ -2077,7 +2077,7 @@ a:hover + .sub-menu,
   text-align: right;
   width: 100%;
 }
-.cbbcEs {
+.sectionTitle .cbbcEs {
   font-size: 1.5rem!important;
   margin-left: var(--cbbcEsMarginL);
   margin-right: var(--cbbcEsMarginR);
@@ -2085,6 +2085,7 @@ a:hover + .sub-menu,
   white-space: nowrap;
   font-weight: bold;
   margin-top: -50px;
+  text-transform: none;
 }
 .sectionTitle {
   margin: auto;
@@ -2944,8 +2945,8 @@ iframe {
   height: 30px;
   background: var(--color3);
   font-size: 1rem;
-    font-family: 'Roboto', sans-serif;
-    color:white;
+  font-family: 'Roboto', sans-serif;
+  color: black;
 }
 
 .formularioDeContacto .wpcf7-form p:nth-last-child(3){

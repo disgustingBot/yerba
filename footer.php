@@ -6,7 +6,7 @@
 
   <img class="footerLogo lazy" data-url="<?php echo get_template_directory_uri(); ?>/img/footer/logo-blanco-1.png" alt="CBbC GROUP">
 
-  <a class="footerContacto" href="#" target="_blank">Contacto</a>
+  <a class="footerContacto" href="<?php echo site_url('/contacto'); ?>" target="_blank">Contacto</a>
 
   <div class="socialContainer">
     <a class="socialItem facebookFooter" href="https://es-es.facebook.com/CalaBassaBeachClub/" target="_blank">
@@ -28,16 +28,16 @@
     <li class="footerMenuItem"><a href="<?php echo site_url('/ibiza'); ?>">Ibiza</a></li>
     <li class="footerMenuItem"><a href="<?php echo site_url('/andorra'); ?>">Andorra</a></li>
     <li class="footerMenuItem"><a href="<?php echo site_url('/contacto'); ?>">Grupos y eventos</a></li>
-    <li class="footerMenuItem"><a href="<?php echo site_url('/contacto'); ?>">+Restauración</a></li>
-    <li class="footerMenuItem"><a href="<?php echo site_url('/contacto'); ?>">+Reservas y contacto</a></li>
+    <li class="footerMenuItem"><a href="<?php echo site_url('/contacto'); ?>">Restauración</a></li>
+    <li class="footerMenuItem"><a href="<?php echo site_url('/contacto'); ?>">Reservas y contacto</a></li>
 
   </ul>
   <ul class="footerMenu footerMenu2">
     <li class="footerMenuItem"><a href="<?php echo site_url('/home'); ?>">© Copyright 2019 CBbC Group</a></li>
     <li class="footerMenuItem"><a href="<?php echo site_url('/contacto'); ?>">Empleo</a></li>
     <li class="footerMenuItem"><a href="<?php echo site_url('/aviso-legal-y-confidencialidad'); ?>">Aviso legal & Privacidad</a></li>
-    <li class="footerMenuItem"><a href="<?php echo site_url('/magazine'); ?>">Publicidad</a></li>
-    <li class="footerMenuItem" onclick="alternateNewsLetter()"><a href="<?php echo site_url('/magazine'); ?>">NewsLetter</a></li>
+    <li class="footerMenuItem"><a href="<?php echo site_url('/contacto'); ?>">Publicidad</a></li>
+    <li class="footerMenuItem" onclick="alternateNewsLetter()"><a href="<?php echo site_url('/magazine'); ?>">Newsletter</a></li>
   </ul>
 
 
