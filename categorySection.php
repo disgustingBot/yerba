@@ -21,7 +21,7 @@
 
 
     <figure class="standarCard rowcol1">
-      <a class="standarCardImg rowcol1" href="<?php echo get_permalink(); ?>"><img class="standarCardImg" src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt=""></a>
+      <a class="standarCardImg rowcol1" href="<?php echo get_permalink(); ?>"><img class="standarCardImg lazy" data-url="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt=""></a>
       <figcaption class="standarCardCaption">
         <h5 class="standarCardTitle"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h5>
         <p class="standarCardTxt"><a href="<?php echo get_permalink(); ?>"><?php echo excerpt(200); ?></a></p>
@@ -42,7 +42,7 @@
     while($blogPosts->have_posts()){$blogPosts->the_post(); ?>
 
       <figure class="standarCard sectionItem">
-        <a class="standarCardImg rowcol1" href="<?php echo get_permalink(); ?>"><img class="standarCardImg" src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt=""></a>
+        <a class="standarCardImg rowcol1" href="<?php echo get_permalink(); ?>"><img class="standarCardImg lazy" data-url="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt=""></a>
         <!-- <h5 class="itemTitleCenter rowcol1 itemTitle"><?php the_title(); ?></h5> -->
         <figcaption class="standarCardCaption">
           <h5 class="standarCardTitle"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h5>
@@ -77,7 +77,7 @@
         $blogPosts=new WP_Query($args);
         while($blogPosts->have_posts()){$blogPosts->the_post(); ?>
           <figure class="grid colMax">
-            <img class="simpleCardImg rowcol1" src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt="">
+            <img class="simpleCardImg rowcol1 lazy" data-url="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt="">
             <figcaption class="itemTitleCenter itemTitle rowcol1">
               <a href="<?php echo get_permalink(); ?>"><h5><?php the_title(); ?></h5></a>
             </figcaption>
@@ -88,13 +88,13 @@
           'post_type'=>'post',
           'posts_per_page'=>1,
           'category_name' => $cat,
-          'tag' => array('featured', $loc[$a]),
+          'tag_slug__and' => array('featured', $loc[$a]),
         );
         $blogPosts=new WP_Query($args);
         while($blogPosts->have_posts()) {
           $blogPosts->the_post();$featuredID=get_the_ID(); ?>
           <figure class="tarjeta grid2C colMax">
-            <a class="tarjetaImg" href="<?php echo get_permalink(); ?>"><img class="tarjetaImg" src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt="" ></a>
+            <a class="tarjetaImg" href="<?php echo get_permalink(); ?>"><img class="tarjetaImg lazy" data-url="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt="" ></a>
             <figcaption class="tarjetaCaption">
               <h5 class="tarjetaTitle"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h5>
               <p class="tarjetaTxt"><a href="<?php echo get_permalink(); ?>"><?php echo excerpt(70); ?></a></p>
@@ -113,7 +113,7 @@
         $blogPosts=new WP_Query($args);
         while($blogPosts->have_posts()){$blogPosts->the_post(); ?>
           <figure class="standarCard grid">
-            <a class="standarCardImg rowcol1" href="<?php echo get_permalink(); ?>"><img class="standarCardImg" src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt=""></a>
+            <a class="standarCardImg rowcol1" href="<?php echo get_permalink(); ?>"><img class="standarCardImg lazy" data-url="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt=""></a>
             <figcaption class="">
               <h5><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h5>
               <p><a href="<?php echo get_permalink(); ?>"><?php echo excerpt(70); ?></a></p>

@@ -22,7 +22,7 @@ if(is_category()){
   $atf=new WP_Query($args);
   while($atf->have_posts()){$atf->the_post(); ?>
   <figure class="carus carouselItem rowcol1">
-    <img class="carusImg rowcol1" src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt="">
+    <img class="carusImg rowcol1 lazy" data-url="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt="">
     <figcaption class="carusCaption rowcol1">
       <h4 class="carusTitle"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
       <!-- <p class="carusTxt">

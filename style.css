@@ -929,7 +929,7 @@ a:hover + .sub-menu,
   grid-auto-columns: min-content;
   margin: auto;
   margin-top:0;
-  margin-bottom: -3.72rem;
+  margin-bottom: -4rem;
   /* padding: 1.2rem; */
 }
 .header.alt .headerLogoCont{
@@ -1624,6 +1624,14 @@ a:hover + .sub-menu,
   margin-bottom:1rem;
   margin-top: 15vh;
   text-align: center;
+  display: flex;
+}
+.carusTitle a{
+  margin: auto;
+  padding: .2em .4em;
+  background: black;
+  /* height: min-content; */
+  /* filter: blur(.5); */
 }
 
 .carusTxt {
