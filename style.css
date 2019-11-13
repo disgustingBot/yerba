@@ -266,6 +266,9 @@ FIN DE MAPA DE CONTENIDOS */
 
     --verMasMarginTop: 3rem;
 
+    --carouselCaptionColumnWidth: 100%;
+
+
 
 
 
@@ -536,6 +539,7 @@ FIN DE MAPA DE CONTENIDOS */
 
     --singleBannerHeight: 400px;
     --singleBannerWidth: 200px;
+    --carouselCaptionColumnWidth: 70%;
 
 
 
@@ -1632,7 +1636,7 @@ a:hover + .sub-menu,
   display: grid;
   align-content: center;
   justify-content: center;
-  grid-template-columns: 50%;
+  grid-template-columns: var(--carouselCaptionColumnWidth);
 }
 .carusTitle{
   color: white;
@@ -1645,7 +1649,11 @@ a:hover + .sub-menu,
 .carusTitle a{
   margin: auto;
   padding: .2em .4em;
-  background: black;
+  background: rgba(0,0,0, 0.4);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12),
+              0 1px 2px rgba(0,0,0,0.24),
+              0 14px 28px rgba(0,0,0,0.25),
+              0 10px 10px rgba(0,0,0,0.22);
   /* height: min-content; */
   /* filter: blur(.5); */
 }
@@ -2069,7 +2077,7 @@ a:hover + .sub-menu,
   text-align: right;
   width: 100%;
 }
-.cbbcEs {
+.sectionTitle .cbbcEs {
   font-size: 1.5rem!important;
   margin-left: var(--cbbcEsMarginL);
   margin-right: var(--cbbcEsMarginR);
@@ -2077,6 +2085,7 @@ a:hover + .sub-menu,
   white-space: nowrap;
   font-weight: bold;
   margin-top: -50px;
+  text-transform: none;
 }
 .sectionTitle {
   margin: auto;
@@ -2936,8 +2945,8 @@ iframe {
   height: 30px;
   background: var(--color3);
   font-size: 1rem;
-    font-family: 'Roboto', sans-serif;
-    color:white;
+  font-family: 'Roboto', sans-serif;
+  color: black;
 }
 
 .formularioDeContacto .wpcf7-form p:nth-last-child(3){
