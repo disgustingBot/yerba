@@ -107,7 +107,9 @@
         </div>
       </div>
     </div>
-    <?php the_content(); ?>
+    <div class="theContentContainer">
+      <?php the_content(); ?>
+    </div>
 
     <div class="singleSocialContainer altSocial">
 

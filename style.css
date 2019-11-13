@@ -220,6 +220,10 @@ FIN DE MAPA DE CONTENIDOS */
     --singleTitleInfoPadding: 0;
     --singleSocialContainer: space-around;
     --breadcrumbsFontSize: 1rem;
+    --iframeWidth: 100%;
+    --theContentPadding: 0 .5rem;
+    --theContentContainerPadding: 0;
+    --theContentUlOlPadding: 1rem;
 
 
 
@@ -334,6 +338,9 @@ FIN DE MAPA DE CONTENIDOS */
     --singleTitleInfoPadding: 10px 0 0 20px;
     --singleSocialContainer: ;
     --breadcrumbsFontSize: .6rem;
+    --theContentPadding: 0 1rem;
+    --theContentContainerPadding: .5rem;
+    --theContentUlOlPadding: 1.5rem;
 
     /* estructura */
     --cardsSize: 200px;
@@ -425,6 +432,9 @@ FIN DE MAPA DE CONTENIDOS */
 
     --singleBannerHeight: 300px;
     --singleBannerWidth: 150px;
+    --theContentPadding: 0 1rem;
+    --theContentContainerPadding: .5rem;
+    --theContentUlOlPadding: 1.5rem;
 
     --verMasMarginTop: .5rem;
     --verMasWidth: 70%;
@@ -484,6 +494,8 @@ FIN DE MAPA DE CONTENIDOS */
   --topCero: 32px;
 
   --verMasWidth: auto;
+
+  --iframeWidth: 500px;
   }
 
 }
@@ -573,6 +585,10 @@ FIN DE MAPA DE CONTENIDOS */
 
     --singleBannerHeight: 600px;
     --singleBannerWidth: 300px;
+
+    --theContentPadding: 0 2rem;
+    --theContentContainerPadding: 1rem;
+    --theContentUlOlPadding: 2rem;
 
 
 
@@ -2178,7 +2194,8 @@ a:hover + .sub-menu,
 .imgAuthor{
   background: white;
   border-radius: 0 8px 0 0;
-  display: inline-flex;
+  /* display: inline-flex; */
+  display: none;
   padding: 5px 20px;
   height: 45px;
   width: auto;
@@ -2271,9 +2288,17 @@ a:hover + .sub-menu,
 
 .theContent {
   grid-column: var(--theContentGridC);
-  padding: 0 5%;
+  padding: var(--theContentPadding);
 }
 
+
+.theContentContainer {
+  padding: var(--theContentContainerPadding);
+}
+
+.theContentContainer ul, .theContentContainer ol {
+  padding-left: var(--theContentUlOlPadding);
+}
 .singleBanner {
   display: var(--singleBannerDisplay);
   position: sticky;
@@ -2302,6 +2327,13 @@ a:hover + .sub-menu,
   flex: 3 1 30%;
 }
 
+.wp-block-embed__wrapper {
+  display: flex;
+}
+iframe {
+  margin: auto;
+  width: var(--iframeWidth);
+}
 
 .theTags {
   width: 100%;
