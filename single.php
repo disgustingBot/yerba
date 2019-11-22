@@ -87,7 +87,7 @@
             </g>
             </svg>
           </a>
-          <a href="'.$pinterestURL.'" target="_blank">
+          <a href="https://www.pinterest.es/CBbCGroup/" target="_blank">
             <svg class="googleFooter" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
   	        width="38.062px" height="38.061px" viewBox="0 0 38.062 38.061" enable-background="new 0 0 38.062 38.061" xml:space="preserve">
               <g id="XMLID_1678_">
@@ -173,8 +173,8 @@
         </g>
         </svg>
       </a>
-      <a href="'.$pinterestURL.'" target="_blank">
-        <svg class="googleFooter" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      <a href="https://www.pinterest.es/CBbCGroup/" target="_blank">
+        <svg class="pinterestFooter" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         width="38.062px" height="38.061px" viewBox="0 0 38.062 38.061" enable-background="new 0 0 38.062 38.061" xml:space="preserve">
           <g id="XMLID_1678_">
             <path id="XMLID_1680_" fill="currentColor" d="M19.03,38.061L19.03,38.061C8.52,38.061,0,29.541,0,19.031l0,0C0,8.521,8.52,0,19.03,0
@@ -190,9 +190,6 @@
           </g>
         </svg>
       </a>
-      <p class="rssSingle" onclick="alternateNewsLetter()">/ RSS
-        <svg class="singleRss" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><circle cx="6.18" cy="17.82" r="2.18"/><path d="M4 4.44v2.83c7.03 0 12.73 5.7 12.73 12.73h2.83c0-8.59-6.97-15.56-15.56-15.56zm0 5.66v2.83c3.9 0 7.07 3.17 7.07 7.07h2.83c0-5.47-4.43-9.9-9.9-9.9z"/></svg>
-      </p>
     </div>
     <div class="theTags">
       <?php echo get_the_tag_list(); ?>

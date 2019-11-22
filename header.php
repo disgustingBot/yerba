@@ -47,7 +47,7 @@
           <!-- <a class="subrayable" id="gastronomiaLink" href="#gastronomia">Gastronomía</a> -->
           <!-- <a class="subrayable" id="experienciasLink" href="#experiencias">Experiencias</a> -->
           <!-- <a class="subrayable magazineLink<?php if(is_page("magazine")){echo ' subrayado"';} ?>" href="<?php echo site_url('/magazine'); ?>" target="_blank">CBbC <span class="specialTxt">&nbsplife&nbsp</span> Magazine</a> -->
-          <button class="suscribeButton" onclick="alternateNewsLetter()">+SUSCRIBETE</button>
+          <button class="suscribeButton" onclick="alternateNewsLetter()">+SUSCRÍBETE</button>
         </nav>
       <?php } ?>
 
@@ -69,7 +69,7 @@
           <a class="subrayable<?php if(is_category("experiencias")){echo ' subrayado"';} ?>" href="<?php echo site_url('/category/experiencias'); ?>">Experiencias</a>
           <a class="subrayable<?php if(is_category("planes")){echo ' subrayado"';} ?>" href="<?php echo site_url('/category/planes'); ?>">Planes</a>
           <a class="subrayable<?php if(is_category("music")){echo ' subrayado"';} ?>" href="<?php echo site_url('/category/music'); ?>">Musica</a> -->
-          <button class="suscribeButton" onclick="alternateNewsLetter()">+SUSCRIBETE</button>
+          <button class="suscribeButton" onclick="alternateNewsLetter()">+SUSCRÍBETE</button>
         </nav>
       <?php } ?>
       <div class="burger" onclick="alternateNavBar()">
@@ -97,7 +97,7 @@
         <a class="subrayable<?php if(is_page("about")){echo ' subrayado"';} ?>" href="<?php echo site_url('/about'); ?>">About Us</a>
         <a class="subrayable<?php if(is_page("eventos")){echo ' subrayado"';} ?>" href="<?php echo site_url('/eventos'); ?>">Eventos</a>
         <a class="subrayable magazineLink<?php if(is_page("magazine")){echo ' subrayado"';} ?>" href="<?php echo site_url('/magazine'); ?>">CBbC <span class="specialTxt">Life</span> Magazine</a> -->
-        <button class="suscribeButton" onclick="alternateNewsLetter()">+SUSCRIBETE</button>
+        <button class="suscribeButton" onclick="alternateNewsLetter()">+SUSCRÍBETE</button>
       <?php } ?>
 
 
@@ -113,7 +113,7 @@
         <a class="subrayable<?php if(is_category("experiencias")){echo ' subrayado"';} ?>" href="<?php echo site_url('/category/experiencias'); ?>">Experiencias</a>
         <a class="subrayable<?php if(is_category("planes")){echo ' subrayado"';} ?>" href="<?php echo site_url('/category/planes'); ?>">Planes</a>
         <a class="subrayable<?php if(is_category("music")){echo ' subrayado"';} ?>" href="<?php echo site_url('/category/music'); ?>">Musica</a> -->
-        <button class="suscribeButton" onclick="alternateNewsLetter()">+SUSCRIBETE</button>
+        <button class="suscribeButton" onclick="alternateNewsLetter()">+SUSCRÍBETE</button>
       <?php } ?>
 
 
