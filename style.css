@@ -2081,7 +2081,7 @@ a:hover + .sub-menu,
   font-size: 1.5rem!important;
   margin-left: var(--cbbcEsMarginL);
   margin-right: var(--cbbcEsMarginR);
-  font-family: none!important;
+  font-family: 'poppins', sans-serif;
   white-space: nowrap;
   font-weight: bold;
   margin-top: -50px;
