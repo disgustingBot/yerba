@@ -1626,6 +1626,7 @@ a:hover + .sub-menu,
   /* transform:rotate(90deg); */
   /* transform-origin: 0 100%; */
   opacity: 0;
+  pointer-events: none;
 }
 
 .carusImg{
@@ -2289,7 +2290,8 @@ twitter-widget {
 }
 
 .singleContent p {
-  margin: 50px 0;
+  margin: 2rem 0;
+  font-size: .9rem;
 }
 
 .singleContent figure {
@@ -2313,6 +2315,11 @@ twitter-widget {
 
 .theContentContainer ul, .theContentContainer ol {
   padding-left: var(--theContentUlOlPadding);
+  margin: 1rem 0;
+}
+
+.theContentContainer li{
+  margin: .3rem 0;
 }
 .singleBanner {
   display: var(--singleBannerDisplay);
@@ -2643,7 +2650,7 @@ iframe {
   background: #232323;
 }
 
-.wpcf7-form-control-wrap {width: 100%; height: 100%;}
+.wpcf7-form-control-wrap {width: 100%; height: 100%;text-align: center;}
 .wpcf7-form-control-wrap input {width: 100%; padding: 5px 10px;}
 .wpcf7-form p span input::placeholder {color:black;}
 
@@ -2879,6 +2886,7 @@ iframe {
 .contactoBackground {
   height: 100%;
   width: 100%;
+  pointer-events: none;
   opacity: 0.3;
   object-fit: var(--contactoBackgroundFitting);
   position: absolute;
