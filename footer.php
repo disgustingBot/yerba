@@ -4,7 +4,7 @@
 
 <footer class="footer">
 
-  <img class="footerLogo lazy" data-url="<?php echo get_template_directory_uri(); ?>/img/footer/logo-blanco-1.png" alt="CBbC GROUP">
+  <img class="footerLogo" src="<?php echo get_template_directory_uri(); ?>/img/footer/logo-blanco-1.png" alt="CBbC GROUP">
 
   <a class="footerContacto" href="<?php echo site_url('/contacto'); ?>" target="_blank">Contacto</a>
 
