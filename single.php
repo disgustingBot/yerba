@@ -4,6 +4,31 @@
 <?php while(have_posts()){the_post(); ?>
 
 
+
+
+
+
+  <?php
+
+      // Get current page URL
+      $sb_url = urlencode(get_permalink());
+
+      // Get current page title
+      $sb_title = str_replace( ' ', '%20', get_the_title());
+
+      // Construct sharing URL without using any script
+      $twitterURL = 'https://twitter.com/intent/tweet?text='.$sb_title.'&amp;url='.$sb_url.'&amp;via=wpvkp';
+      $facebookURL = 'https://www.facebook.com/sharer/sharer.php?u='.$sb_url;
+      $linkedInURL = 'https://www.linkedin.com/shareArticle?mini=true&url='.$sb_url.'&amp;title='.$sb_title;
+   ?>
+
+
+
+
+
+
+
+
 <figure class="singleATF grid">
   <img class="singleATFImg rowcol1 lazy" data-url="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt="">
   <figcaption class="imgAuthor rowcol1">
@@ -27,7 +52,7 @@
           <span class="theCategory"><br><?php the_category(); ?></span>
         </h4>
         <div class="singleSocialContainer">
-          <a href="'.$facebookURL.'" target="_blank">
+          <a href="<?php echo $facebookURL; ?>" target="_blank">
             <svg class="facebookFooter" class="" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                width="38.061px" height="38.061px" viewBox="0 0 38.061 38.061" enable-background="new 0 0 38.061 38.061" xml:space="preserve">
               <g id="XMLID_1693_">
@@ -39,7 +64,7 @@
               </g>
             </svg>
           </a>
-          <a href="'.$twitterURL.'" target="_blank">
+          <a href="<?php echo $twitterURL; ?>" target="_blank">
             <svg class="twitterFooter" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             width="38.061px" height="38.061px" viewBox="0 0 38.061 38.061" enable-background="new 0 0 38.061 38.061" xml:space="preserve">
               <g id="XMLID_1723_">
@@ -113,7 +138,7 @@
 
     <div class="singleSocialContainer altSocial">
 
-      <a href="'.$facebookURL.'" target="_blank">
+      <a href="<?php echo $facebookURL; ?>" target="_blank">
         <svg class="facebookFooter" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
            width="38.061px" height="38.061px" viewBox="0 0 38.061 38.061" enable-background="new 0 0 38.061 38.061" xml:space="preserve">
           <g id="XMLID_1693_">
@@ -125,7 +150,7 @@
           </g>
         </svg>
       </a>
-      <a href="'.$twitterURL.'" target="_blank">
+      <a href="<?php echo $twitterURL; ?>" target="_blank">
         <svg class="twitterFooter" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         width="38.061px" height="38.061px" viewBox="0 0 38.061 38.061" enable-background="new 0 0 38.061 38.061" xml:space="preserve">
           <g id="XMLID_1723_">
