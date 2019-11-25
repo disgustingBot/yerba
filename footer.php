@@ -47,11 +47,11 @@
 
   </ul>
   <ul class="footerMenu footerMenu2">
-    <li class="footerMenuItem"><a href="<?php echo site_url('/home'); ?>">© Copyright 2019 CBbC Group</a></li>
     <li class="footerMenuItem"><a href="<?php echo site_url('/contacto'); ?>">Empleo</a></li>
     <li class="footerMenuItem"><a href="<?php echo site_url('/aviso-legal-y-confidencialidad'); ?>">Aviso legal & Privacidad</a></li>
     <li class="footerMenuItem"><a href="<?php echo site_url('/contacto'); ?>">Publicidad</a></li>
     <li class="footerMenuItem" onclick="alternateNewsLetter()"><a href="<?php echo site_url('/magazine'); ?>">Newsletter</a></li>
+    <li class="footerMenuItem"><a href="<?php echo site_url('/home'); ?>">© Copyright 2019 CBbC Group</a></li>
   </ul>
 
 

@@ -32,7 +32,7 @@
     <header class="header<?php if($isMagazine){echo " alt";} if($headerIsDrunk){echo ' drunk';} ?>">
       <?php if( !$isMagazine ){ ?>
         <a class="headerLogoCont" href="<?php echo site_url(''); ?>">
-          <img class="headerLogo" src="<?php echo get_template_directory_uri(); ?>/img/logoCasiLimpio.png" alt="">
+          <img class="headerLogo" src="<?php echo get_template_directory_uri(); ?>/img/logoCalaBassa.png" alt="">
         </a>
         <nav id="navBar" class="headerCont navBar">
           <?php wp_nav_menu( array( 'theme_location' => 'home-menu', 'home-menu' => 'new_menu_class' ) ); ?>
