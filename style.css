@@ -2996,6 +2996,10 @@ iframe {
   font-size: .7rem;
 }
 
+.formularioDeContacto .wpcf7-form p:nth-last-child(4){
+  grid-column: 1/3;
+  /* font-size: .7rem; */
+}
 
 
 
