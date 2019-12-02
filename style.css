@@ -131,6 +131,12 @@ FIN DE MAPA DE CONTENIDOS */
     --headerAltWidth: 100%;
 
 
+    --subMenuOpacity:1;
+    --subMenuPosition:relative;
+    --subMenuTransform:rotateX(0);
+    --subMenuBottom:0;
+
+
 
     /* ATF */
   --homeATFCopyFont: 2rem;
@@ -378,6 +384,14 @@ FIN DE MAPA DE CONTENIDOS */
     --headerLogoMarginBottom: 1rem;
 
     --headerAltWidth: max-content;
+
+
+    --subMenuOpacity:0;
+    --subMenuPosition:absolute;
+    --subMenuTransform:rotateX(90deg);
+    --subMenuBottom:1.5rem;
+
+
 
     /* ATF */
     --locATFCaptionGTC:1fr 1fr;
@@ -895,12 +909,13 @@ h5, h6 {text-align: left; margin: .5rem 0;}
   grid-auto-rows: 1rem;
   grid-gap: .5rem;
   left: 0;
-  opacity: 0;
+  /* top:var(--subMenuTop) */
+  opacity: var(--subMenuOpacity);
   padding: .5rem;
-  position: absolute;
-  bottom:1.5rem;
+  position: var(--subMenuPosition);
+  bottom:var(--subMenuBottom);
   transition: .4s ease-in-out;
-  transform:rotateX(90deg);
+  transform:var(--subMenuTransform);
   transform-origin: bottom;
   /* width: 100%; */
   z-index: 1;
@@ -2321,6 +2336,9 @@ twitter-widget {
 .theContentContainer li{
   margin: .3rem 0;
 }
+.wp-block-gallery{padding:0!important}
+
+
 .singleBanner {
   display: var(--singleBannerDisplay);
   position: sticky;
@@ -2436,9 +2454,14 @@ iframe {
   margin: 0 auto!important;
 }
 
-.formularioDeContacto .wpcf7-form p:nth-child(8) {
+
+.formularioDeContacto .wpcf7-form p:nth-child(8),
+.formularioDeContacto .wpcf7-form p:nth-child(9){
   grid-column: 1/ -1;
   display: flex;
+}
+.ajax-loader{
+  position: absolute;
 }
 
 .form-submit input, .wpcf7-submit {
@@ -2990,3 +3013,10 @@ iframe {
 }
 
 .sbi_photo_wrap:hover {box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);}
+
+
+
+
+#termsCheckbox .span.wpcf7-list-item{
+  margin:0!important;
+}
