@@ -171,6 +171,7 @@ FIN DE MAPA DE CONTENIDOS */
     /* componentes */
     --locATFCaptionGTC:1fr;
     --locATFCaptionPadding: 0 5%;
+    --verMasMargin:  auto;
 
     /* estructura */
 
@@ -315,6 +316,7 @@ FIN DE MAPA DE CONTENIDOS */
 @media screen and (min-width: 480px) {
   :root {
     --standarCardImgHeight: 250px;
+    --verMasMargin:  .5rem 35%;
 
   }
 }
@@ -359,6 +361,7 @@ FIN DE MAPA DE CONTENIDOS */
     --flex3StandarCardMinWidth:170px;
 
     --verMasWidth: 70%;
+    --verMasMargin:  .5rem 35%;
 
 
 
@@ -426,6 +429,9 @@ FIN DE MAPA DE CONTENIDOS */
     --hidshowFlex: 3 1 33%;
     --hidshowCaptionGR: 1;
     --hidshowGTR: auto;
+
+    --verMasMargin: .5rem 40%;
+
 
 
 
@@ -1925,10 +1931,12 @@ a:hover + .sub-menu,
   background: black;
   color:white;
   text-decoration: none;
+  text-align: center;
   padding: .4rem 1.2rem;
-  margin: .5rem auto;
+  margin: var(--verMasMargin);
   position: relative;
-  width: var(--verMasWidth);
+  /* width: var(--verMasWidth); */
+  width: max-content;
   margin-top: var(--verMasMarginTop);
 }
 .verMas::before, .verMas::after{
@@ -1948,6 +1956,7 @@ a:hover + .sub-menu,
 
 .verMas.alt{
   grid-column: 1/-1;
+  margin: 2rem auto;
 }
 .verMas.alt::before, .verMas.alt::after{
   width: calc((50vw - 16px - 100% - 1rem) / 2);
@@ -2011,14 +2020,6 @@ a:hover + .sub-menu,
 }
 
 
-/* TODO: rincon de Tomi... trata de hacer algo con él */
-/* TODO: cuando hagas responsive tenes cosas al final por acomodar */
-/* TODO: acomodar esto, organizar nombres y tal */
-/* TODO: cuando acomodes esto fijate de no romper nada */
-/* TODO: hacelo con mucho amor y criterio y sin hardcode porfis */
-/* TODO: todas estas clases estan siendo usadas en algun lado */
-/* Items with images */
-
 .itemTitle {
   background: white;
   max-width: 90%;
@@ -2055,7 +2056,7 @@ a:hover + .sub-menu,
 /* ------------------------------------------ */
 
  /* ------------------------------------------ */
-/* TODO: terminar bloque instagram (cuando sepamos más sobre las APIs para
+/* TODO: terminar bloque instagram (cuando sepa más sobre las APIs para
          saber que info va a ir) */
 .igBlock{
   display: grid;
@@ -2192,7 +2193,6 @@ a:hover + .sub-menu,
 /* WARNING:  */
 /* WARNING: Danger zone */
 /* WARNING: code here under your own risk */
-/* TOMI CULIADO, no me seguis en el orden del css, te voy a ponerr en penitencia */
 /* ---------------------------------------------------------------------------
 ------------------------------------------------------------------------------
                                7) =single.php
